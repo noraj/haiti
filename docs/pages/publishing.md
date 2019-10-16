@@ -5,7 +5,7 @@
 ```
 $ git tag -a vx.x.x
 $ git push --follow-tags
-$ gem push haiti-x.x.x.gem
+$ gem push haiti-hash-x.x.x.gem
 ```
 
 See https://guides.rubygems.org/publishing/.
