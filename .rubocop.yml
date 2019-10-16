@@ -1,0 +1,25 @@
+# Metrics
+AllCops:
+  TargetRubyVersion: 2.4
+
+Layout/AlignHash:
+  Include:
+    - 'lib/**/*.rb'
+Metrics/AbcSize:
+  Enabled: false
+Metrics/ClassLength:
+  Max: 200
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/LineLength:
+  Include:
+    - 'lib/**/*.rb'
+Metrics/BlockNesting:
+  Exclude:
+    - 'bin/*'
+Metrics/MethodLength:
+  Max: 25
+Metrics/PerceivedComplexity:
+  Max: 10
+Style/RedundantReturn:
+  Enabled: false

@@ -1,0 +1,56 @@
+PATH
+  remote: .
+  specs:
+    haiti-hash (0.0.1)
+      docopt (~> 0.6)
+      paint (~> 2.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.0)
+    commonmarker (0.20.1)
+      ruby-enum (~> 0.5)
+    concurrent-ruby (1.1.5)
+    docopt (0.6.1)
+    github-markup (3.0.4)
+    i18n (1.7.0)
+      concurrent-ruby (~> 1.0)
+    jaro_winkler (1.5.3)
+    minitest (5.12.2)
+    paint (2.1.1)
+    parallel (1.18.0)
+    parser (2.6.5.0)
+      ast (~> 2.4.0)
+    rainbow (3.0.0)
+    rake (13.0.0)
+    redcarpet (3.5.0)
+    rubocop (0.75.1)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.6)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    ruby-enum (0.7.2)
+      i18n
+    ruby-progressbar (1.10.1)
+    unicode-display_width (1.6.0)
+    yard (0.9.20)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 2.0)
+  commonmarker (~> 0.20)
+  github-markup (~> 3.0)
+  haiti-hash!
+  minitest (~> 5.12)
+  rake (~> 13.0)
+  redcarpet (~> 3.5)
+  rubocop (~> 0.75)
+  yard (~> 0.9)
+
+BUNDLED WITH
+   2.0.2
