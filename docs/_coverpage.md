@@ -1,4 +1,4 @@
-<img src="/_media/logo.png" data-origin="_media/logo.png" alt="logo" height="300">
+<img src="_media/logo.png" data-origin="_media/logo.png" alt="logo" height="300">
 
 # HAITI
 
