@@ -1,10 +1,11 @@
 # HAITI
 
-[![Gem Version](https://badge.fury.io/rb/haiti.svg)](https://badge.fury.io/rb/haiti-hash)
+[![Gem Version](https://badge.fury.io/rb/haiti-hash.svg)](https://badge.fury.io/rb/haiti-hash)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/Orange-Cyberdefense/haiti)
 [![GitHub forks](https://img.shields.io/github/forks/Orange-Cyberdefense/haiti)](https://github.com/Orange-Cyberdefense/haiti/network)
 [![GitHub stars](https://img.shields.io/github/stars/Orange-Cyberdefense/haiti)](https://github.com/Orange-Cyberdefense/haiti/stargazers)
 [![GitHub license](https://img.shields.io/github/license/Orange-Cyberdefense/haiti)](https://github.com/Orange-Cyberdefense/haiti/blob/master/LICENSE.txt)
+[![Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat.svg)](https://inventory.rawsec.ml/tools.html#Haiti)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/haiti.svg)](https://repology.org/project/haiti/versions)
 
