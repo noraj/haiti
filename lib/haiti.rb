@@ -10,7 +10,7 @@ require 'haiti/hash'
 class HashIdentifier
   # Constants
   include Version
-  PROTOTYPES = JSON.parse(File.read('data/prototypes.json'))
+  PROTOTYPES = JSON.parse(File.read(File.join(__dir__, '../data/prototypes.json')))
 
   # @return [String] the hash (as provided)
   # @example
