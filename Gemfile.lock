@@ -9,12 +9,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
-    commonmarker (0.20.2)
+    commonmarker (0.21.0)
       ruby-enum (~> 0.5)
     concurrent-ruby (1.1.5)
     docopt (0.6.1)
     github-markup (3.0.4)
-    i18n (1.7.0)
+    i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.4)
     minitest (5.14.0)
