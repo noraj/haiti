@@ -3,7 +3,7 @@ PATH
   specs:
     haiti-hash (0.0.1)
       docopt (~> 0.6)
-      paint (~> 2.1)
+      paint (~> 2.2)
 
 GEM
   remote: https://rubygems.org/
@@ -20,38 +20,38 @@ GEM
     minitest (5.14.0)
     paint (2.2.0)
     parallel (1.19.1)
-    parser (2.7.0.3)
+    parser (2.7.0.5)
       ast (~> 2.4.0)
     rainbow (3.0.0)
     rake (13.0.1)
     redcarpet (3.5.0)
     rexml (3.2.4)
-    rubocop (0.80.1)
+    rubocop (0.81.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
       rexml
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 1.4.0, < 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
     ruby-enum (0.7.2)
       i18n
     ruby-progressbar (1.10.1)
-    unicode-display_width (1.6.1)
+    unicode-display_width (1.7.0)
     yard (0.9.24)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 2.0)
-  commonmarker (~> 0.20)
+  bundler (~> 2.1)
+  commonmarker (~> 0.21)
   github-markup (~> 3.0)
   haiti-hash!
   minitest (~> 5.12)
   rake (~> 13.0)
   redcarpet (~> 3.5)
-  rubocop (~> 0.75)
+  rubocop (~> 0.80)
   yard (~> 0.9)
 
 BUNDLED WITH
