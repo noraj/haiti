@@ -34,6 +34,7 @@ DOCOPT
 
 begin
   args = Docopt.docopt(doc, version: HashIdentifier::VERSION)
+  Paint.mode = 0 if args['--no-color']
   pp args if args['--debug']
   # use case 1, using the tool
   if args['<hash>']
@@ -42,24 +43,17 @@ begin
       puts 'Unknown hash type'
       exit(0)
     end
-    if args['--no-color']
-      hi.type.each do |type|
-        next if type.extended && !args['--extended']
+    hi.type.each do |type|
+      next if type.extended && !args['--extended']
 
-        line = type.name
-        line += " [HC: #{type.hashcat}]" unless type.hashcat.nil? || args['--short'] || args['--john-only']
-        line += " [JtR: #{type.john}]" unless type.john.nil? || args['--short'] || args['--hashcat-only']
-        puts line
+      print Paint[type.name, :bold]
+      unless type.hashcat.nil? || args['--short'] || args['--john-only']
+        print Paint[" [HC: #{type.hashcat}]", :blue]
       end
-    else
-      hi.type.each do |type|
-        next if type.extended && !args['--extended']
-
-        print Paint[type.name, :bold]
-        print Paint[" [HC: #{type.hashcat}]", :blue] unless type.hashcat.nil? || args['--short'] || args['--john-only']
-        print Paint[" [JtR: #{type.john}]", :green] unless type.john.nil? || args['--short'] || args['--hashcat-only']
-        puts
+      unless type.john.nil? || args['--short'] || args['--hashcat-only']
+        print Paint[" [JtR: #{type.john}]", :green]
       end
+      puts
     end
   end
   # use case 2, help: already handled by docopt

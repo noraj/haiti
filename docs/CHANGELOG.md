@@ -1,3 +1,7 @@
+## [Unreleased]
+
+- bin: code simplification & lint
+
 ## [1.0.0]
 
 - lib: Fix a file loading path of prototypes
