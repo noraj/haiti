@@ -25,7 +25,7 @@ Legend:
 - Ref.: hashcat and john the ripper matching reference
 - ✅: feature supported
 - ❌: feature not supported
-- ⭕️: feature partialially support
+- ⭕️: feature partially support
 - 💎: Ruby
 - 🐍: Python
 - :hash: correct modern hashes support
