@@ -1,31 +1,76 @@
-# Metrics
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.7
 
+# ~~~ Layout ~~~
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
 Layout/HashAlignment:
   Include:
     - 'lib/**/*.rb'
 Layout/LineLength:
   Include:
     - 'lib/**/*.rb'
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+# ~~~ Lint ~~~
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+Lint/DuplicateElsifCondition:
+  Enabled: true
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride :
+  Enabled: true
+# ~~~ Metrics ~~~
 Metrics/AbcSize:
-  Enabled: false
-Metrics/ClassLength:
-  Max: 200
-Metrics/CyclomaticComplexity:
   Enabled: false
 Metrics/BlockNesting:
   Exclude:
     - 'bin/*'
+Metrics/ClassLength:
+  Max: 200
+Metrics/CyclomaticComplexity:
+  Enabled: false
 Metrics/MethodLength:
-  Max: 25
+  Max: 30
 Metrics/PerceivedComplexity:
   Max: 10
+# ~~~ Style ~~~
+Style/AccessorGrouping:
+  Enabled: false # for yard
+Style/ArrayCoercion:
+  Enabled: true
+Style/BisectedAttrAccessor:
+  Enabled: false # for yard
+Style/CaseLikeIf:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+Style/FormatStringToken:
+  Enabled: false # https://github.com/rubocop-hq/rubocop/issues/7944
+Style/HashAsLastArrayItem:
+  Enabled: true
 Style/HashEachMethods:
   Enabled: true
-Style/RedundantReturn:
-  Enabled: false
+Style/HashLikeCase:
+  Enabled: true
 Style/HashTransformKeys:
   Enabled: true
 Style/HashTransformValues:
+  Enabled: true
+Style/RedundantAssignment:
+  Enabled: true
+Style/RedundantFetchBlock:
+  Enabled: true
+Style/RedundantFileExtensionInRequire:
+  Enabled: true
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+Style/RedundantRegexpEscape:
+  Enabled: true
+Style/RedundantReturn:
+  Enabled: false
+Style/SlicingWithRange:
   Enabled: true

@@ -15,8 +15,8 @@ A CLI tool to identify the hash type of a given hash.
 
 ## References
 
-Homepage / Documentation: https://orange-cyberdefense.github.io/haiti/
+Homepage / Documentation: https://noraj.github.io/haiti/
 
 ## Author
 
-Made by Alexandre ZANNI ([@noraj](https://github.com/noraj)), pentester from Orange Cyberdefense.
+Made by Alexandre ZANNI ([@noraj](https://pwn.by/noraj/)).

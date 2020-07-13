@@ -59,7 +59,7 @@ $ gem install --development haiti-hash
 Just replace `x.x.x` with the gem version you see after `gem build`.
 
 ```
-$ git clone https://github.com/Orange-Cyberdefense/haiti.git haiti
+$ git clone https://github.com/noraj/haiti.git haiti
 $ cd haiti
 $ gem install bundler
 $ bundler install

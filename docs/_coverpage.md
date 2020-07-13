@@ -9,7 +9,7 @@
 - CLI tool & library
 - Hackable
 
-[GitHub](https://github.com/Orange-Cyberdefense/haiti/)
+[GitHub](https://github.com/noraj/haiti/)
 [Get Started](pages/quick-start?id=quick-start)
 
 ![color](#ffffff)

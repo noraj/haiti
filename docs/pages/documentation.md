@@ -15,7 +15,7 @@ $ docsify serve docs
 
 The output directory of the library documentation will be `docs/yard`.
 
-You can consult it online [here](https://orange-cyberdefense.github.io/haiti/yard/).
+You can consult it online [here](https://noraj.github.io/haiti/yard/).
 
 ### Building locally: for library users
 

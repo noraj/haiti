@@ -15,7 +15,7 @@ class HaitiTest < Minitest::Test
 
   def test_hashidentifier_type
     assert_instance_of(Array, @hi.type)
-    assert_instance_of(HashIdentifier:: Chf, @hi.type[0])
+    assert_instance_of(HashIdentifier::Chf, @hi.type[0])
   end
 
   def test_hashidentifier_type_non_existing

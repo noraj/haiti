@@ -6,12 +6,12 @@ Gem::Specification.new do |s|
   s.name          = 'haiti-hash'
   s.version       = Version::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2020-03-02'
+  s.date          = '2020-07-13'
   s.summary       = 'HAsh IdenTifIer'
   s.description   = 'A CLI tool to identify the hash type of a given hash.'
   s.authors       = ['Alexandre ZANNI']
   s.email         = 'alexandre.zanni@engineer.com'
-  s.homepage      = 'https://orange-cyberdefense.github.io/haiti/'
+  s.homepage      = 'https://noraj.github.io/haiti/'
   s.license       = 'MIT'
 
   s.files         = Dir['bin/*'] + Dir['lib/**/*.rb'] + Dir['data/*.json']
@@ -22,14 +22,14 @@ Gem::Specification.new do |s|
 
   s.metadata = {
     'yard.run'          => 'yard',
-    'bug_tracker_uri'   => 'https://github.com/Orange-Cyberdefense/haiti/issues',
-    'changelog_uri'     => 'https://github.com/Orange-Cyberdefense/haiti/blob/master/docs/CHANGELOG.md',
-    'documentation_uri' => 'https://orange-cyberdefense.github.io/haiti/',
-    'homepage_uri'      => 'https://orange-cyberdefense.github.io/haiti/',
-    'source_code_uri'   => 'https://github.com/Orange-Cyberdefense/haiti/'
+    'bug_tracker_uri'   => 'https://github.com/noraj/haiti/issues',
+    'changelog_uri'     => 'https://github.com/noraj/haiti/blob/master/docs/CHANGELOG.md',
+    'documentation_uri' => 'https://noraj.github.io/haiti/',
+    'homepage_uri'      => 'https://noraj.github.io/haiti/',
+    'source_code_uri'   => 'https://github.com/noraj/haiti/'
   }
 
-  s.required_ruby_version = '~> 2.4'
+  s.required_ruby_version = '~> 2.7'
 
   s.add_runtime_dependency('docopt', '~> 0.6') # for argument parsing
   s.add_runtime_dependency('paint', '~> 2.2') # for colorized ouput
