@@ -1,10 +1,12 @@
 ## Why?
 
 hashID is unmaintained since March 2015, hash-identifier is unmaintained since
-March 2018 and Dagon since June 2018. They all have no/wrong/erroneous support
+March 2018, Dagon since June 2018 and findmyhash since 2011.
+They all have no/wrong/erroneous support
 for modern hashes like Keccak/SHA3/Blake2 etc.
 Also a tool like hash-identifier which is fully interractive and has no options
 is not handy for scripting.
+findmyhash has a very limited set of detected hashes.
 The most interresting tool is hashID (for hash identification) but since it is
 unmaintained for more than 5 years, issue and open PR are stacking, bugs remain
 and some features keep lacking.
@@ -18,7 +20,8 @@ Tool                 | Maintained | Color | Ref. | Library | Lang | ️:hash:
 haiti                | ✅          | ✅     | ✅    | ✅       | 💎   | ✅
 [hashID][1]          | ❌          | ❌     | ✅    | ❌       | 🐍   | ⭕️
 [hash-identifier][2] | ❌          | ❌     | ❌    | ❌       | 🐍   | ❌
-[Dagon][3]           | ❌          | ⭕️    | ❌    | ❌       | 🐍   | ⭕️
+[Dagon][3]           | ❌          | ⭕️     | ❌    | ❌       | 🐍   | ⭕️
+[findmyhash][4]      | ❌          | ❌     | ❌    | ❌       | 🐍   | ❌
 
 Legend:
 
@@ -33,3 +36,4 @@ Legend:
 [1]:https://github.com/psypanda/hashID
 [2]:https://github.com/blackploit/hash-identifier
 [3]:https://github.com/Ekultek/Dagon
+[4]:https://code.google.com/archive/p/findmyhash
