@@ -16,7 +16,7 @@ GEM
     github-markup (3.0.4)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
-    minitest (5.14.1)
+    minitest (5.14.3)
     paint (2.2.1)
     parallel (1.19.2)
     parser (2.7.1.4)
