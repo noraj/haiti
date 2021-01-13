@@ -1,5 +1,6 @@
 AllCops:
   TargetRubyVersion: 2.7
+  NewCops: enable
 
 # ~~~ Layout ~~~
 Layout/EmptyLinesAroundAttributeAccessor:

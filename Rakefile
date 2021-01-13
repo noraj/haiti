@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rake/testtask'
 require 'bundler/gem_tasks'
 
@@ -7,4 +9,3 @@ end
 
 desc 'Run tests'
 task default: :test
-

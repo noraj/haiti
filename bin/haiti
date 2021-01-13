@@ -47,12 +47,8 @@ begin
       next if type.extended && !args['--extended']
 
       print Paint[type.name, :bold]
-      unless type.hashcat.nil? || args['--short'] || args['--john-only']
-        print Paint[" [HC: #{type.hashcat}]", :blue]
-      end
-      unless type.john.nil? || args['--short'] || args['--hashcat-only']
-        print Paint[" [JtR: #{type.john}]", :green]
-      end
+      print Paint[" [HC: #{type.hashcat}]", :blue] unless type.hashcat.nil? || args['--short'] || args['--john-only']
+      print Paint[" [JtR: #{type.john}]", :green] unless type.john.nil? || args['--short'] || args['--hashcat-only']
       puts
     end
   end
