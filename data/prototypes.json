@@ -192,6 +192,12 @@
                 "hashcat": 2400,
                 "extended": false,
                 "name": "Cisco-PIX(MD5)"
+            },
+            {
+                "john": "dynamic_19",
+                "hashcat": 2400,
+                "extended": true,
+                "name": "md5($pass)"
             }
         ]
     },
@@ -416,10 +422,22 @@
                 "name": "md5($salt.$pass.$salt)"
             },
             {
-                "john": null,
+                "john": "dynamic_14",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5($salt.md5($pass).$salt)"
+            },
+            {
+                "john": "dynamic_13",
                 "hashcat": 3910,
                 "extended": true,
                 "name": "md5(md5($pass).md5($salt))"
+            },
+            {
+                "john": "dynamic_12",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5(md5($salt).md5($pass))"
             },
             {
                 "john": "dynamic_6",
@@ -434,7 +452,7 @@
                 "name": "md5($salt.md5($salt.$pass))"
             },
             {
-                "john": null,
+                "john": "dynamic_11",
                 "hashcat": 4110,
                 "extended": true,
                 "name": "md5($salt.md5($pass.$salt))"
@@ -444,6 +462,24 @@
                 "hashcat": 4210,
                 "extended": true,
                 "name": "md5($username.0.$pass)"
+            },
+            {
+                "john": "dynamic_15",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5($username.md5($pass).$salt)"
+            },
+            {
+                "john": "dynamic_16",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5(md5(md5($pass).$salt).$salt2)"
+            },
+            {
+                "john": "dynamic_18",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5($salt.Y.$pass.0xF7.$salt)"
             }
         ]
     },
@@ -1799,6 +1835,12 @@
                 "hashcat": 2410,
                 "extended": false,
                 "name": "Cisco-ASA(MD5)"
+            },
+            {
+                "john": "dynamic_20",
+                "hashcat": 2410,
+                "extended": true,
+                "name": "md5($pass.$salt)"
             }
         ]
     },
