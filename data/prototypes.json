@@ -356,7 +356,7 @@
                 "name": "md5(strtoupper(md5($pass)))"
             },
             {
-                "john": null,
+                "john": "dynamic_22",
                 "hashcat": 4400,
                 "extended": true,
                 "name": "md5(sha1($pass))"
@@ -480,6 +480,12 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "md5($salt.Y.$pass.0xF7.$salt)"
+            },
+            {
+                "john": "dynamic_29",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5(utf16($pass))"
             }
         ]
     },
@@ -789,19 +795,19 @@
                 "name": "sha1(sha1(sha1($pass)))"
             },
             {
-                "john": null,
+                "john": "dynamic_23",
                 "hashcat": 4700,
                 "extended": true,
                 "name": "sha1(md5($pass))"
             },
             {
-                "john": null,
+                "john": "dynamic_24",
                 "hashcat": 110,
                 "extended": true,
                 "name": "sha1($pass.$salt)"
             },
             {
-                "john": null,
+                "john": "dynamic_25",
                 "hashcat": 120,
                 "extended": true,
                 "name": "sha1($salt.$pass)"
