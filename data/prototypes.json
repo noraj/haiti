@@ -332,10 +332,16 @@
                 "name": "PrestaShop"
             },
             {
-                "john": null,
+                "john": "dynamic_3",
                 "hashcat": 3500,
                 "extended": true,
                 "name": "md5(md5(md5($pass)))"
+            },
+            {
+                "john": "dynamic_2",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5(md5($pass))"
             },
             {
                 "john": null,
@@ -350,13 +356,13 @@
                 "name": "md5(sha1($pass))"
             },
             {
-                "john": null,
+                "john": "dynamic_1",
                 "hashcat": 10,
                 "extended": true,
                 "name": "md5($pass.$salt)"
             },
             {
-                "john": null,
+                "john": "dynamic_4",
                 "hashcat": 20,
                 "extended": true,
                 "name": "md5($salt.$pass)"
@@ -386,13 +392,13 @@
                 "name": "HMAC-MD5 (key = $salt)"
             },
             {
-                "john": null,
+                "john": "dynamic_8",
                 "hashcat": 3610,
                 "extended": true,
                 "name": "md5(md5($salt).$pass)"
             },
             {
-                "john": null,
+                "john": "dynamic_9",
                 "hashcat": 3710,
                 "extended": true,
                 "name": "md5($salt.md5($pass))"
@@ -404,7 +410,7 @@
                 "name": "md5($pass.md5($salt))"
             },
             {
-                "john": null,
+                "john": "dynamic_5",
                 "hashcat": 3810,
                 "extended": true,
                 "name": "md5($salt.$pass.$salt)"
@@ -416,7 +422,13 @@
                 "name": "md5(md5($pass).md5($salt))"
             },
             {
-                "john": null,
+                "john": "dynamic_6",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5(md5($pass).$salt)"
+            },
+            {
+                "john": "dynamic_10",
                 "hashcat": 4010,
                 "extended": true,
                 "name": "md5($salt.md5($salt.$pass))"
