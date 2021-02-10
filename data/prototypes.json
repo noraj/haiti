@@ -353,7 +353,7 @@
                 "john": null,
                 "hashcat": 4300,
                 "extended": true,
-                "name": "md5(strtoupper(md5($pass)))"
+                "name": "md5(uppercase(md5($pass)))"
             },
             {
                 "john": "dynamic_22",
@@ -486,6 +486,42 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "md5(utf16($pass))"
+            },
+            {
+                "john": "dynamic_31",
+                "hashcat": null,
+                "extended": true,
+                "name": "md4($salt.$pass)"
+            },
+            {
+                "john": "dynamic_32",
+                "hashcat": null,
+                "extended": true,
+                "name": "md4($pass.$salt)"
+            },
+            {
+                "john": "dynamic_33",
+                "hashcat": null,
+                "extended": true,
+                "name": "md4(utf16($pass))"
+            },
+            {
+                "john": "dynamic_34",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5(md4($pass))"
+            },
+            {
+                "john": "dynamic_39",
+                "hashcat": null,
+                "extended": true,
+                "name": "net-md5"
+            },
+            {
+                "john": "dynamic_39",
+                "hashcat": null,
+                "extended": true,
+                "name": "md5($salt.pad16($pass))"
             }
         ]
     },
@@ -783,10 +819,28 @@
                 "name": "Skein-512(160)"
             },
             {
-                "john": null,
+                "john": "dynamic_35",
                 "hashcat": null,
                 "extended": true,
                 "name": "MangosWeb Enhanced CMS"
+            },
+            {
+                "john": "dynamic_36",
+                "hashcat": null,
+                "extended": true,
+                "name": "MangosWeb Enhanced CMS v2"
+            },
+            {
+                "john": "dynamic_35",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha1(uppercase($username).:.$pass)"
+            },
+            {
+                "john": "dynamic_36",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha1($username.:.$pass)"
             },
             {
                 "john": null,
@@ -841,6 +895,42 @@
                 "hashcat": 4710,
                 "extended": true,
                 "name": "sha1($salt.$pass.$salt)"
+            },
+            {
+                "john": "dynamic_37",
+                "hashcat": null,
+                "extended": true,
+                "name": "SMF"
+            },
+            {
+                "john": "dynamic_37",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha1(lowercase($username).$pass)"
+            },
+            {
+                "john": "dynamic_38",
+                "hashcat": null,
+                "extended": true,
+                "name": "Wolt3BB"
+            },
+            {
+                "john": "dynamic_38",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha1($salt.sha1($salt.sha1($pass)))"
+            },
+            {
+                "john": "dynamic_40",
+                "hashcat": null,
+                "extended": true,
+                "name": "net-sha1"
+            },
+            {
+                "john": "dynamic_40",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha1($salt.pad20($pass))"
             }
         ]
     },
