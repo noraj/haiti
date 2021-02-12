@@ -1544,13 +1544,13 @@
                 "name": "Skein-1024(512)"
             },
             {
-                "john": null,
+                "john": "dynamic_82",
                 "hashcat": 1710,
                 "extended": true,
                 "name": "sha512($pass.$salt)"
             },
             {
-                "john": null,
+                "john": "dynamic_81",
                 "hashcat": 1720,
                 "extended": true,
                 "name": "sha512($salt.$pass)"
@@ -1578,6 +1578,36 @@
                 "hashcat": 1760,
                 "extended": true,
                 "name": "HMAC-SHA512 (key = $salt)"
+            },
+            {
+                "john": "dynamic_83",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha512(sha512($pass))"
+            },
+            {
+                "john": "dynamic_85",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha512(sha512($pass).$salt)"
+            },
+            {
+                "john": "dynamic_86",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha512($salt.sha512($pass))"
+            },
+            {
+                "john": "dynamic_87",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha512(sha512($salt).sha512($pass))"
+            },
+            {
+                "john": "dynamic_88",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha512(sha512($pass).sha512($pass))"
             }
         ]
     },
