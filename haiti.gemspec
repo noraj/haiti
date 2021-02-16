@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
   s.name          = 'haiti-hash'
   s.version       = Version::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2020-07-13'
   s.summary       = 'HAsh IdenTifIer'
   s.description   = 'A CLI tool to identify the hash type of a given hash.'
   s.authors       = ['Alexandre ZANNI']
