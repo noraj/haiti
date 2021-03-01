@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 2.4
   NewCops: enable
 
 # ~~~ Layout ~~~
