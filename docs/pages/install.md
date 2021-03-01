@@ -26,6 +26,14 @@ From git:
 
 PKGBUILD: [haiti](https://github.com/BlackArch/blackarch/blob/master/packages/haiti/PKGBUILD)
 
+### Install from Pentoo
+
+From the repository:
+
+```
+# emerge -DNu app-crypt/haiti-hash
+```
+
 ### Install from ArchLinux
 
 Manually:
