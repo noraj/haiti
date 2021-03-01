@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
     'source_code_uri'   => 'https://github.com/noraj/haiti/'
   }
 
-  s.required_ruby_version = '~> 2.7'
+  s.required_ruby_version = ['>= 2.4.0', '< 3.0']
 
   s.add_runtime_dependency('docopt', '~> 0.6') # for argument parsing
   s.add_runtime_dependency('paint', '~> 2.2') # for colorized ouput
