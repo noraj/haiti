@@ -31,7 +31,7 @@ PKGBUILD: [haiti](https://github.com/BlackArch/blackarch/blob/master/packages/ha
 From the repository:
 
 ```
-# emerge -DNu app-crypt/haiti-hash
+# emerge app-crypt/haiti-hash
 ```
 
 ### Install from ArchLinux
