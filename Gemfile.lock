@@ -13,7 +13,7 @@ GEM
       ruby-enum (~> 0.5)
     concurrent-ruby (1.1.8)
     docopt (0.6.1)
-    github-markup (3.0.5)
+    github-markup (4.0.0)
     i18n (1.8.8)
       concurrent-ruby (~> 1.0)
     minitest (5.14.4)
@@ -49,7 +49,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.1)
   commonmarker (~> 0.21)
-  github-markup (~> 3.0)
+  github-markup (~> 4.0)
   haiti-hash!
   minitest (~> 5.12)
   rake (~> 13.0)
