@@ -19,7 +19,7 @@ GEM
     minitest (5.14.4)
     paint (2.2.1)
     parallel (1.20.1)
-    parser (3.0.0.0)
+    parser (3.0.1.0)
       ast (~> 2.4.1)
     rainbow (3.0.0)
     rake (13.0.3)
@@ -58,4 +58,4 @@ DEPENDENCIES
   yard (~> 0.9)
 
 BUNDLED WITH
-   2.1.4
+   2.2.15
