@@ -1539,6 +1539,54 @@
                 "hashcat": null,
                 "extended": false,
                 "name": "Skein-1024(384)"
+            },
+            {
+                "john": "dynamic_71",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha384($salt.$pass)"
+            },
+            {
+                "john": "dynamic_72",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha384($pass.$salt)"
+            },
+            {
+                "john": "dynamic_73",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha384(sha384($pass))"
+            },
+            {
+                "john": "dynamic_74",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha384(sha384_raw($pass))"
+            },
+            {
+                "john": "dynamic_75",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha384(sha384($pass).$salt)"
+            },
+            {
+                "john": "dynamic_76",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha384($salt.sha384($pass))"
+            },
+            {
+                "john": "dynamic_77",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha384(sha384($salt).sha384($pass))"
+            },
+            {
+                "john": "dynamic_78",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha384(sha384($pass).sha384($pass))"
             }
         ]
     },
