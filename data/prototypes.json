@@ -1103,7 +1103,7 @@
         "modes": [
             {
                 "john": "raw-sha224",
-                "hashcat": null,
+                "hashcat": 1300,
                 "extended": false,
                 "name": "SHA-224"
             },
