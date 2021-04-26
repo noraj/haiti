@@ -2887,5 +2887,88 @@
                 "name": "PDF 1.4 - 1.6 (Acrobat 5 - 8)"
             }
         ]
+    },
+    {
+        "regex": "^\\$bitcoin\\$[0-9]{2,4}\\$[a-fA-F0-9$]{250,350}$",
+        "modes": [
+            {
+                "john": "bitcoin",
+                "hashcat": 11300,
+                "extended": false,
+                "name": "Bitcoin/Litecoin Wallet"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$ethereum\\$[a-z0-9*]{150,1400}$",
+        "modes": [
+            {
+                "john": "ethereum-presale-opencl",
+                "hashcat": 16300,
+                "extended": false,
+                "name": "Ethereum Presale Wallet"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$ethereum\\$[a-z0-9*]{150,250}$",
+        "modes": [
+            {
+                "john": "Ethereum Wallet",
+                "hashcat": 15600,
+                "extended": false,
+                "name": "ethereum-opencl"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$monero\\$(0)\\*[a-f0-9]{32,4096}$",
+        "modes": [
+            {
+                "john": "monero",
+                "hashcat": null,
+                "extended": false,
+                "name": "monero Wallet"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$ab\\$[0-9]{1}\\*[0-9]{1}\\*[0-9]{1,6}\\*[a-f0-9]{128}\\*[a-f0-9]{128}\\*[a-f0-9]{32}\\*[a-f0-9]{192}$",
+        "modes": [
+            {
+                "john": "AndroidBackup",
+                "hashcat": 18900,
+                "extended": false,
+                "name": "Android Backup"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$zip2\\$\\*[0-9]{1}\\*[0-9]{1}\\*[0-9]{1}\\*[a-f0-9]{16,32}\\*[a-f0-9]{1,6}\\*[a-f0-9]{1,6}\\*[a-f0-9]{0,16384}\\*[a-f0-9]{20}\\*\\$\/zip2\\$$",
+        "modes": [
+            {
+                "john": "ZIP",
+                "hashcat": 13600,
+                "extended": false,
+                "name": "WinZip"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$itunes_backup\\$\\*[0-9]{1,2}\\*[a-f0-9]{80}\\*[0-9]{1,6}\\*[a-f0-9]{40}\\*[0-9]{0,10}\\*[a-f0-9]{0,40}$",
+        "modes": [
+            {
+                "john": "itunes-backup",
+                "hashcat": 14700,
+                "extended": false,
+                "name": "iTunes backup < 10.0"
+            },
+            {
+                "john": "itunes-backup",
+                "hashcat": 14800,
+                "extended": false,
+                "name": "iTunes backup >= 10.0"
+            }
+        ]
     }
 ]
