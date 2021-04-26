@@ -1340,13 +1340,13 @@
                 "name": "Ventrilo"
             },
             {
-                "john": null,
+                "john": "dynamic_62",
                 "hashcat": 1410,
                 "extended": true,
                 "name": "sha256($pass.$salt)"
             },
             {
-                "john": null,
+                "john": "dynamic_61",
                 "hashcat": 1420,
                 "extended": true,
                 "name": "sha256($salt.$pass)"
@@ -1374,6 +1374,42 @@
                 "hashcat": 1460,
                 "extended": true,
                 "name": "HMAC-SHA256 (key = $salt)"
+            },
+            {
+                "john": "dynamic_63",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha256(sha256($pass))"
+            },
+            {
+                "john": "dynamic_64",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha256(sha256_raw($pass))"
+            },
+            {
+                "john": "dynamic_65",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha256(sha256($pass).$salt)"
+            },
+            {
+                "john": "dynamic_66",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha256($salt.sha256($pass))"
+            },
+            {
+                "john": "dynamic_67",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha256(sha256($salt).sha256($pass))"
+            },
+            {
+                "john": "dynamic_68",
+                "hashcat": null,
+                "extended": true,
+                "name": "sha256(sha256($pass).sha256($pass))"
             }
         ]
     },
