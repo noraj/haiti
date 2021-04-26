@@ -293,7 +293,19 @@
                 "john": "haval-128-4",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-128"
+                "name": "Haval-128 (4 rounds)"
+            },
+            {
+                "john": "dynamic_160",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-128 (3 rounds)"
+            },
+            {
+                "john": "dynamic_180",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-128 (5 rounds)"
             },
             {
                 "john": null,
@@ -783,10 +795,22 @@
                 "name": "RIPEMD-160"
             },
             {
-                "john": null,
+                "john": "dynamic_190",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-160"
+                "name": "Haval-160 (3 rounds)"
+            },
+            {
+                "john": "dynamic_200",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-160 (4 rounds)"
+            },
+            {
+                "john": "dynamic_210",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-160 (5 rounds)"
             },
             {
                 "john": null,
@@ -1000,10 +1024,22 @@
         "regex": "^[a-f0-9]{48}$",
         "modes": [
             {
-                "john": null,
+                "john": "dynamic_220",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-192"
+                "name": "Haval-192 (3 rounds)"
+            },
+            {
+                "john": "dynamic_230",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-192 (4 rounds)"
+            },
+            {
+                "john": "dynamic_240",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-192 (5 rounds)"
             },
             {
                 "john": "tiger",
@@ -1156,19 +1192,31 @@
                 "name": "sha224(sha224($pass).sha224($pass))"
             },
             {
-                "john": null,
+                "john": "dynamic_250",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-224"
+                "name": "Haval-224 (3 rounds)"
             },
             {
-                "john": null,
+                "john": "dynamic_260",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-224 (4 rounds)"
+            },
+            {
+                "john": "dynamic_270",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-224 (5 rounds)"
+            },
+            {
+                "john": "dynamic_370",
                 "hashcat": 17300,
                 "extended": false,
                 "name": "SHA3-224"
             },
             {
-                "john": null,
+                "john": "dynamic_430",
                 "hashcat": 17700,
                 "extended": false,
                 "name": "Keccak-224"
@@ -1184,6 +1232,12 @@
                 "hashcat": null,
                 "extended": false,
                 "name": "Skein-512(224)"
+            },
+            {
+                "john": "dynamic_330",
+                "hashcat": null,
+                "extended": false,
+                "name": "Skein-224"
             }
         ]
     },
@@ -1286,7 +1340,7 @@
                 "name": "SHA-256"
             },
             {
-                "john": null,
+                "john": "dynamic_140",
                 "hashcat": null,
                 "extended": false,
                 "name": "RIPEMD-256"
@@ -1295,7 +1349,19 @@
                 "john": "haval-256-3",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-256"
+                "name": "Haval-256 (3 rounds)"
+            },
+            {
+                "john": "dynamic_290",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-256 (4 rounds)"
+            },
+            {
+                "john": "dynamic_300",
+                "hashcat": null,
+                "extended": false,
+                "name": "Haval-256 (5 rounds)"
             },
             {
                 "john": "gost",
@@ -1310,7 +1376,7 @@
                 "name": "GOST CryptoPro S-Box"
             },
             {
-                "john": null,
+                "john": "dynamic_380",
                 "hashcat": 17400,
                 "extended": false,
                 "name": "SHA3-256"
@@ -1410,6 +1476,12 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "sha256(sha256($pass).sha256($pass))"
+            },
+            {
+                "john": "dynamic_320",
+                "hashcat": null,
+                "extended": false,
+                "name": "PANAMA"
             }
         ]
     },
@@ -1478,7 +1550,7 @@
         "regex": "^[a-f0-9]{80}$",
         "modes": [
             {
-                "john": null,
+                "john": "dynamic_150",
                 "hashcat": null,
                 "extended": false,
                 "name": "RIPEMD-320"
@@ -1517,13 +1589,13 @@
                 "name": "SHA-384"
             },
             {
-                "john": null,
+                "john": "dynamic_390",
                 "hashcat": 17500,
                 "extended": false,
                 "name": "SHA3-384"
             },
             {
-                "john": null,
+                "john": "dynamic_440",
                 "hashcat": 17900,
                 "extended": false,
                 "name": "Keccak-384"
@@ -1587,6 +1659,12 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "sha384(sha384($pass).sha384($pass))"
+            },
+            {
+                "john": "dynamic_350",
+                "hashcat": null,
+                "extended": true,
+                "name": "Skein-384"
             }
         ]
     },
@@ -1647,6 +1725,12 @@
             },
             {
                 "john": "raw-sha3",
+                "hashcat": 17600,
+                "extended": false,
+                "name": "SHA3-512"
+            },
+            {
+                "john": "dynamic_400",
                 "hashcat": 17600,
                 "extended": false,
                 "name": "SHA3-512"
