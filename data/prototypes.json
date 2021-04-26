@@ -713,7 +713,7 @@
             {
                 "john": null,
                 "hashcat": 1600,
-                "extended": true,
+                "extended": false,
                 "name": "md5apr1"
             }
         ]
@@ -2073,7 +2073,95 @@
                 "john": "krb5pa-md5",
                 "hashcat": 7500,
                 "extended": false,
-                "name": "Kerberos 5 AS-REQ Pre-Auth"
+                "name": "Kerberos 5 AS-REQ Pre-Auth etype 23"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb5tgs\\$23\\$\\*[^*]*\\*\\$[a-f0-9]{32}\\$[a-f0-9]{64,40960}$",
+        "modes": [
+            {
+                "john": "krb5tgs",
+                "hashcat": 13100,
+                "extended": false,
+                "name": "Kerberos 5 TGS-REP etype 23"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb5asrep\\$23\\$[^:]+:[a-f0-9]{32,32}\\$[a-f0-9]{64,40960}$",
+        "modes": [
+            {
+                "john": "krb5asrep",
+                "hashcat": 18200,
+                "extended": false,
+                "name": "Kerberos 5 AS-REP etype 23"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb5asrep\\$18\\$[^:]+:[a-f0-9]{32,32}\\$[a-f0-9]{64,40960}$",
+        "modes": [
+            {
+                "john": "krb5asrep",
+                "hashcat": null,
+                "extended": false,
+                "name": "Kerberos 5 AS-REP etype 18"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb5asrep\\$17\\$[^:]+:[a-f0-9]{32,32}\\$[a-f0-9]{64,40960}$",
+        "modes": [
+            {
+                "john": "krb5asrep",
+                "hashcat": null,
+                "extended": false,
+                "name": "Kerberos 5 AS-REP etype 17"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb5tgs\\$17\\$[^$]{1,512}\\$[^$]{1,512}\\$[^$]{1,4}?\\$?[a-f0-9]{1,32}\\$[a-f0-9]{64,40960}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 19600,
+                "extended": false,
+                "name": "Kerberos 5 TGS-REP etype 17 (AES128-CTS-HMAC-SHA1-96)"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb5tgs\\$18\\$[^$]{1,512}\\$[^$]{1,512}\\$[^$]{1,4}?\\$?[a-f0-9]{1,32}\\$[a-f0-9]{64,40960}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 19700,
+                "extended": false,
+                "name": "Kerberos 5 TGS-REP etype 18 (AES256-CTS-HMAC-SHA1-96)"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb5pa\\$17\\$[^$]{1,512}\\$[^$]{1,512}\\$[a-f0-9]{104,112}$",
+        "modes": [
+            {
+                "john": "krb5pa-sha1",
+                "hashcat": 19800,
+                "extended": false,
+                "name": "Kerberos 5 AS-REQ Pre-Auth etype 17"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb5pa\\$18\\$[^$]{1,512}\\$[^$]{1,512}\\$[a-f0-9]{104,112}$",
+        "modes": [
+            {
+                "john": "krb5pa-sha1",
+                "hashcat": 19900,
+                "extended": false,
+                "name": "Kerberos 5 AS-REQ Pre-Auth etype 18"
             }
         ]
     },
