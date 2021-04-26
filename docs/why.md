@@ -21,12 +21,13 @@ There are now two valid options for hash identification.
 
 Tool                 | Maintained | Color | Ref. | Library | Lang | :hash:
 ---------------------|------------|-------|------|---------|------|---------------
-haiti                | ✅ (2019-now)| ✅     | ✅    | ✅       | 💎   | ✅
+haiti                | ✅ (2019-now)  | ✅     | ✅    | ✅       | 💎   | ✅
 [hashID][1]          | ❌ (2013-2015) | ❌     | ✅    | ❌       | 🐍   | ⭕️
 [hash-identifier][2] | ❌ (2011-2011) | ❌     | ❌    | ❌       | 🐍   | ❌
 [Dagon][3]           | ❌ (2017-2018) | ⭕️     | ❌    | ❌       | 🐍   | ⭕️
 [findmyhash][4]      | ❌ (2011-2011) | ❌     | ❌    | ❌       | 🐍   | ❌
-[Name-That-Hash][5]  | ✅ (2021-now) | ✅     | ✅    | ✅       | 🐍   | ⭕
+[Name-That-Hash][5]  | ✅ (2021-now)  | ✅     | ✅    | ✅       | 🐍   | ⭕
+[HashTag][6]         | ❌ (201362013) | ❌     | ❌    | ❌       | 🐍   | ⭕
 
 Legend:
 
@@ -43,3 +44,4 @@ Legend:
 [3]:https://github.com/Ekultek/Dagon
 [4]:https://code.google.com/archive/p/findmyhash
 [5]:https://github.com/HashPals/Name-That-Hash
+[6]:https://github.com/SmeegeSec/HashTag
