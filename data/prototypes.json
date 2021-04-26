@@ -1238,6 +1238,12 @@
                 "hashcat": null,
                 "extended": false,
                 "name": "Skein-224"
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "BLAKE2-224"
             }
         ]
     },
@@ -1482,6 +1488,12 @@
                 "hashcat": null,
                 "extended": false,
                 "name": "PANAMA"
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "BLAKE2-256"
             }
         ]
     },
@@ -1665,6 +1677,12 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "Skein-384"
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "BLAKE2-384"
             }
         ]
     },
@@ -1745,7 +1763,7 @@
                 "john": "raw-blake2",
                 "hashcat": 600,
                 "extended": false,
-                "name": "Blake2"
+                "name": "BLAKE2-512"
             },
             {
                 "john": "skein-512",
