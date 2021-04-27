@@ -25,9 +25,9 @@ class HaitiTest < Minitest::Test
   end
 
   def test_chf
-    assert_equal('MD2', @hi.type[0].name)
-    assert_equal('md2', @hi.type[0].john)
-    assert_nil(@hi.type[0].hashcat)
+    assert_equal('MD5', @hi.type[0].name)
+    assert_equal('raw-md5', @hi.type[0].john)
+    assert_equal(0, @hi.type[0].hashcat)
     assert_equal(false, @hi.type[0].extended)
   end
 end

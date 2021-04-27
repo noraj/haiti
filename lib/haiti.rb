@@ -11,6 +11,7 @@ class HashIdentifier
   # Constants
   include Version
   PROTOTYPES = JSON.parse(File.read(File.join(__dir__, '../data/prototypes.json')))
+  COMMONS = JSON.parse(File.read(File.join(__dir__, '../data/commons.json')))
 
   # @return [String] the hash (as provided)
   # @example
@@ -26,6 +27,7 @@ class HashIdentifier
   def initialize(hash)
     @hash = hash
     @type = identify(hash)
+    sort_commons
   end
 
   private
@@ -45,5 +47,10 @@ class HashIdentifier
       end
     end
     return res
+  end
+
+  # Sort common hash types first
+  def sort_commons
+    @type.sort_by! { |e| COMMONS.include?(e.name) ? 0 : 1 }
   end
 end

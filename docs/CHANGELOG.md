@@ -1,5 +1,16 @@
 ## [Unreleased]
 
+## [1.1.1]
+
+- code:
+  - common algorithms are sorted first
+  - add some BLAKE2 length variants
+  - add some Kerberos variants
+  - add some cryptocurrency wallets (bitcoin, ethereum, monero)
+  - add Android Backup
+  - add WinZip
+  - add iTunes backup
+
 ## [1.1.0]
 
 - code:
