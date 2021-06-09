@@ -2,7 +2,7 @@
 
 ## [1.1.2]
 
-- code:
+- code: [#27][#27]
   - "office"
     - add JtR support for Microsoft Office 2007 & 2010
     - add JtR support for Microsoft Office 2019 (same as 2013)
@@ -16,6 +16,15 @@
   - Blake2
     - add JtR support for Blake2 hash using `$BLAKE2$` format
     - remove HC support for Blake2 hash using the normal format
+  - PDF
+    - add PDF 1.1 - 1.3 (Acrobat 2 - 4)
+    - add PDF 1.1 - 1.3 (Acrobat 2 - 4), collider #1
+    - add PDF 1.1 - 1.3 (Acrobat 2 - 4), collider #2
+    - fix PDF 1.4 - 1.6 (Acrobat 5 - 8)
+    - add PDF 1.7 Level 3 (Acrobat 9)
+    - add PDF 1.7 Level 8 (Acrobat 10 - 11)
+
+[#27]:https://github.com/noraj/haiti/issues/27
 
 ## [1.1.1]
 
