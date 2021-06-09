@@ -1,5 +1,22 @@
 ## [Unreleased]
 
+## [1.1.2]
+
+- code:
+  - "office"
+    - add JtR support for Microsoft Office 2007 & 2010
+    - add JtR support for Microsoft Office 2019 (same as 2013)
+    - add HC support for Microsoft Office 2016 - SheetProtection
+  - "oldoffice"
+    - add JtR support for Microsoft Office ≤ 2003 (SHA1+RC4)
+  - Telegram
+    - add JtR support for Telegram Desktop 1.3.9
+    - add JtR support for Telegram Desktop ≥ 2.1.14 beta / 2.2.0
+    - add HC support for Telegram Mobile App Passcode (SHA256)
+  - Blake2
+    - add JtR support for Blake2 hash using `$BLAKE2$` format
+    - remove HC support for Blake2 hash using the normal format
+
 ## [1.1.1]
 
 - code:
