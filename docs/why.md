@@ -17,17 +17,21 @@ doesn't have to wrap a CLI tool in a sub-process.
 
 Since January 2021, nearly two years after I started Haiti, a project named
 Name-That-Hash surfaced because the author needed a Python lib for Ciphey.
-There are now two valid options for hash identification.
+There are now two valid options for hash identification even if NTH has less
+hash types supported and have some broken or incomplete regexp.
 
-Tool                 | Maintained | Color | Ref. | Library | Lang | :hash:
----------------------|------------|-------|------|---------|------|---------------
-haiti                | ✅ (2019-now)  | ✅     | ✅    | ✅       | 💎   | ✅
-[hashID][1]          | ❌ (2013-2015) | ❌     | ✅    | ❌       | 🐍   | ⭕️
-[hash-identifier][2] | ❌ (2011-2011) | ❌     | ❌    | ❌       | 🐍   | ❌
-[Dagon][3]           | ❌ (2017-2018) | ⭕️     | ❌    | ❌       | 🐍   | ⭕️
-[findmyhash][4]      | ❌ (2011-2011) | ❌     | ❌    | ❌       | 🐍   | ❌
-[Name-That-Hash][5]  | ✅ (2021-now)  | ✅     | ✅    | ✅       | 🐍   | ⭕
-[HashTag][6]         | ❌ (201362013) | ❌     | ❌    | ❌       | 🐍   | ⭕
+The conclusion is that haiti is **THE** hash identifying tool and stay on the top
+for now.
+
+Tool                 | Maintained | Color | Ref. | Library | Lang | :hash: | :1234:
+---------------------|------------|-------|------|---------|------|---------------|---
+[haiti][0]           | ✅ (2019-now)  | ✅     | ✅    | ✅       | 💎   | ✅ | 379
+[hashID][1]          | ❌ (2013-2015) | ❌     | ✅    | ❌       | 🐍   | ⭕️ | 275
+[hash-identifier][2] | ❌ (2011-2011) | ❌     | ❌    | ❌       | 🐍   | ❌ | ~126
+[Dagon][3]           | ❌ (2017-2018) | ⭕️     | ❌    | ❌       | 🐍   | ⭕️ | ~48
+[findmyhash][4]      | ❌ (2011-2011) | ❌     | ❌    | ❌       | 🐍   | ❌ | ~17
+[Name-That-Hash][5]  | ✅ (2021-now)  | ✅     | ✅    | ✅       | 🐍   | ⭕ | 319
+[HashTag][6]         | ❌ (2013-2013) | ❌     | ❌    | ❌       | 🐍   | ⭕ | ~137
 
 Legend:
 
@@ -38,7 +42,9 @@ Legend:
 - 💎: Ruby
 - 🐍: Python
 - :hash: correct modern hashes support
+- 🔢 number of hash types supported
 
+[0]:https://github.com/noraj/haiti
 [1]:https://github.com/psypanda/hashID
 [2]:https://code.google.com/archive/p/hash-identifier/
 [3]:https://github.com/Ekultek/Dagon

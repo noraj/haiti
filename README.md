@@ -49,7 +49,7 @@ Homepage / Documentation: https://noraj.github.io/haiti/
 
 See the reasons why Haiti was created and a detailed comparison with other existing tools on the [documentation page](https://noraj.github.io/haiti/#/why).
 
-![image](https://user-images.githubusercontent.com/16578570/96921676-2951ef80-14af-11eb-98fb-443aa03cdcb4.png)
+![haiti_comparison](https://user-images.githubusercontent.com/16578570/121500737-dfd2f800-c9de-11eb-839f-0293144d3619.png)
 
 ## Author
 
