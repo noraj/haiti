@@ -23,6 +23,15 @@
     - fix PDF 1.4 - 1.6 (Acrobat 5 - 8)
     - add PDF 1.7 Level 3 (Acrobat 9)
     - add PDF 1.7 Level 8 (Acrobat 10 - 11)
+  - 7-zip
+  - SecureZIP
+    - SecureZIP AES-128
+    - SecureZIP AES-192
+    - SecureZIP AES-256
+  - PKZIP
+    - PKZIP Master Key
+    - PKZIP Master Key (6 byte optimization)
+    - PKZIP
 
 [#27]:https://github.com/noraj/haiti/issues/27
 
