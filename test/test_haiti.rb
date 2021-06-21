@@ -30,4 +30,17 @@ class HaitiTest < Minitest::Test
     assert_equal(0, @hi.type[0].hashcat)
     assert_equal(false, @hi.type[0].extended)
   end
+
+  def test_prototypes
+    HashIdentifier::PROTOTYPES.each do |prototype|
+      reg = Regexp.new prototype['regex'], Regexp::IGNORECASE
+      prototype['modes'].each do |mode|
+        next unless mode['samples']
+
+        mode['samples'].each do |sample|
+          assert_match(reg, sample)
+        end
+      end
+    end
+  end
 end

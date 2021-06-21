@@ -1,5 +1,16 @@
 ## [Unreleased]
 
+## [1.1.3]
+
+- Code:
+  - add a `samples` attributes to `Chf`
+- Fixes:
+  - CRC-32 [#28][#28]
+- Chore:
+  - Add prototypes tests
+
+[#27]:https://github.com/noraj/haiti/issues/28
+
 ## [1.1.2]
 
 - code: [#27][#27]

@@ -105,7 +105,12 @@
                 "john": "crc32",
                 "hashcat": 11500,
                 "extended": false,
-                "name": "CRC-32"
+                "name": "CRC-32",
+                "samples": [
+                    "c762de4a:00000000",
+                    "$crc32$00000000.fa455f6b",
+                    "$crc32$4ff4f23f.ce6eb863"
+                ]
             }
         ]
     },
