@@ -2094,9 +2094,12 @@
         "modes": [
             {
                 "john": null,
-                "hashcat": null,
+                "hashcat": 20711,
                 "extended": false,
-                "name": "Minecraft(AuthMe Reloaded)"
+                "name": "Minecraft (AuthMe Reloaded sha256)",
+                "samples": [
+                    "$SHA$7218532375810603$bfede293ecf6539211a7305ea218b9f3f608953130405cda9eaba6fb6250f824"
+                ]
             }
         ]
     },

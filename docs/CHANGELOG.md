@@ -15,6 +15,7 @@
   - PrestaShop [#34][#34]
   - mysql-sha1 [#35][#35]
   - MSSQL [#36][#36]
+  - AuthMe [#37][#37]
 - Chore:
   - Add prototypes tests
 
@@ -27,6 +28,7 @@
 [#34]:https://github.com/noraj/haiti/issues/34
 [#35]:https://github.com/noraj/haiti/issues/35
 [#36]:https://github.com/noraj/haiti/issues/36
+[#37]:https://github.com/noraj/haiti/issues/37
 
 ## [1.1.2]
 
