@@ -1963,16 +1963,24 @@
         "regex": "^0x0200[a-f0-9]{136}$",
         "modes": [
             {
-                "john": "msql12",
+                "john": "mssql12",
                 "hashcat": 1731,
                 "extended": false,
-                "name": "MSSQL(2012)"
+                "name": "MSSQL(2012)",
+                "samples": [
+                    "0x0200F733058A07892C5CACE899768F89965F6BD1DED7955FE89E1C9A10E27849B0B213B5CE92CC9347ECCB34C3EFADAF2FD99BFFECD8D9150DD6AACB5D409A9D2652A4E0AF16",
+                    "0x0200AB3E1F9028A739EEF62ABF672427276A32D5EDD349E638E7F2CD81DAA247CFE20EE4E3B0A30B2D0AE3C3FA010E61752F1BF45E045041F1B988C083C7F118527E3E5F0562"
+                ]
             },
             {
-                "john": "msql12",
+                "john": "mssql12",
                 "hashcat": 1731,
                 "extended": false,
-                "name": "MSSQL(2014)"
+                "name": "MSSQL(2014)",
+                "samples": [
+                    "0x02003788006711b2e74e7d8cb4be96b1d187c962c5591a02d5a6ae81b3a4a094b26b7877958b26733e45016d929a756ed30d0a5ee65d3ce1970f9b7bf946e705c595f07625b1",
+                    "0x02006BF4AB05873FF0C8A4AFD1DC5912CBFDEF62E0520A3353B04E1184F05C873C9C76BBADDEAAC1E9948C7B6ABFFD62BFEFD7139F17F6AFE10BE0FEE7A178644623067C2423"
+                ]
             }
         ]
     },

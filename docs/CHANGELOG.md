@@ -14,6 +14,7 @@
   - net-md5 [#33][#33]
   - PrestaShop [#34][#34]
   - mysql-sha1 [#35][#35]
+  - MSSQL [#36][#36]
 - Chore:
   - Add prototypes tests
 
@@ -25,6 +26,7 @@
 [#33]:https://github.com/noraj/haiti/issues/33
 [#34]:https://github.com/noraj/haiti/issues/34
 [#35]:https://github.com/noraj/haiti/issues/35
+[#36]:https://github.com/noraj/haiti/issues/36
 
 ## [1.1.2]
 
