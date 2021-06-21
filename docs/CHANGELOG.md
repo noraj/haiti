@@ -8,6 +8,8 @@
   - BSDi Crypt [#30][#30]
   - MD5 [#31][#31]
   - sha1crypt [#40][#40]
+  - PBKDF2-SHA1 [#41][#41]
+  - PBKDF2-SHA256 [#42][#42]
 - Fixes:
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]
@@ -35,6 +37,8 @@
 [#38]:https://github.com/noraj/haiti/issues/38
 [#39]:https://github.com/noraj/haiti/issues/39
 [#40]:https://github.com/noraj/haiti/issues/40
+[#41]:https://github.com/noraj/haiti/issues/41
+[#42]:https://github.com/noraj/haiti/issues/42
 
 ## [1.1.2]
 
