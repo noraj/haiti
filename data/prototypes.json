@@ -251,19 +251,25 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "CRC-96(ZIP)"
+                "name": "CRC-96 (ZIP)"
             },
             {
                 "john": null,
                 "hashcat": 20500,
                 "extended": false,
-                "name": "PKZIP Master Key"
+                "name": "PKZIP Master Key",
+                "samples": [
+                    "f1eff5c0368d10311dcfc419"
+                ]
             },
             {
                 "john": null,
                 "hashcat": 20510,
                 "extended": false,
-                "name": "PKZIP Master Key (6 byte optimization)"
+                "name": "PKZIP Master Key (6 byte optimization)",
+                "samples": [
+                    "f1eff5c0368d10311dcfc419"
+                ]
             }
         ]
     },
@@ -3172,7 +3178,7 @@
         "regex": "^\\$zip2\\$\\*[0-9]{1}\\*[0-9]{1}\\*[0-9]{1}\\*[a-f0-9]{16,32}\\*[a-f0-9]{1,6}\\*[a-f0-9]{1,6}\\*[a-f0-9]{0,16384}\\*[a-f0-9]{20}\\*\\$\/zip2\\$$",
         "modes": [
             {
-                "john": "ZIP",
+                "john": "zip",
                 "hashcat": 13600,
                 "extended": false,
                 "name": "WinZip"
