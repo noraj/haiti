@@ -16,6 +16,7 @@
   - mysql-sha1 [#35][#35]
   - MSSQL [#36][#36]
   - AuthMe [#37][#37]
+  - Redmine [#38][#38]
 - Chore:
   - Add prototypes tests
 
@@ -29,6 +30,7 @@
 [#35]:https://github.com/noraj/haiti/issues/35
 [#36]:https://github.com/noraj/haiti/issues/36
 [#37]:https://github.com/noraj/haiti/issues/37
+[#38]:https://github.com/noraj/haiti/issues/38
 
 ## [1.1.2]
 

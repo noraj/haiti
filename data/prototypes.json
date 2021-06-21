@@ -2295,9 +2295,12 @@
         "modes": [
             {
                 "john": null,
-                "hashcat": 7600,
+                "hashcat": 4521,
                 "extended": false,
-                "name": "Redmine Project Management Web App"
+                "name": "Redmine",
+                "samples": [
+                    "c18e826af2a78c7b9b7261452613233417e65817:28246535720688452723483475753333"
+                ]
             }
         ]
     },
