@@ -3323,5 +3323,16 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$argon2id\\$v=19\\$m=[0-9]{1,6},t=[0-9]{1,2},p=[0-9]{1,2}\\$[^$]+\\$[^\\s]{6,}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "argon2id"
+            }
+        ]
     }
 ]

@@ -4,6 +4,8 @@
 
 - Code:
   - add a `samples` attributes to `Chf`
+- Additions:
+  - argon2 [#45][#45]
 - Enhancements:
   - BSDi Crypt [#30][#30]
   - MD5 [#31][#31]
@@ -13,7 +15,6 @@
   - PBKDF2-HMAC-SHA256 (PHP)
   - bitcoin [#43][#43]
   - PKZIP [#44][#44]
-  - argen2 [#45][#45]
 - Fixes:
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]
