@@ -1033,19 +1033,28 @@
         ]
     },
     {
-        "regex": "^\\*[a-f0-9]{40}$",
+        "regex": "^(\\*)?[a-f0-9]{40}$",
         "modes": [
             {
                 "john": "mysql-sha1",
                 "hashcat": 300,
                 "extended": false,
-                "name": "MySQL5.x"
+                "name": "MySQL5.x",
+                "samples": [
+                    "*2c905879f74f28f8570989947d06a8429fb943e6",
+                    "*A8A397146B1A5F8C8CF26404668EFD762A1B7B82"
+                ]
             },
             {
                 "john": "mysql-sha1",
                 "hashcat": 300,
                 "extended": false,
-                "name": "MySQL4.1"
+                "name": "MySQL4.1",
+                "samples": [
+                    "*5AD8F88516BD021DD43F171E2C785C69F8E54ADB",
+                    "*be1bdec0aa74b4dcb079943e70528096cca985f8",
+                    "fcf7c1b8749cf99d88e5f34271d636178fb5d130"
+                ]
             }
         ]
     },

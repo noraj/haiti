@@ -13,6 +13,7 @@
   - RIPEMD [#32][#32]
   - net-md5 [#33][#33]
   - PrestaShop [#34][#34]
+  - mysql-sha1 [#35][#35]
 - Chore:
   - Add prototypes tests
 
@@ -23,6 +24,7 @@
 [#32]:https://github.com/noraj/haiti/issues/32
 [#33]:https://github.com/noraj/haiti/issues/33
 [#34]:https://github.com/noraj/haiti/issues/34
+[#35]:https://github.com/noraj/haiti/issues/35
 
 ## [1.1.2]
 
