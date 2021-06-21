@@ -233,6 +233,35 @@
 </li>
 
     
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#samples-instance_method" title="#samples (instance method)">#<strong>samples</strong>  &#x21d2; Array&lt;String&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Examples of hashes.</p>
+</div></span>
+  
+</li>
+
+    
   </ul>
 
 
@@ -304,21 +333,23 @@
       <pre class="lines">
 
 
-16
-17
 18
 19
 20
-21</pre>
+21
+22
+23
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/haiti/hash.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'lib/haiti/hash.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_mode'>mode</span><span class='rparen'>)</span>
   <span class='ivar'>@name</span> <span class='op'>=</span> <span class='id identifier rubyid_mode'>mode</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
   <span class='ivar'>@john</span> <span class='op'>=</span> <span class='id identifier rubyid_mode'>mode</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>john</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
   <span class='ivar'>@hashcat</span> <span class='op'>=</span> <span class='id identifier rubyid_mode'>mode</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>hashcat</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
   <span class='ivar'>@extended</span> <span class='op'>=</span> <span class='id identifier rubyid_mode'>mode</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>extended</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@samples</span> <span class='op'>=</span> <span class='id identifier rubyid_mode'>mode</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>samples</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -574,13 +605,74 @@
 </table>
 </div>
     
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="samples-instance_method">
+  
+    #<strong>samples</strong>  &#x21d2; <tt>Array&lt;String&gt;</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns Examples of hashes.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Examples of hashes</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/haiti/hash.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_samples'>samples</span>
+  <span class='ivar'>@samples</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
   </div>
 
 
 </div>
 
       <div id="footer">
-  Generated on Thu Jun 10 11:29:19 2021 by
+  Generated on Mon Jun 21 18:07:02 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.26 (ruby-3.0.1).
 </div>
