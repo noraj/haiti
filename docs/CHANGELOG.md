@@ -15,6 +15,7 @@
   - PBKDF2-HMAC-SHA256 (PHP)
   - bitcoin [#43][#43]
   - PKZIP [#44][#44]
+  - SHA-512
 - Fixes:
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]

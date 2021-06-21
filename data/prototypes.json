@@ -1842,7 +1842,12 @@
                 "john": "raw-sha512",
                 "hashcat": 1700,
                 "extended": false,
-                "name": "SHA-512"
+                "name": "SHA-512",
+                "samples": [
+                    "f342aae82952db35b8e02c30115e3deed3d80fdfdadacab336f0ba51ac54e297291fa1d6b201d69a2bd77e2535280f17a54fa1e527abc6e2eddba79ad3be11c0",
+                    "7aba4411846c61b08b0f2282a8a4600232ace4dd96593c755ba9c9a4e7b780b8bdc437b5c55574b3e8409c7b511032f98ef120e25467678f0458643578eb60ff",
+                    "12b03226a6d8be9c6e8cd5e55dc6c7920caaa39df14aab92d5e3ea9340d1c8a4d3d0b8e4314f1f6ef131ba4bf1ceb9186ab87c801af0d5c95b1befb8cedae2b9"
+                ]
             },
             {
                 "john": "whirlpool",
