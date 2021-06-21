@@ -375,12 +375,6 @@
                 "name": "ZipMonster"
             },
             {
-                "john": null,
-                "hashcat": 11000,
-                "extended": true,
-                "name": "PrestaShop"
-            },
-            {
                 "john": "dynamic_3",
                 "hashcat": 3500,
                 "extended": true,
@@ -559,6 +553,21 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "md5($salt.pad16($pass))"
+            }
+        ]
+    },
+    {
+        "regex": "^[a-f0-9]{32}:.{56}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 11000,
+                "extended": false,
+                "name": "PrestaShop",
+                "samples": [
+                    "f22cade043e7214200206dbffca49fd9:27167508161455764247627144160038845437138252877014827848",
+                    "810e3d12f0f10777a679d9ca1ad7a8d9:M2uZ122bSHJ4Mi54tXGY0lqcv1r28mUluSkyw37ou5oia4i239ujqw0l"
+                ]
             }
         ]
     },

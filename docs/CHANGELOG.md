@@ -12,6 +12,7 @@
   - Hashcat 3100 [#29][#29]
   - RIPEMD [#32][#32]
   - net-md5 [#33][#33]
+  - PrestaShop [#34][#34]
 - Chore:
   - Add prototypes tests
 
@@ -21,6 +22,7 @@
 [#31]:https://github.com/noraj/haiti/issues/31
 [#32]:https://github.com/noraj/haiti/issues/32
 [#33]:https://github.com/noraj/haiti/issues/33
+[#34]:https://github.com/noraj/haiti/issues/34
 
 ## [1.1.2]
 
