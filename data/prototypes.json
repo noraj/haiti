@@ -159,21 +159,9 @@
             },
             {
                 "john": null,
-                "hashcat": 3100,
-                "extended": false,
-                "name": "DES(Oracle)"
-            },
-            {
-                "john": null,
                 "hashcat": 5100,
                 "extended": false,
                 "name": "Half MD5"
-            },
-            {
-                "john": null,
-                "hashcat": 3100,
-                "extended": false,
-                "name": "Oracle 7-10g"
             },
             {
                 "john": null,
@@ -186,6 +174,29 @@
                 "hashcat": null,
                 "extended": false,
                 "name": "CRC-64"
+            }
+        ]
+    },
+    {
+        "regex": "^[a-f0-9]{16}:[a-f0-9]{0,30}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 3100,
+                "extended": false,
+                "name": "DES(Oracle)",
+                "samples": [
+                    "792FCB0AE31D8489:7284616727"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 3100,
+                "extended": false,
+                "name": "Oracle 7-10g",
+                "samples": [
+                    "792FCB0AE31D8489:7284616727"
+                ]
             }
         ]
     },

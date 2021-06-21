@@ -6,10 +6,12 @@
   - add a `samples` attributes to `Chf`
 - Fixes:
   - CRC-32 [#28][#28]
+  - Hashcat 3100 [#29][#29]
 - Chore:
   - Add prototypes tests
 
-[#27]:https://github.com/noraj/haiti/issues/28
+[#28]:https://github.com/noraj/haiti/issues/28
+[#29]:https://github.com/noraj/haiti/issues/29
 
 ## [1.1.2]
 
