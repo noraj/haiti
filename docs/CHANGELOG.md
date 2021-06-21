@@ -7,6 +7,7 @@
 - Enhancements:
   - BSDi Crypt [#30][#30]
   - MD5 [#31][#31]
+  - sha1crypt [#40][#40]
 - Fixes:
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]
@@ -33,6 +34,7 @@
 [#37]:https://github.com/noraj/haiti/issues/37
 [#38]:https://github.com/noraj/haiti/issues/38
 [#39]:https://github.com/noraj/haiti/issues/39
+[#40]:https://github.com/noraj/haiti/issues/40
 
 ## [1.1.2]
 

@@ -2485,9 +2485,13 @@
         "modes": [
             {
                 "john": "sha1crypt",
-                "hashcat": null,
+                "hashcat": 15100,
                 "extended": false,
-                "name": "SHA-1 Crypt"
+                "name": "SHA-1 Crypt (Juniper/NetBSD)",
+                "samples": [
+                    "$sha1$20000$75552156$HhYMDdaEHiK3eMIzTldOFPnw.s2Q",
+                    "$sha1$64000$wnUR8T1U$azjCegpOIk0FjE61qzGWhdkpuMRL"
+                ]
             }
         ]
     },
@@ -2525,13 +2529,20 @@
         ]
     },
     {
-        "regex": "^\\$pbkdf2(-sha1)?\\$[0-9]+\\$[a-z0-9\\/.]+\\$[a-z0-9\\/.]{27}$",
+        "regex": "^\\$pbkdf2(-hmac)?(-sha1)?\\$([0-9]{1,6}\\$[a-z0-9\\/.]+\\$[a-z0-9\\/.]+|[0-9]{1,6}\\.[a-f0-9]+\\.[a-f0-9]{40})$",
         "modes": [
             {
-                "john": null,
-                "hashcat": null,
+                "john": "pbkdf2-hmac-sha1",
+                "hashcat": 20400,
                 "extended": false,
-                "name": "PBKDF2-SHA1(Generic)"
+                "name": "PBKDF2-SHA1 (Generic)",
+                "samples": [
+                    "$pbkdf2$131000$r5WythYixPgfQ2jt3buXcg$8Kdr.QQEOaZIXNOrrru36I/.6Po",
+                    "$pbkdf2-hmac-sha1$1000.fd11cde0.27de197171e6d49fc5f55c9ef06c0d8751cd7250",
+                    "$pbkdf2-hmac-sha1$1000$6926d45e$231c561018a4cee662df7cd4a8206701c5806af9",
+                    "$pbkdf2-hmac-sha1$1000.6834476f733353333654315a5a31494f.1932a843a69dc1e38a29d2691a7abf27ecaa6d55",
+                    "$pbkdf2-hmac-sha1$1000.3031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738.8f7c89f74233f78f6c8ace00696cf6ed09ae43f4"
+                ]
             }
         ]
     },
