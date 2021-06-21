@@ -45,6 +45,8 @@ hi.type.each do |type|
   john_ref = type.john
   # Hash with salt
   extended = type.extended
+  # Samples / Examples of hashes of that type
+  samples = type.samples
 end
 ```
 

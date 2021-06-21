@@ -29,6 +29,8 @@
   - Legacy hash types [#39][#39]
 - Chore:
   - Add prototypes tests
+- Documentation:
+  - update examples
 
 [#28]:https://github.com/noraj/haiti/issues/28
 [#29]:https://github.com/noraj/haiti/issues/29
