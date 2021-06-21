@@ -296,7 +296,11 @@
                 "john": "raw-md5",
                 "hashcat": 0,
                 "extended": false,
-                "name": "MD5"
+                "name": "MD5",
+                "samples": [
+                    "8743b52063cd84097a65d1633f5c74f5",
+                    "098F6BCD4621D373CADE4E832627B4F6"
+                ]
             },
             {
                 "john": "raw-md4",
