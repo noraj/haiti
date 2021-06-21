@@ -3289,5 +3289,39 @@
                 "name": "PKZIP"
             }
         ]
+    },
+    {
+        "regex": "^\\$argon2d\\$v=19\\$m=[0-9]{1,6},t=[0-9]{1,2},p=[0-9]{1,2}\\$[^$]+\\$[^\\s]{6,}$",
+        "modes": [
+            {
+                "john": "argon2",
+                "hashcat": null,
+                "extended": false,
+                "name": "argon2d",
+                "samples": [
+                    "$argon2d$v=19$m=4096,t=3,p=1$ZGFtYWdlX2RvbmU$w9w3s5/zV8+PcAZlJhnTCOE+vBkZssmZf6jOq3dKv50",
+                    "$argon2d$v=19$m=4096,t=3,p=1$c2hvcnRfc2FsdA$zMrTcOAOUje6UqObRVh84Pe1K6gumcDqqGzRM0ILzYmj",
+                    "$argon2d$v=19$m=16384,t=3,p=1$c2hvcnRfc2FsdA$TLSTPihIo+5F67Y1vJdfWdB9",
+                    "$argon2d$v=19$m=16384,t=4,p=3$YW5vdGhlcl9zYWx0$yw93eMxC8REPAwbQ0e/q43jR9+RI9HI/DHP75uzm7tQfjU734oaI3dzcMWjYjHzVQD+J4+MG+7oyD8dN/PtnmPCZs+UZ67E+rkXJ/wTvY4WgXgAdGtJRrAGxhy4rD7d5G+dCpqhrog"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$argon2i\\$v=19\\$m=[0-9]{1,6},t=[0-9]{1,2},p=[0-9]{1,2}\\$[^$]+\\$[^\\s]{6,}$",
+        "modes": [
+            {
+                "john": "argon2",
+                "hashcat": null,
+                "extended": false,
+                "name": "argon2i",
+                "samples": [
+                    "$argon2i$v=19$m=4096,t=3,p=1$ZGFtYWdlX2RvbmU$N59QwnpxDQZRj1/cO6bqm408dD6Z2Z9LKYpwFJSPVKA",
+                    "$argon2i$v=19$m=4096,t=3,p=1$c2hvcnRfc2FsdA$1l4kAwUdAApoCbFH7ghBEf7bsdrOQzE4axIJ3PV0Ncrd",
+                    "$argon2i$v=19$m=16384,t=3,p=1$c2hvcnRfc2FsdA$vvjDVog22A5x9eljmB+2yC8y",
+                    "$argon2i$v=19$m=16384,t=4,p=3$YW5vdGhlcl9zYWx0$K7unxwO5aeuZCpnIJ06FMCRKod3eRg8oIRzQrK3E6mGbyqlTvvl47jeDWq/5drF1COJkEF9Ty7FWXJZHa+vqlf2YZGp/4qSlAvKmdtJ/6JZU32iQItzMRwcfujHE+PBjbL5uz4966A"
+                ]
+            }
+        ]
     }
 ]

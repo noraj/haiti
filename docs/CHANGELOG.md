@@ -13,6 +13,7 @@
   - PBKDF2-HMAC-SHA256 (PHP)
   - bitcoin [#43][#43]
   - PKZIP [#44][#44]
+  - argen2 [#45][#45]
 - Fixes:
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]
@@ -44,6 +45,7 @@
 [#42]:https://github.com/noraj/haiti/issues/42
 [#43]:https://github.com/noraj/haiti/issues/43
 [#44]:https://github.com/noraj/haiti/issues/44
+[#45]:https://github.com/noraj/haiti/issues/45
 
 ## [1.1.2]
 
