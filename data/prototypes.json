@@ -558,13 +558,22 @@
                 "john": "dynamic_39",
                 "hashcat": null,
                 "extended": true,
-                "name": "net-md5"
-            },
-            {
-                "john": "dynamic_39",
-                "hashcat": null,
-                "extended": true,
                 "name": "md5($salt.pad16($pass))"
+            }
+        ]
+    },
+    {
+        "regex": "^(\\$netmd5\\$)?([a-f0-9]{88,96}\\$)?[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": "net-md5",
+                "hashcat": null,
+                "extended": false,
+                "name": "Keyed MD5: RIPv2, OSPF, BGP, SNMPv2",
+                "samples": [
+                    "02020000ffff0003002c01145267d48d000000000000000000020000ac100100ffffff000000000000000001ffff0001$1e372a8a233c6556253a0909bc3dcce6",
+                    "$netmd5$0201002cac1001010000000000000002000001105267ff8fffffff00000a0201000000280000000000000000$445ecbb27272bd791a757a6c85856150"
+                ]
             }
         ]
     },

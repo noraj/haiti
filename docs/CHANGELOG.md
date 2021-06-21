@@ -11,6 +11,7 @@
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]
   - RIPEMD [#32][#32]
+  - net-md5 [#33][#33]
 - Chore:
   - Add prototypes tests
 
@@ -19,6 +20,7 @@
 [#30]:https://github.com/noraj/haiti/issues/30
 [#31]:https://github.com/noraj/haiti/issues/31
 [#32]:https://github.com/noraj/haiti/issues/32
+[#33]:https://github.com/noraj/haiti/issues/33
 
 ## [1.1.2]
 
