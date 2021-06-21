@@ -17,6 +17,7 @@
   - MSSQL [#36][#36]
   - AuthMe [#37][#37]
   - Redmine [#38][#38]
+  - Legacy hash types [#39][#39]
 - Chore:
   - Add prototypes tests
 
@@ -31,6 +32,7 @@
 [#36]:https://github.com/noraj/haiti/issues/36
 [#37]:https://github.com/noraj/haiti/issues/37
 [#38]:https://github.com/noraj/haiti/issues/38
+[#39]:https://github.com/noraj/haiti/issues/39
 
 ## [1.1.2]
 

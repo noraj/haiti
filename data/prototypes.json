@@ -378,7 +378,10 @@
                 "john": "dynamic_3",
                 "hashcat": 3500,
                 "extended": true,
-                "name": "md5(md5(md5($pass)))"
+                "name": "md5(md5(md5($pass)))",
+                "samples": [
+                    "9882d0778518b095917eb589f6998441"
+                ]
             },
             {
                 "john": "dynamic_2",
@@ -438,7 +441,10 @@
                 "john": "dynamic_8",
                 "hashcat": 3610,
                 "extended": true,
-                "name": "md5(md5($salt).$pass)"
+                "name": "md5(md5($salt).$pass)",
+                "samples": [
+                    "7b57255a15958ef898543ea6cc3313bc:1234"
+                ]
             },
             {
                 "john": "dynamic_9",
@@ -450,7 +456,10 @@
                 "john": null,
                 "hashcat": 3720,
                 "extended": true,
-                "name": "md5($pass.md5($salt))"
+                "name": "md5($pass.md5($salt))",
+                "samples": [
+                    "10ce488714fdbde9453670e0e4cbe99c:1234"
+                ]
             },
             {
                 "john": "dynamic_5",
@@ -498,7 +507,10 @@
                 "john": null,
                 "hashcat": 4210,
                 "extended": true,
-                "name": "md5($username.0.$pass)"
+                "name": "md5($username.0.$pass)",
+                "samples": [
+                    "09ea048c345ad336ebe38ae5b6c4de24:1234"
+                ]
             },
             {
                 "john": "dynamic_15",
@@ -794,13 +806,16 @@
         ]
     },
     {
-        "regex": "^[a-f0-9]{32}:[a-f0-9]{32}$",
+        "regex": "^[a-f0-9]{32}:.+$",
         "modes": [
             {
                 "john": null,
                 "hashcat": 3721,
                 "extended": false,
-                "name": "WebEdition CMS"
+                "name": "WebEdition CMS",
+                "samples": [
+                    "fa01af9f0de5f377ae8befb03865178e:5678"
+                ]
             }
         ]
     },
@@ -886,7 +901,10 @@
                 "john": "raw-sha1-linkedin",
                 "hashcat": 190,
                 "extended": false,
-                "name": "LinkedIn"
+                "name": "LinkedIn",
+                "samples": [
+                    "b89eaac7e61417341b710b727768294d0e6a277b"
+                ]
             },
             {
                 "john": null,
@@ -928,7 +946,10 @@
                 "john": null,
                 "hashcat": 4600,
                 "extended": true,
-                "name": "sha1(sha1(sha1($pass)))"
+                "name": "sha1(sha1(sha1($pass)))",
+                "samples": [
+                    "dc57f246485e62d99a5110afc9264b4ccbfcf3cc"
+                ]
             },
             {
                 "john": "dynamic_23",
@@ -1213,7 +1234,10 @@
                 "john": "sunmd5",
                 "hashcat": 3300,
                 "extended": false,
-                "name": "Sun MD5 Crypt"
+                "name": "Sun MD5 Crypt",
+                "samples": [
+                    "$md5$rounds=904$iPPKEBnEkp3JV8uX$0L6m7rOFTVFn.SGqo2M9W1"
+                ]
             }
         ]
     },
@@ -2344,7 +2368,10 @@
                 "john": null,
                 "hashcat": 123,
                 "extended": false,
-                "name": "EPi"
+                "name": "EPi",
+                "samples": [
+                    "0x326C6D7B4E4F794B79474E36704F35723958397163735263516265456E31 0xAFC55E260B8F45C0C6512BCE776C1AD8312B56E6"
+                ]
             }
         ]
     },
