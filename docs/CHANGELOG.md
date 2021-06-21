@@ -10,6 +10,7 @@
 - Fixes:
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]
+  - RIPEMD [#32][#32]
 - Chore:
   - Add prototypes tests
 
@@ -17,6 +18,7 @@
 [#29]:https://github.com/noraj/haiti/issues/29
 [#30]:https://github.com/noraj/haiti/issues/30
 [#31]:https://github.com/noraj/haiti/issues/31
+[#32]:https://github.com/noraj/haiti/issues/32
 
 ## [1.1.2]
 

@@ -321,12 +321,6 @@
                 "name": "LM"
             },
             {
-                "john": "ripemd-128",
-                "hashcat": null,
-                "extended": false,
-                "name": "RIPEMD-128"
-            },
-            {
                 "john": "haval-128-4",
                 "hashcat": null,
                 "extended": false,
@@ -571,6 +565,21 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "md5($salt.pad16($pass))"
+            }
+        ]
+    },
+    {
+        "regex": "^(\\$ripemd\\$)?[a-f0-9]{32}(:.+)?$",
+        "modes": [
+            {
+                "john": "ripemd-128",
+                "hashcat": null,
+                "extended": false,
+                "name": "RIPEMD-128",
+                "samples": [
+                    "cdf26213a150dc3ecb610f18f6b38b46",
+                    "$ripemd$cdf26213a150dc3ecb610f18f6b38b46"
+                ]
             }
         ]
     },
@@ -826,12 +835,6 @@
                 "name": "Double SHA-1"
             },
             {
-                "john": "ripemd-160",
-                "hashcat": 6000,
-                "extended": false,
-                "name": "RIPEMD-160"
-            },
-            {
                 "john": "dynamic_190",
                 "hashcat": null,
                 "extended": false,
@@ -992,6 +995,22 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "sha1($salt.pad20($pass))"
+            }
+        ]
+    },
+    {
+        "regex": "^(\\$ripemd\\$)?[a-f0-9]{40}(:.+)?$",
+        "modes": [
+            {
+                "john": "ripemd-160",
+                "hashcat": 6000,
+                "extended": false,
+                "name": "RIPEMD-160",
+                "samples": [
+                    "9c1185a5c5e9fc54612808977ee8f548b2258d31",
+                    "$ripemd$9c1185a5c5e9fc54612808977ee8f548b2258d31",
+                    "012cb9b334ec1aeb71a9c8ce85586082467f7eb6"
+                ]
             }
         ]
     },
@@ -1386,7 +1405,11 @@
                 "john": "dynamic_140",
                 "hashcat": null,
                 "extended": false,
-                "name": "RIPEMD-256"
+                "name": "RIPEMD-256",
+                "samples": [
+                    "1419109aa0de60e6ba0b6d2b2f602c13b07e97b5ffc85b6be2297badc699262f",
+                    "f156e6c20042057840f3251ee041596d89fde06c2505f61764ad1c03c2fc1375"
+                ]
             },
             {
                 "john": "haval-256-3",
@@ -1602,7 +1625,11 @@
                 "john": "dynamic_150",
                 "hashcat": null,
                 "extended": false,
-                "name": "RIPEMD-320"
+                "name": "RIPEMD-320",
+                "samples": [
+                    "303aa1dcb731cd4e4bff2a60971eb7376c6c47cb59947c804776d115470183c8cc2e487337b45412",
+                    "3c616c27aa7539c4726388c9e047aa4ea089dd739b3cfc470e964ea12e479da3cce437b9daa90214"
+                ]
             }
         ]
     },
