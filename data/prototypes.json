@@ -233,9 +233,14 @@
         "modes": [
             {
                 "john": "bsdicrypt",
-                "hashcat": null,
+                "hashcat": 12400,
                 "extended": false,
-                "name": "BSDi Crypt"
+                "name": "BSDi Crypt",
+                "samples": [
+                    "_GW..8841inaTltazRsQ",
+                    "_J9..XXXXsqM/YSSP..Y",
+                    "_J9..SDSD5YGyRCr4W4c"
+                ]
             }
         ]
     },

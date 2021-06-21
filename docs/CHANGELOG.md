@@ -4,6 +4,8 @@
 
 - Code:
   - add a `samples` attributes to `Chf`
+- Enhancements:
+  - BSDi Crypt [#30][#30]
 - Fixes:
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]
@@ -12,6 +14,7 @@
 
 [#28]:https://github.com/noraj/haiti/issues/28
 [#29]:https://github.com/noraj/haiti/issues/29
+[#30]:https://github.com/noraj/haiti/issues/30
 
 ## [1.1.2]
 
