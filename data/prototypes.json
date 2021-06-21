@@ -3023,7 +3023,10 @@
                 "john": null,
                 "hashcat": 10900,
                 "extended": false,
-                "name": "PBKDF2-HMAC-SHA256 (PHP)"
+                "name": "PBKDF2-HMAC-SHA256 (PHP)",
+                "samples": [
+                    "sha256:1000:NjI3MDM3:vVfavLQL9ZWjg8BUMq6/FB8FtpkIGWYk"
+                ]
             }
         ]
     },

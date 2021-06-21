@@ -10,6 +10,7 @@
   - sha1crypt [#40][#40]
   - PBKDF2-SHA1 [#41][#41]
   - PBKDF2-SHA256 [#42][#42]
+  - PBKDF2-HMAC-SHA256 (PHP)
 - Fixes:
   - CRC-32 [#28][#28]
   - Hashcat 3100 [#29][#29]
