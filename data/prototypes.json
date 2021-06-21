@@ -99,11 +99,11 @@
         ]
     },
     {
-        "regex": "^(\\$crc32\\$[a-f0-9]{8}.)?[a-f0-9]{8}$",
+        "regex": "^(\\$crc32\\$)?([a-f0-9]{8}.)?[a-f0-9]{8}$",
         "modes": [
             {
                 "john": "crc32",
-                "hashcat": null,
+                "hashcat": 11500,
                 "extended": false,
                 "name": "CRC-32"
             }
