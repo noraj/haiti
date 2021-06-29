@@ -4,6 +4,11 @@
 
 - **Breaking changes**
   - Drop ruby 2.4 support
+- Additions:
+  - AxCrypt 1 [#47][#47]
+  - AxCrypt 2 [#47][#47]
+
+[#47]:https://github.com/noraj/haiti/issues/47
 
 ## [1.1.3]
 
