@@ -10,6 +10,7 @@
 - Enhancements:
   - Add samples
     - Eggdrop IRC Bot [#48][#48]
+    - DEScrypt [#48][#48]
 
 [#47]:https://github.com/noraj/haiti/issues/47
 [#48]:https://github.com/noraj/haiti/issues/48

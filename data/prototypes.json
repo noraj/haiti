@@ -137,19 +137,34 @@
                 "john": "descrypt",
                 "hashcat": 1500,
                 "extended": false,
-                "name": "DES(Unix)"
+                "name": "DES(Unix)",
+                "samples": [
+                    "CCNf8Sbh3HDfQ",
+                    "CCX.K.MFy4Ois",
+                    "CC4rMpbg9AMZ."
+                ]
             },
             {
                 "john": "descrypt",
                 "hashcat": 1500,
                 "extended": false,
-                "name": "Traditional DES"
+                "name": "Traditional DES",
+                "samples": [
+                    "CCNf8Sbh3HDfQ",
+                    "CCX.K.MFy4Ois",
+                    "CC4rMpbg9AMZ."
+                ]
             },
             {
                 "john": "descrypt",
                 "hashcat": 1500,
                 "extended": false,
-                "name": "DEScrypt"
+                "name": "DEScrypt",
+                "samples": [
+                    "CCNf8Sbh3HDfQ",
+                    "CCX.K.MFy4Ois",
+                    "CC4rMpbg9AMZ."
+                ]
             }
         ]
     },
