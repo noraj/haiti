@@ -7,8 +7,12 @@
 - Additions:
   - AxCrypt 1 [#47][#47]
   - AxCrypt 2 [#47][#47]
+- Enhancements:
+  - Add samples
+    - Eggdrop IRC Bot [#48][#48]
 
 [#47]:https://github.com/noraj/haiti/issues/47
+[#48]:https://github.com/noraj/haiti/issues/48
 
 ## [1.1.3]
 

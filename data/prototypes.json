@@ -121,7 +121,12 @@
                 "john": "bfegg",
                 "hashcat": null,
                 "extended": false,
-                "name": "Eggdrop IRC Bot"
+                "name": "Eggdrop IRC Bot",
+                "samples": [
+                    "+9F93o1OxwgK1",
+                    "+C/.8o.Wuph9.",
+                    "+Obytd.zXYjH/"
+                ]
             }
         ]
     },
