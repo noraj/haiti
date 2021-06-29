@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [1.2.0]
+
+- **Breaking changes**
+  - Drop ruby 2.4 support
+
 ## [1.1.3]
 
 - Code:

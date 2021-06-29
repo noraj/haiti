@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
   NewCops: enable
   SuggestExtensions: false
 # ~~~ Layout ~~~
@@ -38,6 +38,9 @@ Metrics/MethodLength:
   Max: 30
 Metrics/PerceivedComplexity:
   Max: 10
+# ~~~ Naming ~~~
+Naming/InclusiveLanguage:
+  Enabled: false
 # ~~~ Style ~~~
 Style/AccessorGrouping:
   Enabled: false # for yard
