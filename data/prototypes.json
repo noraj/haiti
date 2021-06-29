@@ -3408,5 +3408,46 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$RAR3\\$\\*[0-9]{1}\\*[a-f0-9]{16}\\*[a-f0-9]{8}\\*[0-9]{1,7}\\*[0-9]{1,6}\\*[0-9]{1}\\*[a-f0-9]{2,}\\*[0-9]{2}$",
+        "modes": [
+            {
+                "john": "rar",
+                "hashcat": 23700,
+                "extended": false,
+                "name": "RAR3 -p (Uncompressed)",
+                "samples": [
+                    "$RAR3$*1*e54a73729887cb53*49b0a846*16*14*1*34620bcca8176642a210b1051901921e*30",
+                    "$RAR3$*1*c47c5bef0bbd1e98*965f1453*48*47*1*c5e987f81d316d9dcfdb6a1b27105ce63fca2c594da5aa2f6fdf2f65f50f0d66314f8a09da875ae19d6c15636b65c815*30"
+                ]
+            },
+            {
+                "john": "rar",
+                "hashcat": 23800,
+                "extended": false,
+                "name": "RAR3 -p (Compressed)",
+                "samples": [
+                    "$RAR3$*1*ad56eb40219c9da2*834064ce*32*13*1*eb47b1abe17a1a75bce6c92ab1cef3f4126035ea95deaf08b3f32a0c7b8078e1*33",
+                    "$RAR3$*1*b4eee1a48dc95d12*965f1453*64*47*1*0fe529478798c0960dd88a38a05451f9559e15f0cf20b4cac58260b0e5b56699d5871bdcc35bee099cc131eb35b9a116adaedf5ecc26b1c09cadf5185b3092e6*33"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$RAR3\\$\\*[0-9]{1}\\*[a-f0-9]{16}\\*[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": "rar",
+                "hashcat": 12500,
+                "extended": false,
+                "name": "RAR3 -hp",
+                "samples": [
+                    "$RAR3$*0*45109af8ab5f297a*adbf6c5385d7a40373e8f77d7b89d317",
+                    "$RAR3$*0*7ce241baa2bd521b*3eb0017fa8843017952c53a3ac8332b6",
+                    "$RAR3$*0*c203c4d80a8a09dc*1f406154556d4c895a8be207fd2b5d0c"
+                ]
+            }
+        ]
     }
 ]
