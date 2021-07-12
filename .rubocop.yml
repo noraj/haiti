@@ -52,8 +52,6 @@ Style/CaseLikeIf:
   Enabled: true
 Style/ExponentialNotation:
   Enabled: true
-Style/FormatStringToken:
-  Enabled: false # https://github.com/rubocop-hq/rubocop/issues/7944
 Style/HashAsLastArrayItem:
   Enabled: true
 Style/HashEachMethods:
