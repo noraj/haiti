@@ -20,7 +20,8 @@ jobs:
     strategy:
       matrix:
         ruby-version: ['3.0', '2.7', '2.6', '2.5']
-
+    env:
+      BUNDLE_WITHOUT: development
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
