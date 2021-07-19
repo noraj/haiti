@@ -22,7 +22,7 @@ group :development, :lint do
   gem 'rubocop', '~> 1.8'
 end
 
-group :development, :doc do
+group :development, :docs do
   gem 'commonmarker', '~> 0.21' # for GMF support in YARD
   gem 'github-markup', '~> 4.0' # for GMF support in YARD
   gem 'redcarpet', '~> 3.5' # for GMF support in YARD

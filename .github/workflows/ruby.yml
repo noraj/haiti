@@ -21,7 +21,7 @@ jobs:
       matrix:
         ruby-version: ['3.0', '2.7', '2.6', '2.5']
     env:
-      BUNDLE_WITHOUT: doc
+      BUNDLE_WITHOUT: docs development # https://bundler.io/v1.5/groups.html
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
