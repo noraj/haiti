@@ -43,9 +43,11 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.1)
   commonmarker (~> 0.21)
+  docopt (~> 0.6)
   github-markup (~> 4.0)
   haiti-hash!
   minitest (~> 5.12)
+  paint (~> 2.2)
   rake (~> 13.0)
   redcarpet (~> 3.5)
   rubocop (~> 1.8)
