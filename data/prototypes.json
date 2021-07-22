@@ -662,24 +662,38 @@
         ]
     },
     {
-        "regex": "^([^\\\\\\/:*?\"<>|]{1,20}:)?[a-f0-9]{32}(:[^\\\\\\/:*?\"<>|]{1,20})?$",
+        "regex": "^(([^\\\\:*?\"<>|\\n]+:)|(M\\$.+#))?[a-f0-9]{32}(:[^\\\\\\/:*?\"<>|\\n]+)?$",
         "modes": [
             {
                 "john": "mscash",
                 "hashcat": 1100,
                 "extended": false,
-                "name": "Domain Cached Credentials (DCC), MS Cache"
+                "name": "Domain Cached Credentials (DCC), MS Cache",
+                "samples": [
+                    "176a4c2bd45ac73687676c2f09045353",
+                    "M$test2#ab60bdb4493822b175486810ac2abe63",
+                    "M$#january#72488d8077e33d138b9cff94092716e4",
+                    "CORP1.COMPANY.LOCAL/Administrator:ab60bdb4493822b175486810ac2abe63:Administrator"
+                ]
             }
         ]
     },
     {
-        "regex": "^([^\\\\\\/:*?\"<>|]{1,20}:)?(\\$DCC2\\$10240#[^\\\\\\/:*?\"<>|]{1,20}#)?[a-f0-9]{32}$",
+        "regex": "^([^\\\\:*?\"<>|\\n]+:)?(\\$DCC2\\$(\\d+#)?[^\\\\:*?\"<>|\\n]*#)?[a-f0-9]{32}$",
         "modes": [
             {
                 "john": "mscash2",
                 "hashcat": 2100,
                 "extended": false,
-                "name": "Domain Cached Credentials 2 (DCC2), MS Cache 2"
+                "name": "Domain Cached Credentials 2 (DCC2), MS Cache 2",
+                "samples": [
+                    "cfc6a1e33eb36c3d4f84e4c2606623d2",
+                    "$DCC2$10240#test1#607bbe89611e37446e736f7856515bf8",
+                    "$DCC2$10000#Twelve_chars#54236c670e185043c8016006c001e982",
+                    "$DCC2$january#26b5495b21f9ad58255d99b5e117abe2",
+                    "$DCC2$#59137848828d14b1fca295a5032b52a1",
+                    "CORP1.COMPANY.LOCAL/Administrator:$DCC2$10240#Administrator#cceed966f6689269b758893bb6bbb985"
+                ]
             }
         ]
     },

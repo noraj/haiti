@@ -3,11 +3,16 @@
 ## [1.2.1]
 
 - Enhancements:
-  - DCC & DCC2: better description
+  - DCC & DCC2:
+    - better description
+    - accept more formats [#58][#58]
+  - Add samples
+    - DCC & DCC2 [#58][#58]
 - Fixes:
-  - DCC & DCC2: correct JtR hash name [#57]
+  - DCC & DCC2: correct JtR hash name [#57][#57]
 
 [#57]:https://github.com/noraj/haiti/issues/57
+[#58]:https://github.com/noraj/haiti/issues/58
 
 ## [1.2.0]
 
