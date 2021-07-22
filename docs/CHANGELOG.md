@@ -1,5 +1,14 @@
 ## [Unreleased]
 
+## [1.2.1]
+
+- Enhancements:
+  - DCC & DCC2: better description
+- Fixes:
+  - DCC & DCC2: correct JtR hash name [#57]
+
+[#57]:https://github.com/noraj/haiti/issues/57
+
 ## [1.2.0]
 
 - **Breaking changes**

@@ -665,10 +665,10 @@
         "regex": "^([^\\\\\\/:*?\"<>|]{1,20}:)?[a-f0-9]{32}(:[^\\\\\\/:*?\"<>|]{1,20})?$",
         "modes": [
             {
-                "john": "mscach",
+                "john": "mscash",
                 "hashcat": 1100,
                 "extended": false,
-                "name": "Domain Cached Credentials"
+                "name": "Domain Cached Credentials (DCC), MS Cache"
             }
         ]
     },
@@ -676,10 +676,10 @@
         "regex": "^([^\\\\\\/:*?\"<>|]{1,20}:)?(\\$DCC2\\$10240#[^\\\\\\/:*?\"<>|]{1,20}#)?[a-f0-9]{32}$",
         "modes": [
             {
-                "john": "mscach2",
+                "john": "mscash2",
                 "hashcat": 2100,
                 "extended": false,
-                "name": "Domain Cached Credentials 2"
+                "name": "Domain Cached Credentials 2 (DCC2), MS Cache 2"
             }
         ]
     },
