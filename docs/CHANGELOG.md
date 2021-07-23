@@ -14,6 +14,7 @@
   - MongoDB ServerKey SCRAM-SHA-1 [#62][#62]
   - MongoDB ServerKey SCRAM-SHA-256 [#62][#62]
   - `sha1($salt.sha1($pass.$salt))` [#63][#63]
+  - PDF 1.4 - 1.6 (Acrobat 5 - 8) - edit password [#70][#70]
 - Enhancements:
   - DCC & DCC2:
     - better description
@@ -28,6 +29,7 @@
     - Telegram Desktop [#64][#64]
     - Dahua [#68][#68]
     - Microsoft Office 2016 - SheetProtection [#69][#69]
+    - PDF 1.4 - 1.6 (Acrobat 5 - 8) [#70][#70]
 - Fixes:
   - DCC & DCC2: correct JtR hash name [#57][#57]
 - Chore:
@@ -44,6 +46,7 @@
 [#64]:https://github.com/noraj/haiti/issues/64
 [#68]:https://github.com/noraj/haiti/issues/68
 [#69]:https://github.com/noraj/haiti/issues/69
+[#70]:https://github.com/noraj/haiti/issues/70
 
 ## [1.2.0]
 
