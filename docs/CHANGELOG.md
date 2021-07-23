@@ -7,6 +7,8 @@
   - MetaMask Wallet [#56][#56]
   - FortiGate256 [#59][#59]
   - Umbraco HMAC-SHA1 [#60][#60]
+  - Jetico BestCrypt v3 Volume Encryption [#61][#61]
+  - Jetico BestCrypt Container Encryption (.jbc) [#61][#61]
 - Enhancements:
   - DCC & DCC2:
     - better description
@@ -21,6 +23,7 @@
 [#58]:https://github.com/noraj/haiti/issues/58
 [#59]:https://github.com/noraj/haiti/issues/59
 [#60]:https://github.com/noraj/haiti/issues/60
+[#61]:https://github.com/noraj/haiti/issues/61
 
 ## [1.2.0]
 

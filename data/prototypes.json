@@ -3521,5 +3521,34 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$bcve\\$\\d\\$[a-f0-9]{2}\\$[a-f0-9]{16}\\$[a-f0-9]{192}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 23900,
+                "extended": false,
+                "name": "Jetico BestCrypt v3 Volume Encryption",
+                "samples": [
+                    "$bcve$3$08$234b8182cee7098b$35c12ef76a1e88175c4c222da3558310a0075bc7a06ecf46746d149c02a81fb8a97637d1103d2e13ddd5deaf982889594b18c12d7ca18a54875c5da4a47f90ae615ab94b8e3ed9e3c793d872a1b5ac35cfdb66c221d6d0853e9ff2e0f4435b43"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$BestCrypt\\$\\d\\$\\d\\$\\d\\$\\d{1,5}\\$\\d{1,3}\\$\\d+\\$\\d{1,3}\\$\\d{1,2}\\$[a-f0-9]{64,128}\\$\\d\\$[a-f0-9]{512}$",
+        "modes": [
+            {
+                "john": "bestcrypt",
+                "hashcat": null,
+                "extended": false,
+                "name": "Jetico BestCrypt Container Encryption (.jbc)",
+                "samples": [
+                    "$BestCrypt$1$5$3$16384$240$3154116612$128$32$51f7450dccbb1c947dd46138bf0d80d588b6938b02505642dde9e1ea61481485$1$a186f281fbbc68f3b27c7b4cc16b7916a2e19c2695b34ee4133a6ac6373db67b88fb54e3def1c0d288d3170dcb5860c2f190ab199fde7f1072a2a109441e608ae46890c5f18ab80803012a43d9cc595a45c5b9ed8b3ed3330cab1a29e5a96512e2f2e0e5927d6836c3a67c1cd13a61a8201a0a99be84c3e19e6d8a12330ae72c22179d37bb7d55034bb96b5cf9f73c11fa82be31d06bfe33305b616cc72079777a5f1f4a720b56470a83da08c17cbc86e34961c4f0bdb8556e2afa0b2b890780e03304725ce7cf8c592f037beb04b393f4f02e3bc9f6582082a39d31f2e643c5f7811f30eeee2ccc6c11496b7d70dc0d300e145408d28448ff5d929c42007dbe",
+                    "$BestCrypt$1$5$3$16384$240$3154116612$10$64$7f36390c85bc5695d49d5d135cb09e00cbf738bb203d0f0a0181805acc15d1cc6f856af0f738c44eead724a854700700a1595b5b30d47242a277b60df6491dde$1$a5b6a69b5cb04be789b42e1f50d3426048ea0df06c3b9a9932d85bd54b99aae202c1ca2e283786a4154f09fa01014ecab7f95c3b9a9b6adab1a695153ca8bffec2408566a7da986c0f107c57404c96823bbdc18a4b11337d211b49d7a133cf951b03c54aaccf3ed9b6445e472ba508add524fb67343e954efe313f544d8ecd6f99e9731fa147c62e17a07954f4a265b43cad4247d61529a3e8760d91c5a4314238eb78e10c2521309b7b827be302a32ee37e03854a8c4f872a07fac709b6170f2e7bd9d723f65ba3fd3766c42ed4a4f8dcc55e4c3b9d4e1dcf2bc54a23a87763f4379afdd9d8e934f254f713f3ba80369f26de2c5195c5e04405acdb2893990a"
+                ]
+            }
+        ]
     }
 ]
