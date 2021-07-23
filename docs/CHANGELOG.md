@@ -9,6 +9,10 @@
   - Umbraco HMAC-SHA1 [#60][#60]
   - Jetico BestCrypt v3 Volume Encryption [#61][#61]
   - Jetico BestCrypt Container Encryption (.jbc) [#61][#61]
+  - MongoDB (system / network) [#62][#62]
+  - MongoDB SCRAM PBKDF2-SHA1 [#62][#62]
+  - MongoDB ServerKey SCRAM-SHA-1 [#62][#62]
+  - MongoDB ServerKey SCRAM-SHA-256 [#62][#62]
 - Enhancements:
   - DCC & DCC2:
     - better description
@@ -26,6 +30,7 @@
 [#59]:https://github.com/noraj/haiti/issues/59
 [#60]:https://github.com/noraj/haiti/issues/60
 [#61]:https://github.com/noraj/haiti/issues/61
+[#62]:https://github.com/noraj/haiti/issues/62
 
 ## [1.2.0]
 
