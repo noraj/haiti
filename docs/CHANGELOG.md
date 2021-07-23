@@ -13,6 +13,7 @@
   - MongoDB SCRAM PBKDF2-SHA1 [#62][#62]
   - MongoDB ServerKey SCRAM-SHA-1 [#62][#62]
   - MongoDB ServerKey SCRAM-SHA-256 [#62][#62]
+  - `sha1($salt.sha1($pass.$salt))` [#63][#63]
 - Enhancements:
   - DCC & DCC2:
     - better description
@@ -31,6 +32,7 @@
 [#60]:https://github.com/noraj/haiti/issues/60
 [#61]:https://github.com/noraj/haiti/issues/61
 [#62]:https://github.com/noraj/haiti/issues/62
+[#63]:https://github.com/noraj/haiti/issues/63
 
 ## [1.2.0]
 
