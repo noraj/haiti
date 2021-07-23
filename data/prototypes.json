@@ -3463,5 +3463,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$uido\\$[a-f0-9]{32}\\$[a-f0-9]{40}\\$\\d{1,7}\\$[a-f0-9]{80}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 26500,
+                "extended": false,
+                "name": "iPhone passcode (UID key + System Keybag)",
+                "samples": [
+                    "$uido$77889b1bca161ce876d976a102c7bf82$3090545724551425617156367874312887832777$50000$2d4c86b71c0c04129a47c6468e2437d1fecd88e232a7b15112d5364682dc391dbbbb921cf6e02664"
+                ]
+            }
+        ]
     }
 ]

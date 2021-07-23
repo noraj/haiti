@@ -2,6 +2,8 @@
 
 ## [1.2.1]
 
+- Additions:
+  - iPhone passcode [#56]
 - Enhancements:
   - DCC & DCC2:
     - better description
@@ -11,6 +13,7 @@
 - Fixes:
   - DCC & DCC2: correct JtR hash name [#57][#57]
 
+[#56]:https://github.com/noraj/haiti/issues/56
 [#57]:https://github.com/noraj/haiti/issues/57
 [#58]:https://github.com/noraj/haiti/issues/58
 
