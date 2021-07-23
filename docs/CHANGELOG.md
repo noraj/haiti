@@ -27,6 +27,7 @@
     - DCC & DCC2 [#58][#58]
     - Telegram Desktop [#64][#64]
     - Dahua [#68][#68]
+    - Microsoft Office 2016 - SheetProtection [#69][#69]
 - Fixes:
   - DCC & DCC2: correct JtR hash name [#57][#57]
 - Chore:
@@ -42,6 +43,7 @@
 [#63]:https://github.com/noraj/haiti/issues/63
 [#64]:https://github.com/noraj/haiti/issues/64
 [#68]:https://github.com/noraj/haiti/issues/68
+[#69]:https://github.com/noraj/haiti/issues/69
 
 ## [1.2.0]
 

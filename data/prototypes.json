@@ -2888,7 +2888,10 @@
                 "john": null,
                 "hashcat": 25300,
                 "extended": false,
-                "name": "Microsoft Office 2016 - SheetProtection"
+                "name": "Microsoft Office 2016 - SheetProtection",
+                "samples": [
+                    "$office$2016$0$100000$876MLoKTq42+/DLp415iZQ==$TNDvpvYyvlSUy97UOLKNhXynhUDDA7H8kLql0ISH5SxcP6hbthdjaTo4Z3/MU0dcR2SAd+AduYb3TB5CLZ8+ow=="
+                ]
             }
         ]
     },
