@@ -3089,9 +3089,13 @@
         "modes": [
             {
                 "john": "dahua",
-                "hashcat": null,
+                "hashcat": 24900,
                 "extended": false,
-                "name": "Dahua"
+                "name": "Dahua (MD5 Authentication)",
+                "samples": [
+                    "GRuHbyVp",
+                    "$dahua$4WzwxXxM"
+                ]
             }
         ]
     },

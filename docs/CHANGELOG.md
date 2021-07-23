@@ -20,9 +20,13 @@
     - accept more formats [#58][#58]
   - Telegram Desktop
     - add HC ref. [#64][#64]
+  - Dahua
+    - add HC ref. [#68][#68]
+    - better description [#68][#68]
   - Add samples
     - DCC & DCC2 [#58][#58]
     - Telegram Desktop [#64][#64]
+    - Dahua [#68][#68]
 - Fixes:
   - DCC & DCC2: correct JtR hash name [#57][#57]
 - Chore:
@@ -37,6 +41,7 @@
 [#62]:https://github.com/noraj/haiti/issues/62
 [#63]:https://github.com/noraj/haiti/issues/63
 [#64]:https://github.com/noraj/haiti/issues/64
+[#68]:https://github.com/noraj/haiti/issues/68
 
 ## [1.2.0]
 
