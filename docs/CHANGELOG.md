@@ -18,8 +18,11 @@
   - DCC & DCC2:
     - better description
     - accept more formats [#58][#58]
+  - Telegram Desktop
+    - add HC ref. [#64][#64]
   - Add samples
     - DCC & DCC2 [#58][#58]
+    - Telegram Desktop [#64][#64]
 - Fixes:
   - DCC & DCC2: correct JtR hash name [#57][#57]
 - Chore:
@@ -33,6 +36,7 @@
 [#61]:https://github.com/noraj/haiti/issues/61
 [#62]:https://github.com/noraj/haiti/issues/62
 [#63]:https://github.com/noraj/haiti/issues/63
+[#64]:https://github.com/noraj/haiti/issues/64
 
 ## [1.2.0]
 
