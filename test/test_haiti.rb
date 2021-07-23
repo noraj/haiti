@@ -38,7 +38,7 @@ class HaitiTest < Minitest::Test
         next unless mode['samples']
 
         mode['samples'].each do |sample|
-          assert_match(reg, sample)
+          assert_match(reg, sample, mode['name'])
         end
       end
     end

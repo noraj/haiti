@@ -17,6 +17,8 @@
     - DCC & DCC2 [#58][#58]
 - Fixes:
   - DCC & DCC2: correct JtR hash name [#57][#57]
+- Chore:
+  - Test: Display algo name when failing
 
 [#56]:https://github.com/noraj/haiti/issues/56
 [#57]:https://github.com/noraj/haiti/issues/57
