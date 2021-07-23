@@ -3,8 +3,9 @@
 ## [1.2.1]
 
 - Additions:
-  - iPhone passcode [#56]
-  - MetaMask Wallet [#56]
+  - iPhone passcode [#56][#56]
+  - MetaMask Wallet [#56][#56]
+  - FortiGate256 [#59][#59]
 - Enhancements:
   - DCC & DCC2:
     - better description
@@ -17,6 +18,7 @@
 [#56]:https://github.com/noraj/haiti/issues/56
 [#57]:https://github.com/noraj/haiti/issues/57
 [#58]:https://github.com/noraj/haiti/issues/58
+[#59]:https://github.com/noraj/haiti/issues/59
 
 ## [1.2.0]
 
