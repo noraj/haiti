@@ -6,6 +6,7 @@
   - iPhone passcode [#56][#56]
   - MetaMask Wallet [#56][#56]
   - FortiGate256 [#59][#59]
+  - Umbraco HMAC-SHA1 [#60][#60]
 - Enhancements:
   - DCC & DCC2:
     - better description
@@ -19,6 +20,7 @@
 [#57]:https://github.com/noraj/haiti/issues/57
 [#58]:https://github.com/noraj/haiti/issues/58
 [#59]:https://github.com/noraj/haiti/issues/59
+[#60]:https://github.com/noraj/haiti/issues/60
 
 ## [1.2.0]
 

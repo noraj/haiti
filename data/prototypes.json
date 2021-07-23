@@ -3507,5 +3507,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^(?=.{28})(?:[a-zA-Z0-9+\\/]{4})*(?:|(?:[a-zA-Z0-9+\\/]{3}=)|(?:[a-zA-Z0-9+\\/]{2}==)|(?:[a-zA-Z0-9+\\/]{1}===))$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 24800,
+                "extended": false,
+                "name": "Umbraco HMAC-SHA1",
+                "samples": [
+                    "8uigXlGMNI7BzwLCJlDbcKR2FP4="
+                ]
+            }
+        ]
     }
 ]
