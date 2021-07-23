@@ -3477,5 +3477,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$metamask\\$(?:(?:[a-zA-Z0-9+\\/]{4})*(?:|(?:[a-zA-Z0-9+\\/]{3}=)|(?:[a-zA-Z0-9+\\/]{2}==)|(?:[a-zA-Z0-9+\\/]{1}===))){44}\\$(?:(?:[a-zA-Z0-9+\\/]{4})*(?:|(?:[a-zA-Z0-9+\\/]{3}=)|(?:[a-zA-Z0-9+\\/]{2}==)|(?:[a-zA-Z0-9+\\/]{1}===))){24}\\$(?:(?:[a-zA-Z0-9+\\/]{4})*(?:|(?:[a-zA-Z0-9+\\/]{3}=)|(?:[a-zA-Z0-9+\\/]{2}==)|(?:[a-zA-Z0-9+\\/]{1}===))){64,}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 26600,
+                "extended": false,
+                "name": "MetaMask Wallet",
+                "samples": [
+                    "$metamask$AARgM5AgABE2eWgJcWAwQIAFmSYoASZVZBlAR4B0h2M=$8HrVMqsjfFTusMbegh+KWg==$7FPq7LjWe3t/TjDBtUwrJBpiG/Rdt+uf71dLCyUZd0pdtymBK6mSMZDyRfp/CzpjEPA1dU1BLDshcwM/1k6KdO//+mPWrgY4j49XTXIMnHNhJPfPv8s9rXiq8jLqetsStqtWmTZaD7fTtbzOYWR4gwQc98MxCnn/IrSnfCHungw1rLV5Xm0/hF7WfzFeEgcHknhJJP1xSeJCL9qI5DJ+lz7ksc0UVvHoiNJx8uvPBNkHpGQRNujwlnk="
+                ]
+            }
+        ]
     }
 ]

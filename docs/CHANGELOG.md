@@ -4,6 +4,7 @@
 
 - Additions:
   - iPhone passcode [#56]
+  - MetaMask Wallet [#56]
 - Enhancements:
   - DCC & DCC2:
     - better description
