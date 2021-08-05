@@ -821,25 +821,36 @@
         ]
     },
     {
-        "regex": "^\\$apr1\\$[a-z0-9\\/.]{0,8}\\$[a-z0-9\\/.]{22}$",
+        "regex": "^(?:\\$apr1\\$|\\$1\\$|{smd5})[a-z0-9\\/.]{0,8}\\$[a-z0-9\\/.]{22}$",
         "modes": [
             {
-                "john": null,
+                "john": "md5crypt-long",
                 "hashcat": 1600,
                 "extended": false,
-                "name": "MD5(APR)"
+                "name": "MD5 (APR)"
             },
             {
-                "john": null,
+                "john": "md5crypt-long",
                 "hashcat": 1600,
                 "extended": false,
                 "name": "Apache MD5"
             },
             {
-                "john": null,
+                "john": "md5crypt-long",
                 "hashcat": 1600,
                 "extended": false,
                 "name": "md5apr1"
+            },
+            {
+                "john": "md5crypt-long",
+                "hashcat": 1600,
+                "extended": false,
+                "name": "crypt(3) MD5",
+                "samples": [
+                    "$apr1$71850310$gh9m4xcAn3MGxogwX/ztb.",
+                    "$1$12345678$aIccj83HRDBo6ux1bVx7D1",
+                    "{smd5}s8/xSJ/v$uGam4GB8hOjTLQqvBfxJ2/"
+                ]
             }
         ]
     },
