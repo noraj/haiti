@@ -591,6 +591,15 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "md5($salt.pad16($pass))"
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "MD6-128",
+                "samples": [
+                    "8cd9a30bfde990878c06be4a6111f726"
+                ]
             }
         ]
     },
@@ -1654,6 +1663,15 @@
                 "hashcat": null,
                 "extended": false,
                 "name": "BLAKE2-256"
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "MD6-256",
+                "samples": [
+                    "bc9e2022386d929ae3936306153d9366fc555dc868579c87c7faf8846f79f414"
+                ]
             }
         ]
     },
@@ -2011,6 +2029,15 @@
                 "hashcat": null,
                 "extended": true,
                 "name": "sha512(sha512($pass).sha512($pass))"
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "MD6-512",
+                "samples": [
+                    "39990e5d4b65abd1c679b36fc7fa0b2f831144374ac3792736180bc5fc5ed4e93f177ed03f16ebac7327b9ddb7e4add838c3ce784653bbdd57d46a9a1d22932d"
+                ]
             }
         ]
     },

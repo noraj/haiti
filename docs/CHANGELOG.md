@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [1.2.2]
+
+- Additions:
+  - MD6 (128, 256, 512) [#84][#84]
+
+[#84]:https://github.com/noraj/haiti/issues/84
+
 ## [1.2.1]
 
 - Additions:
