@@ -3710,5 +3710,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^[a-f0-9]{10}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 24700,
+                "extended": false,
+                "name": "Stuffit5",
+                "samples": [
+                    "66a75cb059"
+                ]
+            }
+        ]
     }
 ]
