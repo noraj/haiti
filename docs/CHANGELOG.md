@@ -4,15 +4,17 @@
 
 - Additions:
   - MD6 (128, 256, 512) [#84][#84]
+  - Apple iWork [#65][#65]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
-    -  add `$1$` and `{smd5}` prefixes support
+    - add `$1$` and `{smd5}` prefixes support
     - add `crypt(3)` name
     - add samples
 
 [#84]:https://github.com/noraj/haiti/issues/84
 [#83]:https://github.com/noraj/haiti/issues/83
+[#65]:https://github.com/noraj/haiti/issues/65
 
 ## [1.2.1]
 

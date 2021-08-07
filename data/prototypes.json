@@ -3679,5 +3679,22 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$iwork\\$\\d\\$\\d\\$\\d\\$\\d{4,6}\\$[a-f0-9]{16,32}\\$[a-f0-9]{32}\\$[a-f0-9]{128}$",
+        "modes": [
+            {
+                "john": "iwork",
+                "hashcat": 23300,
+                "extended": false,
+                "name": "Apple iWork",
+                "samples": [
+                    "$iwork$2$1$1$4000$b31b7320d1e7a5ee$01f54d6f9e5090eb16fef2b05f8242bc$69561c985268326b7353fb22c3685a378341127557bd2bbea1bd10afb31f2127344707b662a2c29480c32b8b93dea0538327f604e5aa8733be83af25f370f7ac",
+                    "$iwork$1$2$1$100000$d77ce46a68697e08b76ac91de9117541$e7b72b2848dc27efed883963b00b1ac7$e794144cd2f04bd50e23957b30affb2898554a99a3accb7506c17132654e09c04bbeff45dc4f8a8a1db5fd1592f699eeff2f9a8c31b503e9631a25a344b517f7",
+                    "$iwork$1$2$1$100000$9d406f6bbb6d3798273a1352c33ed387$7dfef75b06f8cb0092802ad833d6e88c$fc4dd694e0b5fbb123d1a6f1abec30e51176e6f0d574e4988e9c82d354baa3540e2f2268d096d9e46c1080eda32ca8eb8abfeeaa01466d86706b03eb8bd5f0e5",
+                    "$iwork$2$1$1$4000$736f6d6553616c74$a9d975f8b3e1bf0c388944b457127df4$09eb5d093584376001d4c94e9d0a41eb8a2993132849c5aed8e56e7bd0e8ed50ba38aced793e3480675990c828c01d25fe245cc6aa603c6cb1a0425988f1d3dc"
+                ]
+            }
+        ]
     }
 ]
