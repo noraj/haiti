@@ -3696,5 +3696,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^SQLCIPHER\\*\\d\\*\\d{1,6}\\*[a-f0-9]{32}\\*[a-f0-9]{32}\\*[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 24610,
+                "extended": false,
+                "name": "SQLCipher",
+                "samples": [
+                    "SQLCIPHER*1*64000*25548249195677404156261816261456*85b5e156e1cf1e0be5e9f4217186817b*33435c230bbc7989bbd027630e3f47cd"
+                ]
+            }
+        ]
     }
 ]

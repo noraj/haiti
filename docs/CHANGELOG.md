@@ -5,6 +5,7 @@
 - Additions:
   - MD6 (128, 256, 512) [#84][#84]
   - Apple iWork [#65][#65]
+  - SQLCipher [#66][#66]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
@@ -15,6 +16,7 @@
 [#84]:https://github.com/noraj/haiti/issues/84
 [#83]:https://github.com/noraj/haiti/issues/83
 [#65]:https://github.com/noraj/haiti/issues/65
+[#66]:https://github.com/noraj/haiti/issues/66
 
 ## [1.2.1]
 
