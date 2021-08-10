@@ -1443,6 +1443,24 @@
                 "hashcat": 3200,
                 "extended": false,
                 "name": "bcrypt"
+            },
+            {
+                "john": null,
+                "hashcat": 25600,
+                "extended": true,
+                "name": "bcrypt(md5($pass)) / bcryptmd5",
+                "samples": [
+                    "$2a$05$/VT2Xs2dMd8GJKfrXhjYP.DkTjOVrY12yDN7/6I8ZV0q/1lEohLru"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 25800,
+                "extended": true,
+                "name": "bcrypt(sha1($pass)) / bcryptsha1",
+                "samples": [
+                    "$2a$05$Uo385Fa0g86uUXHwZxB90.qMMdRFExaXePGka4WGFv.86I45AEjmO"
+                ]
             }
         ]
     },
