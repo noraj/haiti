@@ -7,6 +7,7 @@
   - Apple iWork [#65][#65]
   - SQLCipher [#66][#66]
   - Stuffit5 [#67][#67]
+  - Stargazer Stellar Wallet XLM [#71][#71]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
@@ -19,6 +20,7 @@
 [#65]:https://github.com/noraj/haiti/issues/65
 [#66]:https://github.com/noraj/haiti/issues/66
 [#67]:https://github.com/noraj/haiti/issues/67
+[#71]:https://github.com/noraj/haiti/issues/71
 
 ## [1.2.1]
 
