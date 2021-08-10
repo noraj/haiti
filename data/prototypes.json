@@ -3159,6 +3159,20 @@
         ]
     },
     {
+        "regex": "^[a-z0-9]{8}(?::[a-z0-9]{8})?$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 25700,
+                "extended": false,
+                "name": "MurmurHash",
+                "samples": [
+                    "b69e7687:05094309"
+                ]
+            }
+        ]
+    },
+    {
         "regex": "^\\$mysqlna\\$[a-f0-9]{40}[:*][a-f0-9]{40}$",
         "modes": [
             {
