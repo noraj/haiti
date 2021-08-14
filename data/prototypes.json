@@ -3770,5 +3770,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$knx-ip-secure-device-authentication-code\\$\\*[a-f0-9]{4}\\*[a-f0-9]{64}\\*[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 25900,
+                "extended": false,
+                "name": "KNX IP Secure - Device Authentication Code",
+                "samples": [
+                    "$knx-ip-secure-device-authentication-code$*3033*fa7c0d787a9467c209f0a6e7cf16069ed704f3959dce19e45d7935c0a91bce41*f927640d9bbe9a4b0b74dd3289ad41ec"
+                ]
+            }
+        ]
     }
 ]

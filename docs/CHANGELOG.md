@@ -11,6 +11,7 @@
   - bcrypt(md5($pass)) [#72][#72]
   - bcrypt(sha1($pass)) [#72][#72]
   - MurmurHash [#73][#73]
+  - KNX IP Secure - Device Authentication Code [#74][#74]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
@@ -26,6 +27,7 @@
 [#71]:https://github.com/noraj/haiti/issues/71
 [#72]:https://github.com/noraj/haiti/issues/72
 [#73]:https://github.com/noraj/haiti/issues/73
+[#74]:https://github.com/noraj/haiti/issues/74
 
 ## [1.2.1]
 
