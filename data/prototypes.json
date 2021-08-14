@@ -3813,5 +3813,22 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^[a-z]{16}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 26200,
+                "extended": false,
+                "name": "OpenEdge Progress 4GL Encode",
+                "samples": [
+                    "lebVZteiEsdpkncc",
+                    "pjqtudckibycRKbj",
+                    "bkibllkLdqlpeIol",
+                    "OpalkkljtlheSihj"
+                ]
+            }
+        ]
     }
 ]

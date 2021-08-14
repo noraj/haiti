@@ -14,6 +14,7 @@
   - KNX IP Secure - Device Authentication Code [#74][#74]
   - Mozilla key4.db [#75][#75]
   - Mozilla key3.db [#75][#75]
+  - OpenEdge Progress 4GL Encode [#76][#76]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
@@ -31,6 +32,7 @@
 [#73]:https://github.com/noraj/haiti/issues/73
 [#74]:https://github.com/noraj/haiti/issues/74
 [#75]:https://github.com/noraj/haiti/issues/75
+[#76]:https://github.com/noraj/haiti/issues/76
 
 ## [1.2.1]
 
