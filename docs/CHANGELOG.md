@@ -13,6 +13,7 @@
   - MurmurHash [#73][#73]
   - KNX IP Secure - Device Authentication Code [#74][#74]
   - Mozilla key4.db [#75][#75]
+  - Mozilla key3.db [#75][#75]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.

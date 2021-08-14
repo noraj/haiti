@@ -3798,5 +3798,20 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$mozilla\\$\\*(?:(?:3DES\\*[a-f0-9]{40}\\*[a-f0-9]{40}\\*[a-f0-9]{32})|(?:\\d\\*\\d{2}\\*\\d\\*[a-f0-9]{40}\\*\\d{2}\\*[a-f0-9]{22}\\*\\d{2}\\*[a-f0-9]{32}\\*\\d{2}\\*[a-f0-9]{40}))$",
+        "modes": [
+            {
+                "john": "mozilla",
+                "hashcat": 26000,
+                "extended": false,
+                "name": "Mozilla key3.db",
+                "samples": [
+                    "$mozilla$*3DES*b735d19e6cadb5136376a98c2369f22819d08c79*2b36961682200a877f7d5550975b614acc9fefe3*f03f3575fd5bdbc9e32232316eab7623",
+                    "$mozilla$*3*20*1*5199adfab24e85e3f308bacf692115f23dcd4f8f*11*2a864886f70d010c050103*16*9debdebd4596b278de029b2b2285ce2e*20*2c4d938ccb3f7f1551262185ccee947deae3b8ae"
+                ]
+            }
+        ]
     }
 ]
