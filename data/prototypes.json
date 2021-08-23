@@ -876,6 +876,33 @@
                 "samples": [
                     "fa01af9f0de5f377ae8befb03865178e:5678"
                 ]
+            },
+            {
+                "john": null,
+                "hashcat": 26401,
+                "extended": true,
+                "name": "AES-128-ECB NOKDF (PT = $salt, key = $pass)",
+                "samples": [
+                    "e7a32f3210455cc044f26117c4612aab:86046627772965328523223752173724"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 26402,
+                "extended": true,
+                "name": "AES-192-ECB NOKDF (PT = $salt, key = $pass)",
+                "samples": [
+                    "2995e91b798ef51232a91579edb1d176:49869364034411376791729962721320"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 26403,
+                "extended": true,
+                "name": "AES-256-ECB NOKDF (PT = $salt, key = $pass)",
+                "samples": [
+                    "264a4248c9522cb74d33fe26cb596895:61270210011294880287232432636227"
+                ]
             }
         ]
     },

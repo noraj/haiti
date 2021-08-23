@@ -15,6 +15,9 @@
   - Mozilla key4.db [#75][#75]
   - Mozilla key3.db [#75][#75]
   - OpenEdge Progress 4GL Encode [#76][#76]
+  - AES-128-ECB NOKDF (PT = $salt, key = $pass) [#77][#77]
+  - AES-192-ECB NOKDF (PT = $salt, key = $pass) [#77][#77]
+  - AES-256-ECB NOKDF (PT = $salt, key = $pass) [#77][#77]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
@@ -33,6 +36,7 @@
 [#74]:https://github.com/noraj/haiti/issues/74
 [#75]:https://github.com/noraj/haiti/issues/75
 [#76]:https://github.com/noraj/haiti/issues/76
+[#77]:https://github.com/noraj/haiti/issues/77
 
 ## [1.2.1]
 
