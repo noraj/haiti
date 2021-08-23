@@ -3857,5 +3857,21 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$bitwarden\\$\\d\\*\\d{1,7}\\*(?:(?:.+\\*[a-f0-9]{32}\\*[a-f0-9]{160})|(?:(?:[a-z0-9+\\/]{4})*(?:|(?:[a-z0-9+\\/]{3}=)|(?:[a-z0-9+\\/]{2}==)|(?:[a-z0-9+\\/]{1}===))\\*(?:[a-z0-9+\\/]{4})*(?:|(?:[a-z0-9+\\/]{3}=)|(?:[a-z0-9+\\/]{2}==)|(?:[a-z0-9+\\/]{1}===))))$",
+        "modes": [
+            {
+                "john": "bitwarden",
+                "hashcat": 23400,
+                "extended": false,
+                "name": "Bitwarden",
+                "samples": [
+                    "$bitwarden$1*100000*bm9yZXBseUBoYXNoY2F0Lm5ldA==*zAXL7noQxkIJG82vWuqyDsnoqnKAVU7gE/8IRI6BlMs=",
+                    "$bitwarden$0*5000*lulu@mailinator.com*20d9c3c9daaed076026b6cb5887d3273*3bbcb4c7cec45d71c7238291573eb8a8a0f71e6191fb708b07f2cb43b26a56b533ba35a5906abdc08600baedb18fbc042a3b50f4549890210a254129b0ae749394c3c39b33ca183c605ee97b167329d3",
+                    "$bitwarden$0*5000*user@example.com*ce49243f6593589f7fa825411fbeb8d7*d90deb720836c5ea5c91eccc896035e510fc8951606266e840b6d7748a623ef68cf98fb69ec8ab5b0fe6a0ddd48edcda9aa6eef07125d89ea417477b96bfd2db462f2b2363f73b5553d78e8b3f372e3a"
+                ]
+            }
+        ]
     }
 ]

@@ -18,6 +18,7 @@
   - AES-128-ECB NOKDF (PT = $salt, key = $pass) [#77][#77]
   - AES-192-ECB NOKDF (PT = $salt, key = $pass) [#77][#77]
   - AES-256-ECB NOKDF (PT = $salt, key = $pass) [#77][#77]
+  - Bitwarden [#79][#79]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
@@ -37,6 +38,7 @@
 [#75]:https://github.com/noraj/haiti/issues/75
 [#76]:https://github.com/noraj/haiti/issues/76
 [#77]:https://github.com/noraj/haiti/issues/77
+[#79]:https://github.com/noraj/haiti/issues/79
 
 ## [1.2.1]
 
