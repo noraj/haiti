@@ -20,6 +20,7 @@
   - AES-256-ECB NOKDF (PT = $salt, key = $pass) [#77][#77]
   - Bitwarden [#79][#79]
   - XMPP SCRAM PBKDF2-SHA1 [#80][#80]
+  - Apple macOS Keychain [#81][#81]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
@@ -41,6 +42,7 @@
 [#77]:https://github.com/noraj/haiti/issues/77
 [#79]:https://github.com/noraj/haiti/issues/79
 [#80]:https://github.com/noraj/haiti/issues/80
+[#81]:https://github.com/noraj/haiti/issues/81
 
 ## [1.2.1]
 
