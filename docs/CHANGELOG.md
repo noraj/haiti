@@ -21,6 +21,8 @@
   - Bitwarden [#79][#79]
   - XMPP SCRAM PBKDF2-SHA1 [#80][#80]
   - Apple macOS Keychain [#81][#81]
+  - PKCS#8 Private Keys (PBKDF2-HMAC-SHA1 + 3DES/AES) [#78][#78]
+  - PKCS#8 Private Keys (PBKDF2-HMAC-SHA256 + 3DES/AES) [#78][#78]
 - Enhancements:
   - MD5 APR: [#83][#83]
     - add JtR ref.
@@ -43,6 +45,7 @@
 [#79]:https://github.com/noraj/haiti/issues/79
 [#80]:https://github.com/noraj/haiti/issues/80
 [#81]:https://github.com/noraj/haiti/issues/81
+[#78]:https://github.com/noraj/haiti/issues/78
 
 ## [1.2.1]
 
