@@ -20,16 +20,17 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.metadata = {
-    'yard.run'          => 'yard',
-    'bug_tracker_uri'   => 'https://github.com/noraj/haiti/issues',
-    'changelog_uri'     => 'https://github.com/noraj/haiti/blob/master/docs/CHANGELOG.md',
-    'documentation_uri' => 'https://noraj.github.io/haiti/',
-    'homepage_uri'      => 'https://noraj.github.io/haiti/',
-    'source_code_uri'   => 'https://github.com/noraj/haiti/'
+    'yard.run'              => 'yard',
+    'bug_tracker_uri'       => 'https://github.com/noraj/haiti/issues',
+    'changelog_uri'         => 'https://github.com/noraj/haiti/blob/master/docs/CHANGELOG.md',
+    'documentation_uri'     => 'https://noraj.github.io/haiti/',
+    'homepage_uri'          => 'https://noraj.github.io/haiti/',
+    'source_code_uri'       => 'https://github.com/noraj/haiti/',
+    'rubygems_mfa_required' => 'true'
   }
 
   s.required_ruby_version = ['>= 2.5.0', '< 3.1']
 
   s.add_runtime_dependency('docopt', '~> 0.6') # for argument parsing
-  s.add_runtime_dependency('paint', '~> 2.2') # for colorized ouput
+  s.add_runtime_dependency('paint', '~> 2.2') # for colorized output
 end

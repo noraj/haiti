@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+- Chore:
+  - MFA required for gem release
+
 ## [1.2.2]
 
 - Additions:
