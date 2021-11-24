@@ -111,6 +111,15 @@
                     "$crc32$00000000.fa455f6b",
                     "$crc32$4ff4f23f.ce6eb863"
                 ]
+            },
+            {
+                "john": "crc32",
+                "hashcat": 27900,
+                "extended": false,
+                "name": "CRC-32C",
+                "samples": [
+                    "5e23d60f:00000000"
+                ]
             }
         ]
     },

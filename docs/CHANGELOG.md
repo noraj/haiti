@@ -1,7 +1,11 @@
 ## [Unreleased]
 
+- Additions:
+  - CRC-32C [#101][#101]
 - Chore:
   - MFA required for gem release
+
+[#101]:https://github.com/noraj/haiti/issues/101
 
 ## [1.2.2]
 
