@@ -8,6 +8,7 @@
     - MultiBit Classic =< 0.5.18 .wallet
     - MultiBit HD wallet >= 0.5.0
   - MurmurHash3 [#101][#101]
+  - Windows Hello PIN/Password [#101][#101]
 - Chore:
   - MFA required for gem release
 
