@@ -207,6 +207,20 @@
         ]
     },
     {
+        "regex": "^[a-f0-9]{16}:[a-f0-9]{16}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 28000,
+                "extended": false,
+                "name": "CRC64Jones",
+                "samples": [
+                    "65c1f848fe38cce6:4260950400318054"
+                ]
+            }
+        ]
+    },
+    {
         "regex": "^[a-f0-9]{16}:[a-f0-9]{0,30}$",
         "modes": [
             {

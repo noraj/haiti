@@ -2,6 +2,7 @@
 
 - Additions:
   - CRC-32C [#101][#101]
+  - CRC64Jones [#101][#101]
 - Chore:
   - MFA required for gem release
 
