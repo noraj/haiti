@@ -3219,6 +3219,15 @@
                 "samples": [
                     "b69e7687:05094309"
                 ]
+            },
+            {
+                "john": null,
+                "hashcat": 27800,
+                "extended": false,
+                "name": "MurmurHash3",
+                "samples": [
+                    "23e93f65:00000000"
+                ]
             }
         ]
     },
