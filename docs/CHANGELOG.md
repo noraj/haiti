@@ -3,6 +3,10 @@
 - Additions:
   - CRC-32C [#101][#101]
   - CRC64Jones [#101][#101]
+  - MultiBit Wallet [#101][#101]
+    - MultiBit Classic >= 0.5.19 .wallet
+    - MultiBit Classic =< 0.5.18 .wallet
+    - MultiBit HD wallet >= 0.5.0
 - Chore:
   - MFA required for gem release
 

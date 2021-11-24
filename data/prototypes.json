@@ -3960,5 +3960,50 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$multibit\\$\\d\\*\\d{5}\\*\\d\\*\\d\\*[a-f0-9]{16}\\*[a-f0-9]{64}$",
+        "modes": [
+            {
+                "john": "multibit",
+                "hashcat": 27700,
+                "extended": false,
+                "name": "MultiBit Classic >= 0.5.19 .wallet",
+                "samples": [
+                    "$multibit$3*16384*8*1*7523cb5482e81b81*91780fd49b81a782ab840157a69ba7996d81270eaf456c850f314fc1787d9b0b",
+                    "$multibit$3*16384*8*1*1bf663752dade439*d2a4810673c311f6cdd4cebceadbd564c05d408ba9c74912a187953eabc20bee",
+                    "$multibit$3*16384*8*1*1bf663752dade439*956a6f229c25154832bab8f4ddfe83e985631678fb8df33aad1b5128a55ea0e2"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$multibit\\$\\d\\*[a-f0-9]{16}\\*[a-f0-9]{64}$",
+        "modes": [
+            {
+                "john": "multibit",
+                "hashcat": null,
+                "extended": false,
+                "name": "MultiBit Classic =< 0.5.18 .wallet",
+                "samples": [
+                    "$multibit$1*0908a1bd44147709*c82b6d0409c1e46a4660ea6d4fa9ae12e4e234c98a71a51ced105c7e66a57ca3",
+                    "$multibit$1*2043ebb14b6d9670*24284a38a62b6a63fb0912ebc05aa9d26d6fd828134d20b9778d8d841f65f584"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$multibit\\$\\d\\*[a-f0-9]{32}\\*[a-f0-9]{32}\\*[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": "multibit",
+                "hashcat": null,
+                "extended": false,
+                "name": "MultiBit HD wallet >= 0.5.0",
+                "samples": [
+                    "$multibit$2*081e3a1252c26731120d0d63783ae46f*8354d5b454e78fb15f81c9e6289ba9b8*081e3a1252c26731120d0d63783ae46f"
+                ]
+            }
+        ]
     }
 ]
