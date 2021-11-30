@@ -11,6 +11,9 @@
   - Windows Hello PIN/Password [#101][#101]
 - Chore:
   - MFA required for gem release
+- Dependencies:
+  - Update to yard [v0.9.27](https://github.com/lsegal/yard/releases/tag/v0.9.27)
+    - Move from Redcarpet to CommonMarker markdown provider
 
 [#101]:https://github.com/noraj/haiti/issues/101
 

@@ -1,6 +1,8 @@
 --output-dir docs/yard
 --protected
 --private
+--markup markdown
+--markup-provider commonmarker
 -
 --main README.md
 LICENSE.txt
