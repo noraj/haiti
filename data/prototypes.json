@@ -4028,5 +4028,33 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$vbox\\$0\\$\\d{1,9}\\$[a-f0-9]{64}\\$\\d{1,2}\\$[a-f0-9]{64}\\$\\d{1,9}\\$[a-f0-9]{64}\\$[a-f0-9]{64}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 27500,
+                "extended": false,
+                "name": "VirtualBox (PBKDF2-HMAC-SHA256 & AES-128-XTS)",
+                "samples": [
+                    "$vbox$0$260000$fcc37189521686699a43e49514b91f159306be108b98895666583cd15c3e206b$8$288c3957db47e7c3dff2f7932121eb3395d21ab76b9cf3de2dc660310a25e7ad$20000$8847cd90f8acef74bae41155392908780eebb1d16452aa09b2f7b6cd7d8a4096$9f4d615b484f95c73944a98f392a3ce04f93403e8bb6257e6b6c854273d3a08a"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$vbox\\$0\\$\\d{1,9}\\$[a-f0-9]{64}\\$\\d{1,2}\\$[a-f0-9]{128}\\$\\d{1,9}\\$[a-f0-9]{64}\\$[a-f0-9]{64}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 27600,
+                "extended": false,
+                "name": "VirtualBox (PBKDF2-HMAC-SHA256 & AES-256-XTS)",
+                "samples": [
+                    "$vbox$0$160000$54aff69fca91c20b3b15618c6732c4a2f953dd88690cd4cc731569b6b80b5572$16$cfb003087e0c618afa9ad7e44adcd97517f039e0424dedb46db8affbb73cd064019abae19ee5e4f5b05b626e6bc5d7da65c61a5f94d7bcac521c388276e5358b$20000$2e5729055136168eea79cb3f1765450a35ab7540125f2ca2a46924a99fd0524d$b28d1db1cabe99ca989a405c33a27beeb9c0683b8b4b54b0e0d85f712f64d89c"
+                ]
+            }
+        ]
     }
 ]

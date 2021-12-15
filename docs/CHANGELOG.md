@@ -9,6 +9,8 @@
     - MultiBit HD wallet >= 0.5.0
   - MurmurHash3 [#101][#101]
   - Windows Hello PIN/Password [#101][#101]
+  - VirtualBox (PBKDF2-HMAC-SHA256 & AES-128-XTS) [#89][#89]
+  - VirtualBox (PBKDF2-HMAC-SHA256 & AES-256-XTS) [#89][#89]
 - Chore:
   - MFA required for gem release
 - Dependencies:
@@ -16,6 +18,7 @@
     - Move from Redcarpet to CommonMarker markdown provider
 
 [#101]:https://github.com/noraj/haiti/issues/101
+[#89]:https://github.com/noraj/haiti/issues/89
 
 ## [1.2.2]
 
