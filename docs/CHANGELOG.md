@@ -13,6 +13,8 @@
   - VirtualBox (PBKDF2-HMAC-SHA256 & AES-256-XTS) [#89][#89]
 - Chore:
   - MFA required for gem release
+  - Better publishing documentation
+  - Add a rake task to count the number of hash types supported
 - Dependencies:
   - Update to yard [v0.9.27](https://github.com/lsegal/yard/releases/tag/v0.9.27)
     - Move from Redcarpet to CommonMarker markdown provider
