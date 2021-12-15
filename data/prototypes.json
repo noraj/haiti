@@ -1153,6 +1153,15 @@
                 "samples": [
                     "94520b02c04e79e08a75a84c2a6e3ed4e3874fe8:ThisIsATestSalt"
                 ]
+            },
+            {
+                "john": null,
+                "hashcat": 27200,
+                "extended": false,
+                "name": "Ruby on Rails Restful Auth (one round, no sitekey)",
+                "samples": [
+                    "3999d08db95797891ec77f07223ca81bf43e1be2:5dcc47b04c49d3c8e1b9e4ec367fddeed21b7b85"
+                ]
             }
         ]
     },

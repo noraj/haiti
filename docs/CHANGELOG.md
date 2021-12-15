@@ -20,6 +20,7 @@
     - SNMPv3 HMAC-SHA256-192
     - SNMPv3 HMAC-SHA384-256
     - SNMPv3 HMAC-SHA512-384
+  - Ruby on Rails Restful Auth (one round, no sitekey) [#91][#91]
 - Chore:
   - MFA required for gem release
   - Better publishing documentation
@@ -31,6 +32,7 @@
 [#101]:https://github.com/noraj/haiti/issues/101
 [#89]:https://github.com/noraj/haiti/issues/89
 [#88]:https://github.com/noraj/haiti/issues/88
+[#91]:https://github.com/noraj/haiti/issues/91
 
 ## [1.2.2]
 
