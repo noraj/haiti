@@ -9,8 +9,17 @@
     - MultiBit HD wallet >= 0.5.0
   - MurmurHash3 [#101][#101]
   - Windows Hello PIN/Password [#101][#101]
-  - VirtualBox (PBKDF2-HMAC-SHA256 & AES-128-XTS) [#89][#89]
-  - VirtualBox (PBKDF2-HMAC-SHA256 & AES-256-XTS) [#89][#89]
+  - VirtualBox [#89][#89]
+    - VirtualBox (PBKDF2-HMAC-SHA256 & AES-128-XTS)
+    - VirtualBox (PBKDF2-HMAC-SHA256 & AES-256-XTS)
+  - SNMPv3 [#88][#88]
+    - SNMPv3 HMAC-MD5-96/HMAC-SHA1-96
+    - SNMPv3 HMAC-MD5-96
+    - SNMPv3 HMAC-SHA1-96
+    - SNMPv3 HMAC-SHA224-128
+    - SNMPv3 HMAC-SHA256-192
+    - SNMPv3 HMAC-SHA384-256
+    - SNMPv3 HMAC-SHA512-384
 - Chore:
   - MFA required for gem release
   - Better publishing documentation
@@ -21,6 +30,7 @@
 
 [#101]:https://github.com/noraj/haiti/issues/101
 [#89]:https://github.com/noraj/haiti/issues/89
+[#88]:https://github.com/noraj/haiti/issues/88
 
 ## [1.2.2]
 
