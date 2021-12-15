@@ -16,7 +16,7 @@ A CLI tool (and library) to identify hash types (hash type identifier).
 
 ## Features
 
-- 423+ hash types detected
+- 442+ hash types detected
 - Modern algorithms supported (SHA3, Keccak, Blake2, etc.)
 - Hashcat and John the Ripper references
 - CLI tool & library
@@ -38,7 +38,7 @@ Homepage / Documentation: https://noraj.github.io/haiti/
 
 See the reasons why Haiti was created and a detailed comparison with other existing tools on the [documentation page](https://noraj.github.io/haiti/#/why).
 
-![haiti_comparison](https://user-images.githubusercontent.com/16578570/121500737-dfd2f800-c9de-11eb-839f-0293144d3619.png)
+![haiti_comparison](https://user-images.githubusercontent.com/16578570/146222414-3c826f37-149a-4570-ad93-a0c965e06df5.png)
 
 ## Author
 

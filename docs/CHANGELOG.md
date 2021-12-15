@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [1.2.3]
+
 - Additions:
   - CRC-32C [#101][#101]
   - CRC64Jones [#101][#101]
