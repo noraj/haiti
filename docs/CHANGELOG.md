@@ -21,6 +21,14 @@
     - SNMPv3 HMAC-SHA384-256
     - SNMPv3 HMAC-SHA512-384
   - Ruby on Rails Restful Auth (one round, no sitekey) [#91][#91]
+  - NetNTLM (NT) [#92][#92]
+    - NetNTLMv1 / NetNTLMv1+ESS (NT)
+    - NetNTLMv2 (NT)
+- Enhancements:
+  - NetNTLM (vanilla)
+    - Better regexp
+    - Better description
+    - Add samples
 - Chore:
   - MFA required for gem release
   - Better publishing documentation
@@ -33,6 +41,7 @@
 [#89]:https://github.com/noraj/haiti/issues/89
 [#88]:https://github.com/noraj/haiti/issues/88
 [#91]:https://github.com/noraj/haiti/issues/91
+[#92]:https://github.com/noraj/haiti/issues/92
 
 ## [1.2.2]
 
