@@ -63,7 +63,7 @@ $ git clone https://github.com/noraj/haiti.git
 $ cd haiti
 $ docker-compose build
 # alternatively without docker compose
-$ docker build -f Dockerfile -t haiti --build-arg HAITI_VERSION=1.2.3 .
+$ docker build -f Dockerfile -t haiti:1.2.3 --build-arg HAITI_VERSION=1.2.3 .
 ```
 
 Usage examples:
@@ -75,6 +75,34 @@ $ docker run -it --rm haiti haiti -e d41d8cd98f00b204e9800998ecf8427e
 ```
 
 ### **Docker (Docker Hub)**
+
+host: `docker.io`
+
+```
+# lastest
+$ docker pull noraj/haiti
+
+# specific tag
+$ docker pull noraj/haiti:1.2.3
+```
+
+Repository: [noraj/haiti](https://hub.docker.com/r/noraj/haiti).
+
+### **Docker (GHCR)**
+
+GHCR = Github Container Registry
+
+host: `ghcr.io`
+
+```
+# lastest
+$ docker pull ghcr.io/noraj/haiti
+
+# specific tag
+$ docker pull ghcr.io/noraj/haiti:1.2.3
+```
+
+Repository: TODO
 
 <!-- tabs:end -->
 
