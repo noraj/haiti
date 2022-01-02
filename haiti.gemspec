@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version       = Version::VERSION
   s.platform      = Gem::Platform::RUBY
   s.summary       = 'HAsh IdenTifIer'
-  s.description   = 'A CLI tool to identify the hash type of a given hash.'
+  s.description   = 'Hash type identifier (CLI & lib).'
   s.authors       = ['Alexandre ZANNI']
   s.email         = 'alexandre.zanni@engineer.com'
   s.homepage      = 'https://noraj.github.io/haiti/'
