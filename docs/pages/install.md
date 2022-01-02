@@ -2,7 +2,9 @@
 
 ## Production
 
-### Install from rubygems.org
+<!-- tabs:start -->
+
+### **rubygems.org**
 
 ```
 $ gem install haiti-hash
@@ -10,7 +12,7 @@ $ gem install haiti-hash
 
 Gem: [haiti-hash](https://rubygems.org/gems/haiti-hash)
 
-### Install from BlackArch
+### **BlackArch**
 
 From the repository:
 
@@ -26,7 +28,7 @@ From git:
 
 PKGBUILD: [haiti](https://github.com/BlackArch/blackarch/blob/master/packages/haiti/PKGBUILD)
 
-### Install from Pentoo
+### **Pentoo**
 
 From the repository:
 
@@ -34,7 +36,7 @@ From the repository:
 # emerge app-crypt/haiti-hash
 ```
 
-### Install from ArchLinux
+### **ArchLinux**
 
 Manually:
 
@@ -52,17 +54,43 @@ $ pikaur -S haiti
 
 AUR: [haiti](https://aur.archlinux.org/packages/haiti/)
 
+### **Docker (git)**
+
+Without a registry
+
+```
+$ git clone https://github.com/noraj/haiti.git
+$ cd haiti
+$ docker-compose build
+# alternatively without docker compose
+$ docker build -f Dockerfile -t haiti --build-arg HAITI_VERSION=1.2.3 .
+```
+
+Usage examples:
+
+```
+$ docker-compose run haiti haiti -e d41d8cd98f00b204e9800998ecf8427e
+# alternatively without docker compose
+$ docker run -it --rm haiti haiti -e d41d8cd98f00b204e9800998ecf8427e
+```
+
+### **Docker (Docker Hub)**
+
+<!-- tabs:end -->
+
 ## Development
 
-It's better to use [rbenv](https://github.com/rbenv/rbenv) to have latests version of ruby and to avoid trashing your system ruby.
+It's better to use [ASDM-VM](https://asdf-vm.com/) to have latests version of ruby and to avoid trashing your system ruby.
 
-### Install from rubygems.org
+<!-- tabs:start -->
+
+### **rubygems.org**
 
 ```
 $ gem install --development haiti-hash
 ```
 
-### Build from git
+### **git**
 
 Just replace `x.x.x` with the gem version you see after `gem build`.
 
@@ -77,7 +105,9 @@ $ gem install haiti-x.x.x.gem
 
 Note: if an automatic install is needed you can get the version with `$ gem build haiti.gemspec | grep Version | cut -d' ' -f4`.
 
-### Run the library in irb without installing the gem
+### **No install**
+
+Run the library in irb without installing the gem.
 
 From local file:
 
@@ -96,3 +126,5 @@ Same for the CLI tool:
 ```
 $ ruby -Ilib -rhaiti bin/haiti
 ```
+
+<!-- tabs:end -->
