@@ -1,0 +1,13 @@
+# Author: noraj
+version: '3'
+services:
+  haiti:
+    image: noraj/haiti:1.2.3
+    user: noraj
+    container_name: haiti
+    read_only: false
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        HAITI_VERSION: 1.2.3
