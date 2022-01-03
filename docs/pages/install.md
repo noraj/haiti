@@ -104,6 +104,26 @@ $ docker pull ghcr.io/noraj/haiti:1.2.3
 
 Repository: TODO
 
+!> **Note**: currently not working.
+
+### **Docker (ACR)**
+
+ACR = Alibaba Cloud Container Registry
+
+host: `registry-intl.eu-central-1.aliyuncs.com`
+
+```
+# lastest
+$ docker pull registry-intl.eu-central-1.aliyuncs.com/noraj/haiti
+
+# specific tag
+$ docker pull registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:1.2.3
+```
+
+Repository: [the overview page is not public](https://cr.console.aliyun.com/repository/eu-central-1/noraj/haiti/details)
+
+!> **Note**: currently not working.
+
 <!-- tabs:end -->
 
 ## Development
