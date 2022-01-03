@@ -82,6 +82,18 @@ $ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
 $ docker push ghcr.io/noraj/haiti:x.x.x
 ```
 
-Note: currently not working.
+!> **Note**: currently not working.
+
+### **Alibaba Cloud (ACR)**
+
+ACR = Alibaba Cloud Container Registry
+
+```
+$ docker build -f Dockerfile -t registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:x.x.x --build-arg HAITI_VERSION=x.x.x .
+$ docker login registry-intl.eu-central-1.aliyuncs.com
+$ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:x.x.x
+```
+
+!> **Note**: currently not working.
 
 <!-- tabs:end -->
