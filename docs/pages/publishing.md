@@ -67,6 +67,7 @@ $ gem push haiti-hash-x.x.x.gem
 $ docker build -f Dockerfile -t noraj/haiti:x.x.x --build-arg HAITI_VERSION=x.x.x .
 $ docker login docker.io
 $ docker push docker.io/noraj/haiti:x.x.x
+$ docker push docker.io/noraj/haiti
 ```
 
 ### **Github (GHCR)**
@@ -79,10 +80,10 @@ $ docker build -f Dockerfile -t ghcr.io/noraj/haiti:x.x.x --build-arg HAITI_VERS
 $ export CR_PAT=YOUR_TOKEN
 $ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
 
+$ pass show docker-credential-helpers/Z2hjci5pbw==/USERNAME
 $ docker push ghcr.io/noraj/haiti:x.x.x
+$ docker push ghcr.io/noraj/haiti
 ```
-
-!> **Note**: currently not working.
 
 ### **Alibaba Cloud (ACR)**
 
@@ -90,10 +91,12 @@ ACR = Alibaba Cloud Container Registry
 
 ```
 $ docker build -f Dockerfile -t registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:x.x.x --build-arg HAITI_VERSION=x.x.x .
-$ docker login registry-intl.eu-central-1.aliyuncs.com
-$ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:x.x.x
-```
 
-!> **Note**: currently not working.
+$ docker login registry-intl.eu-central-1.aliyuncs.com
+
+$ pass show docker-credential-helpers/cmVnaXN0cnktaW50bC5ldS1jZW50cmFsLTEuYWxpeXVuY3MuY29t/USERNAME
+$ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:x.x.x
+$ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti
+```
 
 <!-- tabs:end -->

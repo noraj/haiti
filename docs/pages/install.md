@@ -79,7 +79,7 @@ $ docker run -it --rm haiti haiti -e d41d8cd98f00b204e9800998ecf8427e
 host: `docker.io`
 
 ```
-# lastest
+# latest
 $ docker pull noraj/haiti
 
 # specific tag
@@ -95,16 +95,14 @@ GHCR = Github Container Registry
 host: `ghcr.io`
 
 ```
-# lastest
+# latest
 $ docker pull ghcr.io/noraj/haiti
 
 # specific tag
 $ docker pull ghcr.io/noraj/haiti:1.2.3
 ```
 
-Repository: TODO
-
-!> **Note**: currently not working.
+Repository: [noraj/haiti](https://github.com/noraj/haiti/pkgs/container/haiti)
 
 ### **Docker (ACR)**
 
@@ -113,7 +111,7 @@ ACR = Alibaba Cloud Container Registry
 host: `registry-intl.eu-central-1.aliyuncs.com`
 
 ```
-# lastest
+# latest
 $ docker pull registry-intl.eu-central-1.aliyuncs.com/noraj/haiti
 
 # specific tag
@@ -121,8 +119,6 @@ $ docker pull registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:1.2.3
 ```
 
 Repository: [the overview page is not public](https://cr.console.aliyun.com/repository/eu-central-1/noraj/haiti/details)
-
-!> **Note**: currently not working.
 
 <!-- tabs:end -->
 
