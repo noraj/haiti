@@ -11,3 +11,9 @@ updates:
       interval: "daily"
     labels:
       - "dependency::update"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "dependency::update"
