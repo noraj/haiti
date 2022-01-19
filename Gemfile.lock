@@ -16,13 +16,13 @@ GEM
     parallel (1.21.0)
     parser (3.1.0.0)
       ast (~> 2.4.1)
-    rainbow (3.0.0)
+    rainbow (3.1.1)
     rake (13.0.6)
     regexp_parser (2.2.0)
     rexml (3.2.5)
-    rubocop (1.24.1)
+    rubocop (1.25.0)
       parallel (~> 1.10)
-      parser (>= 3.0.0.0)
+      parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml
@@ -48,7 +48,7 @@ DEPENDENCIES
   minitest (~> 5.15)
   paint (~> 2.2)
   rake (~> 13.0)
-  rubocop (~> 1.24)
+  rubocop (~> 1.25)
   yard (>= 0.9.27, < 0.10)
 
 BUNDLED WITH
