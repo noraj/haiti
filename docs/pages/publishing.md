@@ -65,7 +65,10 @@ $ gem push haiti-hash-x.x.x.gem
 
 ```
 $ docker build -f Dockerfile -t noraj/haiti:x.x.x --build-arg HAITI_VERSION=x.x.x .
+
 $ docker login docker.io
+
+$ pass show docker-credential-helpers/aHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEv/USERNAME
 $ docker push docker.io/noraj/haiti:x.x.x
 $ docker push docker.io/noraj/haiti
 ```

@@ -1,5 +1,14 @@
 ## [Unreleased]
 
+## [1.3.0]
+
+- Chore:
+  - Add support for Ruby 3.1
+  - Remove nodejs package lock
+  - Update ruby version in Dockerfile
+- Documentation:
+  - Add `pass` unlock step to build docker (DockerHub) for the publishing page
+
 ## [1.2.3]
 
 - Additions:

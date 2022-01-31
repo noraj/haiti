@@ -1,5 +1,5 @@
 # Official verified image
-FROM ruby:3.0.3-alpine3.15
+FROM ruby:3.1.0-alpine3.15
 
 # Remote git repository <-> Remote container registry
 LABEL org.opencontainers.image.source https://github.com/noraj/haiti

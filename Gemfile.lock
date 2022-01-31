@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    haiti-hash (1.2.3)
+    haiti-hash (1.3.0)
       docopt (~> 0.6)
       paint (~> 2.2)
 
@@ -52,4 +52,4 @@ DEPENDENCIES
   yard (>= 0.9.27, < 0.10)
 
 BUNDLED WITH
-   2.2.15
+   2.3.6
