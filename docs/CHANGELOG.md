@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+- Chore:
+  - Fix github action ruby workflow
+
 ## [1.3.0]
 
 - Chore:
