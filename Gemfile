@@ -23,6 +23,6 @@ group :development, :lint do
 end
 
 group :development, :docs do
-  gem 'commonmarker', '~> 0.21' # for markdown support in YARD
+  gem 'commonmarker', '~> 0.23' # for markdown support in YARD
   gem 'yard', ['>= 0.9.27', '< 0.10']
 end
