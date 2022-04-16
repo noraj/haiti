@@ -2,6 +2,8 @@
 
 - Chore:
   - Fix github action ruby workflow
+- Documentation:
+  - Comparison to houndsniff
 
 ## [1.3.0]
 

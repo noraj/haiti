@@ -32,6 +32,7 @@ Tool                 | Maintained | Color | Ref. | Library | Lang | :hash: | :12
 [findmyhash][4]      | ❌ (2011-2011) | ❌     | ❌    | ❌       | 🐍   | ❌ | ~17
 [Name-That-Hash][5]  | ✅ (2021-now)  | ✅     | ✅    | ✅       | 🐍   | ✅ | 365
 [HashTag][6]         | ❌ (2013-2013) | ❌     | ❌    | ❌       | 🐍   | ⭕ | ~137
+[houndsniff][7]      | ✅ (2020-now)  | ✅     | ❌    | ❌       | 🇨   | ⭕ | 51
 
 Legend:
 
@@ -39,8 +40,10 @@ Legend:
 - ✅: feature supported
 - ❌: feature not supported
 - ⭕️: feature partially supported
-- 💎: Ruby
-- 🐍: Python
+- Programming langage:
+  - 💎: Ruby
+  - 🐍: Python
+  - 🇨 : C
 - :hash: correct modern hashes support
 - 🔢 number of hash types supported
 
@@ -51,3 +54,4 @@ Legend:
 [4]:https://code.google.com/archive/p/findmyhash
 [5]:https://github.com/HashPals/Name-That-Hash
 [6]:https://github.com/SmeegeSec/HashTag
+[7]:https://github.com/MichaelDim02/houndsniff
