@@ -32,7 +32,7 @@ Tool                 | Maintained | Color | Ref. | Library | Lang | :hash: | :12
 [findmyhash][4]      | ❌ (2011-2011) | ❌     | ❌    | ❌       | 🐍   | ❌ | ~17
 [Name-That-Hash][5]  | ✅ (2021-now)  | ✅     | ✅    | ✅       | 🐍   | ✅ | 365
 [HashTag][6]         | ❌ (2013-2013) | ❌     | ❌    | ❌       | 🐍   | ⭕ | ~137
-[houndsniff][7]      | ✅ (2020-now)  | ✅     | ❌    | ❌       | 🇨   | ⭕ | 51
+[houndsniff][7]      | ✅ (2020-now)  | ✅     | ❌    | ❌       | 🇨   | ❌ | 51
 
 Legend:
 
