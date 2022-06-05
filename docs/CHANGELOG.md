@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- CLI:
+  - Now can read hash from STDIN
 - Chore:
   - Fix github action ruby workflow
 - Documentation:
