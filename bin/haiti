@@ -42,7 +42,7 @@ begin
   pp args if args['--debug']
   # use case 1, using the tool
   if args['<hash>']
-    args['<hash>'] = STDIN.read.chomp if args['<hash>'] == '-'
+    args['<hash>'] = $stdin.read.chomp if args['<hash>'] == '-'
     hi = HashIdentifier.new(args['<hash>'])
     if hi.type.empty?
       puts 'Unknown hash type'
