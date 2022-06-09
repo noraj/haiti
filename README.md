@@ -38,8 +38,7 @@ A CLI tool (and library) to identify hash types (hash type identifier).
 $ gem install haiti-hash
 ```
 
-Check the [installation](https://noraj.github.io/haiti/) page on the documentation to discover more methods.
-
+Check the [installation](https://noraj.github.io/haiti/#/pages/install) page on the documentation to discover more methods.
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/haiti.svg)](https://repology.org/project/haiti/versions)
 [![Gem Version](https://badge.fury.io/rb/haiti-hash.svg)](https://badge.fury.io/rb/haiti-hash)
