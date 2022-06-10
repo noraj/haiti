@@ -4,7 +4,7 @@
 
 <!-- tabs:start -->
 
-### **rubygems.org**
+### **rubygems.org (universal)**
 
 ```
 $ gem install haiti-hash
@@ -120,6 +120,33 @@ $ docker pull registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:1.3.0
 
 Repository: [the overview page is not public](https://cr.console.aliyun.com/repository/eu-central-1/noraj/haiti/details)
 
+### **Debian**
+
+Download the `.deb` files from the last Github [release](https://github.com/noraj/haiti/releases)
+attached in the _Assets_ section.
+
+```
+# install dependencies
+$ apt install ruby-paint
+$ dpkg -i ruby-docopt_0.6.1_all_debian11.deb
+
+# install haiti
+$ dpkg -i haiti_1.3.0_all_debian11.deb
+```
+
+This has been tested only on Debian 11 (bullseye).
+
+Checksum with `b2sum` (Blake2 hash):
+
+```
+fefd3827a9058231dfa99c01c1e38ebf4f0dd81034e6876a506e64826d9835b5d1056cbaa6312415deb0a4f9d91c9969084873363fcee6cb3c08b92d3512915c  haiti_1.3.0_all_debian11.deb
+f85e4bf6148fa69fe1b3258acfd4ab31cf303d1c03b4ce6b1f5ff16fde1d78dda6469eca0f5b44ffee6b0454961d5e865549d5d986bea4a4a31d9bfdc8e6f518  ruby-docopt_0.6.1_all_debian11.deb
+```
+
+### **openSUSE**
+
+Work in progress
+
 <!-- tabs:end -->
 
 ## Development
@@ -170,5 +197,20 @@ Same for the CLI tool:
 ```
 $ ruby -Ilib -rhaiti bin/haiti
 ```
+
+### **.deb**
+
+Build the `.deb` for Debian using `fpm` from the gem:
+
+```
+$ git clone https://github.com/noraj/haiti.git
+$ gem install fpm
+$ cd packages/debian/ruby-docopt
+$ fpm -s gem docopt
+$ cd ../haiti
+$ fpm -s gem haiti-hash
+```
+
+Adapt `.fpm` file in each folder for each release.
 
 <!-- tabs:end -->

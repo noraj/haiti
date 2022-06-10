@@ -1,0 +1,10 @@
+--output-type rpm
+--name rubygem-docopt
+--license mit
+--version 0.6.1
+--architecture all
+--depends ruby
+--description "A Ruby command line option parser"
+--url "http://docopt.org/"
+--maintainer "docopt team https://github.com/orgs/docopt/people"
+--package rubygem-docopt_0.6.1-5_all_opensuse.rpm

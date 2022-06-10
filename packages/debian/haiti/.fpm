@@ -1,0 +1,15 @@
+--output-type deb
+--name haiti
+--license MIT
+--version 1.3.0
+--architecture all
+--depends ruby-paint
+--depends ruby-docopt
+--no-auto-depends
+--description "Hash type identifier (CLI & lib)"
+--url "https://noraj.github.io/haiti/"
+--maintainer "noraj <printf %s 'YWxleGFuZHJlLnphbm5pQGV1cm9wZS5jb20='|base64 -d>"
+--package haiti_1.3.0_all_debian11.deb
+--prefix /usr/share/rubygems-integration/all
+--gem-bin-path /usr/bin
+--verbose

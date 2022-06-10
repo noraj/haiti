@@ -4,6 +4,8 @@
   - Now can read hash from STDIN
 - Chore:
   - Fix github action ruby workflow
+- Install:
+  - Can now be installed on Debian with a `.deb`
 - Documentation:
   - Comparison to houndsniff
 

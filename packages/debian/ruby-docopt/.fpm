@@ -1,0 +1,12 @@
+--output-type deb
+--name ruby-docopt
+--license MIT
+--version 0.6.1
+--architecture all
+--depends ruby
+--description "A Ruby command line option parser"
+--url "http://docopt.org/"
+--maintainer "docopt team https://github.com/orgs/docopt/people"
+--package ruby-docopt_0.6.1_all_debian11.deb
+--prefix /usr/share/rubygems-integration/all
+--verbose
