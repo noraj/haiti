@@ -1,13 +1,19 @@
 ## [Unreleased]
 
+- Enhancements:
+  - 7-zip: [#118][#118]
+    - Add samples
+    - Match variants with optional fields
 - CLI:
-  - Now can read hash from STDIN
+  - **Now can read hash from STDIN**
 - Chore:
   - Fix github action ruby workflow
 - Install:
   - Can now be installed on Debian with a `.deb`
 - Documentation:
   - Comparison to houndsniff
+
+[#118]:https://github.com/noraj/haiti/issues/118
 
 ## [1.3.0]
 
