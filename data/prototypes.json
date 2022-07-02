@@ -3517,7 +3517,10 @@
                 "john": "securezip",
                 "hashcat": 23001,
                 "extended": false,
-                "name": "SecureZIP AES-128"
+                "name": "SecureZIP AES-128",
+                "samples": [
+                    "$zip3$*0*1*128*0*b4630625c92b6e7848f6fd86*df2f62611b3d02d2c7e05a48dad57c7d93b0bac1362261ab533807afb69db856676aa6e350320130b5cbf27c55a48c0f75739654ac312f1cf5c37149557fc88a92c7e3dde8d23edd2b839036e88092a708b7e818bf1b6de92f0efb5cce184cceb11db6b3ca0527d0bdf1f1137ee6660d9890928cd80542ac1f439515519147c14d965b5ba107c6227f971e3e115170bf*0*0*0*file.txt"
+                ]
             }
         ]
     },
@@ -3528,7 +3531,12 @@
                 "john": "securezip",
                 "hashcat": 23002,
                 "extended": false,
-                "name": "SecureZIP AES-192"
+                "name": "SecureZIP AES-192",
+                "samples": [
+                    "$zip3$*0*1*192*0*53ff2de8c280778e1e0ab997*603eb37dbab9ea109e2c405e37d8cae1ec89e1e0d0b9ce5bf55d1b571c343b6a3df35fe381c30249cb0738a9b956ba8e52dfc5552894296300446a771032776c811ff8a71d9bb3c4d6c37016c027e41fea2d157d5b0ce17804b1d7c1606b7c1121d37851bd705e001f2cd755bbf305966d129a17c1d48ff8e87cfa41f479090cd456527db7d1d43f9020ad8e73f851a5*0*0*0*file.txt",
+                    "$zip3$*0*1*192*0*edb47a990800000000000000*ba4288c0572f6043b21eba768ca8854fbec62c644f29cdc9652f037b3600dcc761dd07645cbaa1ebec1140e21e19a1cf4b43a82cb47e71e6ac82d3387581996e3fb201328dd5ad8a5be841e2cc9bee7e940da5b55b8a385df87d2431e24baf9a050ea550bd8ea00d2271f9e9d06b32222b8e5815a9db7e75655937c8437332b5b5b08e4c1800976b528322df6ba9653e*0*0*0*secret.txt",
+                    "$zip3$*0*1*192*0*a5763deec28f57f7c3218289*7c789a396b6935a2595da1045728aec01572ed0834bc0baa1ab43a186265be83135359ddf2e2f1a2c42f88879617922687131720e8238b006ba10f1caead1d6fbcabbacf32bc3aeda76747d26671f3a94f2037b330a3a790eb72564b05e064747e042c3112d42e739907fdded43c5c4fbf1a5f831cf77bb47f838c75d30a95215b6457a0d4ffc6d408da6be86a04c0d2*0*0*0*1"
+                ]
             }
         ]
     },
@@ -3539,7 +3547,12 @@
                 "john": "securezip",
                 "hashcat": 23003,
                 "extended": false,
-                "name": "SecureZIP AES-256"
+                "name": "SecureZIP AES-256",
+                "samples": [
+                    "$zip3$*0*1*256*0*39bff47df6152a0214d7a967*65ff418ffb3b1198cccdef0327c03750f328d6dd5287e00e4c467f33b92a6ef40a74bb11b5afad61a6c3c9b279d8bd7961e96af7b470c36fc186fd3cfe059107021c9dea0cf206692f727eeca71f18f5b0b6ee1f702b648bba01aa21c7b7f3f0f7d547838aad46868155a04214f22feef7b31d7a15e1abe6dba5e569c62ee640783bb4a54054c2c69e93ece9f1a2af9d*0*0*0*file.txt",
+                    "$zip3$*0*1*256*0*edb47a990800000000000000*32f884f9fbb54360920a50ec37cc0651fe7b0d9892de44eed17696186139a09c1530e0522abfd9777d18441739cdc7107fdfd252ecd0c8dbbba8181bd09436e9a6a918e385cbab26bee49cd0e3182e67df3fe8c3cdc9e58d6166a0f550969cc456b4a881524e6e66a14e30196b972e260c509fce918736465aea1d00bd5871876e263635be4700ef081117ed896e1504*0*0*0*secret.txt",
+                    "$zip3$*0*1*256*0*3f2f7f230e00000000000000*c75ed4a3ec89c22cda7aa3faa9a11cdcca9f5a2f45fe2844d963b2b76b8f98f43a907997557fc2b0eb8cb590b130c573ddfac3f5e70997d6a4539e10728317bdcd70eb74b82bafa2e4871488984db8522c4c4c8ff28fd2dd62c26be9d24246f80ddbdfa8d3b9e81b775dbdb84371446564df3effdbea48713dd223a2bb9afddffc9b8e60f41939f7577f9f30b0a28b78*0*0*0*code.txt"
+                ]
             }
         ]
     },

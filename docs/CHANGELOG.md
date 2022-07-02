@@ -7,6 +7,8 @@
   - WinZip: [#118][#118]
     - Add samples
     - Enhance regexp, 7th token can be at max `0x200000 * 4 * 2`
+  - SecureZip: [#118][#118]
+    - Add samples
 - CLI:
   - **Now can read hash from STDIN**
 - Chore:
