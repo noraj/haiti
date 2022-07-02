@@ -4,6 +4,9 @@
   - 7-zip: [#118][#118]
     - Add samples
     - Match variants with optional fields
+  - WinZip: [#118][#118]
+    - Add samples
+    - Enhance regexp, 7th token can be at max `0x200000 * 4 * 2`
 - CLI:
   - **Now can read hash from STDIN**
 - Chore:
