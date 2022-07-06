@@ -6,7 +6,7 @@ gemspec
 
 group :runtime, :cli do
   gem 'docopt', '~> 0.6' # for argument parsing
-  gem 'paint', '~> 2.2' # for colorized ouput
+  gem 'paint', '~> 2.3' # for colorized ouput
 end
 
 group :development, :install do
