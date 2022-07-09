@@ -143,6 +143,36 @@ fefd3827a9058231dfa99c01c1e38ebf4f0dd81034e6876a506e64826d9835b5d1056cbaa6312415
 f85e4bf6148fa69fe1b3258acfd4ab31cf303d1c03b4ce6b1f5ff16fde1d78dda6469eca0f5b44ffee6b0454961d5e865549d5d986bea4a4a31d9bfdc8e6f518  ruby-docopt_0.6.1_all_debian11.deb
 ```
 
+### **Void Linux**
+
+`xbps-src` templates are provided in `packages/void` for haiti and its dependencies.
+
+Example copy the templates to void-packages:
+
+```
+$ git clone --depth 1 https://github.com/void-linux/void-packages
+$ git clone --depth 1 https://github.com/noraj/haiti.git
+$ cp -r haiti/packages/void/* void-packages/srcpkgs
+```
+
+Install `xtools` and `base-devel`:
+
+```
+$ sudo xbps-install base-devel xtools
+```
+
+Build and install:
+
+```
+cd void-packages
+./xbps-src pkg ruby-docopt
+./xbps-src pkg ruby-paint
+./xbps-src pkg haiti
+xi haiti
+```
+
+If you want haiti to be included in the official Void repository ask [here](https://github.com/void-linux/void-packages/pull/37804).
+
 ### **openSUSE**
 
 Work in progress
@@ -205,12 +235,21 @@ Build the `.deb` for Debian using `fpm` from the gem:
 ```
 $ git clone https://github.com/noraj/haiti.git
 $ gem install fpm
-$ cd packages/debian/ruby-docopt
+$ cd haiti/packages/debian/ruby-docopt
 $ fpm -s gem docopt
 $ cd ../haiti
 $ fpm -s gem haiti-hash
 ```
 
 Adapt `.fpm` file in each folder for each release.
+
+### **Void Linux**
+
+```
+$ git clone https://github.com/noraj/haiti.git
+$ cd haiti/packages/void/haiti
+```
+
+See [Void Linux packaging tips](https://gist.github.com/noraj/ba10acf45695cf00b4378254ebce5444) to know how to verify checksum, lint, build, etc.
 
 <!-- tabs:end -->

@@ -19,6 +19,7 @@
   - Fix github action ruby workflow
 - Install:
   - Can now be installed on Debian with a `.deb`
+  - Can now be installed on Void Linux
 - Documentation:
   - Comparison to houndsniff
 
