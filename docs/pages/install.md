@@ -69,7 +69,7 @@ $ docker build -f Dockerfile -t haiti:1.3.0 --build-arg HAITI_VERSION=1.3.0 .
 Usage examples:
 
 ```
-$ docker-compose run haiti haiti -e d41d8cd98f00b204e9800998ecf8427e
+$ docker-compose run --rm haiti haiti -e d41d8cd98f00b204e9800998ecf8427e
 # alternatively without docker compose
 $ docker run -it --rm haiti haiti -e d41d8cd98f00b204e9800998ecf8427e
 ```
