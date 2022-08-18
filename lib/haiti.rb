@@ -30,6 +30,25 @@ class HashIdentifier
     sort_commons
   end
 
+  class << self
+    # Find hash samples for a given hash type (by name or hashcat/john the ripper reference)
+    # @param input [String|Integer] hash type name, hashcat reference, john the ripper reference
+    # @return [Array<String>] a list of samples
+    # @example
+    #   HashIdentifier.samples('crc32')
+    #   # => ["c762de4a:00000000", "$crc32$00000000.fa455f6b", "$crc32$4ff4f23f.ce6eb863", "5e23d60f:00000000"]
+    def samples(input)
+      samples = []
+      PROTOTYPES.each do |prototype|
+        prototype['modes'].each do |mode|
+          samples << Chf.new(mode).samples if [mode['name'], mode['hashcat'].to_s, mode['john']].include?(input)
+        end
+      end
+      samples.delete(nil)
+      samples.flatten.uniq
+    end
+  end
+
   private
 
   # Check which hash types are matching the provided hash

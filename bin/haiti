@@ -14,11 +14,17 @@ doc = <<~DOCOPT
 
   Usage:
     haiti [options] <hash>
+    haiti samples (<ref> | <name>)
     haiti -h | --help
     haiti --version
 
+  Commands:
+    samples         Display hash samples for the given type
+
   Parameters:
     <hash>          Hash string to identify, read from STDIN if equal to "-"
+    <ref>           hashcat or john the ripper reference
+    <name>          Hash type name
 
   Options:
     --no-color      Disable colorized output
@@ -34,6 +40,7 @@ doc = <<~DOCOPT
     haiti -e d41d8cd98f00b204e9800998ecf8427e
     haiti --no-color --short d41d8cd98f00b204e9800998ecf8427e
     b2sum /etc/os-release | awk '{print $1}' | haiti -
+    haiti samples crc32
 DOCOPT
 
 begin
@@ -55,6 +62,12 @@ begin
       print Paint[" [HC: #{type.hashcat}]", :blue] unless type.hashcat.nil? || args['--short'] || args['--john-only']
       print Paint[" [JtR: #{type.john}]", :green] unless type.john.nil? || args['--short'] || args['--hashcat-only']
       puts
+    end
+  elsif args['samples']
+    input = args['<ref>'] || args['<name>']
+    samples = HashIdentifier.samples(input)
+    samples.each do |sample|
+      puts sample
     end
   end
   # use case 2, help: already handled by docopt

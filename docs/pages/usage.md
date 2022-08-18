@@ -8,11 +8,17 @@ HAITI (HAsh IdenTifIer) v1.3.0
 
 Usage:
   haiti [options] <hash>
+  haiti samples (<ref> | <name>)
   haiti -h | --help
   haiti --version
 
+Commands:
+  samples         Display hash samples for the given type
+
 Parameters:
   <hash>          Hash string to identify, read from STDIN if equal to "-"
+  <ref>           hashcat or john the ripper reference
+  <name>          Hash type name
 
 Options:
   --no-color      Disable colorized output
@@ -28,9 +34,12 @@ Examples:
   haiti -e d41d8cd98f00b204e9800998ecf8427e
   haiti --no-color --short d41d8cd98f00b204e9800998ecf8427e
   b2sum /etc/os-release | awk '{print $1}' | haiti -
+  haiti samples crc32
 ```
 
 ## Library
+
+Identify hashes:
 
 ```ruby
 require 'haiti'
@@ -52,6 +61,16 @@ hi.type.each do |type|
   # Samples / Examples of hashes of that type
   samples = type.samples
 end
+```
+
+Find hash samples for a given hash type (by name or hashcat/john the ripper reference):
+
+```ruby
+require 'haiti'
+
+HashIdentifier.samples('crc32')
+HashIdentifier.samples(1100)
+HashIdentifier.samples('MD6-256')
 ```
 
 ## Console

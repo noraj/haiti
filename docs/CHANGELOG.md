@@ -15,6 +15,9 @@
     - Add several sub-variants
 - CLI:
   - **Now can read hash from STDIN**
+  - **New command to display hash samples**
+- Lib:
+  - **New class method to find hash samples**
 - Chore:
   - Fix github action ruby workflow
 - Install:

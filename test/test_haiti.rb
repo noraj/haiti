@@ -24,6 +24,15 @@ class HaitiTest < Minitest::Test
     assert_empty(hi.type)
   end
 
+  def test_hashidentifier_samples
+    samples = HashIdentifier.samples('crc32')
+    assert_instance_of(Array, samples)
+    assert_instance_of(String, samples[0])
+    assert_empty(HashIdentifier.samples('Django(SHA-384)'))
+    assert_empty(HashIdentifier.samples('nonexistant'))
+    assert_empty(HashIdentifier.samples(9_999_999_999_999))
+  end
+
   def test_chf
     assert_equal('MD5', @hi.type[0].name)
     assert_equal('raw-md5', @hi.type[0].john)
