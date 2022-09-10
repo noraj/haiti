@@ -19,6 +19,12 @@
   - DPAPI masterkey file v2 (context 3) [#126][#126]
   - Exodus Desktop Wallet [#126][#126]
   - Flask Session Cookie [#126][#126]
+  - KeePass 1 AES / without keyfile [#126][#126]
+  - KeePass 1 Twofish / with keyfile [#126][#126]
+  - KeePass 1 Twofish / without keyfile [#126][#126]
+  - KeePass 2 AES / without keyfile [#126][#126]
+  - Keepass 2 AES / with keyfile [#126][#126]
+  - KeePass 2 ChaCha20 (KDBX 3) / without keyfile [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
