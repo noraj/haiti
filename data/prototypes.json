@@ -4416,5 +4416,67 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$DPAPImk\\$1\\*[12]\\*[S\\-0-9]{10,60}\\*.{4,6}\\*.{4,6}\\*\\d{1,6}\\*[a-f0-9]{32}\\*\\d{1,6}\\*[a-f0-9]{0,1024}$",
+        "modes": [
+            {
+                "john": "DPAPImk",
+                "hashcat": 15300,
+                "extended": false,
+                "name": "DPAPI masterkey file v1 (context 1 and 2)",
+                "samples": [
+                    "$DPAPImk$1*1*S-15-21-466364039-425773974-453930460-1925*des3*sha1*24000*b038489dee5ad04e3e3cab4d957258b5*208*cb9b5b7d96a0d2a00305ca403d3fd9c47c561e35b4b2cf3aebfd1d3199a6481d56972be7ebd6c291b199e6f1c2ffaee91978706737e9b1209e6c7d3aa3d8c3c3e38ad1ccfa39400d62c2415961c17fd0bd6b0f7bbd49cc1de1a394e64b7237f56244238da8d37d78",
+                    "$DPAPImk$1*1*S-15-21-447321867-460417387-480872410-1240*des3*sha1*24000*9b49e2d3b25103d03e936fdf66b94d26*208*ec96025ed4b023ebfa52bdfd91dfeb64edf3f3970b347ee8bb8adfb2a686a0a34792d40074edd372f346da8fcd02cc5d4182c2fd09f4549ec106273926edd05c42e4b5fc8b8758a7c48f6ddae273f357bcb645c8ad16e3161e8a9dbb5002454f4db5ef0d5d7a93ac",
+                    "$DPAPImk$1*2*S-15-21-458698633-447735394-485599537-1788*des3*sha1*24000*96b957d9bf0f8846399e70a84431b595*208*0ee9fa2baf2cf0efda81514376aef853c6c93a5776fa6af66a869f44c50ac80148b7488f52b4c52c305e89a497a583e17cca4a9bab580668a8a5ce2eee083382c98049e481e47629b5815fb16247e3bbfa62c454585aaaf51ef15555a355fcf925cff16c0bb006f8",
+                    "$DPAPImk$1*1*S-1-5-21-1482476501-1659004503-725345543-1003*des3*sha1*4000*b3d62a0b06cecc236fe3200460426a13*208*d3841257348221cd92caf4427a59d785ed1474cab3d0101fc8d37137dbb598ff1fd2455826128b2594b846934c073528f8648d750d3c8e6621e6f706d79b18c22f172c0930d9a934de73ea2eb63b7b44810d332f7d03f14d1c153de16070a5cab9324da87405c1c0"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$DPAPImk\\$1\\*3\\*[S\\-0-9]{10,60}\\*.{4,6}\\*.{4,6}\\*\\d{1,6}\\*[a-f0-9]{32}\\*\\d{1,6}\\*[a-f0-9]{0,1024}$",
+        "modes": [
+            {
+                "john": "DPAPImk",
+                "hashcat": 15310,
+                "extended": false,
+                "name": "DPAPI masterkey file v1 (context 3)",
+                "samples": [
+                    "$DPAPImk$1*3*S-15-21-407415836-404165111-436049749-1915*des3*sha1*14825*3e86e7d8437c4d5582ff668a83632cb2*208*96ad763b59e67c9f5c3d925e42bbe28a1412b919d1dc4abf03b2bed4c5c244056c14931d94d441117529b7171dfd6ebbe6eecf5d958b65574c293778fbadb892351cc59d5c65d65d2fcda73f5b056548a4a5550106d03d0c39d3cca7e5cdc0d521f48ac9e51cecc5",
+                    "$DPAPImk$1*3*S-1-5-21-1857904334-2267218879-1458651445-1123*des3*sha1*18000*e4c529ba8975e4ed56f5fb8b1e85be43*208*af96b391f1d6e2d37a4de3b4c412ce78f032d446d77ea1fb6a0782f47c390c844349c2bcaeba9fd570b39def6f67a369aa2e266e8d017689d8a09667fdfb640feb3e19ca22067cc5704644c1dcc43d4cccac667391f4918d0de77f36569fd2e104ef0619a46edcfc"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$DPAPImk\\$2\\*[12]\\*[S\\-0-9]{10,60}\\*.{4,6}\\*.{4,6}\\*\\d{1,6}\\*[a-f0-9]{32}\\*\\d{1,6}\\*[a-f0-9]{0,1024}$",
+        "modes": [
+            {
+                "john": "DPAPImk",
+                "hashcat": 15900,
+                "extended": false,
+                "name": "DPAPI masterkey file v2 (context 1 and 2)",
+                "samples": [
+                    "$DPAPImk$2*1*S-15-21-439882973-489230393-482956683-1522*aes256*sha512*12900*79f7ca399f2626e21aad108c3922af7c*288*c47bc8a985ca6aa708b01c97b004bff20cc52379dc2635b4acf59ce17970a2cb47ace98c7e8de977f265243c5c03d0a97e4b954b494d9e38d9158d0c1e729d16a28ba69e2e7c6c3bc0e3afc9c9b6306b83372ccb35d89b98925728fd36315b8ee95b4d4eccdcb31564769f9a4b9ee10828184e16d4af336675d5e31d987dd87233d34fbbb98880c5e1f64cbb9b043ad8",
+                    "$DPAPImk$2*1*S-15-21-417226446-481759312-475941522-1494*aes256*sha512*8000*1e6b7a71a079bc12e71c75a6bcfd865c*288*5b5d651e538e5185f7d6939ba235ca2d8a2b9726a6e95b59844320ba1d1f22282527210bc784d22075e596d113927761a644ad4057cb4dbb497bd64ee6c630930a4ba388eadb59484ec2be7fb4cc79299a87f341d002d25b5b187c71fa19417ec9d1b65568a79c962cb3b5bcb1b8df5f968669af35eec5a24ed5dcee46deef42bfee5ad665dd4de56ccd9c6ba26b2acd",
+                    "$DPAPImk$2*2*S-15-21-402916398-457068774-444912990-1699*aes256*sha512*17000*4c51109a901e4be7f1e208f82a56e690*288*bb80d538ac4185eb0382080fda0d405bb74da3a6b98e96f222292b819fa9168cf1571e9bc9c698ad10daf850ab34de1a1765cfd5c0fb8a63a413a767d241dfe6355804af259d24f6be7282daac0a9e02d7fbe20675afb3733141995990a6d11012edfb7e81b49c0e1132dbc4503dd2206489e4f512e4fe9d573566c9d8973188b8d1a87610b8bef09e971270a376a52b"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$DPAPImk\\$2\\*3\\*[S\\-0-9]{10,60}\\*.{4,6}\\*.{4,6}\\*\\d{1,6}\\*[a-f0-9]{32}\\*\\d{1,6}\\*[a-f0-9]{0,1024}$",
+        "modes": [
+            {
+                "john": "DPAPImk",
+                "hashcat": 15910,
+                "extended": false,
+                "name": "DPAPI masterkey file v2 (context 3)",
+                "samples": [
+                    "$DPAPImk$2*3*S-15-21-464497560-472124119-475628788-1088*aes256*sha512*13450*685165fdb6d0627a15100215ec331ed8*288*7e1ea6f7ec3c2111f2a3903c73aefe66e524d8b241dc1482d0bd07cc1f3ccdadd8cebd4263b3b7c2496da48f40d2eb4890513e6624aeefbe6bbc6ea73f2f71fecf9cc5fef3891a2e697a4415ba7a069642069c142335d53cc750d42a4f4d2b0592956b4a0e57a5d5b1bfd27f0a8eac9d0d5fc5c5e5e23af18ce1a8eff442ed335e5db3bad6e89146f71aa9351e132fd9"
+                ]
+            }
+        ]
     }
 ]

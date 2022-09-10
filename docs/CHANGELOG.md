@@ -13,6 +13,10 @@
   - Bitcoin WIF private key (P2SH(P2WPKH)), uncompressed [#126][#126]
   - BLAKE2-512($pass.$salt) [#126][#126]
   - BLAKE2-512($salt.$pass) [#126][#126]
+  - DPAPI masterkey file v1 (context 1 and 2) [#126][#126]
+  - DPAPI masterkey file v1 (context 3) [#126][#126]
+  - DPAPI masterkey file v2 (context 1 and 2) [#126][#126]
+  - DPAPI masterkey file v2 (context 3) [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
