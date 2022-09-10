@@ -339,7 +339,7 @@
         ]
     },
     {
-        "regex": "^[a-f0-9]{32}(:.+)?$",
+        "regex": "^[a-f0-9]{32}(?::.+)?$",
         "modes": [
             {
                 "john": "raw-md5",
@@ -622,6 +622,15 @@
                 "name": "MD6-128",
                 "samples": [
                     "8cd9a30bfde990878c06be4a6111f726"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 2810,
+                "extended": false,
+                "name": "IPB 2.x (Invision Power Board)",
+                "samples": [
+                    "022f7e02b3314f7d0968f73c00ba759f:67588"
                 ]
             }
         ]
@@ -926,28 +935,6 @@
                 "samples": [
                     "264a4248c9522cb74d33fe26cb596895:61270210011294880287232432636227"
                 ]
-            }
-        ]
-    },
-    {
-        "regex": "^[a-f0-9]{32}:.{5}$",
-        "modes": [
-            {
-                "john": null,
-                "hashcat": 2811,
-                "extended": false,
-                "name": "IP.Board \u2265 v2+"
-            }
-        ]
-    },
-    {
-        "regex": "^[a-f0-9]{32}:.{8}$",
-        "modes": [
-            {
-                "john": null,
-                "hashcat": 2811,
-                "extended": false,
-                "name": "MyBB \u2265 v1.2+"
             }
         ]
     },
@@ -4307,6 +4294,23 @@
                     "$response$8663faf2337dbcb2c52882807592ec2c$user$myrealm$GET$/$8c12bd8f728afe56d45a0ce846b70e5a",
                     "$response$b9b9cb1fcce017ec497b31cc33a572b0$lulu$hyperion$GET$/$IERozb5mBQA=de6a5916efca4c24959b5be7e4ed3fc0c7f1f765$00000006$1bd5678ca084bc0d$auth",
                     "$response$abe32fa35969fd6d77bad0ce3dbfdd3a$lulu$hyperion$GET$/icons/poweredby.png$XkZ1Dr9mBQA=6258d402c7c95b352bab0ba774d6974506e3318b$00000003$bd29e3b874427c73$auth"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$IPB2\\$[a-f0-9]{2,}\\$[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": "ipb2",
+                "hashcat": null,
+                "extended": false,
+                "name": "IPB 2.x (Invision Power Board)",
+                "samples": [
+                    "$IPB2$2e75504633$d891f03a7327639bc632d62a7f302604",
+                    "$IPB2$735a213a4e$4f23de7bb115139660db5e953153f28a",
+                    "$IPB2$5d75343455$de98ba8ca7bb16f43af05e9e4fb8afee",
+                    "$IPB2$556c576c39$16d4f29c71b05bd75e61d0254800bfa3"
                 ]
             }
         ]
