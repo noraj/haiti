@@ -4,6 +4,7 @@
   - AzureAD [#93][#93]
   - HTTP Digest access authentication [#94][#94]
   - IPB 2.x (Invision Power Board) [#95][#95]
+  - Amazon AWS4-HMAC-SHA256 [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
@@ -34,6 +35,7 @@
 [#93]:https://github.com/noraj/haiti/issues/93
 [#94]:https://github.com/noraj/haiti/issues/94
 [#95]:https://github.com/noraj/haiti/issues/95
+[#126]:https://github.com/noraj/haiti/issues/126
 
 ## [1.3.0]
 
