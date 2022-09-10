@@ -18,6 +18,7 @@
   - DPAPI masterkey file v2 (context 1 and 2) [#126][#126]
   - DPAPI masterkey file v2 (context 3) [#126][#126]
   - Exodus Desktop Wallet [#126][#126]
+  - Flask Session Cookie [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples

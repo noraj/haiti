@@ -4492,5 +4492,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^[a-z0-9-_]+\\.[a-z0-9-_]{1,6}\\.[a-z0-9-_]{20,27}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 29100,
+                "extended": false,
+                "name": "Flask Session Cookie ($salt.$salt.$pass)",
+                "samples": [
+                    "eyJ1c2VybmFtZSI6ImFkbWluIn0.YjdgRQ.1OTlf1PD0H9wXsu_qS0aywAJVD8"
+                ]
+            }
+        ]
     }
 ]
