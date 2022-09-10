@@ -29,6 +29,7 @@
   - Kerberos 5 DB etype 18 [#126][#126]
   - Kerberos 5 DB etype 3
   - Kerberos 5 TGT
+  - Kerberos 4 TGT
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples

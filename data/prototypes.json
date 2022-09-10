@@ -2415,6 +2415,21 @@
         ]
     },
     {
+        "regex": "^\\$(?:af|k4)\\$[^$]+\\$[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": "krb4",
+                "hashcat": null,
+                "extended": false,
+                "name": "Kerberos 4 TGT",
+                "samples": [
+                    "$af$UMICH.EDU$bb46613c503ad92e649d99d038efddb2",
+                    "$af$UMICH.EDU$bebcedf43f7f2aa78cf9c0639e494c92"
+                ]
+            }
+        ]
+    },
+    {
         "regex": "^\\$krb5\\$[^$]+\\$[^$]+\\$[a-f0-9]{456}$",
         "modes": [
             {
