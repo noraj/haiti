@@ -2014,7 +2014,10 @@
                 "john": "raw-blake2",
                 "hashcat": null,
                 "extended": false,
-                "name": "BLAKE2-512"
+                "name": "BLAKE2-512",
+                "samples": [
+                    "4245af08b46fbb290222ab8a68613621d92ce78577152d712467742417ebc1153668f1c9e1ec1e152a32a9c242dc686d175e087906377f0c483c5be2cb68953e"
+                ]
             },
             {
                 "john": "skein-512",
@@ -2112,11 +2115,38 @@
                 "john": "raw-blake2",
                 "hashcat": 600,
                 "extended": false,
-                "name": "BLAKE2-512"
+                "name": "BLAKE2-512",
+                "samples": [
+                    "$BLAKE2$021ced8799296ceca557832ab941a50b4a11f83478cf141f51f933f653ab9fbcc05a037cddbed06e309bf334942c4e58cdf1a46e237911ccd7fcf9787cbc7fd0",
+                    "$BLAKE2$1f7d9b7c9a90f7bfc66e52b69f3b6c3befbd6aee11aac860e99347a495526f30c9e51f6b0db01c24825092a09dd1a15740f0ade8def87e60c15da487571bcef7",
+                    "$BLAKE2$296c269e70ac5f0095e6fb47693480f0f7b97ccd0307f5c3bfa4df8f5ca5c9308a0e7108e80a0a9c0ebb715e8b7109b072046c6cd5e155b4cfd2f27216283b1e"
+                ]
             }
         ]
     },
-
+    {
+        "regex": "^\\$BLAKE2\\$[a-f0-9]{128}(?::.+)$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 610,
+                "extended": true,
+                "name": "BLAKE2-512($pass.$salt)",
+                "samples": [
+                    "$BLAKE2$41fcd44c789c735c08b43a871b81c8f617ca43918d38aee6cf8291c58a0b00a03115857425e5ff6f044be7a5bec8536b52d6c9992e21cd43cdca8a55bbf1f5c1:1033"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 620,
+                "extended": true,
+                "name": "BLAKE2-512($salt.$pass)",
+                "samples": [
+                    "$BLAKE2$f0325fdfc3f82a014935442f7adbc069d4636d67276a85b09f8de368f122cf5195a0b780d7fee709fbf1dcd02ddcb581df84508cf1fb0f3393af1be0565491c6:3301"
+                ]
+            }
+        ]
+    },
     {
         "regex": "^[a-f0-9]{136}$",
         "modes": [

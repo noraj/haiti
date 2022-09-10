@@ -11,6 +11,8 @@
   - Bitcoin WIF private key (P2WPKH, Bech32), uncompressed [#126][#126]
   - Bitcoin WIF private key (P2SH(P2WPKH)), compressed [#126][#126]
   - Bitcoin WIF private key (P2SH(P2WPKH)), uncompressed [#126][#126]
+  - BLAKE2-512($pass.$salt) [#126][#126]
+  - BLAKE2-512($salt.$pass) [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
