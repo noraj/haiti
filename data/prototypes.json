@@ -939,17 +939,6 @@
         ]
     },
     {
-        "regex": "^[a-z0-9]{34}$",
-        "modes": [
-            {
-                "john": null,
-                "hashcat": null,
-                "extended": false,
-                "name": "CryptoCurrency(Adress)"
-            }
-        ]
-    },
-    {
         "regex": "^[a-f0-9]{40}(:.+)?$",
         "modes": [
             {
@@ -4325,6 +4314,75 @@
                 "name": "Amazon AWS4-HMAC-SHA256",
                 "samples": [
                     "$AWS-Sig-v4$0$20220221T000000Z$us-east-1$s3$421ab6e4af9f49fa30fa9c253fcfeb2ce91668e139e6b23303c5f75b04f8a3c4$3755ed2bc1b2346e003ccaa7d02ae8b73c72bcbe9f452ccf066c78504d786bbb"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^[a-z0-9]{26,34}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 28501,
+                "extended": false,
+                "name": "Bitcoin WIF private key (P2PKH), compressed",
+                "samples": [
+                    "1Jv6EonXm9x4Dw4QjEPAhGfmzFxTL7b3Zj"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 28502,
+                "extended": false,
+                "name": "Bitcoin WIF private key (P2PKH), uncompressed",
+                "samples": [
+                    "1L9nr4GX4Zmd7gDL1UT75QPUqxSgNTvdHb"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^bc1[a-z0-9]{39}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 28503,
+                "extended": false,
+                "name": "Bitcoin WIF private key (P2WPKH, Bech32), compressed",
+                "samples": [
+                    "bc1qxd76a5zamfyw0g2d2rxkdh0zt9m0uzmxmwjf0q"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 28504,
+                "extended": false,
+                "name": "Bitcoin WIF private key (P2WPKH, Bech32), uncompressed",
+                "samples": [
+                    "bc1qv8e65p73gmp4w3z6fqnyu8t6ct69vetsda3snd"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^[a-z0-9]{34}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 28505,
+                "extended": false,
+                "name": "Bitcoin WIF private key (P2SH(P2WPKH)), compressed",
+                "samples": [
+                    "3H1YvmSdrjEfj9LvtiKJ8XiYq5htJRuejA"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 28506,
+                "extended": false,
+                "name": "Bitcoin WIF private key (P2SH(P2WPKH)), uncompressed",
+                "samples": [
+                    "3LovFVx5zBRvusVcj7pf3JxV9V46kjKhKu"
                 ]
             }
         ]

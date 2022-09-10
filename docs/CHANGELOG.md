@@ -5,6 +5,12 @@
   - HTTP Digest access authentication [#94][#94]
   - IPB 2.x (Invision Power Board) [#95][#95]
   - Amazon AWS4-HMAC-SHA256 [#126][#126]
+  - Bitcoin WIF private key (P2PKH), compressed [#126][#126]
+  - Bitcoin WIF private key (P2PKH), uncompressed [#126][#126]
+  - Bitcoin WIF private key (P2WPKH, Bech32), compressed [#126][#126]
+  - Bitcoin WIF private key (P2WPKH, Bech32), uncompressed [#126][#126]
+  - Bitcoin WIF private key (P2SH(P2WPKH)), compressed [#126][#126]
+  - Bitcoin WIF private key (P2SH(P2WPKH)), uncompressed [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
