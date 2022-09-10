@@ -27,6 +27,8 @@
   - KeePass 2 ChaCha20 (KDBX 3) / without keyfile [#126][#126]
   - Kerberos 5 DB etype 17 [#126][#126]
   - Kerberos 5 DB etype 18 [#126][#126]
+  - Kerberos 5 DB etype 3
+  - Kerberos 5 TGT
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
@@ -40,6 +42,8 @@
     - Add samples
     - Add HC codes
     - Add several sub-variants
+  - many Kerberos 5 types:
+    - Add samples
 - **CLI**:
   - **Now can read hash from STDIN**
   - **New command to display hash samples**

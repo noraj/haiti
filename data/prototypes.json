@@ -2415,57 +2415,96 @@
         ]
     },
     {
-        "regex": "^\\$(krb5pa|mskrb5)\\$([0-9]{2})?\\$.+\\$[a-f0-9]{1,}$",
+        "regex": "^\\$krb5\\$[^$]+\\$[^$]+\\$[a-f0-9]{456}$",
+        "modes": [
+            {
+                "john": "krb5",
+                "hashcat": null,
+                "extended": false,
+                "name": "Kerberos 5 TGT",
+                "samples": [
+                    "$krb5$oskov$ACM.UIUC.EDU$4730d7249765615d6f3652321c4fb76d09fb9cd06faeb0c31b8737f9fdfcde4bd4259c31cb1dff25df39173b09abdff08373302d99ac09802a290915243d9f0ea0313fdedc7f8d1fae0d9df8f0ee6233818d317f03a72c2e77b480b2bc50d1ca14fba85133ea00e472c50dbc825291e2853bd60a969ddb69dae35b604b34ea2c2265a4ffc72e9fb811da17c7f2887ccb17e2f87cd1f6c28a9afc0c083a9356a9ee2a28d2e4a01fc7ea90cc8836b8e25650c3a1409b811d0bad42a59aa418143291d42d7b1e6cb5b1876a4cc758d721323a762e943f774630385c9faa68df6f3a94422f97",
+                    "$krb5$oskov$ACM.UIUC.EDU$6cba0316d38e31ba028f87394792baade516afdfd8c5a964b6a7677adbad7815d778b297beb238394aa97a4d495adb7c9b7298ba7c2a2062fb6c9a4297f12f83755060f4f58a1ea4c7026df585cdfa02372ad619ab1a4ec617ad23e76d6e37e36268d9aa0abcf83f11fa8092b4328c5e6c577f7ec6f1c1684d9c99a309eee1f5bd764c4158a2cf311cded8794b2de83131c3dc51303d5300e563a2b7a230eac67e85b4593e561bf6b88c77b82c729e7ba7f3d2f99b8dc85b07873e40335aff4647833a87681ee557fbd1ffa1a458a5673d1bd3c1587eceeabaebf4e44c24d9a8ac8c1d89"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$(?:krb5pa\\$[0-9]{2}|mskrb5)\\$.+\\$[a-f0-9]+$",
         "modes": [
             {
                 "john": "krb5pa-md5",
                 "hashcat": 7500,
                 "extended": false,
-                "name": "Kerberos 5 AS-REQ Pre-Auth etype 23"
+                "name": "Kerberos 5 AS-REQ Pre-Auth etype 23",
+                "samples": [
+                    "$krb5pa$23$user$realm$salt$5cbb0c882a2b26956e81644edbdb746326f4f5f0e947144fb3095dffe4b4b03e854fc1d631323632303636373330383333353630",
+                    "$krb5pa$23$user$realm$salt$afcbe07c32c3450b37d0f2516354570fe7d3e78f829e77cdc1718adf612156507181f7daeb03b6fbcfe91f8346f3c0ae7e8abfe5",
+                    "$mskrb5$john$JOHN.DOE.MS.COM$02E837D06B2AC76891F388D9CC36C67A$2A9785BF5036C45D3843490BF9C228E8C18653E10CE58D7F8EF119D2EF4F92B1803B1451",
+                    "$krb5pa$23$$$$afcbe07c32c3450b37d0f2516354570fe7d3e78f829e77cdc1718adf612156507181f7daeb03b6fbcfe91f8346f3c0ae7e8abfe5"
+                ]
             }
         ]
     },
     {
-        "regex": "^\\$krb5tgs\\$23\\$\\*[^*]*\\*\\$[a-f0-9]{32}\\$[a-f0-9]{64,40960}$",
+        "regex": "^\\$krb5tgs\\$23\\$(?:[^$]+\\$[^$]+\\$[^$]+\\$)?[a-f0-9]{32}\\$[a-f0-9]{64,40960}$",
         "modes": [
             {
                 "john": "krb5tgs",
                 "hashcat": 13100,
                 "extended": false,
-                "name": "Kerberos 5 TGS-REP etype 23"
+                "name": "Kerberos 5 TGS-REP etype 23",
+                "samples": [
+                    "$krb5tgs$23$*user$realm$test/spn*$b548e10f5694ae018d7ad63c257af7dc$35e8e45658860bc31a859b41a08989265f4ef8afd75652ab4d7a30ef151bf6350d879ae189a8cb769e01fa573c6315232b37e4bcad9105520640a781e5fd85c09615e78267e494f433f067cc6958200a82f70627ce0eebc2ac445729c2a8a0255dc3ede2c4973d2d93ac8c1a56b26444df300cb93045d05ff2326affaa3ae97f5cd866c14b78a459f0933a550e0b6507bf8af27c2391ef69fbdd649dd059a4b9ae2440edd96c82479645ccdb06bae0eead3b7f639178a90cf24d9a",
+                    "$krb5tgs$23$74809c4c83c3c8279c6058d2f206ec2f$78b4bbd4d229487d5afc9a6050d4144ce10e9245cdfc0df542879814ce740cebb970ee820677041596d7e55836a18cc95c04169e7c74a4a22ae94e66f3d37150e26cc9cb99e189ef54feb7a40a8db2cb2c41db80d8927c74da7b33b52c58742d2109036b8ab27184609e7adff27b8f17b2f2a7b7d85e4ad532d8a70d48685a4390a9fc7a0ab47fd17334534d795abf83462f0db3de931c6a2d5988ab5bf3253facfff1381afb192ce385511c9052f2915ffdb7ea28a1bbad0573d9071e79dc15068527d50100de8813793a15c292f145fa3797ba86f373a4f0a05e5f2ec7dbfd8c8b5139cc7fbb098ea1dd91a7440134ffe2aff7174d0df13dcad82c81c680a70127a3ec8792bdecd74a878f97ff2b21277dc8c9a2f7bbcd9f72560dd933d85585259067d45a46a6f505d03f188b62c37edf03f117503a26743ebd674d5b07324c15fc8418881613b365402e0176da97d43cf85e8239b69aee07791233a959bcaf83a7f492fa718dd0a1747eaf5ce626eb11bda89e8235a056e2721f45c3b61442d893ef32a8c192ea0dadb853f3c6f3c75e92f23c744605c6f55578f696b0f33a9586b8aae3e12e38a097692cd9a31d780d973eaaf62ef23b2fc9ae59a38bfd8ea14d3289b46910f61a90aa733e66382bc27f40ba634e55ef1bec0ca7f71546b79566d85664b92f9fae495fcef5cde4c4399a6798569a7e81b9cc4bdde7104f3fe181401f82bba944e3b0a406c7093c00ff9d5984a82517b1a64a8aa561bc1f0cbafbdbbc5654d375c91d4e485e17bb06838109fbc1504147481c91652f545086a84daa423a6286ea6bb13460c5ff3d865a7b37b9ce4e7b07fbe2f6897c12c1e4df2e875c1ec9cfbf84097a7f48b270baf3481263b21849ab93c231490d06a23461a5e00c23df76bca8e5a19256d859304e1f5752bf055ac7f4843e1ad174f1cbbf5c142958f9310025ce439d5979982fb0b8c2ea95e1a22ee8dc63423d9d364cb0b95bcdf89ec4ed485b9005326d728757d77aa3e020a4a61d7deb782bc5264dca350173609772cd6d003ee8104dd24d310c9a18a44f78e27d65095f5bb54f6118c8f0d79ad5a850cec8d40a19bd0134144e904c9eb7fdcff3293696071fc1118f6b2f934281a25bcd5ca7d567714b1e43bd6d09bfcc8744c0ca273a75938394ac2fb31957287093346078577c94a71dfa6ad4a63211f54f00ef7a9064d070aaff84116ee891728915c938a8a32e87aaa00ec18e2b4e9ae88f7e53f08d855052a995f92351be32d8df934eab487103b0f089828e5fb5f73af3a8a05b9fffd25c43a392994743de3de1a2a9b8bba27e02ae2341f09d63aafab291759c41b9635521ca02f08e21e7e5c3ce75c8c3515eaa99aeb9bf8e204663e8b6b8507ecf87230a131687b4770e250ba0ef29fa3ca3b47b34971e17c6a3ef785acdd7c90da9d2",
+                    "$krb5tgs$23$8bef2ad33c7d5d23c8693ccd868d9f84$f72688ca744f9634625c2dbd94ef6193644e08c4627839ce5fcf8bbfbd15ad7093fb3ecc24512ac161188a7ad2de127166f4f244f37527e15468d844efe6396756b8cf8341cbfe70e454e1f2b324f5ddee64f4f4947e1bb6776041e28e6261b57b1791677b35e1b4171ec5a05062b7bd7eb5558d6e4165ad916e790954f163a7f7e8390462295d74eff33fcbb442d4281f7cf68ddbb6ce27030015b2cf4f68e04793a9674e634663a68622e13a5a6d8c27bf8b90ee18033e754c95776d1dbd8d73ab292d27c445eb33b9b814945617f527678667b2d81adc57c7c62713d7826bc9ea918b330245a4d7fbcc33889901a63131be87a0d4e8f49d1259141677bfa27c284d8cfb1c94f4d4a602f30b774e58378710d0ad2a73c978c8c6470402c0cdbdf5d505fe07dc4250510836d5ec969b56790128aa75b292d71d4e6c77ffee261230fc7b11969e4701abc63f120420cc0f74f99e42d6613713fc0530842f77b7a45daadb296c744e0725cd2867492b5bc1cb6a4e3315e1f6b7e5b0299a9283235769d95ef63c885352b08176547f86a03ec323a2e5c84f66f3ab699fc7c5e8b2120659c963d5c98df9529939b250e0f1703f5a9859f8b00a5317aa92dc37093dc87984c0eb841cd2ce77b80510c79e8b5eb56c15f07eba936d257a4d78f82a6179ba7ed07fbeba68d43112e44f850a5034b9239c689828f7039b8c8efcbecbc34ab92d5fb869482456a92ce9201e6586458e1d7bd38b2251b1fb573dc1c6ce40a428448cfaf18e5251436aece6baa2356a06a50a6d4c011977233e7b38007cad4a869941fea1139ff4d2ce216166abf5dfa89dc85719b14eaa0d492b1d442b67cb10c81bb35e1a96ae4f62e8c4fbf604c916e2ac4a121620a2beb40cf7d43bbe7ddbb38435dacd7aba846915eb01b57d33d5dcc25082e79452416d86143e33608a8e279d396cca4a8cc5d02ad820868c4381f9f7f5bab23ba8440fd9ab5ae713cb1c20a82e0a0e93a83248b2a2a8a30aceed71a8e78526943b45f122f16ea004ffdea16005bb52e184b7498c8aefb26da2e8b43e98343e9bb364578deceee623656985fdb58dda60a112d9dc1f0e36230d43ab8d1f48ba2013fd641001f675b8918fb69826decefd742a3f3c02b49988b2b439db763db2d95744a2f2456f5b32ea64e8836873ecce085875b4e054e55700198642961560529bba800a683f149c63dd5f983477f415399f229f6f292327ebac73a6707da022e472f1081421c8549d21696db7fe7bdd2ad744a5afbada9a719c26e3962cd86f8e"
+                ]
             }
         ]
     },
     {
-        "regex": "^\\$krb5asrep\\$23\\$[^:]+:[a-f0-9]{32,32}\\$[a-f0-9]{64,40960}$",
+        "regex": "^\\$krb5asrep\\$23\\$(?:[^:$]+:)?[a-f0-9]{32}\\$[a-f0-9]{64,40960}$",
         "modes": [
             {
                 "john": "krb5asrep",
                 "hashcat": 18200,
                 "extended": false,
-                "name": "Kerberos 5 AS-REP etype 23"
+                "name": "Kerberos 5 AS-REP etype 23",
+                "samples": [
+                    "$krb5asrep$23$8cf8eb5287e28a4006c064892150c4fb$3e05ecc13548bec8e1eeb900dea5429cc6931bae9b8524490eb3a8801560871fe44355ed556202afbb39872e1bbb5c3c4f1b37dcd68fda89a23ebad917d4bbb0933edd94331598939e5d0c0c98c7e219a2e9dd6b877280d1bd7c51131413be577a167208bcc21e9fe7ae8f393278d740e72ca5c44c42d5cb0bf6bab0a36f1b88b7ddc4abbc6f152e652f6ba35c2955fb4132e11b7e566f3b422c3740f79847b77783d245a4e570b8a621b4ff6ff4815566446af70313ee78133707a76a4e4424783bd7c04920aa822a1a36b29f7e25cef186e6439fc46e42e23d6bd918969ef49b8388aef158e443b3a57dbde7ada631fbef7326f9046a9b",
+                    "$krb5asrep$23$c447eddaebf22ebf006a8fc6f986488c$eb3a17eb56287b474cecad5d4e0490d949977ba3f5015220bcd3080444d5601d67b76c5453b678e8527624e40c273bea4cfe4a7303e136b9bc3b9e63b6fb492ee4b4d2f830c5fa5a55466b57a678f708438f6712354a2deb851792b09270f4941966b82a2fd5ad8fa1fbd95a60b0f9bcd57774b3e55467a02ffcb3f1379104c24e468342f83df20b571e6f34f9a9842b43735d58d94514dcefa76719c0f5c7c3a3bfa770380924625aa0a3472d7c02d10dbb278fd946f7efcfe59a4d4cb7bdb9c5dbddc027611fe333d3ac940ec5b4ed43b55ab54b03cd2df0a9a2a7b5d235c226b259bd5ff8e0e49680351d4f0c4d13e258bc8d383cad6fc2711be0",
+                    "$krb5asrep$23$771adbc2397abddef676742924414f2b$2df6eb2d9c71820dc3fa2c098e071d920f0e412f5f12411632c5ee70e004da1be6f003b78661f8e4507e173552a52da751c45887c19bc1661ed334e0ccb4ef33975d4bd68b3d24746f281b4ca4fdf98fca0e50a8e845ad7d834e020c05b1495bc473b0295c6e9b94963cb912d3ff0f2f48c9075b0f52d9a31e5f4cc67c7af1d816b6ccfda0da5ccf35820a4d7d79073fa404726407ac840910357ef210fcf19ed81660106dfc3f4d9166a89d59d274f31619ddd9a1e2712c879a4e9c471965098842b44fae7ca6dd389d5d98b7fd7aca566ca399d072025e81cf0ef5075447687f80100307145fade7a8",
+                    "$krb5asrep$23$user@domain.com:3e156ada591263b8aab0965f5aebd837$007497cb51b6c8116d6407a782ea0e1c5402b17db7afa6b05a6d30ed164a9933c754d720e279c6c573679bd27128fe77e5fea1f72334c1193c8ff0b370fadc6368bf2d49bbfdba4c5dccab95e8c8ebfdc75f438a0797dbfb2f8a1a5f4c423f9bfc1fea483342a11bd56a216f4d5158ccc4b224b52894fadfba3957dfe4b6b8f5f9f9fe422811a314768673e0c924340b8ccb84775ce9defaa3baa0910b676ad0036d13032b0dd94e3b13903cc738a7b6d00b0b3c210d1f972a6c7cae9bd3c959acf7565be528fc179118f28c679f6deeee1456f0781eb8154e18e49cb27b64bf74cd7112a0ebae2102ac"
+                ]
             }
         ]
     },
     {
-        "regex": "^\\$krb5asrep\\$18\\$[^:]+:[a-f0-9]{32,32}\\$[a-f0-9]{64,40960}$",
+        "regex": "^\\$krb5asrep\\$18\\$[^$]+\\$[a-f0-9]{542}\\$[a-f0-9]{24}$",
         "modes": [
             {
                 "john": "krb5asrep",
                 "hashcat": null,
                 "extended": false,
-                "name": "Kerberos 5 AS-REP etype 18"
+                "name": "Kerberos 5 AS-REP etype 18",
+                "samples": [
+                    "$krb5asrep$18$EXAMPLE.COMlulu$b49aa3de9314e2d8daafe323f2e84b9a4ddc361d99bf3bf3a99102f8bff5368bdefc9d7ae090532fdad2a508ac1271bfbd17363b3a1da23bf9db324a24c238634e3ab28d7f4eca009b4c3953c882f5a4206458a0b4238f3e538308d7339382f38412bbfe7b71e269274526edf7b802ea1ecdf7b8c17f9502b7a6750313329a68b8f8a2d039c8dfe74b9ead98684cfc86e5d0f77c18ba05718b01c33831db17191a0e77f9cef998bbb66a794915b03c94725aceabe9e2b5e25b665a37b5dd3a59a5552bd779dd5f0ae7295d232194eec1ca1ba0324bdc836ba623117e59fcfedab45a86d76d2c768341d327c035a1f5c756cfc06d76b6f7ea31c7a8e782eb48de0aab2fb373ffc2352c4192838323f8$a5245c7f39480a840da0e4c6",
+                    "$krb5asrep$18$EXAMPLE.COMluser$42e34732112be6cec1532177a6c93af5ec3b2fc7da106c004d6d89ddcb4131092aecbead3e9f30d07b593f4c7adc6478ab50b80fee07db3531471f5f1986c8882c45fef784258f9d43195108b83a74f6dcae1beed179c356c0da4e2d69f122efc579fd207d2b2b241a6c275997f2ec6fec95573a7518cb8b8528d932cc14186e4c5d46cef1eed4f2924ea316d80a62b0bcd98592a11eb69c04ef43b63aeae35e9f8bd8f842d0c9c33d768cd33c55914c2a1fb2f7c640b7270cf2274993c0ce4f413aac8e9d7a231c70dd0c6f8b9c16b47a90fae8d68982a66aa58e2eb8dde93d3504e87b5d4e33827c2aa501ed63544c0578032f395205c63b030cccc699aafb9132692c79a154d645fe83927b0eda$420973360c2e907b9053f1db"
+                ]
             }
         ]
     },
     {
-        "regex": "^\\$krb5asrep\\$17\\$[^:]+:[a-f0-9]{32,32}\\$[a-f0-9]{64,40960}$",
+        "regex": "^\\$krb5asrep\\$17\\$[^$]+\\$[a-f0-9]{542}\\$[a-f0-9]{24}$",
         "modes": [
             {
                 "john": "krb5asrep",
                 "hashcat": null,
                 "extended": false,
-                "name": "Kerberos 5 AS-REP etype 17"
+                "name": "Kerberos 5 AS-REP etype 17",
+                "samples": [
+                    "$krb5asrep$17$EXAMPLE.COMhero$4e7c79214fd330b2e505a4c75e257e4686029136d54f92ce91bb69d5ffc064e64e925b3ae8bc1df431c74ccaf2075cb4a1a32151b0848964e147bf6f8e4a50caa7931faad50433991e016e312c70ad9007e38166f8df39eda3edd2445cce757e062d0919e663a67eb9fdb472b2a840cf521f18bd794947bcc0c0c6394cc5a60b860c963640867e623732206e7bf904d3b066a17b6f4ea3fd6d74f110ee80052e5297f7a19aaec22e22d582d183d43d6ca1792da187a3a182d1f479c5b4692841ccd701a63735d64584c4f8d199d67876dae5181f4eadfe75e454d0587d0953d7e16cb1b63265da6188b10c1746a2e83c41707bd03fcb2d460d1c6802826a0347b5ee7cdbe5384acad139b4395928bd$7ed0277ba9b853008cc62abe"
+                ]
             }
         ]
     },
@@ -2476,7 +2515,10 @@
                 "john": null,
                 "hashcat": 19600,
                 "extended": false,
-                "name": "Kerberos 5 TGS-REP etype 17 (AES128-CTS-HMAC-SHA1-96)"
+                "name": "Kerberos 5 TGS-REP etype 17 (AES128-CTS-HMAC-SHA1-96)",
+                "samples": [
+                    "$krb5tgs$17$srv_http$synacktiv.local$849e31b3db1c1f203fa20b85$948690f5875125348286ad3346d27b43eaabc71896b620c16de7ddcdbd561628c650c508856a3f574261948b6db4b48332d30536e978046a423ad4368f9a69b4dc4642dab4e0d475d8299be718fd6f98ac85a771b457b2453e78c9411dfce572b19660fe7a5a8246d9b2a91ea2f14d1986ea0a77ecf9b8330bc8fd9ab540bcf46b74c5aa7005cfccd89ec05f66aeab30c6b2bf8595cf6c9a1b68ad885258850c4b1dd9265f270fb2af52fd76c16246df51ea67efc58a65c345686c84e43642febe908a"
+                ]
             }
         ]
     },
@@ -2487,34 +2529,47 @@
                 "john": null,
                 "hashcat": 19700,
                 "extended": false,
-                "name": "Kerberos 5 TGS-REP etype 18 (AES256-CTS-HMAC-SHA1-96)"
+                "name": "Kerberos 5 TGS-REP etype 18 (AES256-CTS-HMAC-SHA1-96)",
+                "samples": [
+                    "$krb5tgs$18$srv_http$synacktiv.local$16ce51f6eba20c8ee534ff8a$57d07b23643a516834795f0c010da8f549b7e65063e5a367ca9240f9b800adad1734df7e7d5dd8307e785de4f40aacf901df41aa6ce695f8619ec579c1fa57ee93661cf402aeef4e3a42e7e3477645d52c09dc72feade03512dffe0df517344f673c63532b790c242cc1d50f4b4b34976cb6e08ab325b3aefb2684262a5ee9faacb14d059754f50553be5bfa5c4c51e833ff2b6ac02c6e5d4c4eb193e27d7dde301bd1ddf480e5e282b8c27ef37b136c8f140b56de105b73adeb1de16232fa1ab5c9f6"
+                ]
             }
         ]
     },
     {
-        "regex": "^\\$krb5pa\\$17\\$[^$]{1,512}\\$[^$]{1,512}\\$[a-f0-9]{104,112}$",
+        "regex": "^\\$krb5pa\\$17\\$[^$]{1,512}\\$[^$]{1,512}(?:\\$[^$]*)?\\$[a-f0-9]{104,112}$",
         "modes": [
             {
                 "john": "krb5pa-sha1",
                 "hashcat": 19800,
                 "extended": false,
-                "name": "Kerberos 5 AS-REQ Pre-Auth etype 17"
+                "name": "Kerberos 5 AS-REQ Pre-Auth etype 17",
+                "samples": [
+                    "$krb5pa$17$hashcat$HASHCATDOMAIN.COM$a17776abe5383236c58582f515843e029ecbff43706d177651b7b6cdb2713b17597ddb35b1c9c470c281589fd1d51cca125414d19e40e333",
+                    "$krb5pa$17$user1$EXAMPLE.COM$$c5461873dc13665771b98ba80be53939e906d90ae1ba79cf2e21f0395e50ee56379fbef4d0298cfccfd6cf8f907329120048fd05e8ae5df4"
+                ]
             }
         ]
     },
     {
-        "regex": "^\\$krb5pa\\$18\\$[^$]{1,512}\\$[^$]{1,512}\\$[a-f0-9]{104,112}$",
+        "regex": "^\\$krb5pa\\$18\\$[^$]{1,512}\\$[^$]{1,512}(?:\\$[^$]*)?\\$[a-f0-9]{104,112}$",
         "modes": [
             {
                 "john": "krb5pa-sha1",
                 "hashcat": 19900,
                 "extended": false,
-                "name": "Kerberos 5 AS-REQ Pre-Auth etype 18"
+                "name": "Kerberos 5 AS-REQ Pre-Auth etype 18",
+                "samples": [
+                    "$krb5pa$18$hashcat$HASHCATDOMAIN.COM$96c289009b05181bfd32062962740b1b1ce5f74eb12e0266cde74e81094661addab08c0c1a178882c91a0ed89ae4e0e68d2820b9cce69770",
+                    "$krb5pa$18$user1$EXAMPLE.COM$$2a0e68168d1eac344da458599c3a2b33ff326a061449fcbc242b212504e484d45903c6a16e2d593912f56c93883bf697b325193d62a8be9c",
+                    "$krb5pa$18$aduser$AD.EXAMPLE.COM$$64dfeee04be2b2e0423814e0df4d0f960885aca4efffe6cb5694c4d34690406071c4968abd2c153ee42d258c5e09a41269bbcd7799f478d3",
+                    "$krb5pa$18$aduser$AD.EXAMPLE.COM$AD.EXAMPLE.COMaduser$f94f755a8b4493d925094a4eb1cec630ac40411a14c9733a853516fe426637d9daefdedc0567e2bb5a83d4f89a0ad1a4b178662b6106c0ff"
+                ]
             }
         ]
     },
     {
-        "regex": "^\\$krb5db\\$17\\$[^$]{1,512}\\$[^$]{1,512}(?:\\$[^$]{1,512})?\\$[a-f0-9]{32}$",
+        "regex": "^\\$krb5db\\$17\\$[^$]{1,512}\\$[^$]{1,512}(?:\\$[^$]*)?\\$[a-f0-9]{32}$",
         "modes": [
             {
                 "john": null,
@@ -2523,6 +2578,21 @@
                 "name": "Kerberos 5 DB etype 17",
                 "samples": [
                     "$krb5db$17$test$TEST.LOCAL$1c41586d6c060071e08186ee214e725e"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb17\\$[^$]{1,512}\\$[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": "krb5-17",
+                "hashcat": null,
+                "extended": false,
+                "name": "Kerberos 5 DB etype 17",
+                "samples": [
+                    "$krb17$TEST.LOCALtest$6fb8b78e20ad3df6591cabb9cacf4594",
+                    "$krb17$TEST.LOCALtest$b7dc1cf2b403cf5f27ea9b2ea526dc5a"
                 ]
             }
         ]
@@ -2537,6 +2607,37 @@
                 "name": "Kerberos 5 DB etype 18",
                 "samples": [
                     "$krb5db$18$test$TEST.LOCAL$266b5a53a6d663c3f69174f3309acada8e467c097c7973699f86286a6cf1a6c7"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb18\\$[^$]{1,512}\\$[a-f0-9]{64}$",
+        "modes": [
+            {
+                "john": "krb5-18",
+                "hashcat": null,
+                "extended": false,
+                "name": "Kerberos 5 DB etype 18",
+                "samples": [
+                    "$krb18$OLYMPE.OLtest$214bb89cf5b8330112d52189ab05d9d05b03b5a961fe6d06203335ad5f339b26"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$krb3\\$[^$]{1,512}\\$[a-f0-9]{16}$",
+        "modes": [
+            {
+                "john": "krb5-3",
+                "hashcat": null,
+                "extended": false,
+                "name": "Kerberos 5 DB etype 3",
+                "samples": [
+                    "$krb3$INTERNAL.CORP1user3$eafdc79b7620584a",
+                    "$krb3$EXAMPLE.COMlulu$25bfb33132c11346",
+                    "$krb3$EXAMPLE.COMluluaaaa$97076894ae025738",
+                    "$krb3$EXAMPLE.COMluluaaaa$79850e6e9e5e92d0"
                 ]
             }
         ]
@@ -3000,7 +3101,7 @@
         ]
     },
     {
-        "regex": "^SCRYPT:[0-9]{1,}:[0-9]{1}:[0-9]{1}:[a-z0-9:\\/+=]{1,}$",
+        "regex": "^SCRYPT:[0-9]+:[0-9]{1}:[0-9]{1}:[a-z0-9:\\/+=]+$",
         "modes": [
             {
                 "john": null,
