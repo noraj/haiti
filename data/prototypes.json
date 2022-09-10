@@ -3094,17 +3094,6 @@
         ]
     },
     {
-        "regex": "^md5[a-f0-9]{32}$",
-        "modes": [
-            {
-                "john": null,
-                "hashcat": null,
-                "extended": false,
-                "name": "PostgreSQL MD5"
-            }
-        ]
-    },
-    {
         "regex": "^\\([a-z0-9\\/+]{49}\\)$",
         "modes": [
             {
@@ -3347,7 +3336,7 @@
                 "john": "postgres",
                 "hashcat": 11100,
                 "extended": false,
-                "name": "PostgreSQL Challenge-Response Authentication (MD5)"
+                "name": "PostgreSQL CRAM (MD5)"
             }
         ]
     },
