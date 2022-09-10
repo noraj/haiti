@@ -1,6 +1,8 @@
 ## [1.4.0 - Unreleased]
 
-- Enhancements:
+- **Additions**:
+  - AzureAD [#93][#93]
+- **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
     - Match variants with optional fields
@@ -13,20 +15,21 @@
     - Add samples
     - Add HC codes
     - Add several sub-variants
-- CLI:
+- **CLI**:
   - **Now can read hash from STDIN**
   - **New command to display hash samples**
-- Lib:
+- **Lib**:
   - **New class method to find hash samples**
-- Chore:
+- **Chore**:
   - Fix github action ruby workflow
-- Install:
+- **Install**:
   - Can now be installed on Debian with a `.deb`
   - Can now be installed on Void Linux
-- Documentation:
+- **Documentation**:
   - Comparison to houndsniff
 
 [#118]:https://github.com/noraj/haiti/issues/118
+[#93]:https://github.com/noraj/haiti/issues/93
 
 ## [1.3.0]
 
