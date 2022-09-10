@@ -25,6 +25,8 @@
   - KeePass 2 AES / without keyfile [#126][#126]
   - Keepass 2 AES / with keyfile [#126][#126]
   - KeePass 2 ChaCha20 (KDBX 3) / without keyfile [#126][#126]
+  - Kerberos 5 DB etype 17 [#126][#126]
+  - Kerberos 5 DB etype 18 [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
