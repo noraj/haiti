@@ -2,6 +2,7 @@
 
 - **Additions**:
   - AzureAD [#93][#93]
+  - HTTP Digest access authentication [#94][#94]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
@@ -30,6 +31,7 @@
 
 [#118]:https://github.com/noraj/haiti/issues/118
 [#93]:https://github.com/noraj/haiti/issues/93
+[#94]:https://github.com/noraj/haiti/issues/94
 
 ## [1.3.0]
 
