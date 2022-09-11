@@ -636,6 +636,20 @@
         ]
     },
     {
+        "regex": "^[a-f0-9]{32}(?::.{1,32})?$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 12,
+                "extended": true,
+                "name": "PostgreSQL",
+                "samples": [
+                    "93a8cf6a7d43e3b5bcd2dc6abb3e02c6:27032153220030464358344758762807"
+                ]
+            }
+        ]
+    },
+    {
         "regex": "^[a-f0-9]{32}:.{56}$",
         "modes": [
             {
