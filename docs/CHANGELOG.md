@@ -45,6 +45,7 @@
     - Add several sub-variants
   - many Kerberos 5 types:
     - Add samples
+  - Hide some uncommon hash types (not removed but set as extended)
 - **CLI**:
   - **Now can read hash from STDIN**
   - **New command to display hash samples**

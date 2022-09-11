@@ -360,7 +360,7 @@
             {
                 "john": null,
                 "hashcat": 2600,
-                "extended": false,
+                "extended": true,
                 "name": "Double MD5"
             },
             {
@@ -378,31 +378,31 @@
             {
                 "john": "dynamic_160",
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Haval-128 (3 rounds)"
             },
             {
                 "john": "dynamic_180",
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Haval-128 (5 rounds)"
             },
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Tiger-128"
             },
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-256(128)"
             },
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-512(128)"
             },
             {
@@ -618,7 +618,7 @@
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "MD6-128",
                 "samples": [
                     "8cd9a30bfde990878c06be4a6111f726"
@@ -974,7 +974,7 @@
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Tiger-160"
             },
             {
@@ -1435,19 +1435,19 @@
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-256(224)"
             },
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-512(224)"
             },
             {
                 "john": "dynamic_330",
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-224"
             },
             {
@@ -1635,7 +1635,7 @@
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-512(256)"
             },
             {
@@ -1756,7 +1756,7 @@
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "SAM(LM_Hash:NT_Hash)"
             }
         ]
@@ -1861,13 +1861,13 @@
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-512(384)"
             },
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-1024(384)"
             },
             {
@@ -2028,7 +2028,7 @@
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-1024(512)"
             },
             {
@@ -2206,7 +2206,7 @@
             {
                 "john": null,
                 "hashcat": null,
-                "extended": false,
+                "extended": true,
                 "name": "Skein-1024"
             }
         ]
