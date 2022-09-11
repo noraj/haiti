@@ -64,6 +64,7 @@
   - Can now be installed on Void Linux
 - **Documentation**:
   - Comparison to houndsniff
+  - Add some legal terms
 
 [#118]:https://github.com/noraj/haiti/issues/118
 [#93]:https://github.com/noraj/haiti/issues/93

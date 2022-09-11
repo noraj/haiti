@@ -12,4 +12,5 @@
 
 - [Why?](why.md)
 - [About](about.md)
+- [legal](legal.md)
 - [Changelog](CHANGELOG.md)
