@@ -4744,5 +4744,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^SCRAM-SHA-256\\$\\d{1,7}:(?=[^:$]{1,88}\\$)(?:[a-z0-9+\/]{4})*(?:|(?:[a-z0-9+\/]{3}=)|(?:[a-z0-9+\/]{2}==)|(?:[a-z0-9+\/]{1}===))\\$(?=[^:]{44}:)(?:[a-z0-9+\/]{4})*(?:|(?:[a-z0-9+\/]{3}=)|(?:[a-z0-9+\/]{2}==)|(?:[a-z0-9+\/]{1}===)):(?=[^:]{44})(?:[a-z0-9+\/]{4})*(?:|(?:[a-z0-9+\/]{3}=)|(?:[a-z0-9+\/]{2}==)|(?:[a-z0-9+\/]{1}===))$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 28600,
+                "extended": false,
+                "name": "PostgreSQL SCRAM-SHA-256",
+                "samples": [
+                    "SCRAM-SHA-256$4096:IKfxzJ8Nq4PkLJCfgKcPmA==$iRw3qwTp18uaBnsTOEExbtgWdKeBMbSSnZvqD4sdqLQ=:hPciC1CcnBna3szR8Mf3MVc8t0W7QPbIHoMMrh4zRV0="
+                ]
+            }
+        ]
     }
 ]
