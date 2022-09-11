@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2020-2020 Alexandre ZANNI
+Copyright (c) 2020-2022 Alexandre ZANNI (independent)
 Copyright (c) 2019-2020 Alexandre ZANNI at Orange Cyberdefense
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
