@@ -32,6 +32,7 @@
   - Kerberos 4 TGT
   - PostgreSQL [#126][#126]
   - PostgreSQL SCRAM-SHA-256 [#126][#126]
+  - Radmin3 [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
