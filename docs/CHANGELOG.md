@@ -44,6 +44,9 @@
     - Add samples
     - Add HC codes
     - Add several sub-variants
+  - PostgreSQL CRAM (MD5): [#126][#126]
+    - Add samples
+    - Enhance regexp
   - many Kerberos 5 types:
     - Add samples
   - Hide some uncommon hash types (not removed but set as extended)

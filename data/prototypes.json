@@ -3344,13 +3344,19 @@
         ]
     },
     {
-        "regex": "^\\$postgres\\$.[^\\*]+[*:][a-f0-9]{1,32}[*:][a-f0-9]{32}$",
+        "regex": "^\\$postgres?\\$(?:[^*]{0,32})?\\*[a-f0-9]{8}\\*[a-f0-9]{32}$",
         "modes": [
             {
                 "john": "postgres",
                 "hashcat": 11100,
                 "extended": false,
-                "name": "PostgreSQL CRAM (MD5)"
+                "name": "PostgreSQL CRAM (MD5)",
+                "samples": [
+                    "$postgres$postgres*74402844*4e7fabaaf34d780c4a5822d28ee1c83e",
+                    "$postgres$postgres*f063f05d*1d586cc8d137e5f1733f234d224393e8",
+                    "$postgre$postgres*684697c8*bf2a64f35feba7bf1b633d60393c1356",
+                    "$postgres$Twelve_chars*55393156*c01df9affa7573ef32ec143759f3e005"
+                ]
             }
         ]
     },
