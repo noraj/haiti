@@ -1473,7 +1473,7 @@
         ]
     },
     {
-        "regex": "^(\\$2[axy]|\\$2)\\$\\d{2}\\$[a-z0-9\\/.]{53}$",
+        "regex": "^(\\$2[abxy]|\\$2)\\$\\d{2}\\$[a-z0-9\\/.]{53}$",
         "modes": [
             {
                 "john": "bcrypt",
@@ -1509,6 +1509,15 @@
                 "name": "bcrypt(sha1($pass)) / bcryptsha1",
                 "samples": [
                     "$2a$05$Uo385Fa0g86uUXHwZxB90.qMMdRFExaXePGka4WGFv.86I45AEjmO"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 28400,
+                "extended": true,
+                "name": "bcrypt(sha512($pass)) / bcryptsha512",
+                "samples": [
+                    "$2a$12$KhivLhCuLhSyMBOxLxCyLu78x4z2X/EJdZNfS3Gy36fvRt56P2jbS"
                 ]
             }
         ]
