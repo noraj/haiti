@@ -4786,5 +4786,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^[a-f0-9]{32}[a-f0-9]{32}(?=[^$]{108}$)(?:[a-z0-9+\/]{4})*(?:|(?:[a-z0-9+\/]{3}=)|(?:[a-z0-9+\/]{2}==)|(?:[a-z0-9+\/]{1}===))$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 29600,
+                "extended": false,
+                "name": "Terra Station Wallet (AES256-CBC(PBKDF2($pass)))",
+                "samples": [
+                    "67445496c838e96c1424a8dae4b146f0fc247c8c34ef33feffeb1e4412018512wZGtBMeN84XZE2LoOKwTGvA4Ee4m7PR1lDGIdWUV6OSUZKRiKFx9tlrnZLt8r8OfOzbwUS2a2Uo+nrrP6F85fh4eHstwPJw0KwzHWB8br58="
+                ]
+            }
+        ]
     }
 ]

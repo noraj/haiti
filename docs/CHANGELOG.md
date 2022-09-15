@@ -34,6 +34,7 @@
   - PostgreSQL SCRAM-SHA-256 [#126][#126]
   - Radmin3 [#126][#126]
   - Teamspeak 3 (channel hash) [#126][#126]
+  - Terra Station Wallet [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
