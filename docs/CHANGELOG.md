@@ -38,6 +38,7 @@
   - bcrypt(sha512($pass)) / bcryptsha512 [#126][#126]
   - md5(sha1($pass).$salt) [#126][#126]
   - sha1($salt.sha1(utf16le($username).':'.utf16le($pass))) [#126][#126]
+  - sha256($salt.sha256_raw($pass)) [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
@@ -58,7 +59,7 @@
     - Add samples
   - sha1 / RIPEMD-160
     - Enhance regexp
-  - sha256(sha256_raw($pass))
+  - sha256(sha256_raw($pass)) / sha256($salt.sha256($pass)) / sha256(sha256($pass).$salt)
     - add HC
     - add sample
   - Hide some uncommon hash types (not removed but set as extended)

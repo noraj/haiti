@@ -1743,15 +1743,30 @@
             },
             {
                 "john": "dynamic_65",
-                "hashcat": null,
+                "hashcat": 20710,
                 "extended": true,
-                "name": "sha256(sha256($pass).$salt)"
+                "name": "sha256(sha256($pass).$salt)",
+                "samples": [
+                    "bfede293ecf6539211a7305ea218b9f3f608953130405cda9eaba6fb6250f824:7218532375810603"
+                ]
             },
             {
                 "john": "dynamic_66",
-                "hashcat": null,
+                "hashcat": 20720,
                 "extended": true,
-                "name": "sha256($salt.sha256($pass))"
+                "name": "sha256($salt.sha256($pass))",
+                "samples": [
+                    "bae9edada8358fcebcd811f7d362f46277fb9d488379869fba65d79701d48b8b:869dc2ed80187919"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 21420,
+                "extended": true,
+                "name": "sha256($salt.sha256_raw($pass))",
+                "samples": [
+                    "5934ea4d670c13a71155faba42056b2525f71bdc9215d31108990c11bf3d98e3:9269771356270099311432765354522635185291064175409115041569"
+                ]
             },
             {
                 "john": "dynamic_67",
