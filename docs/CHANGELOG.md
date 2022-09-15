@@ -58,6 +58,9 @@
     - Add samples
   - sha1 / RIPEMD-160
     - Enhance regexp
+  - sha256(sha256_raw($pass))
+    - add HC
+    - add sample
   - Hide some uncommon hash types (not removed but set as extended)
 - **CLI**:
   - **Now can read hash from STDIN**

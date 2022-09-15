@@ -1734,9 +1734,12 @@
             },
             {
                 "john": "dynamic_64",
-                "hashcat": null,
+                "hashcat": 21400,
                 "extended": true,
-                "name": "sha256(sha256_raw($pass))"
+                "name": "sha256(sha256_raw($pass))",
+                "samples": [
+                    "0cc1b58a543f372327aa0281e97ab56e345267ee46feabf7709515debb7ec43c"
+                ]
             },
             {
                 "john": "dynamic_65",
