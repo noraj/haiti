@@ -37,6 +37,7 @@
   - Terra Station Wallet [#126][#126]
   - bcrypt(sha512($pass)) / bcryptsha512 [#126][#126]
   - md5(sha1($pass).$salt) [#126][#126]
+  - sha1($salt.sha1(utf16le($username).':'.utf16le($pass))) [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
@@ -55,6 +56,8 @@
     - Enhance regexp
   - many Kerberos 5 types:
     - Add samples
+  - sha1 / RIPEMD-160
+    - Enhance regexp
   - Hide some uncommon hash types (not removed but set as extended)
 - **CLI**:
   - **Now can read hash from STDIN**

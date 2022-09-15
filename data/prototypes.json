@@ -962,7 +962,7 @@
         ]
     },
     {
-        "regex": "^[a-f0-9]{40}(:.+)?$",
+        "regex": "^[a-f0-9]{40}(:[^:]+)?$",
         "modes": [
             {
                 "john": "raw-sha1",
@@ -1165,7 +1165,7 @@
         ]
     },
     {
-        "regex": "^(\\$ripemd\\$)?[a-f0-9]{40}(:.+)?$",
+        "regex": "^(\\$ripemd\\$)?[a-f0-9]{40}(:[^:]+)?$",
         "modes": [
             {
                 "john": "ripemd-160",
@@ -1176,6 +1176,20 @@
                     "9c1185a5c5e9fc54612808977ee8f548b2258d31",
                     "$ripemd$9c1185a5c5e9fc54612808977ee8f548b2258d31",
                     "012cb9b334ec1aeb71a9c8ce85586082467f7eb6"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^[a-f0-9]{40}:[a-f0-9]+:[a-f0-9]+$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 29000,
+                "extended": true,
+                "name": "sha1($salt.sha1(utf16le($username).':'.utf16le($pass)))",
+                "samples": [
+                    "339b5eaa53f28516008e9ca710857d3a4785b6fc:8ca064ff42fcab5a8f0692544b8dd3d3054bd73fe9afaa08c6b6b310538cc9a7:757365726e616d65"
                 ]
             }
         ]
