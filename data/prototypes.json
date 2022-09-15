@@ -617,6 +617,15 @@
             },
             {
                 "john": null,
+                "hashcat": 4410,
+                "extended": true,
+                "name": "md5(sha1($pass).$salt)",
+                "samples": [
+                    "bc8319c0220bff8a0d7f5d703114a725:34659348756345251"
+                ]
+            },
+            {
+                "john": null,
                 "hashcat": null,
                 "extended": true,
                 "name": "MD6-128",

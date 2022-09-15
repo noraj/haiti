@@ -36,6 +36,7 @@
   - Teamspeak 3 (channel hash) [#126][#126]
   - Terra Station Wallet [#126][#126]
   - bcrypt(sha512($pass)) / bcryptsha512 [#126][#126]
+  - md5(sha1($pass).$salt) [#126][#126]
 - **Enhancements**:
   - 7-zip: [#118][#118]
     - Add samples
