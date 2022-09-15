@@ -4764,11 +4764,25 @@
         "modes": [
             {
                 "john": null,
-                "hashcat": null,
+                "hashcat": 29200,
                 "extended": false,
                 "name": "Radmin3",
                 "samples": [
                     "$radmin3$75007300650072006e0061006d006500*c63bf695069d564844c4849e7df6d41f1fbc5f3a7d8fe27c5f20545a238398fa*0062fb848c21d606baa0a91d7177daceb69ad2f6d090c2f1b3a654cfb417be66f739ae952f5c7c5170743459daf854a22684787b24f8725337b3c3bd1e0f2a6285768ceccca77f26c579d42a66372df7782b2eefccb028a0efb51a4257dd0804d05e0a83f611f2a0f10ffe920568cc7af1ec426f450ec99ade1f2a4905fd319f8c190c2db0b0e24627d635bc2b4a2c4c9ae956b1e02784c9ce958eb9883c60ba8ea2731dd0e515f492c44f39324e4027587c1330f14216e17f212eaec949273797ae74497782ee8b6f640dd2d124c59db8c37724c8a5a63bad005f8e491b459ff1b92f861ab6d99a2548cb8902b0840c7f20a108ede6bf9a60093053781216fe"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$teamspeak\\$3\\$(?=[^$]{28}\\$)(?:[a-z0-9+\/]{4})*(?:|(?:[a-z0-9+\/]{3}=)|(?:[a-z0-9+\/]{2}==)|(?:[a-z0-9+\/]{1}===))\\$(?=[^$]{152}$)(?:[a-z0-9+\/]{4})*(?:|(?:[a-z0-9+\/]{3}=)|(?:[a-z0-9+\/]{2}==)|(?:[a-z0-9+\/]{1}===))$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 28300,
+                "extended": false,
+                "name": "Teamspeak 3 (channel hash)",
+                "samples": [
+                    "$teamspeak$3$E0aV0IQ29EDyxRfkFoQflUGJ6zo=$mRgDUkNpd0IwUEcTJQBmE0NHYwdDEhFzQ0VgMRcFJUIRYnaHBwNXRZJwk2ZUaURzdXkVYiUROERmI0hYYGFYCDiIJCeIU3N5EhRVcZFnSIRCJlkUFkY4YFMDcheYeTl4RYZEdpKGJYhxAIQJEYGYEA=="
                 ]
             }
         ]
