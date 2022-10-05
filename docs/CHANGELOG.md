@@ -1,3 +1,7 @@
+## [unreleased]
+
+- Stop testing on Ruby 2.5 because Github Action (CI) has some issue with it.
+
 ## [1.4.0]
 
 - **Additions**:
