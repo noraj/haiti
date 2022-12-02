@@ -3,6 +3,7 @@
 - **Additions**:
   - scrypt Crypt
   - ScryptKDF
+  - yescrypt [#130][#130]
 - **Enhancements**:
   - scrypt:
     - Add samples
@@ -33,6 +34,8 @@
   - Comparison to HashData
 - **Chore**:
   - Stop testing on Ruby 2.5 because Github Action (CI) has some issue with it.
+
+[#130]:https://github.com/noraj/haiti/issues/130
 
 ## [1.4.0]
 

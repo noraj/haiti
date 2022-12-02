@@ -4935,5 +4935,21 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$y\\$[.\\/a-z0-9]+\\$[.\\/a-z0-9]{0,86}\\$[.\\/a-z0-9]{43}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "yescrypt",
+                "samples": [
+                    "$y$j9T$.9s2wZRY3hcP/udKIFher1$sIBIYsiMmFlXhKOO4ZDJDXo54byuq7a4xAD0k9jw2m4",
+                    "$y$j9T$o8MJgcu/zxjLLjo3pBk4A.$SPwoNr7I95/JHVKBeTnsu1mSC//M76vfmKc6mE6lSe2",
+                    "$y$j9T$F5Jx5fExrKuPp53xLKQ..1$X3DX6M94c7o.9agCG9G317fhZg9SqC.5i5rd.RhAtQ7"
+                ]
+            }
+        ]
     }
 ]
