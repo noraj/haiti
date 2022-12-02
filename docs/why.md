@@ -33,6 +33,7 @@ Tool                 | Maintained | Color | Ref. | Library | Lang | :hash: | :12
 [Name-That-Hash][5]  | ✅ (2021-now)  | ✅     | ✅    | ✅       | 🐍   | ✅ | 365
 [HashTag][6]         | ❌ (2013-2013) | ❌     | ❌    | ❌       | 🐍   | ⭕ | ~137
 [houndsniff][7]      | ✅ (2020-now)  | ✅     | ❌    | ❌       | 🇨   | ❌ | 51
+[HashData][8]        | ❌ (2012-2015) | ✅     | ❌    | ✅       | 💎   | ❌ | 93
 
 Legend:
 
@@ -55,3 +56,4 @@ Legend:
 [5]:https://github.com/HashPals/Name-That-Hash
 [6]:https://github.com/SmeegeSec/HashTag
 [7]:https://github.com/MichaelDim02/houndsniff
+[8]:https://github.com/sam-b/HashData
