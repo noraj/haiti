@@ -785,19 +785,32 @@
                 "john": "md5crypt",
                 "hashcat": 500,
                 "extended": false,
-                "name": "MD5 Crypt"
-            },
-            {
-                "john": "md5crypt",
-                "hashcat": 500,
-                "extended": false,
-                "name": "Cisco-IOS(MD5)"
+                "name": "MD5 Crypt",
+                "samples": [
+                    "$1$38652870$DUjsu4TTlTsOe/xxZ05uf/"
+                ]
             },
             {
                 "john": "md5crypt",
                 "hashcat": 500,
                 "extended": false,
                 "name": "FreeBSD MD5"
+            }
+        ]
+    },
+    {
+        "regex": "^\\$1\\$[a-z0-9\\/.]{4}\\$[a-z0-9\\/.]{22}(:.*)?$",
+        "modes": [
+
+            {
+                "john": "md5crypt",
+                "hashcat": 500,
+                "extended": false,
+                "name": "Cisco Type 5 (MD5)",
+                "samples": [
+                    "$1$VkQd$Vma3sR7B1LL.v5lgy1NYc/",
+                    "$1$SpMm$eALjeyED.WSZs0naLNv22/"
+                ]
             }
         ]
     },
@@ -1227,7 +1240,10 @@
                 "john": null,
                 "hashcat": 5700,
                 "extended": false,
-                "name": "Cisco-IOS(SHA-256)"
+                "name": "Cisco Type 4 (Raw SHA256)",
+                "samples": [
+                    "2btjjy78REtmYkkW0csHUbJZOstRXoWdX1mGrmmfeHI"
+                ]
             }
         ]
     },
