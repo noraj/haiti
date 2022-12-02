@@ -3407,10 +3407,16 @@
         "regex": "^(\\$cisco4\\$)?[a-z0-9\\/.]{43}$",
         "modes": [
             {
-                "john": "cisco4",
+                "john": "raw-sha256",
                 "hashcat": null,
                 "extended": false,
-                "name": "Cisco Type 4"
+                "name": "Cisco Type 4 (Raw SHA256)",
+                "samples": [
+                    "$cisco4$LcV6aBcc/53FoCJjXQMd7rBUDEpeevrK8V5jQVoJEhU",
+                    "$cisco4$OsOmQzwozC4ROs/CzpczJoShdCeW9lp7k/tGrPS5Kog",
+                    "$cisco4$d7kgbEk.P6mpKdduC66fUy1BF0MImo3eyJ9uI/JbMRk",
+                    "$cisco4$hUsuWZSE8dZERUBYNwRK8Aa8VxEGIHsuZFUCjNj2.Ac"
+                ]
             }
         ]
     },

@@ -13,6 +13,10 @@
     - Add samples
     - Enhance name
     - Fix JtR ref.
+  - Cisco Type 4 (Raw SHA256)
+    - Add samples
+    - Enhance name
+    - Fix JtR ref.
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:
