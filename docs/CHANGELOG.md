@@ -2,6 +2,7 @@
 
 - **Additions**:
   - scrypt Crypt
+  - ScryptKDF
 - **Enhancements**:
   - scrypt:
     - Add samples

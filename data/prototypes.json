@@ -3225,6 +3225,22 @@
         ]
     },
     {
+        "regex": "^\\$ScryptKDF\\.pm\\$\\d{1,5}\\*\\d\\*\\d\\*[a-z0-9:\\/+=]+\\*[a-z0-9:\\/+=]+$",
+        "modes": [
+            {
+                "john": "scrypt",
+                "hashcat": null,
+                "extended": false,
+                "name": "ScryptKDF",
+                "samples": [
+                    "$ScryptKDF.pm$16384*8*1*bjZkemVmZ3lWVi42*cmBflTPsqGIbg9ZIJRTQdbic8OCUH+904TFmNPBkuEA=",
+                    "$ScryptKDF.pm$16384*8*1*VlVYUzBhQmlNbk5J*bJhm6VUS2UQRwMRqLTvSsljDeq193Ge4aqQDtb94bKg=",
+                    "$ScryptKDF.pm$16384*8*1*VHRuaXZOZ05INWJs*JjrOzA8pdPhLvLh8sY64fLLaAjFUwYCXMmS16NXcn0BhlHpZJ3J2jcozCDM7t+sfjkgQ894R+f+ldVWM5atlkA=="
+                ]
+            }
+        ]
+    },
+    {
         "regex": "^\\$8\\$[a-z0-9\\/.]{14}\\$[a-z0-9\\/.]{43}$",
         "modes": [
             {
