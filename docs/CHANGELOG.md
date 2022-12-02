@@ -43,6 +43,8 @@
     - Add samples
   - NTHash (FreeBSD Variant)
     - Add samples
+  - RACF
+    - Add samples
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:

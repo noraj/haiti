@@ -2916,7 +2916,10 @@
                 "john": "racf",
                 "hashcat": 8500,
                 "extended": false,
-                "name": "RACF"
+                "name": "RACF",
+                "samples": [
+                    "$racf$*USER*FC2577C6EBE6265B"
+                ]
             }
         ]
     },
