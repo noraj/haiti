@@ -4951,5 +4951,20 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "^\\$gy\\$[.\\/a-z0-9]+\\$[.\\/a-z0-9]{0,86}\\$[.\\/a-z0-9]{43}$",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "gost-yescrypt",
+                "samples": [
+                    "$gy$jCT$HM87v.7RwpQLba8fDjNSk1$VgqS7k2OZWhFbAJVBye2vaA7ex/1VtU3a5fmL8Wv/26",
+                    "$gy$j9T$.......$.xOKFTJExrsAB12xqOm7X4K3mMPTwx0aMN1dx5PQnQ5"
+                ]
+            }
+        ]
     }
 ]

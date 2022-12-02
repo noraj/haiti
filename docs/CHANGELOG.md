@@ -4,6 +4,7 @@
   - scrypt Crypt
   - ScryptKDF
   - yescrypt [#130][#130]
+  - gost-yescrypt [#130][#130]
 - **Enhancements**:
   - scrypt:
     - Add samples
