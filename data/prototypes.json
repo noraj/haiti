@@ -3175,7 +3175,10 @@
                 "john": null,
                 "hashcat": 8900,
                 "extended": false,
-                "name": "scrypt"
+                "name": "scrypt",
+                "samples": [
+                    "SCRYPT:1024:1:1:MDIwMzMwNTQwNDQyNQ==:5FW+zWivLxgCWj7qLiQbeC8zaNQ+qdO0NUinvqyFcfo="
+                ]
             }
         ]
     },
