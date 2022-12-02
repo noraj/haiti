@@ -9,6 +9,10 @@
     - Add samples
     - Enhance name
     - Fix JtR ref.
+  - Cisco Type 8 (PBKDF2-SHA256)
+    - Add samples
+    - Enhance name
+    - Fix JtR ref.
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:

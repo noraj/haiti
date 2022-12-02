@@ -3203,10 +3203,16 @@
         "regex": "^\\$8\\$[a-z0-9\\/.]{14}\\$[a-z0-9\\/.]{43}$",
         "modes": [
             {
-                "john": "cisco8",
+                "john": "pbkdf2-hmac-sha256",
                 "hashcat": 9200,
                 "extended": false,
-                "name": "Cisco Type 8"
+                "name": "Cisco Type 8 (PBKDF2-SHA256)",
+                "samples": [
+                    "$8$TnGX/fE4KGHOVU$pEhnEvxrvaynpi8j4f.EMHr6M.FzU8xnZnBr/tJdFWk",
+                    "$8$dsYGNam3K1SIJO$7nv/35M/qr6t.dVc7UY9zrJDWRVqncHub1PE9UlMQFs",
+                    "$8$6NHinlEjiwvb5J$RjC.H.ydVb34wDLqJvfjyG1ubxYKpfXqv.Ry9mtrNBY",
+                    "$8$lGO8juTOQLPCHw$cBv2WEaFCLUA24Z48CKUGixIywyGFP78r/slQcMXr3M"
+                ]
             }
         ]
     },
