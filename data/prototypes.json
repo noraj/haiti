@@ -3214,10 +3214,16 @@
         "regex": "^\\$9\\$[a-z0-9\\/.]{14}\\$[a-z0-9\\/.]{43}$",
         "modes": [
             {
-                "john": "cisco9",
+                "john": "scrypt",
                 "hashcat": 9300,
                 "extended": false,
-                "name": "Cisco Type 9"
+                "name": "Cisco Type 9 (scrypt)",
+                "samples": [
+                    "$9$2MJBozw/9R3UsU$2lFhcKvpghcyw8deP25GOfyZaagyUOGBymkryvOdfo6",
+                    "$9$nhEmQVczB7dqsO$X.HsgL6x1il0RxkOSSvyQYwucySCt7qFm4v7pqCxkKM",
+                    "$9$cvWdfQlRRDKq/U$VFTPha5VHTCbSgSUAo.nPoh50ZiXOw1zmljEjXkaq1g",
+                    "$9$X9fA8mypebLFVj$Klp6X9hxNhkns0kwUIinvLRSIgWOvCwDhVTZqjsycyU"
+                ]
             }
         ]
     },

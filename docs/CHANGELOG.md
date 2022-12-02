@@ -5,6 +5,10 @@
 - **Enhancements**:
   - scrypt:
     - Add samples
+  - Cisco Type 9 (scrypt)
+    - Add samples
+    - Enhance name
+    - Fix JtR ref.
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:
