@@ -5,6 +5,7 @@
   - ScryptKDF
   - yescrypt [#130][#130]
   - gost-yescrypt [#130][#130]
+  - OpenSSH private keys [#131][#131]
 - **Enhancements**:
   - scrypt:
     - Add samples
@@ -48,6 +49,7 @@
   - Stop testing on Ruby 2.5 because Github Action (CI) has some issue with it.
 
 [#130]:https://github.com/noraj/haiti/issues/130
+[#131]:https://github.com/noraj/haiti/issues/131
 
 ## [1.4.0]
 
