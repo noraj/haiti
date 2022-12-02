@@ -20,6 +20,12 @@
   - Cisco Type 7 (XOR)
     - Add samples
     - Enhance name
+  - Cisco Type 5 (MD5)
+    - Add samples
+    - Enhance name
+    - Fix regexp
+  - Cisco-ASA (MD5)
+    - Add samples
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:

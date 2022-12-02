@@ -2860,7 +2860,10 @@
                 "john": "asa-md5",
                 "hashcat": 2410,
                 "extended": false,
-                "name": "Cisco-ASA(MD5)"
+                "name": "Cisco-ASA (MD5)",
+                "samples": [
+                    "02dMBMYkTdC5Ziyp:36"
+                ]
             },
             {
                 "john": "dynamic_20",
