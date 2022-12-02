@@ -288,7 +288,8 @@
                 "samples": [
                     "_GW..8841inaTltazRsQ",
                     "_J9..XXXXsqM/YSSP..Y",
-                    "_J9..SDSD5YGyRCr4W4c"
+                    "_J9..SDSD5YGyRCr4W4c",
+                    "_EQ0.jzhSVeUyoSqLupI"
                 ]
             }
         ]
@@ -1397,9 +1398,10 @@
                 "john": "sunmd5",
                 "hashcat": 3300,
                 "extended": false,
-                "name": "Sun MD5 Crypt",
+                "name": "Sun / Solaris MD5 Crypt",
                 "samples": [
-                    "$md5$rounds=904$iPPKEBnEkp3JV8uX$0L6m7rOFTVFn.SGqo2M9W1"
+                    "$md5$rounds=904$iPPKEBnEkp3JV8uX$0L6m7rOFTVFn.SGqo2M9W1",
+                    "$md5,rounds=5000$GUBv0xjJ$$mSwgIswdjlTY0YxV7HBVm0"
                 ]
             }
         ]
@@ -2348,7 +2350,10 @@
                 "john": "sha256crypt",
                 "hashcat": 7400,
                 "extended": false,
-                "name": "SHA-256 Crypt"
+                "name": "SHA-256 Crypt",
+                "samples": [
+                    "$5$9ks3nNEqv31FX.F$gdEoLFsCRsn/WRN3wxUnzfeZLoooVlzeF4WjLomTRFD"
+                ]
             }
         ]
     },
@@ -2370,7 +2375,10 @@
                 "john": "sha512crypt",
                 "hashcat": 1800,
                 "extended": false,
-                "name": "SHA-512 Crypt"
+                "name": "SHA-512 Crypt",
+                "samples": [
+                    "$6$qoE2letU$wWPRl.PVczjzeMVgjiA8LLy2nOyZbf7Amj3qLIL978o18gbMySdKZ7uepq9tmMQXxyTIrS12Pln.2Q/6Xscao0"
+                ]
             }
         ]
     },
@@ -2919,7 +2927,10 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "NTHash(FreeBSD Variant)"
+                "name": "NTHash (FreeBSD Variant)",
+                "samples": [
+                    "$3$$8846f7eaee8fb117ad06bdd830b7586c"
+                ]
             }
         ]
     },
@@ -2933,7 +2944,8 @@
                 "name": "SHA-1 Crypt (Juniper/NetBSD)",
                 "samples": [
                     "$sha1$20000$75552156$HhYMDdaEHiK3eMIzTldOFPnw.s2Q",
-                    "$sha1$64000$wnUR8T1U$azjCegpOIk0FjE61qzGWhdkpuMRL"
+                    "$sha1$64000$wnUR8T1U$azjCegpOIk0FjE61qzGWhdkpuMRL",
+                    "$sha1$40000$jtNX3nZ2$hBNaIXkt4wBI2o5rsi8KejSjNqIq"
                 ]
             }
         ]

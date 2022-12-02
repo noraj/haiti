@@ -31,6 +31,17 @@
     - Add samples
   - Cisco-PIX (MD5)
     - Add samples
+  - BSDi Crypt
+    - Add samples
+  - Sun / Solaris MD5 Crypt
+    - Add samples
+    - Enhance name
+  - SHA-256 Crypt
+    - Add samples
+  - SHA-512 Crypt
+    - Add samples
+  - NTHash (FreeBSD Variant)
+    - Add samples
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:
