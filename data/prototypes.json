@@ -250,7 +250,13 @@
                 "john": "pix-md5",
                 "hashcat": 2400,
                 "extended": false,
-                "name": "Cisco-PIX(MD5)"
+                "name": "Cisco-PIX (MD5)",
+                "samples": [
+                    "dRRVnUmUHXOTt9nk",
+                    "2KFQnbNIdI.2KYOU",
+                    "TRPEas6f/aa6JSPL",
+                    ".7nfVBEIEu4KbF/1"
+                ]
             },
             {
                 "john": "dynamic_19",

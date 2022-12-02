@@ -26,6 +26,8 @@
     - Fix regexp
   - Cisco-ASA (MD5)
     - Add samples
+  - Cisco-PIX (MD5)
+    - Add samples
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:
