@@ -3388,7 +3388,13 @@
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Cisco Type 7"
+                "name": "Cisco Type 7 (XOR)",
+                "samples": [
+                    "046E1803362E595C260E0B240619050A2D",
+                    "062B0A33",
+                    "095C4F1A0A1218000F",
+                    "0309540539022E58710D1C3A0713181F01"
+                ]
             }
         ]
     },

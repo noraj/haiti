@@ -17,6 +17,9 @@
     - Add samples
     - Enhance name
     - Fix JtR ref.
+  - Cisco Type 7 (XOR)
+    - Add samples
+    - Enhance name
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:
