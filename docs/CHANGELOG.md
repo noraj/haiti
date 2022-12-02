@@ -1,5 +1,7 @@
 ## [unreleased]
 
+- **Additions**:
+  - scrypt Crypt
 - **Enhancements**:
   - scrypt:
     - Add samples

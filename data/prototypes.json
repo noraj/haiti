@@ -3183,6 +3183,23 @@
         ]
     },
     {
+        "regex": "^\\$7\\$[.\\/\\\\A-Za-z0-9]{11,97}\\$[.\\/A-Za-z0-9]{43}$",
+        "modes": [
+            {
+                "john": "scrypt",
+                "hashcat": null,
+                "extended": false,
+                "name": "scrypt Crypt",
+                "samples": [
+                    "$7$C6..../....SodiumChloride$kBGj9fHznVYFQMEn/qDCfrDevf9YDtcDdKvEqHJLV8D",
+                    "$7$C6..../....\\x01\\x09\\x0a\\x0d\\x20\\x7f\\x80\\xff$b7cKqzsQk7txdc9As1WZBHjUPNWQWJW8A.UUUTA5eD1",
+                    "$7$2/..../....$rNxJWVHNv/mCNcgE/f6/L4zO6Fos5c2uTzhyzoisI62",
+                    "$7$86....E....NaCl$xffjQo7Bm/.SKRS4B2EuynbOLjAmXU5AbDbRXhoBl64"
+                ]
+            }
+        ]
+    },
+    {
         "regex": "^\\$8\\$[a-z0-9\\/.]{14}\\$[a-z0-9\\/.]{43}$",
         "modes": [
             {
