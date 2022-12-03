@@ -6,6 +6,7 @@
   - yescrypt [#130][#130]
   - gost-yescrypt [#130][#130]
   - OpenSSH private keys [#131][#131]
+  - BitLocker [#134][#134]
 - **Enhancements**:
   - scrypt:
     - Add samples
@@ -60,6 +61,7 @@
 [#130]:https://github.com/noraj/haiti/issues/130
 [#131]:https://github.com/noraj/haiti/issues/131
 [#133]:https://github.com/noraj/haiti/issues/133
+[#134]:https://github.com/noraj/haiti/issues/134
 
 ## [1.4.0]
 
