@@ -1,4 +1,4 @@
-## [unreleased]
+## [1.4.1]
 
 - **Additions**:
   - scrypt Crypt
