@@ -9,6 +9,7 @@
   - BitLocker [#134][#134]
   - Open Document Format (ODF) 1.2 (SHA-256, AES) [#135][#135]
   - Open Document Format (ODF) 1.1 (SHA-1, Blowfish) [#135][#135]
+  - SIP digest authentication (MD5) [#136][#136]
 - **Enhancements**:
   - scrypt:
     - Add samples
@@ -71,6 +72,7 @@
 [#133]:https://github.com/noraj/haiti/issues/133
 [#134]:https://github.com/noraj/haiti/issues/134
 [#135]:https://github.com/noraj/haiti/issues/135
+[#136]:https://github.com/noraj/haiti/issues/136
 
 ## [1.4.0]
 
