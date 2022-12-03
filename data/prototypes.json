@@ -2905,7 +2905,10 @@
                 "john": null,
                 "hashcat": 8300,
                 "extended": false,
-                "name": "DNSSEC(NSEC3)"
+                "name": "DNSSEC (NSEC3)",
+                "samples": [
+                    "7b5n74kq8r441blc2c5qbbat19baj79r:.lvdsiqfj.net:33164473:1"
+                ]
             }
         ]
     },

@@ -45,6 +45,8 @@
     - Add samples
   - RACF
     - Add samples
+  - DNSSEC (NSEC3)
+    - Add samples
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:
