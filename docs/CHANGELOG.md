@@ -55,6 +55,8 @@
     - Fix regexp
     - Add several variants
     - Add JtR support
+  - Woltlab Burning Board 3.x
+    - Add samples
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:

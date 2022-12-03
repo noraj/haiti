@@ -2841,7 +2841,10 @@
                 "john": "wbb3",
                 "hashcat": 8400,
                 "extended": false,
-                "name": "Woltlab Burning Board 3.x"
+                "name": "Woltlab Burning Board 3.x",
+                "samples": [
+                    "8084df19a6dc81e2597d051c3d8b400787e2d5a9:6755045315424852185115352765375338838643"
+                ]
             }
         ]
     },
