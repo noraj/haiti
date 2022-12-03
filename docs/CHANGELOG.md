@@ -57,6 +57,8 @@
     - Add JtR support
   - Woltlab Burning Board 3.x
     - Add samples
+  - Radmin 2
+    - Add samples
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:

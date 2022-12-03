@@ -3459,7 +3459,10 @@
                 "john": "radmin",
                 "hashcat": 9900,
                 "extended": false,
-                "name": "RAdmin v2.x"
+                "name": "RAdmin v2.x",
+                "samples": [
+                    "22527bee5c29ce95373c4e0f359f079b"
+                ]
             }
         ]
     },
