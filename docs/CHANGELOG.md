@@ -7,6 +7,8 @@
   - gost-yescrypt [#130][#130]
   - OpenSSH private keys [#131][#131]
   - BitLocker [#134][#134]
+  - Open Document Format (ODF) 1.2 (SHA-256, AES) [#135][#135]
+  - Open Document Format (ODF) 1.1 (SHA-1, Blowfish) [#135][#135]
 - **Enhancements**:
   - scrypt:
     - Add samples
@@ -62,6 +64,7 @@
 [#131]:https://github.com/noraj/haiti/issues/131
 [#133]:https://github.com/noraj/haiti/issues/133
 [#134]:https://github.com/noraj/haiti/issues/134
+[#135]:https://github.com/noraj/haiti/issues/135
 
 ## [1.4.0]
 
