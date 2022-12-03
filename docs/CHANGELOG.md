@@ -59,6 +59,8 @@
     - Add samples
   - Radmin 2
     - Add samples
+  - SipHash
+    - Add samples
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:

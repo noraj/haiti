@@ -3495,7 +3495,10 @@
                 "john": null,
                 "hashcat": 10100,
                 "extended": false,
-                "name": "SipHash"
+                "name": "SipHash",
+                "samples": [
+                    "ad61d78c06037cd9:2:4:81533218127174468417660201434054"
+                ]
             }
         ]
     },
