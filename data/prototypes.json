@@ -2857,13 +2857,66 @@
         ]
     },
     {
-        "regex": "^[a-f0-9]{32}:\\d+:[a-z0-9_.+\\-]+@[a-z0-9\\-]+\\.[a-z0-9\\-.]+$",
+        "regex": "^[a-f0-9]{32,64}:\\d{1,6}:[a-z0-9_.+\\-]+@[a-z0-9\\-]+\\.[a-z0-9\\-.]+(?::[a-f0-9]{32})?$",
         "modes": [
             {
                 "john": null,
                 "hashcat": 6800,
                 "extended": false,
-                "name": "Lastpass"
+                "name": "LastPass / LastPass sniffed",
+                "samples": [
+                    "a2d1f7b7a1862d0d4a52644e72d59df5:500:lp@trash-mail.com",
+                    "02eb97e869e0ddc7dc760fc633b4b54d:100100:pmix@trash-mail.com:9b071db7b8e265d4cadd3eb65ac0864a"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$lp\\$[a-z0-9_.+\\-@]+\\$(?:\\d{1,4}\\$)?[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": "lp",
+                "hashcat": null,
+                "extended": false,
+                "name": "LastPass offline",
+                "samples": [
+                    "$lp$hackme@mailinator.com$6f5d8cec3615fc9ac7ba2e0569bce4f5",
+                    "$lp$3$27c8641d7f5ab5985569d9d0b499b467",
+                    "$lp$ninechars$d09153108a89347da5c97a4a18f91345",
+                    "$lp$lulu@mailinator.com$5000$d8d1e25680b3d9f73489d5769ac3a9c1"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$lpcli\\$\\d\\$[a-z0-9_.+\\-@]+\\$\\d{1,4}\\$[a-f0-9]{32}\\$[a-f0-9]{32}$",
+        "modes": [
+            {
+                "john": "lpcli",
+                "hashcat": null,
+                "extended": false,
+                "name": "LastPass CLI",
+                "samples": [
+                    "$lpcli$0$lulu@mailinator.com$1234$3fec6cd2d8c049cbafe9fa6a9343f42f$f21d8e60ad22db53033e431700fb5e0c",
+                    "$lpcli$0$lulu@mailinator.com$1234$fbd97e7e14713363c5567bdc106bb1f4$75ebb9460f9852ccb2382029fe333867",
+                    "$lpcli$0$lulu@mailinator.com$1$9611651d6cbe6ab1dfb035d3874bd803$68bbe1480410c03cc053662658884f2b"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$lastpass\\$[a-z0-9_.+\\-@]+\\$\\d{1,4}\\$[+\\/a-z0-9=]+$",
+        "modes": [
+            {
+                "john": "lastpass",
+                "hashcat": null,
+                "extended": false,
+                "name": "LastPass sniffed",
+                "samples": [
+                    "$lastpass$hackme@mailinator.com$500$i+hJCwPOj5eQN4tvHcMguoejx4VEmiqzOXOdWIsZKlk=",
+                    "$lastpass$pass_gen@generated.com$500$vgC0g8BxOi4MerkKfZYFFSAJi8riD7k0ROLpBEA3VJk=",
+                    "$lastpass$1@short.com$500$2W/GA8d2N+Z4HGvRYs2R7w=="
+                ]
             }
         ]
     },

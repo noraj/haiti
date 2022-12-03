@@ -47,6 +47,11 @@
     - Add samples
   - DNSSEC (NSEC3)
     - Add samples
+  - Lastpass [#133][#133]
+    - Add samples
+    - Fix regexp
+    - Add several variants
+    - Add JtR support
 - **Documentation**:
   - Comparison to HashData
 - **Chore**:
@@ -54,6 +59,7 @@
 
 [#130]:https://github.com/noraj/haiti/issues/130
 [#131]:https://github.com/noraj/haiti/issues/131
+[#133]:https://github.com/noraj/haiti/issues/133
 
 ## [1.4.0]
 
