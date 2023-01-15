@@ -1,6 +1,7 @@
 ## [unreleased]
 
-TODO
+- **Chore**:
+  - Add support for Ruby 3.2
 
 ## [1.4.1]
 
