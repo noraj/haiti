@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/github/license/noraj/haiti)](https://github.com/noraj/haiti/blob/master/LICENSE.txt)
 [![Rawsec's CyberSecurity Inventory](https://inventory.raw.pm/img/badges/Rawsec-inventoried-FF5050_flat.svg)](https://inventory.raw.pm/tools.html#Haiti)
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/noraj/haiti/Ruby)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/noraj/haiti/ruby.yml?branch=master)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/noraj/haiti)
 
 ![](https://noraj.github.io/haiti/_media/logo.png)
