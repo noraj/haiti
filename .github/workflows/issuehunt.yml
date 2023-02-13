@@ -6,8 +6,6 @@ jobs:
   comment:
     name: Hello new contributor
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
      - name: Create IssueHunt comment for opened issues
        uses: goatandsheep/issuehunt-action@v1.0.0
