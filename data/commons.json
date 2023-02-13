@@ -5,6 +5,7 @@
   "SHA-512",
   "bcrypt",
   "NTLM",
+  "NT",
   "NetNTLMv2",
   "NetNTLMv1-VANILLA / NetNTLMv1+ESS",
   "BLAKE2-512",

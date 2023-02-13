@@ -1,5 +1,9 @@
 ## [unreleased]
 
+- **Enhancements**:
+  - NTLM:
+    - Add recognition for common dump format
+    - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 

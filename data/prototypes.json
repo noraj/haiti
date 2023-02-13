@@ -728,7 +728,24 @@
                 "john": "nt",
                 "hashcat": 1000,
                 "extended": false,
-                "name": "NTLM"
+                "name": "NTLM",
+                "samples": [
+                    "b4b9b02e6f09a9bd760f388b67351e2b"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^(.+\\\\)?\\w+:\\d+:[a-f0-9]{32}:[a-f0-9]{32}:::$",
+        "modes": [
+            {
+                "john": "nt",
+                "hashcat": 1000,
+                "extended": false,
+                "name": "NTLM",
+                "samples": [
+                    "domain.local\\username:9999:aad3b435b51404eeaad3b435b51404ee:b4b9b02e6f09a9bd760f388b67351e2b:::"
+                ]
             }
         ]
     },
