@@ -2,7 +2,6 @@
 # frozen_string_literal: true
 
 # Ruby internal
-require 'pp'
 # Project internal
 require 'haiti'
 # External
@@ -46,7 +45,7 @@ DOCOPT
 begin
   args = Docopt.docopt(doc, version: HashIdentifier::VERSION)
   Paint.mode = 0 if args['--no-color']
-  pp args if args['--debug']
+  puts args if args['--debug']
   # use case 1, using the tool
   if args['<hash>']
     args['<hash>'] = $stdin.read.chomp if args['<hash>'] == '-'
