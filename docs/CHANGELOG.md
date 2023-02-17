@@ -1,11 +1,18 @@
 ## [unreleased]
 
+- **Additions**:
+  - blake2s
 - **Enhancements**:
   - NTLM:
     - Add recognition for common dump format
     - Add samples
   - argon2id:
-    Add samples
+    - Add samples
+  - SHA-1, SHA-224, SHA-256, SHA-384:
+    - Add samples
+  - BLAKE2-512, BLAKE2-224, BLAKE2-256, BLAKE2-384:
+    - Add samples
+    - Enhance name
 - **Chore**:
   - Add support for Ruby 3.2
 
