@@ -14,6 +14,11 @@
   - BLAKE2-512, BLAKE2-224, BLAKE2-256, BLAKE2-384:
     - Add samples
     - Enhance name
+  - Keccak-224, Keccak-384:
+    - Add samples
+  - Keccak-256, Keccak-512:
+    - Add samples
+    - Alternative format
 - **Chore**:
   - Add support for Ruby 3.2
 
