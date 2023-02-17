@@ -1516,7 +1516,11 @@
                 "john": "dynamic_430",
                 "hashcat": 17700,
                 "extended": false,
-                "name": "Keccak-224"
+                "name": "Keccak-224",
+                "samples": [
+                    "f364c70d916dcdc9658cf9204d814fe9a6192c3517bc82600c69f0e9",
+                    "20feae51a579af51889723a4e473fa9fccbaf048a3b386a16f2bebd3"
+                ]
             },
             {
                 "john": null,
@@ -1727,7 +1731,12 @@
                 "john": "raw-keccak-256",
                 "hashcat": 17800,
                 "extended": false,
-                "name": "Keccak-256"
+                "name": "Keccak-256",
+                "samples": [
+                    "4e03657aea45a94fc7d47ba826c8d667c0d1e6e33a64a036ec44f58fa12d6c45",
+                    "9f21b850ee8906e7acd616553bd72c06084ec9d33e921a336adb12a25d1c38ca",
+                    "1aec7a56aa08b25b596057e1ccbcb6d768b770eaa0f355ccbd56aee5040e02ee"
+                ]
             },
             {
                 "john": "skein-256",
@@ -1885,6 +1894,21 @@
         ]
     },
     {
+        "regex": "^\\$keccak256\\$[a-f0-9]{64}$",
+        "modes": [
+            {
+                "john": "raw-keccak-256",
+                "hashcat": null,
+                "extended": false,
+                "name": "Keccak-256",
+                "samples": [
+                    "$keccak256$4e03657aea45a94fc7d47ba826c8d667c0d1e6e33a64a036ec44f58fa12d6c45",
+                    "$keccak256$3b673b24a64aebb286f193e5c985c8e528db8590f997d9130889ca7f5f4cfe6e"
+                ]
+            }
+        ]
+    },
+    {
         "regex": "^[a-f0-9]{32}:[a-z0-9]{32}$",
         "modes": [
             {
@@ -2005,7 +2029,11 @@
                 "john": "dynamic_440",
                 "hashcat": 17900,
                 "extended": false,
-                "name": "Keccak-384"
+                "name": "Keccak-384",
+                "samples": [
+                    "67d5794b83579146ffdf78c0c48317315e8309b6bfe52b6c17392fb5c6a763e0f26a3d5d61197fe60ebae5af66deb980",
+                    "9012c8f28ae19341182fd358f9c612a16027c0ff34e7d891e3adc1cb6b0c8a8dc6c2cf73bc65f26a30a7297aeb651ee9"
+                ]
             },
             {
                 "john": null,
@@ -2161,7 +2189,12 @@
                 "john": "raw-keccak",
                 "hashcat": 18000,
                 "extended": false,
-                "name": "Keccak-512"
+                "name": "Keccak-512",
+                "samples": [
+                    "0eab42de4c3ceb9235fc91acffe746b29c29a8c366b7c60e4e67c466f36a4304c00fa9caf9d87976ba469bcbe06713b435f091ef2769fb160cdab33d3670680e",
+                    "8a503b2c0d48cbca4ebcb8f3f2d764dd97cdc78674c55dae17e1070093f5db181d4948329b9b86310e99f8e7bce3dffd49f19a6dfaf6a945d44e03204c3db6b7",
+                    "922f1ddfa8c9c9f78c63f3c1be849433b4efe60dca8f3222328dd509f79cb2cec0d1c688535bedce56c70c4ce8b67b8a8f15f9778141d6eed664073a5d052b05"
+                ]
             },
             {
                 "john": "raw-blake2",
@@ -2259,6 +2292,22 @@
                 "name": "MD6-512",
                 "samples": [
                     "39990e5d4b65abd1c679b36fc7fa0b2f831144374ac3792736180bc5fc5ed4e93f177ed03f16ebac7327b9ddb7e4add838c3ce784653bbdd57d46a9a1d22932d"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "^\\$keccak\\$[a-f0-9]{128}$",
+        "modes": [
+            {
+                "john": "raw-keccak",
+                "hashcat": null,
+                "extended": false,
+                "name": "Keccak-512",
+                "samples": [
+                    "$keccak$d135bb84d0439dbac432247ee573a23ea7d3c9deb2a968eb31d47c4fb45f1ef4422d6c531b5b9bd6f449ebcc449ea94d0a8f05f62130fda612da53c79659f609",
+                    "$keccak$e4a7e8f5572f4853ef26a862f31687c249b1cd7922df2aac1f4348d8ceef944c74d1949e3465704a5f3f89fb53e0dcce3ea142c90af04c84cc7e548f144f8f0b",
+                    "$keccak$b7c090825b238d33cff5c92075f4dd80ce1b36359ce399ce9fce2a2d91232d5a494a58c37f489c3c859b779b3740cd7791d7666793779ee5c67476d31f91c814"
                 ]
             }
         ]
