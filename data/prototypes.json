@@ -4041,7 +4041,12 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "argon2id"
+                "name": "argon2id",
+                "samples": [
+                    "$argon2id$v=19$m=16,t=2,p=1$NGlzR2k3QUFLYjc3aTBiaw$oC5hr1bzBsd7Npk2aZRNsQ",
+                    "$argon2id$v=19$m=4096,t=4,p=1$RVlWSEcxZVR6cWxnUzQ5OQ$2mAVg9lZdklv5/W07OOPqA",
+                    "$argon2id$v=19$m=4096,t=4,p=3$RVlWSEcxZVR6cWxnUzQ5OQ$5xoJkErkyJ9r/WB+oO3HNr6Wx80LqDQKnm8Cb5g1xGwwc251dguHpKIC0ZVNqWALPW1ujJCGNGRFis8DGRHUF4hrwf7VQ5d9UDw2kFcdOXJ7c6MFhtXAVrRY11O3mmkIwTEFlA"
+                ]
             }
         ]
     },

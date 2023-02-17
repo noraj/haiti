@@ -4,6 +4,8 @@
   - NTLM:
     - Add recognition for common dump format
     - Add samples
+  - argon2id:
+    Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 
