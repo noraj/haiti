@@ -1871,6 +1871,16 @@
                 "samples": [
                     "bc9e2022386d929ae3936306153d9366fc555dc868579c87c7faf8846f79f414"
                 ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "sm3",
+                "samples": [
+                    "623ee6407b9c1d07f164711467a8b63a6f09eca0cc2bffe8a034895f261783b8",
+                    "ed8c11be5cc3b8a591e3e2ef0a0d1e7011ee65a89cbef7e9a352974bc98b8475"
+                ]
             }
         ]
     },

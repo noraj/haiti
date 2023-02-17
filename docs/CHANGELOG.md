@@ -2,6 +2,7 @@
 
 - **Additions**:
   - blake2s
+  - sm3
 - **Enhancements**:
   - NTLM:
     - Add recognition for common dump format
