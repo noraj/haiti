@@ -1005,7 +1005,11 @@
                 "john": "raw-sha1",
                 "hashcat": 100,
                 "extended": false,
-                "name": "SHA-1"
+                "name": "SHA-1",
+                "samples": [
+                    "c577cc190df1debe1f15fb913d8a7849bb46480a",
+                    "8809c12f038f4db3e827354e4b107771ffee9e02"
+                ]
             },
             {
                 "john": null,
@@ -1430,7 +1434,11 @@
                 "john": "raw-sha224",
                 "hashcat": 1300,
                 "extended": false,
-                "name": "SHA-224"
+                "name": "SHA-224",
+                "samples": [
+                    "bc31219edfb62370655eb444ae9b26707c449cad06e68f01b7e15c82",
+                    "dfb2f74fe34ca2506edb133d8a5b92822caccf6a8ef3856dd815fbbd"
+                ]
             },
             {
                 "john": "dynamic_51",
@@ -1532,7 +1540,11 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "BLAKE2-224"
+                "name": "BLAKE2-224 (blake2b)",
+                "samples": [
+                    "bcb34bae2f591c257a07d6d07adecd4cd968cdd06ab4a4d3bb001574",
+                    "e745e2e424aaed1cef3c765b6c22396bb6bcc5215128100f54031132"
+                ]
             }
         ]
     },
@@ -1659,7 +1671,11 @@
                 "john": "raw-sha256",
                 "hashcat": 1400,
                 "extended": false,
-                "name": "SHA-256"
+                "name": "SHA-256",
+                "samples": [
+                    "4d9f756d36f82896d96c5e9131051117a6e8c5fd89a169f0440c46a853e2c44b",
+                    "08134d7a6fb39b220f63c13e519741045ded7d1dbaa62f28575852408c83cfe5"
+                ]
             },
             {
                 "john": "dynamic_140",
@@ -1831,7 +1847,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "BLAKE2-256"
+                "name": "BLAKE2-256 (blake2b)",
+                "samples": [
+                    "f2b8245ec0196186ab2cc042b9d6c466ebd5ca2aa15fe2c80fd4f94ef832bd1c",
+                    "ba0f791652dfe09a7337350d74fab0233c8200b786676c8f0e425a9cc7aecde1"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "BLAKE2-256 (blake2s)",
+                "samples": [
+                    "9f3f8b4a1db636124a1b3df9a0ed6575b844d4b9dbcae74eaf9b2e7c242b35ce",
+                    "95c2c6844b87aa9d60537fd85e56faf2a670ddd5d9cc25dfaffdfae8469404ff"
+                ]
             },
             {
                 "john": null,
@@ -1949,7 +1979,11 @@
                 "john": "raw-sha384",
                 "hashcat": 10800,
                 "extended": false,
-                "name": "SHA-384"
+                "name": "SHA-384",
+                "samples": [
+                    "8cd123473f9c32ba0fe5f27c8bd676457ccf36060e5811e9ff3bc7026035963241a45bd1a022db6a692c7d2928a69cbb",
+                    "970f00dd3ca7d6b8c575ff1122e0734426b6db97fae61e09d659fcb907a616d138999a13fc516b4758fb2a5bcb7987ca"
+                ]
             },
             {
                 "john": "dynamic_390",
@@ -2033,7 +2067,11 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "BLAKE2-384"
+                "name": "BLAKE2-384 (blake2b)",
+                "samples": [
+                    "1db2bf52310b138b027c0055dc49acad9bf7f370fff65d5a7ba6480c2156fb3a2eb9c5ea84a4816a9dd3f496a324e22e",
+                    "d48662cdff64156379b4cdccaff5ba7e6006a8fa0ab082ad45c11cdd076b3dd6fcf48dbecafeb3e0e966f65c970d2945"
+                ]
             }
         ]
     },
@@ -2119,9 +2157,11 @@
                 "john": "raw-blake2",
                 "hashcat": null,
                 "extended": false,
-                "name": "BLAKE2-512",
+                "name": "BLAKE2-512 (blake2b)",
                 "samples": [
-                    "4245af08b46fbb290222ab8a68613621d92ce78577152d712467742417ebc1153668f1c9e1ec1e152a32a9c242dc686d175e087906377f0c483c5be2cb68953e"
+                    "4245af08b46fbb290222ab8a68613621d92ce78577152d712467742417ebc1153668f1c9e1ec1e152a32a9c242dc686d175e087906377f0c483c5be2cb68953e",
+                    "0190dfe3bd69d3c7e44b24b68b43c7cf292d5ad5897e4b5caa6b7406b93d42287fa4e40a64e38e164aa1f99299410e8a6746a105b2231885256c8d31bf5ce02a",
+                    "a13bd10faf96fe52f2b3d67382803705322e1345952ace2ae5e223b0793fa12f7d4f2c551efe97d710a95dd0d6f5f55955e65257364aba0eedb329e078e4baa5"
                 ]
             },
             {
@@ -2220,7 +2260,7 @@
                 "john": "raw-blake2",
                 "hashcat": 600,
                 "extended": false,
-                "name": "BLAKE2-512",
+                "name": "BLAKE2-512 (blake2b)",
                 "samples": [
                     "$BLAKE2$021ced8799296ceca557832ab941a50b4a11f83478cf141f51f933f653ab9fbcc05a037cddbed06e309bf334942c4e58cdf1a46e237911ccd7fcf9787cbc7fd0",
                     "$BLAKE2$1f7d9b7c9a90f7bfc66e52b69f3b6c3befbd6aee11aac860e99347a495526f30c9e51f6b0db01c24825092a09dd1a15740f0ade8def87e60c15da487571bcef7",
