@@ -19,6 +19,8 @@
   - Keccak-256, Keccak-512:
     - Add samples
     - Alternative format
+  - SHA3-224, SHA3-256, SHA3-384, SHA3-512:
+    - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 

@@ -1510,7 +1510,11 @@
                 "john": "dynamic_370",
                 "hashcat": 17300,
                 "extended": false,
-                "name": "SHA3-224"
+                "name": "SHA3-224",
+                "samples": [
+                    "2b34efc449e855b52bb60a58abd87ebc43afa8302a7acd4d14069f18",
+                    "efdd3949a290694b46e41d542ba11cb07e1e56533c8bb84099802bcd"
+                ]
             },
             {
                 "john": "dynamic_430",
@@ -1725,7 +1729,11 @@
                 "john": "dynamic_380",
                 "hashcat": 17400,
                 "extended": false,
-                "name": "SHA3-256"
+                "name": "SHA3-256",
+                "samples": [
+                    "006fbd67ca256b064801e5a3e3da83c1e379c0be18d42b47ac56985944555fa3",
+                    "0991e713d31138846aafb8f8e0d26020e3b4e88581f03f5544343e29693559d0"
+                ]
             },
             {
                 "john": "raw-keccak-256",
@@ -2023,7 +2031,11 @@
                 "john": "dynamic_390",
                 "hashcat": 17500,
                 "extended": false,
-                "name": "SHA3-384"
+                "name": "SHA3-384",
+                "samples": [
+                    "7a6f5012ad26157c81b524c2d8f6375dbed30c086ca887486523d5bb6d9904a29c9a14b2dea702d1785f39a996192150",
+                    "baae22bfcd0ddb3659ee3a3e913e733bea751758740368b9fb3f7d2ec3fee616f56c8fd063827cd04a6d3bc36e035ce4"
+                ]
             },
             {
                 "john": "dynamic_440",
@@ -2177,7 +2189,11 @@
                 "john": "raw-sha3",
                 "hashcat": 17600,
                 "extended": false,
-                "name": "SHA3-512"
+                "name": "SHA3-512",
+                "samples": [
+                    "188871147f727961604a563375384ccaa8c5850a12b33fb06f4622c1860b23c39c669ce14b86223ab79b5efc4b5b881cebeb5d83e142309b1f1c0237ba4fe2e2",
+                    "cca6fb548bdef6cf84397bb1c58a986109ee48a2532d949534ad217bf93d7c6f7f315d9acf728a164d5def64ea935ed5cd2d43b291f0e7d369fc7db8bc43861c"
+                ]
             },
             {
                 "john": "dynamic_400",
