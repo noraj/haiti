@@ -407,7 +407,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Tiger-128"
+                "name": "Tiger-128 (3 rounds)",
+                "samples": [
+                    "1e2e98f0db2bbce47cc7d2a8c771ffe5",
+                    "928c38615aab777e016b1da0263ebb92"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": true,
+                "name": "Tiger-128 (4 rounds)",
+                "samples": [
+                    "8bdfc06464be0d412d8896dc768941de",
+                    "8773d6449a517e9edad0dcaea8340b19"
+                ]
             },
             {
                 "john": null,
@@ -705,7 +719,7 @@
         ]
     },
     {
-        "regex": "^(\\$ripemd\\$)?[a-f0-9]{32}(:.+)?$",
+        "regex": "^(?:\\$ripemd\\$)?[a-f0-9]{32}(:.+)?$",
         "modes": [
             {
                 "john": "ripemd-128",
@@ -1052,7 +1066,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Tiger-160"
+                "name": "Tiger-160 (3 rounds)",
+                "samples": [
+                    "1e2e98f0db2bbce47cc7d2a8c771ffe5cc57e829",
+                    "928c38615aab777e016b1da0263ebb9207d4b0f8"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": true,
+                "name": "Tiger-160 (4 rounds)",
+                "samples": [
+                    "8bdfc06464be0d412d8896dc768941de514d9dfc",
+                    "8773d6449a517e9edad0dcaea8340b1974132b8e"
+                ]
             },
             {
                 "john": null,
@@ -1344,12 +1372,6 @@
                 "name": "Haval-192 (5 rounds)"
             },
             {
-                "john": "tiger",
-                "hashcat": null,
-                "extended": false,
-                "name": "Tiger-192"
-            },
-            {
                 "john": null,
                 "hashcat": null,
                 "extended": false,
@@ -1372,6 +1394,33 @@
                 "hashcat": 122,
                 "extended": false,
                 "name": "OSX v10.6"
+            }
+        ]
+    },
+    {
+        "regex": "^(?:\\$tiger\\$)?[a-f0-9]{48}$",
+        "modes": [
+            {
+                "john": "tiger",
+                "hashcat": null,
+                "extended": false,
+                "name": "Tiger-192 (3 rounds)",
+                "samples": [
+                    "3293AC630C13F0245F92BBB1766E16167A4E58492DDE73F3",
+                    "$tiger$D981F8CB78201A950DCF3048751E441C517FCA1AA55A29F6",
+                    "1e2e98f0db2bbce47cc7d2a8c771ffe5cc57e8297abfa69a",
+                    "928c38615aab777e016b1da0263ebb9207d4b0f8c19bfec7"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Tiger-192 (4 rounds)",
+                "samples": [
+                    "8bdfc06464be0d412d8896dc768941de514d9dfc5117649a",
+                    "8773d6449a517e9edad0dcaea8340b1974132b8e27415a33"
+                ]
             }
         ]
     },

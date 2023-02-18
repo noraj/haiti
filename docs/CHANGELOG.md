@@ -32,6 +32,12 @@
     - Add samples
   - Snefru-128, Snefru-256:
     - Add samples
+  - MD2, MD4:
+    - Add samples
+  - Tiger-128, Tiger-160, Tiger-192:
+    - Add samples
+    - Alternative format
+    - 3-4 rounds variant
 - **Chore**:
   - Add support for Ruby 3.2
 
