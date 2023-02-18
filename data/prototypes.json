@@ -203,6 +203,15 @@
                 "hashcat": null,
                 "extended": false,
                 "name": "CRC-64"
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "HighwayHash",
+                "samples": [
+                    "f14b26ce4b275bd5"
+                ]
             }
         ]
     },
