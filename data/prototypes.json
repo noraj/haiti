@@ -427,13 +427,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-256(128)"
+                "name": "Skein-256(128)",
+                "samples": [
+                    "ddd6200388a4fa08201bca8c43bb045a",
+                    "36b8a35239d450e5e0b1fafc097e0ffb"
+                ]
             },
             {
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-512(128)"
+                "name": "Skein-512(128)",
+                "samples": [
+                    "a9457d55a71c89ffecfc788444e69c15",
+                    "419651312268226c64f265542693c3f2"
+                ]
             },
             {
                 "john": "lotus5",
@@ -1101,13 +1109,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Skein-256(160)"
+                "name": "Skein-256(160)",
+                "samples": [
+                    "8f157db429bce1b77765f0f84389557f1c1c9513",
+                    "25ff8d8dffc6de8ce36ee24329169b640d47b598"
+                ]
             },
             {
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Skein-512(160)"
+                "name": "Skein-512(160)",
+                "samples": [
+                    "f5f41ce08dbdd26cbb8571674ad9b42e28ea972c",
+                    "e404fd994e12e11e51e0878971b3c9d34038b6c6"
+                ]
             },
             {
                 "john": "dynamic_35",
@@ -1592,13 +1608,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-256(224)"
+                "name": "Skein-256(224)",
+                "samples": [
+                    "e2271062336b3055075ac125bc6e9b5e43cc58ab08a1552093a2822a",
+                    "824667413db85e3a77a0302f1a63bcd061e9498935283467e25da0f2"
+                ]
             },
             {
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-512(224)"
+                "name": "Skein-512(224)",
+                "samples": [
+                    "cc2b668fe5afd14cabf7dacecb23d0536ba0540d0d152b8de34cb5ce",
+                    "5f3d2f4d7ffb4d4cc68f6f3c89834fbf995c8a277224070a7b4486c9"
+                ]
             },
             {
                 "john": "dynamic_330",
@@ -1818,13 +1842,21 @@
                 "john": "skein-256",
                 "hashcat": null,
                 "extended": false,
-                "name": "Skein-256"
+                "name": "Skein-256",
+                "samples": [
+                    "ff73fac4a8df83fdf081c7687dcdc26e2c4a0c406272313f43c60c005956099f",
+                    "38c960ba04962ca2b92aff0ec1078ad03da3d9686b0135318682d909118085de"
+                ]
             },
             {
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-512(256)"
+                "name": "Skein-512(256)",
+                "samples": [
+                    "9370397f77034c24713fc607be363b80e94513b5f0acc1a5daae81812a19c4bf",
+                    "6d9146e90a8468e307031cd0612b15381810444cd6743394ca566a7d63b797f6"
+                ]
             },
             {
                 "john": null,
@@ -2169,13 +2201,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-512(384)"
+                "name": "Skein-512(384)",
+                "samples": [
+                    "7c5bee6805385755c49d638ed8aef0165c46618fddd22ebdb2beda6ffacf30cc1e57bc45ee474317ce0747f9ff607064",
+                    "6ec1db740ab261d99313bdbe3d06b9e62346ad6807b1d718cde186b878586baa1454349b64b566a7a966d0b9253d9a18"
+                ]
             },
             {
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-1024(384)"
+                "name": "Skein-1024(384)",
+                "samples": [
+                    "e3eadd263a32adda501a2d2f14d9bbc4db9fcc28f6bc1144f2184e7d97e5e387e37b5b6a2cfbfcff6d46da32a9214002",
+                    "65c887e4c855dadb8f9828d6882c629e77f060c181e1527685fd02f9c18730e2a81bfff1bb8d6a6191fe1777bdf868d0"
+                ]
             },
             {
                 "john": "dynamic_71",
@@ -2351,13 +2391,21 @@
                 "john": "skein-512",
                 "hashcat": null,
                 "extended": false,
-                "name": "Skein-512"
+                "name": "Skein-512",
+                "samples": [
+                    "77af74b5ce49fde44f5c77db64894042cfdb95c1ff1081ca7b090fec981a0caa535dc63e0144390a8a916aa1ecef239b3d1ba2caddcd24e8cdd239f260bd17b0",
+                    "c1bd069d61ce64fd45d0e01656077561c89d851c8afe44a1817d270ce1836f3018dde27bd1cf4f5be720fe0d883159b3276e9b24d3f31983428443f286becfaf"
+                ]
             },
             {
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-1024(512)"
+                "name": "Skein-1024(512)",
+                "samples": [
+                    "053d1c75e61a10b6150298a77d3848ee65f225061041fce5743910177e07fad41363552957529d32dc73b60d6c4afae956898561bc28815ae14732502637664a",
+                    "1b085302e538fd1b9ddc9c3ff1cb06de4ee2ce7c7fa25a2c315062a45f10f695d5a009f5f545214f75b9362f9de8a60723e5e86e74776d7ae30f9ff3c7192992"
+                ]
             },
             {
                 "john": "dynamic_82",
@@ -2591,7 +2639,11 @@
                 "john": null,
                 "hashcat": null,
                 "extended": true,
-                "name": "Skein-1024"
+                "name": "Skein-1024",
+                "samples": [
+                    "46b84f3fda7654397e26faa3066d19e974c52450c690f33cb85c3f963b241131f364a5c2b0f6df6591a51b80930f0d80dd7b8ac3c9caf589997d9d42fd739c2c7122fe6f57c7aa87f0e53f8028d7cabde8de08488ed25acfb1819054f0dbf4ede04698ee82a325eac8e7a886c053d204a099c622298592481b6b41b4ada91b53",
+                    "83f7cfed35ac949dbe18abca6bfaeb69f706f889973e94377ec6c4aa9ea2a072f7ae31eafafbd5a1a63a22af453d71263669f4ca6e5c70180847f6d90f1f1d16bcc864a86d35062df112e0a5443b111c82a26ffe2e9626019c7081ed8d6ceb580d22bc90db5cb91da211f772cfe0e491fa4b032fa5ce534aa8c44f3197a67cb5"
+                ]
             }
         ]
     },

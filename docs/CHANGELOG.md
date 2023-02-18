@@ -38,6 +38,8 @@
     - Add samples
     - Alternative format
     - 3-4 rounds variant
+  - All Skein
+    - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 
