@@ -93,7 +93,11 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Joaat"
+                "name": "Joaat",
+                "samples": [
+                    "0159782d",
+                    "4835dd77"
+                ]
             },
             {
                 "john": null,

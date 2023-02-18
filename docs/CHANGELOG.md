@@ -44,6 +44,8 @@
     - Add samples
   - Adler, CRC-32, FNV:
     - Add samples
+  - Joaat:
+    - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 
