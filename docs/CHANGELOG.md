@@ -30,6 +30,8 @@
     - Add samples
   - Whirlpool
     - Add samples
+  - Snefru-128, Snefru-256:
+    - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 
