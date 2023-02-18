@@ -8,6 +8,8 @@
   - Shake-512
   - BLAKE3
   - HighwayHash
+  - Streebog-256
+  - Streebog-512
 - **Enhancements**:
   - NTLM:
     - Add recognition for common dump format
