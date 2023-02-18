@@ -65,10 +65,10 @@ begin
       next if type.extended && !args['--extended']
 
       print Paint[type.name, :bold]
-      print Paint[" [HC: #{type.hashcat}]", '#00FFFF'] unless type.hashcat.nil? || args['--short'] || args['--john-only']
-      unless type.john.nil? || args['--short'] || args['--hashcat-only']
-        print Paint[" [JtR: #{type.john}]", '#FF69B4']
+      unless type.hashcat.nil? || args['--short'] || args['--john-only']
+        print Paint[" [HC: #{type.hashcat}]", '#00FFFF']
       end
+      print Paint[" [JtR: #{type.john}]", '#FF69B4'] unless type.john.nil? || args['--short'] || args['--hashcat-only']
       puts
     end
   elsif args['samples']
