@@ -1,5 +1,7 @@
 ## [unreleased]
 
+## [1.5.0]
+
 - **Additions**:
   - blake2s
   - sm3
