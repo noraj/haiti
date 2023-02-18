@@ -7,6 +7,7 @@
   - Shake-256
   - Shake-512
   - BLAKE3
+  - HighwayHash
 - **Enhancements**:
   - NTLM:
     - Add recognition for common dump format
