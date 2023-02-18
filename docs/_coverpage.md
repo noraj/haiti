@@ -4,7 +4,7 @@
 
 > _**HA**sh **I**den**T**if**I**er_
 
-- 500+ hash types detected
+- 519+ hash types detected
 - Modern algorithms supported (SHA3, Keccak, Blake2, etc.) 
 - Hashcat and John the Ripper references
 - CLI tool & library
