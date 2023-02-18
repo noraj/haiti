@@ -726,7 +726,11 @@
                 "john": "snefru-128",
                 "hashcat": null,
                 "extended": false,
-                "name": "Snefru-128"
+                "name": "Snefru-128",
+                "samples": [
+                    "53b8a9b1c9ed00174d88d705fb7bae30",
+                    "$snefru$53b8a9b1c9ed00174d88d705fb7bae30"
+                ]
             }
         ]
     },
@@ -1677,7 +1681,13 @@
                 "john": "snefru-256",
                 "hashcat": null,
                 "extended": false,
-                "name": "Snefru-256"
+                "name": "Snefru-256",
+                "samples": [
+                    "e248c5662e3c13738e82f90f729d9b8f913e4d96ffc1c7443c35deda9347f8e7",
+                    "b662584496b15ab01a57ac5c5f72d645351b8d1ea2248fd65b3e7592069fee88",
+                    "4170e04e900e6221562ceb5ff6ea27fa9b9b0d9587add44a4379a02619c5a106",
+                    "$snefru$4170e04e900e6221562ceb5ff6ea27fa9b9b0d9587add44a4379a02619c5a106"
+                ]
             }
         ]
     },
