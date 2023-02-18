@@ -1947,6 +1947,16 @@
                     "7688b83e47c401043cd15dbcd47fc51473b2d3c3afe4af5b767d69d4f76911ea",
                     "c76f83579bfd9e197b7404cf86934c774f5b70082facf830dab56c9435645263"
                 ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Streebog-256",
+                "samples": [
+                    "3f539a213e97c802cc229d474c6aa32a825a360b2a933a949fd925208d9ce1bb",
+                    "3e7dea7f2384b6c5a3d0e24aaa29c05e89ddd762145030ec22c71a6db8b2c1f4"
+                ]
             }
         ]
     },
@@ -2387,6 +2397,16 @@
                 "samples": [
                     "b7270897b9bc8f9559aad074796eba52d1362f9ead48674218140035ee5d46773ccf7b85af64007245b18815fd1b92020857daa33ea15dcf10767e113f175608",
                     "af63eaad2e10803dded48918453cb494aa4e9c3f3438fb6c2b778c0f62fbef2395b15356810c56b0cd33f2a1968d7ceb5ddf872ece63e6be096ffef1bc885a4b"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Streebog-512",
+                "samples": [
+                    "8e945da209aa869f0455928529bcae4679e9873ab707b55315f56ceb98bef0a7362f715528356ee83cda5f2aac4c6ad2ba3a715c1bcd81cb8e9f90bf4c1c1a8a",
+                    "d2b793a0bb6cb5904828b5b6dcfb443bb8f33efc06ad09368878ae4cdc8245b97e60802469bed1e7c21a64ff0b179a6a1e0bb74d92965450a0adab69162c00fe"
                 ]
             }
         ]
