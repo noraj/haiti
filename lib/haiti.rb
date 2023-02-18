@@ -42,7 +42,7 @@ class HashIdentifier
       PROTOTYPES.each do |prototype|
         prototype['modes'].each do |mode|
           if [mode['name'].downcase, mode['hashcat'].to_s,
-              mode['john'].nil? ? mode['john'] : mode['john'].downcase].include?(input.downcase)
+              mode['john'].nil? ? mode['john'] : mode['john'].downcase].include?(input.to_s.downcase)
             samples << Chf.new(mode).samples
           end
         end
