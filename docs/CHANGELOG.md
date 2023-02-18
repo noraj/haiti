@@ -42,6 +42,8 @@
     - Add samples
   - Gost, Gost Crypto:
     - Add samples
+  - Adler, CRC-32, FNV:
+    - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 

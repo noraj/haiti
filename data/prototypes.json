@@ -29,13 +29,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Adler-32"
+                "name": "Adler-32",
+                "samples": [
+                    "061d0210",
+                    "0669021b"
+                ]
             },
             {
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "CRC-32B"
+                "name": "CRC-32B",
+                "samples": [
+                    "0591b7fa",
+                    "d4c1ce56"
+                ]
             },
             {
                 "john": null,
@@ -59,7 +67,21 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "FNV-132"
+                "name": "FNV-132",
+                "samples": [
+                    "ec14fc93",
+                    "67283768"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "FNV-1A32",
+                "samples": [
+                    "f70e7fc3",
+                    "b7419982"
+                ]
             },
             {
                 "john": null,
@@ -118,7 +140,9 @@
                 "extended": false,
                 "name": "CRC-32C",
                 "samples": [
-                    "5e23d60f:00000000"
+                    "5e23d60f:00000000",
+                    "2fba0194",
+                    "5ebc690a"
                 ]
             }
         ]
@@ -196,7 +220,11 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "FNV-164"
+                "name": "FNV-164",
+                "samples": [
+                    "5e47a65936838493",
+                    "9bfbf589cfb5d948"
+                ]
             },
             {
                 "john": null,
