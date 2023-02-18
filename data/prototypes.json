@@ -1809,13 +1809,21 @@
                 "john": "gost",
                 "hashcat": 6900,
                 "extended": false,
-                "name": "GOST R 34.11-94"
+                "name": "GOST R 34.11-94",
+                "samples": [
+                    "6ac9de54828485f8df60ec61004818565f6edac5788b3af35f02327973059d22",
+                    "0159e744333b42784d79e1730499e96ce832cbac1ef7963326210407058fc0b7"
+                ]
             },
             {
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "GOST CryptoPro S-Box"
+                "name": "GOST CryptoPro S-Box",
+                "samples": [
+                    "08ba4d805cc1537f8d1c34f0b0c37da50654e8825b4a02ad0a0bd49afea3404a",
+                    "785a581dc3bb641f23f7694d49cb94e1b50e43ab82be6a3713fa46375b5e2b55"
+                ]
             },
             {
                 "john": "dynamic_380",

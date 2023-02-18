@@ -38,7 +38,9 @@
     - Add samples
     - Alternative format
     - 3-4 rounds variant
-  - All Skein
+  - All Skein:
+    - Add samples
+  - Gost, Gost Crypto:
     - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
