@@ -64,7 +64,9 @@ begin
 
       print Paint[type.name, :bold]
       print Paint[" [HC: #{type.hashcat}]", 'orange'] unless type.hashcat.nil? || args['--short'] || args['--john-only']
-      print Paint[" [JtR: #{type.john}]", 'orange red'] unless type.john.nil? || args['--short'] || args['--hashcat-only']
+      unless type.john.nil? || args['--short'] || args['--hashcat-only']
+        print Paint[" [JtR: #{type.john}]", 'orange red']
+      end
       puts
     end
   elsif args['samples']
