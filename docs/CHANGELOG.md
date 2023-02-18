@@ -3,6 +3,9 @@
 - **Additions**:
   - blake2s
   - sm3
+  - Shake-128
+  - Shake-256
+  - Shake-512
 - **Enhancements**:
   - NTLM:
     - Add recognition for common dump format

@@ -1898,6 +1898,36 @@
                     "623ee6407b9c1d07f164711467a8b63a6f09eca0cc2bffe8a034895f261783b8",
                     "ed8c11be5cc3b8a591e3e2ef0a0d1e7011ee65a89cbef7e9a352974bc98b8475"
                 ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Shake-128 (256)",
+                "samples": [
+                    "f64c79f6eb8623299b5f33a509ad6da016601306ba116738156e6d51f2348818",
+                    "995e6f24b29cb22812d1842f69754dc980142391419794ddb2a0d1fc7bdb9cfa"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Shake-256 (256)",
+                "samples": [
+                    "ebbb9fa195976c0ddd950fee42ec22fcf64c1b7680f97be2789f553ec2a4871a",
+                    "7cc2848a6f74f0d221bf83f3acdbf1a31b8851243f618e0a8cf857fc625c6399"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Shake-512 (256)",
+                "samples": [
+                    "b7270897b9bc8f9559aad074796eba52d1362f9ead48674218140035ee5d4677",
+                    "af63eaad2e10803dded48918453cb494aa4e9c3f3438fb6c2b778c0f62fbef23"
+                ]
             }
         ]
     },
@@ -2308,6 +2338,36 @@
                 "name": "MD6-512",
                 "samples": [
                     "39990e5d4b65abd1c679b36fc7fa0b2f831144374ac3792736180bc5fc5ed4e93f177ed03f16ebac7327b9ddb7e4add838c3ce784653bbdd57d46a9a1d22932d"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Shake-128 (512)",
+                "samples": [
+                    "f64c79f6eb8623299b5f33a509ad6da016601306ba116738156e6d51f23488188c2a1bb2381058a4ee08ed7d46943a8d4acea4411af6db47ffd8740fdbe366e2",
+                    "995e6f24b29cb22812d1842f69754dc980142391419794ddb2a0d1fc7bdb9cfa60255bcc872eee074947c5477ea9e6cf629086ab08013582674352412f5c6d10"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Shake-256 (512)",
+                "samples": [
+                    "ebbb9fa195976c0ddd950fee42ec22fcf64c1b7680f97be2789f553ec2a4871af52dab7ba0b5c2b75f9e8738651b64f8c436a12eb6cf24cd71624ed182ab31b4",
+                    "7cc2848a6f74f0d221bf83f3acdbf1a31b8851243f618e0a8cf857fc625c63993f007998799e28ad5289bb49a635c0c2c6702f97f1fc2dc322ef33d4c116f3c8"
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Shake-512 (512)",
+                "samples": [
+                    "b7270897b9bc8f9559aad074796eba52d1362f9ead48674218140035ee5d46773ccf7b85af64007245b18815fd1b92020857daa33ea15dcf10767e113f175608",
+                    "af63eaad2e10803dded48918453cb494aa4e9c3f3438fb6c2b778c0f62fbef2395b15356810c56b0cd33f2a1968d7ceb5ddf872ece63e6be096ffef1bc885a4b"
                 ]
             }
         ]
