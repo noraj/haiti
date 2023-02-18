@@ -53,6 +53,7 @@
     - Add samples
 - **Changes**:
   - All regexp will now use `\A` and `\Z` instead of `^` and `$` to prevent multi-line false positives
+  - Make the `samples` command case insensitive
 - **Chore**:
   - Add support for Ruby 3.2
   - Add project reference in help message
