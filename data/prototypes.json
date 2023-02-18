@@ -421,19 +421,31 @@
                 "john": "haval-128-4",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-128 (4 rounds)"
+                "name": "Haval-128 (4 rounds)",
+                "samples": [
+                    "ffdcd18485bf2cde9b0479e65344cfb3",
+                    "8c2e8208484efd71c6c901aef64b7091"
+                ]
             },
             {
                 "john": "dynamic_160",
                 "hashcat": null,
                 "extended": true,
-                "name": "Haval-128 (3 rounds)"
+                "name": "Haval-128 (3 rounds)",
+                "samples": [
+                    "3ece2ceda8273f56852fc84dd9a58be6",
+                    "07c2a84c32037ceec91f13675da4c51d"
+                ]
             },
             {
                 "john": "dynamic_180",
                 "hashcat": null,
                 "extended": true,
-                "name": "Haval-128 (5 rounds)"
+                "name": "Haval-128 (5 rounds)",
+                "samples": [
+                    "a56b093f8ba3930a62b90ad831159892",
+                    "fd24c37e7c6adafcb8065d8117f1687f"
+                ]
             },
             {
                 "john": null,
@@ -1088,19 +1100,31 @@
                 "john": "dynamic_190",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-160 (3 rounds)"
+                "name": "Haval-160 (3 rounds)",
+                "samples": [
+                    "317e75e5be3bdf49a2b141194607a65ec9653371",
+                    "50bd53cf578b14eda7a4a95aa9a95e624ac5e9c7"
+                ]
             },
             {
                 "john": "dynamic_200",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-160 (4 rounds)"
+                "name": "Haval-160 (4 rounds)",
+                "samples": [
+                    "139da225432fef6ff7f832f4367054bb66857311",
+                    "c2ce80000546da5bdb4d40717c60e3739b209dd7"
+                ]
             },
             {
                 "john": "dynamic_210",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-160 (5 rounds)"
+                "name": "Haval-160 (5 rounds)",
+                "samples": [
+                    "c2cd825ab0d6b70e702e3a7649a08c5b4246e04b",
+                    "ca04b5c66de62a545aaaa356111be902108f0a87"
+                ]
             },
             {
                 "john": null,
@@ -1405,19 +1429,31 @@
                 "john": "dynamic_220",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-192 (3 rounds)"
+                "name": "Haval-192 (3 rounds)",
+                "samples": [
+                    "3f8c704dd000707ee2a36e6727cc939fc9489ff7df3a5c06",
+                    "7405cb945d91bad5f23fcb90f08a827858a5f51a854f2303"
+                ]
             },
             {
                 "john": "dynamic_230",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-192 (4 rounds)"
+                "name": "Haval-192 (4 rounds)",
+                "samples": [
+                    "7ca1e493c0ea9cd0b82cda97005be8b41ddac4ce6263499f",
+                    "dcf5cec7c3ed8fffeac98de9c3e2b4edbf5f2cc4e614bd6a"
+                ]
             },
             {
                 "john": "dynamic_240",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-192 (5 rounds)"
+                "name": "Haval-192 (5 rounds)",
+                "samples": [
+                    "b4246c8cea1f6c58c550d18d9907d8b4879875439b1b6243",
+                    "9f8e51d5dd5cbbb1f944296d1ce402e64acf487a4dd05439"
+                ]
             },
             {
                 "john": null,
@@ -1602,19 +1638,31 @@
                 "john": "dynamic_250",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-224 (3 rounds)"
+                "name": "Haval-224 (3 rounds)",
+                "samples": [
+                    "d72b28de72fa0a9493eed36f39660b38735ac612062fa58d08329957",
+                    "e6e4f4ccdfd3a34fd3c84e7559974907be414daf7a69d0918be7a90c"
+                ]
             },
             {
                 "john": "dynamic_260",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-224 (4 rounds)"
+                "name": "Haval-224 (4 rounds)",
+                "samples": [
+                    "0fd7784c6466a9377e4e5b78e16a37e395b7ea5315edea5132daf93e",
+                    "27dc397a841e389de8715c89635dc3a701e80e167a9d09b6405f199b"
+                ]
             },
             {
                 "john": "dynamic_270",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-224 (5 rounds)"
+                "name": "Haval-224 (5 rounds)",
+                "samples": [
+                    "048dede796729dbee8f7ba24ac3b8ae0e9d72c0626c3c2ab0bd0ef63",
+                    "9993a99de02edb123771b4673772e7052a25226324d922cde9b1650e"
+                ]
             },
             {
                 "john": "dynamic_370",
@@ -1823,19 +1871,31 @@
                 "john": "haval-256-3",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-256 (3 rounds)"
+                "name": "Haval-256 (3 rounds)",
+                "samples": [
+                    "0ae01f13738bf8ab682dbd7d3525f912800aa102f42de67c8d916eb5441cf426",
+                    "1bfa79d790b9960673f64c918d8f66805f32e8f35aae1abe3c93bed7524328b9"
+                ]
             },
             {
                 "john": "dynamic_290",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-256 (4 rounds)"
+                "name": "Haval-256 (4 rounds)",
+                "samples": [
+                    "570eac7ca3c9bc6ac10fe156790dd9c191a4f40226f0917a96e53bc100c023d6",
+                    "1e390ebe076a48fafb51cdd4b8ef50e7f08ec82e2b03f999a2dacedc2c92e084"
+                ]
             },
             {
                 "john": "dynamic_300",
                 "hashcat": null,
                 "extended": false,
-                "name": "Haval-256 (5 rounds)"
+                "name": "Haval-256 (5 rounds)",
+                "samples": [
+                    "1bf1b13c01d2f7dfbf5bb8b75349a34a4907629fd712afef597c45c382d5d27d",
+                    "90b4416cb77b6e07cc349085c8059cfe57f425280c8ebc8787f40c916dec88b3"
+                ]
             },
             {
                 "john": "gost",

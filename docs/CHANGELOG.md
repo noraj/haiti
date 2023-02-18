@@ -46,6 +46,8 @@
     - Add samples
   - Joaat:
     - Add samples
+  - All Haval:
+    - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 
