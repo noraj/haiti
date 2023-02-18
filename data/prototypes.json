@@ -2230,7 +2230,13 @@
                 "john": "whirlpool",
                 "hashcat": 6100,
                 "extended": false,
-                "name": "Whirlpool"
+                "name": "Whirlpool",
+                "samples": [
+                    "7ca8eaaaa15eaa4c038b4c47b9313e92da827c06940e69947f85bc0fbef3eb8fd254da220ad9e208b6b28f6bb9be31dd760f1fdb26112d83f87d96b416a4d258",
+                    "19fa61d75522a4669b44e39c1d2e1726c530232130d407f89afee0964997f7a73e83be698b288febcf88e3e03c4f0757ea8964e59b63d93708b138cc42a66eb3",
+                    "cdc66b9a5aac19a97ef5da222781663e0876bae771e84758cc01da21f5b42f63b6a8544024e4b6ef9e00b35334dd28a0b19e6eafd9f2e1de58684e759009399a",
+                    "8a5aafad02c0762eb7a5065eeffe790174d32c710104c9c5eb7820ea38ddd8adc9836f27391c5e8cc1030580de68cd5639ed494b0d85aab525ec852e9226e121"
+                ]
             },
             {
                 "john": null,
