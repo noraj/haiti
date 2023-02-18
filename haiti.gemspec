@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
 
   s.files         = Dir['bin/*'] + Dir['lib/**/*.rb'] + Dir['data/*.json']
-  s.files        += ['LICENSE.txt']
+  s.files        += ['LICENSE.txt'] + ['docs/_media/logo.ascii']
   s.bindir        = 'bin'
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.require_paths = ['lib']

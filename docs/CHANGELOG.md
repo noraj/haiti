@@ -10,6 +10,7 @@
   - HighwayHash
   - Streebog-256
   - Streebog-512
+  - Add an ascii-art option
 - **Enhancements**:
   - **Colors**:
     - help message is colored
