@@ -11,6 +11,9 @@
   - Streebog-256
   - Streebog-512
 - **Enhancements**:
+  - **Colors**:
+    - help message is colored
+    - change reference colors to match the same theme
   - NTLM:
     - Add recognition for common dump format
     - Add samples
@@ -52,6 +55,7 @@
   - All regexp will now use `\A` and `\Z` instead of `^` and `$` to prevent multi-line false positives
 - **Chore**:
   - Add support for Ruby 3.2
+  - Add project reference in help message
 
 ## [1.4.1]
 

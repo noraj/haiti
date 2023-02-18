@@ -9,24 +9,24 @@ require 'docopt'
 require 'paint'
 
 doc = <<~DOCOPT
-  HAITI (HAsh IdenTifIer) v#{HashIdentifier::VERSION}
+  #{Paint['HAITI (HAsh IdenTifIer)', 'orange red']} v#{Paint[HashIdentifier::VERSION, :bold]}
 
-  Usage:
+  #{Paint['Usage:', 'orange']}
     haiti [options] <hash>
     haiti samples (<ref> | <name>)
     haiti -h | --help
     haiti --version
 
-  Commands:
+  #{Paint['Commands:', 'orange']}
     samples         Display hash samples for the given type
 
-  Parameters:
+  #{Paint['Parameters:', 'orange']}
     <hash>          Hash string to identify, read from STDIN if equal to "-"
     <ref>           hashcat or john the ripper reference
     <name>          Hash type name
 
-  Options:
-    --no-color      Disable colorized output
+  #{Paint['Options:', 'orange']}
+    --no-color      Disable colorized output (NO_COLOR environment variable is respected too)
     -e, --extended  List all possible hash algorithms including ones using salt
     --short         Display in a short format: do not display hashcat and john the ripper references
     --hashcat-only  Show only hashcat references
@@ -35,11 +35,16 @@ doc = <<~DOCOPT
     -h, --help      Show this screen
     --version       Show version
 
-  Examples:
+  #{Paint['Examples:', 'orange']}
     haiti -e d41d8cd98f00b204e9800998ecf8427e
     haiti --no-color --short d41d8cd98f00b204e9800998ecf8427e
     b2sum /etc/os-release | awk '{print $1}' | haiti -
     haiti samples crc32
+
+  #{Paint['Project:', 'orange']}
+    #{Paint['author', :underline]} (https://pwn.by/noraj / https://twitter.com/noraj_rawsec)
+    #{Paint['source', :underline]} (https://github.com/noraj/haiti)
+    #{Paint['documentation', :underline]} (https://noraj.github.io/haiti)
 DOCOPT
 
 begin
@@ -58,8 +63,8 @@ begin
       next if type.extended && !args['--extended']
 
       print Paint[type.name, :bold]
-      print Paint[" [HC: #{type.hashcat}]", :blue] unless type.hashcat.nil? || args['--short'] || args['--john-only']
-      print Paint[" [JtR: #{type.john}]", :green] unless type.john.nil? || args['--short'] || args['--hashcat-only']
+      print Paint[" [HC: #{type.hashcat}]", 'orange'] unless type.hashcat.nil? || args['--short'] || args['--john-only']
+      print Paint[" [JtR: #{type.john}]", 'orange red'] unless type.john.nil? || args['--short'] || args['--hashcat-only']
       puts
     end
   elsif args['samples']
