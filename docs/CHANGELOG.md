@@ -28,6 +28,8 @@
     - Alternative format
   - SHA3-224, SHA3-256, SHA3-384, SHA3-512:
     - Add samples
+  - Whirlpool
+    - Add samples
 - **Chore**:
   - Add support for Ruby 3.2
 
