@@ -1928,6 +1928,16 @@
                     "b7270897b9bc8f9559aad074796eba52d1362f9ead48674218140035ee5d4677",
                     "af63eaad2e10803dded48918453cb494aa4e9c3f3438fb6c2b778c0f62fbef23"
                 ]
+            },
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "BLAKE3",
+                "samples": [
+                    "7688b83e47c401043cd15dbcd47fc51473b2d3c3afe4af5b767d69d4f76911ea",
+                    "c76f83579bfd9e197b7404cf86934c774f5b70082facf830dab56c9435645263"
+                ]
             }
         ]
     },
