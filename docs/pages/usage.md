@@ -4,11 +4,12 @@
 
 ```
 $ haiti -h
-HAITI (HAsh IdenTifIer) v1.3.0
+HAITI (HAsh IdenTifIer) v1.5.0
 
 Usage:
   haiti [options] <hash>
   haiti samples (<ref> | <name>)
+  haiti --ascii-art
   haiti -h | --help
   haiti --version
 
@@ -21,11 +22,12 @@ Parameters:
   <name>          Hash type name
 
 Options:
-  --no-color      Disable colorized output
+  --no-color      Disable colorized output (NO_COLOR environment variable is respected too)
   -e, --extended  List all possible hash algorithms including ones using salt
   --short         Display in a short format: do not display hashcat and john the ripper references
   --hashcat-only  Show only hashcat references
   --john-only     Show only john the ripper references
+  --ascii-art       Display the logo in colored ascii-art
   --debug         Display arguments
   -h, --help      Show this screen
   --version       Show version
@@ -35,6 +37,11 @@ Examples:
   haiti --no-color --short d41d8cd98f00b204e9800998ecf8427e
   b2sum /etc/os-release | awk '{print $1}' | haiti -
   haiti samples crc32
+
+Project:
+  author (https://pwn.by/noraj / https://twitter.com/noraj_rawsec)
+  source (https://github.com/noraj/haiti)
+  documentation (https://noraj.github.io/haiti)
 ```
 
 ## Library
