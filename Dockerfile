@@ -8,7 +8,7 @@ LABEL org.opencontainers.image.title="haiti" \
       org.opencontainers.image.vendor="noraj (Alexandre ZANNI)" \
       org.opencontainers.image.documentation="https://noraj.github.io/haiti/" \
       org.opencontainers.image.source="https://github.com/noraj/haiti" \
-      org.opencontainers.image.licenses="MIT" \
+      org.opencontainers.image.licenses="MIT"
 
 ARG HAITI_VERSION
 LABEL org.opencontainers.image.version="$HAITI_VERSION"
