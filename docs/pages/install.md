@@ -138,6 +138,26 @@ $ docker run -it --rm registry-intl.eu-central-1.aliyuncs.com/noraj/haiti haiti 
 
 Repository: [the overview page is not public](https://cr.console.aliyun.com/repository/eu-central-1/noraj/haiti/details)
 
+### Docker (Quay)
+
+host: `quay.io`
+
+```
+# latest
+$ docker pull quay.io/noraj/haiti
+
+# specific tag
+$ docker pull quay.io/noraj/haiti:1.5.0
+```
+
+Usage examples:
+
+```
+$ docker run -it --rm quay.io/noraj/haiti haiti -e d41d8cd98f00b204e9800998ecf8427e
+```
+
+Repository: [noraj/haiti](https://quay.io/repository/noraj/haiti?tab=info)
+
 ### **Debian**
 
 Download the `.deb` files from the last Github [release](https://github.com/noraj/haiti/releases)

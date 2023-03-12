@@ -34,7 +34,7 @@ $ bundle exec yard doc
 Create an **annotated git tag**:
 
 ```
-$ git tag -a vx.x.x
+$ git tag -a v1.5.0
 ```
 
 Push the changes including the tags:
@@ -54,7 +54,7 @@ $ bundle exec rake build
 Push the new gem release on **RubyGems** See https://guides.rubygems.org/publishing/.
 
 ```
-$ gem push haiti-hash-x.x.x.gem
+$ gem push haiti-hash-1.5.0.gem
 ```
 
 ## Docker container registries
@@ -64,13 +64,15 @@ $ gem push haiti-hash-x.x.x.gem
 ### **Docker Hub**
 
 ```
-$ docker build -f Dockerfile -t noraj/haiti:x.x.x --build-arg HAITI_VERSION=x.x.x .
+$ export HAITI_VERSION=1.5.0
+$ docker build -f Dockerfile -t noraj/haiti:$HAITI_VERSION --build-arg HAITI_VERSION=$HAITI_VERSION .
+$ docker build -f Dockerfile -t noraj/haiti:latest --build-arg HAITI_VERSION=$HAITI_VERSION .
 
 $ docker login docker.io
 
 $ pass show docker-credential-helpers/aHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEv/USERNAME
-$ docker push docker.io/noraj/haiti:x.x.x
-$ docker push docker.io/noraj/haiti
+$ docker push docker.io/noraj/haiti:$HAITI_VERSION
+$ docker push docker.io/noraj/haiti:latest
 ```
 
 ### **Github (GHCR)**
@@ -78,14 +80,16 @@ $ docker push docker.io/noraj/haiti
 GHCR = Github Container Registry
 
 ```
-$ docker build -f Dockerfile -t ghcr.io/noraj/haiti:x.x.x --build-arg HAITI_VERSION=x.x.x .
+$ export HAITI_VERSION=1.5.0
+$ docker build -f Dockerfile -t ghcr.io/noraj/haiti:$HAITI_VERSION --build-arg HAITI_VERSION=$HAITI_VERSION .
+$ docker build -f Dockerfile -t ghcr.io/noraj/haiti:latest --build-arg HAITI_VERSION=$HAITI_VERSION .
 
 $ export CR_PAT=YOUR_TOKEN
 $ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
 
 $ pass show docker-credential-helpers/Z2hjci5pbw==/USERNAME
-$ docker push ghcr.io/noraj/haiti:x.x.x
-$ docker push ghcr.io/noraj/haiti
+$ docker push ghcr.io/noraj/haiti:$HAITI_VERSION
+$ docker push ghcr.io/noraj/haiti:latest
 ```
 
 ### **Alibaba Cloud (ACR)**
@@ -93,13 +97,29 @@ $ docker push ghcr.io/noraj/haiti
 ACR = Alibaba Cloud Container Registry
 
 ```
-$ docker build -f Dockerfile -t registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:x.x.x --build-arg HAITI_VERSION=x.x.x .
+$ export HAITI_VERSION=1.5.0
+$ docker build -f Dockerfile -t registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:$HAITI_VERSION --build-arg HAITI_VERSION=$HAITI_VERSION .
+$ docker build -f Dockerfile -t registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:latest --build-arg HAITI_VERSION=$HAITI_VERSION .
 
 $ docker login registry-intl.eu-central-1.aliyuncs.com
 
 $ pass show docker-credential-helpers/cmVnaXN0cnktaW50bC5ldS1jZW50cmFsLTEuYWxpeXVuY3MuY29t/USERNAME
-$ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:x.x.x
-$ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti
+$ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:$HAITI_VERSION
+$ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:latest
+```
+
+### **Quay.io**
+
+```
+$ export HAITI_VERSION=1.5.0
+$ docker build -f Dockerfile -t quay.io/noraj/haiti:$HAITI_VERSION --build-arg HAITI_VERSION=$HAITI_VERSION .
+$ docker build -f Dockerfile -t quay.io/noraj/haiti:latest --build-arg HAITI_VERSION=$HAITI_VERSION .
+
+$ docker login quay.io
+
+$ pass show docker-credential-helpers/cXVheS5pbw==/USERNAME
+$ docker push quay.io/noraj/haiti:$HAITI_VERSION
+$ docker push quay.io/noraj/haiti:latest
 ```
 
 <!-- tabs:end -->
