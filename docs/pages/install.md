@@ -138,7 +138,7 @@ $ docker run -it --rm registry-intl.eu-central-1.aliyuncs.com/noraj/haiti haiti 
 
 Repository: [the overview page is not public](https://cr.console.aliyun.com/repository/eu-central-1/noraj/haiti/details)
 
-### Docker (Quay)
+### **Docker (Quay)**
 
 host: `quay.io`
 
