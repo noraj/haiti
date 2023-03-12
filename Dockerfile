@@ -1,16 +1,17 @@
 # Official verified image
 FROM ruby:3.2.1-alpine3.17
 
-# Remote git repository <-> Remote container registry
-LABEL org.opencontainers.image.source https://github.com/noraj/haiti
-# Other metadata
-LABEL org.opencontainers.image.authors "noraj (Alexandre ZANNI)"
-LABEL org.opencontainers.image.documentation https://noraj.github.io/haiti/
-LABEL org.opencontainers.image.licenses MIT
-LABEL org.opencontainers.image.description "Hash type identifier (CLI & lib)."
+# Metadata
+LABEL org.opencontainers.image.title="haiti" \
+      org.opencontainers.image.description="Hash type identifier (CLI & lib)." \
+      org.opencontainers.image.authors="noraj (Alexandre ZANNI)" \
+      org.opencontainers.image.vendor="noraj (Alexandre ZANNI)" \
+      org.opencontainers.image.documentation="https://noraj.github.io/haiti/" \
+      org.opencontainers.image.source="https://github.com/noraj/haiti" \
+      org.opencontainers.image.licenses="MIT" \
 
 ARG HAITI_VERSION
-LABEL org.opencontainers.image.version $HAITI_VERSION
+LABEL org.opencontainers.image.version="$HAITI_VERSION"
 
 ## INSTALL ##
 # Install the app
