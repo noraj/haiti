@@ -1,5 +1,5 @@
 # Official verified image
-FROM ruby:3.2.1-alpine3.17
+FROM ruby:3.2.2-alpine3.17
 
 # Metadata
 LABEL org.opencontainers.image.title="haiti" \
