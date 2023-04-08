@@ -1,5 +1,12 @@
 ## [unreleased]
 
+- **Enhancements**:
+  - SSHA:
+    - update JtR label
+    - fix regexp
+    - add OPENLDAPS flavor
+    - add samples
+
 ## [1.5.0]
 
 - **Additions**:

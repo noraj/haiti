@@ -1389,25 +1389,48 @@
         ]
     },
     {
-        "regex": "\\A{SSHA}[a-z0-9\\/+]{38}==\\Z",
+        "regex": "\\A{SSHA}[a-z0-9\\/+]{26,}(?:[=]{1,2})?\\Z",
         "modes": [
             {
-                "john": "nsldaps",
+                "john": "salted-sha1",
                 "hashcat": 111,
                 "extended": false,
-                "name": "SSHA-1(Base64)"
+                "name": "SSHA-1 (Base64)",
+                "samples": [
+                    "{SSHA}AZKja92fbuuB9SpRlHqaoXxbTc43Mzc2MDM1Ng=="
+                ]
             },
             {
-                "john": "nsldaps",
+                "john": "salted-sha1",
                 "hashcat": 111,
                 "extended": false,
-                "name": "Netscape LDAP SSHA"
+                "name": "Netscape LDAP SSHA",
+                "samples": [
+                    "{SSHA}FLzWcQqyle6Mo7NvrwXCMAmRzXQxNjYxMTYzNw=="
+                ]
             },
             {
-                "john": "nsldaps",
+                "john": "salted-sha1",
                 "hashcat": 111,
-                "extended": true,
-                "name": "nsldaps"
+                "extended": false,
+                "name": "NSLDAPS (ssha)",
+                "samples": [
+                    "{SSHA}WTT3B9Jjr8gOt0Q7WMs9/XvukyhTQj0Ns0jMKQ==",
+                    "{SSHA}ypkVeJKLzbXakEpuPYbn+YBnQvFmNmB+kQhmWQ==",
+                    "{SSHA}/EExmSfmhQSPHDJaTxwQSdb/uPpzYWx0ZXI=",
+                    "{SSHA}gVK8WC9YyFT1gMsQHTGCgT3sSv5zYWx0",
+                    "{SSHA}zTYIHsq8ygmPTPPjoeNVXfKtEthEMXNCMU9jcURy"
+                ]
+            },
+            {
+                "john": "salted-sha1",
+                "hashcat": null,
+                "extended": false,
+                "name": "OPENLDAPS (openssha)",
+                "samples": [
+                    "{SSHA}Uf2x9YxSWZZNAi2t1QXbG2PmT07AtURl",
+                    "{SSHA}XXGLZ7iKpYSBpF6EwoeTl27U0L/kYYsY"
+                ]
             }
         ]
     },
