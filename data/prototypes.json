@@ -2263,6 +2263,27 @@
         ]
     },
     {
+        "regex": "\\A{ssha256}[a-z0-9\\/+]{43,}(?:[=]{1,2})?\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 1411,
+                "extended": false,
+                "name": "SSHA-256 (Base64)",
+                "samples": [
+                    "{SSHA256}OZiz0cnQ5hgyel3Emh7NCbhBRCQ+HVBwYplQunHYnER7TLuV",
+                    "{SSHA256}L5Wk0zPY2lmoR5pH20zngq37KkxFwgTquEhx95rxfVk3Ng=="
+                ]
+            },
+            {
+                "john": null,
+                "hashcat": 1411,
+                "extended": false,
+                "name": "LDAP (SSHA-256)"
+            }
+        ]
+    },
+    {
         "regex": "\\A[a-f0-9]{80}\\Z",
         "modes": [
             {
@@ -2419,19 +2440,23 @@
         ]
     },
     {
-        "regex": "\\A{SSHA512}[a-z0-9\\/+]{96}\\Z",
+        "regex": "\\A{SSHA512}[a-z0-9\\/+]{86,}(?:[=]{1,2})?\\Z",
         "modes": [
             {
                 "john": "ssha512",
                 "hashcat": 1711,
                 "extended": false,
-                "name": "SSHA-512(Base64)"
+                "name": "SSHA-512 (Base64)",
+                "samples": [
+                    "{SSHA512}ALtwKGBdRgD+U0fPAy31C28RyKYx7+a8kmfksccsOeLknLHv2DBXYI7TDnTolQMBuPkWDISgZr2cHfnNPFjGZTEyNDU4OTkw",
+                    "{SSHA512}Bz8w5q6qEtB1Nnc8b1jfTvTXVTwohWag33oghQGOtLChnkZTw/cuJaHQlLJEI3AWKZGCRyLA6Phujdxo+is7AjA2MDcyNjY1Mg=="
+                ]
             },
             {
                 "john": "ssha512",
                 "hashcat": 1711,
                 "extended": false,
-                "name": "LDAP(SSHA-512)"
+                "name": "LDAP (SSHA-512)"
             }
         ]
     },

@@ -1,16 +1,26 @@
 ## [unreleased]
 
+- **Additions**:
+  - SSHA-256 (Base64) [#147][#147]
+  - LDAP (SSHA-256) [#147][#147]
 - **Enhancements**:
-  - SSHA:
+  - SSHA: [#145][#145]
     - update JtR label
     - fix regexp
     - add OPENLDAPS flavor
     - add samples
-  - AIX:
+  - AIX: [#146][#146]
     - AIX (smd5): add samples
     - AIX (ssha256): add samples
     - AIX (ssha512): add samples
     - AIX (ssha1): add samples
+  - SSHA-512: [#147][#147]
+    - fix regexp
+    - add samples
+
+[#145]:https://github.com/noraj/haiti/issues/145
+[#146]:https://github.com/noraj/haiti/issues/146
+[#147]:https://github.com/noraj/haiti/issues/147
 
 ## [1.5.0]
 
@@ -29,7 +39,7 @@
   - **Colors**:
     - help message is colored
     - change reference colors to match the same theme
-  - NTLM:
+  - NTLM: [#139][#139]
     - Add recognition for common dump format
     - Add samples
   - argon2id:
@@ -72,6 +82,8 @@
 - **Chore**:
   - Add support for Ruby 3.2
   - Add project reference in help message
+
+[#139]:https://github.com/noraj/haiti/issues/139
 
 ## [1.4.1]
 
