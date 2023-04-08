@@ -1032,7 +1032,11 @@
                 "john": "aix-smd5",
                 "hashcat": 6300,
                 "extended": false,
-                "name": "AIX(smd5)"
+                "name": "AIX (smd5)",
+                "samples": [
+                    "{smd5}17800721$WkGka7tXcrfpUQS6WOQyw/",
+                    "{smd5}a5/yTL/u$VfvgyHx1xUlXZYBocQpQY0"
+                ]
             }
         ]
     },
@@ -1560,7 +1564,11 @@
                 "john": "aix-ssha1",
                 "hashcat": 6700,
                 "extended": false,
-                "name": "AIX(ssha1)"
+                "name": "AIX (ssha1)",
+                "samples": [
+                    "{ssha1}06$bJbkFGJAB30L2e23$dCESGOsP7jaIIAJ1QAcmaGeG.kr",
+                    "{ssha1}06$5586485655847243$V5f1Ff1y4dr7AWeVSSdv6N52..Y"
+                ]
             }
         ]
     },
@@ -2246,7 +2254,11 @@
                 "john": "aix-ssha256",
                 "hashcat": 6400,
                 "extended": false,
-                "name": "AIX(ssha256)"
+                "name": "AIX (ssha256)",
+                "samples": [
+                    "{ssha256}06$aJckFGJAB30LTe10$ohUsB7LBPlgclE3hJg9x042DLJvQyxVCX.nZZLEz.g2",
+                    "{ssha256}06$2715084824104660$1s/s4RZWEcvZ5VuWPXWGUfwSoG07eVSVce8F6ANJ.g4"
+                ]
             }
         ]
     },
@@ -2430,7 +2442,11 @@
                 "john": "aix-ssha512",
                 "hashcat": 6500,
                 "extended": false,
-                "name": "AIX(ssha512)"
+                "name": "AIX (ssha512)",
+                "samples": [
+                    "{ssha512}06$bJbkFGJAB30L2e23$bXiXjyH5YGIyoWWmEVwq67nCU5t7GLy9HkCzrodRCQCx3r9VvG98o7O3V0r9cVrX3LPPGuHqT5LLn0oGCuI1..",
+                    "{ssha512}06$4653718755856803$O04nVHL7iU9Jguy/B3Yow.veBM52irn.038Y/Ln6AMy/BG8wbU6ozSP8/W9KDZPUbhdsbl1lf8px.vKJS1S/.."
+                ]
             }
         ]
     },

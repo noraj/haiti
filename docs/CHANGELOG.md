@@ -6,6 +6,11 @@
     - fix regexp
     - add OPENLDAPS flavor
     - add samples
+  - AIX:
+    - AIX (smd5): add samples
+    - AIX (ssha256): add samples
+    - AIX (ssha512): add samples
+    - AIX (ssha1): add samples
 
 ## [1.5.0]
 
