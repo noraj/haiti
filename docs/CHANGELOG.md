@@ -3,6 +3,7 @@
 - **Additions**:
   - SSHA-256 (Base64) [#147][#147]
   - LDAP (SSHA-256) [#147][#147]
+  - IPMI 2.0 RAKP HMAC-MD5 [#144][#144]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
@@ -17,10 +18,15 @@
   - SSHA-512: [#147][#147]
     - fix regexp
     - add samples
+  - IPMI2 RAKP HMAC-SHA1 [#144][#144]
+    - fix regexp
+    - add samples
+    - add JtR format
 
 [#145]:https://github.com/noraj/haiti/issues/145
 [#146]:https://github.com/noraj/haiti/issues/146
 [#147]:https://github.com/noraj/haiti/issues/147
+[#144]:https://github.com/noraj/haiti/issues/144
 
 ## [1.5.0]
 
