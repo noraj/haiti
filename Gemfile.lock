@@ -35,9 +35,7 @@ GEM
       parser (>= 3.2.1.0)
     ruby-progressbar (1.11.0)
     unicode-display_width (2.4.2)
-    webrick (1.7.0)
-    yard (0.9.28)
-      webrick (~> 1.7.0)
+    yard (0.9.32)
 
 PLATFORMS
   x86_64-linux
