@@ -9,7 +9,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
-    commonmarker (0.23.8)
+    commonmarker (0.23.9)
     docopt (0.6.1)
     json (2.6.3)
     minitest (5.17.0)
