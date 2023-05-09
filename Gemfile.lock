@@ -12,7 +12,7 @@ GEM
     commonmarker (0.23.8)
     docopt (0.6.1)
     json (2.6.3)
-    minitest (5.17.0)
+    minitest (5.18.0)
     paint (2.3.0)
     parallel (1.22.1)
     parser (3.2.1.0)
@@ -45,7 +45,7 @@ DEPENDENCIES
   commonmarker (~> 0.23)
   docopt (~> 0.6)
   haiti-hash!
-  minitest (~> 5.15)
+  minitest (~> 5.18)
   paint (~> 2.3)
   rake (~> 13.0)
   rubocop (~> 1.28)
