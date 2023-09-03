@@ -215,6 +215,14 @@ If you want haiti to be included in the official Void repository ask [here](http
 
 Work in progress
 
+### **Exegol**
+
+haiti is available as an [Exegol](https://exegol.readthedocs.io/en/latest/exegol-image/tools.html) image (nightly AMD64).
+
+```
+$ exegol install haiti
+```
+
 <!-- tabs:end -->
 
 ## Development
