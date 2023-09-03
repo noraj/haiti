@@ -1,5 +1,6 @@
 ## [unreleased]
 
+- **Breaking changes**: Drop Ruby 2.5 support ([EOL since 2021](https://www.ruby-lang.org/en/downloads/branches/))
 - **Additions**:
   - SSHA-256 (Base64) [#147][#147]
   - LDAP (SSHA-256) [#147][#147]

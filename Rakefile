@@ -12,5 +12,5 @@ task default: :test
 
 desc 'Count the number of hash types'
 task :count do
-  puts File.read('data/prototypes.json').scan(/"extended"/).count
+  puts File.read('data/prototypes.json').scan('"extended"').count
 end
