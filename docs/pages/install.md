@@ -54,6 +54,21 @@ $ pikaur -S haiti
 
 AUR: [haiti](https://aur.archlinux.org/packages/haiti/)
 
+From [quary](https://github.com/anatol/quarry) user repository for pre-built binaries:
+
+`pacman.conf` or `mirrorlist`
+
+```ini
+[quarry]
+Server = https://pkgbuild.com/~anatolik/quarry/x86_64/
+```
+
+Install from quary:
+
+```bash
+pacman -S ruby-haiti-hash
+```
+
 ### **Docker (git)**
 
 Without a registry
