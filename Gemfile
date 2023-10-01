@@ -24,5 +24,6 @@ end
 
 group :development, :docs do
   gem 'commonmarker', '~> 0.23' # for markdown support in YARD
-  gem 'yard', ['>= 0.9.27', '< 0.10']
+  gem 'yard', ['>= 0.9.27', '< 0.10'] 
+  gem 'ronn', '>=0.7.3' # for manpage generation
 end
