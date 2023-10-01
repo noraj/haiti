@@ -26,6 +26,8 @@
     - fix regexp
     - add samples
     - add JtR format
+- **Documentation**:
+  - added a man page
 
 [#145]:https://github.com/noraj/haiti/issues/145
 [#146]:https://github.com/noraj/haiti/issues/146
