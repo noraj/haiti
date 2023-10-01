@@ -1,0 +1,148 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "HAITI" "1" "October 2023" "" ""
+.
+.SH "NAME"
+\fBHAITI\fR \- HAsh IdenTifIer
+.
+.SH "SYNOPSIS"
+\fBhaiti\fR \fIoptions\fR \fIhash\fR
+.
+.P
+\fBhaiti\fR samples (\fIref\fR | \fIname\fR)
+.
+.P
+\fBhaiti\fR \-\-ascii\-art
+.
+.P
+\fBhaiti\fR \-h | \-\-help
+.
+.P
+\fBhaiti\fR \-\-version
+.
+.SH "DESCRIPTION"
+\fBHAITI\fR is a CLI tool and library for identifying hash types (hash type identifier)\.
+.
+.SH "OPTIONS"
+.
+.TP
+\fB\-\-no\-color\fR:
+.
+.IP
+Disable colorized output (NO_COLOR environment variable is respected too)\.
+.
+.TP
+\fB\-e, \-\-extended\fR:
+.
+.IP
+List all possible hash algorithms, including ones using salt\.
+.
+.TP
+\fB\-\-short\fR:
+.
+.IP
+Display in a short format: do not display hashcat and john the ripper references\.
+.
+.TP
+\fB\-\-hashcat\-only\fR:
+.
+.IP
+Show only hashcat references\.
+.
+.TP
+\fB\-\-john\-only\fR:
+.
+.IP
+Show only john the ripper references\.
+.
+.TP
+\fB\-\-ascii\-art\fR:
+.
+.IP
+Display the logo in colored ascii\-art\.
+.
+.TP
+\fB\-\-debug\fR:
+.
+.IP
+Display arguments\.
+.
+.TP
+\fB\-h, \-\-help\fR:
+.
+.IP
+Show this screen\.
+.
+.TP
+\fB\-\-version\fR:
+.
+.IP
+Show version\.
+.
+.SH "COMMANDS"
+.
+.TP
+\fBsamples\fR:
+.
+.IP
+Display hash samples for the given type\.
+.
+.SH "PARAMETERS"
+.
+.TP
+\fB<hash>\fR:
+.
+.IP
+Hash string to identify, read from STDIN if equal to "\-"\.
+.
+.TP
+\fB<ref>\fR:
+.
+.IP
+Hashcat or John the Ripper reference\.
+.
+.TP
+\fB<name>\fR:
+.
+.IP
+Hash type name\.
+.
+.SH "EXAMPLES"
+\fBhaiti\fR \-e d41d8cd98f00b204e9800998ecf8427e
+.
+.P
+\fBhaiti\fR \-\-no\-color \-\-short d41d8cd98f00b204e9800998ecf8427e
+.
+.P
+b2sum /etc/os\-release | awk \'{print $1}\' | \fBhaiti\fR \-
+.
+.P
+\fBhaiti\fR samples crc32
+.
+.SH "AUTHOR"
+Made by Alexandre ZANNI (@noraj)\.
+.
+.P
+Forked from Orange\-Cyberdefense/haiti (https://github\.com/Orange\-Cyberdefense/haiti)\.
+.
+.SH "COPYRIGHT"
+Copyright © 2019\-2022 Alexandre ZANNI (independent)
+.
+.P
+Copyright © 2019\-2020 Alexandre ZANNI at Orange Cyberdefense
+.
+.P
+This software is distributed under the terms of the MIT License\. You may freely redistribute copies of it, subject to the conditions of the license\.
+.
+.SH "VERSION"
+1\.5\.0
+.
+.SH "REPORTING BUGS"
+Report bugs to https://github\.com/noraj/haiti/issues\.
+.
+.SH "SEE ALSO"
+Project homepage and documentation: https://noraj\.github\.io/haiti
+.
+.P
+Source code: https://github\.com/noraj/haiti
