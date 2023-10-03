@@ -50,6 +50,15 @@ class HashIdentifier
       samples.delete(nil)
       samples.flatten.uniq
     end
+
+    # Return all, common, with or without ref, extended or not.
+    # @return [Array<String>] a list of types
+    # @example
+    #   HashIdentifier.list
+    #   # => ["CRC-16", "CRC-16-CCITT", "FCS-16", "Adler-32", "CRC-32B", "FCS-32"]
+    def list
+      (PROTOTYPES.flat_map { |d| d["modes"].map { |m| m["name"]}} + COMMONS).uniq
+    end
   end
 
   private
