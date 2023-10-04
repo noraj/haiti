@@ -7,8 +7,9 @@ $ haiti -h
 HAITI (HAsh IdenTifIer) v1.5.0
 
 Usage:
-  haiti [options] <hash>
+  haiti [options] list
   haiti samples (<ref> | <name>)
+  haiti [options] <hash>
   haiti --ascii-art
   haiti -h | --help
   haiti --version

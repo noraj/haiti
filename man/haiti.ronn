@@ -7,6 +7,8 @@ HAITI(1) -- HAsh IdenTifIer
 
 `haiti` samples (<ref> | <name>)
 
+`haiti` [options] list
+
 `haiti` --ascii-art
 
 `haiti` -h | --help
@@ -60,6 +62,10 @@ HAITI(1) -- HAsh IdenTifIer
 * **samples**:
 
   Display hash samples for the given type.
+
+* **list**:
+
+  Display a list of all the available hash types.
 
 ## PARAMETERS
 
