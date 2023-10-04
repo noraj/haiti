@@ -35,7 +35,7 @@ class HaitiTest < Minitest::Test
 
   def test_hashidentifier_list
     list = HashIdentifier.list
-    prototypes = HashIdentifier::PROTOTYPES.flat_map { |d| d["modes"].map { |m| m["name"]} }.uniq
+    prototypes = HashIdentifier::PROTOTYPES.flat_map { |d| d['modes'].map { |m| m['name'] } }.uniq
     expected_list = (prototypes + HashIdentifier::COMMONS).uniq
     assert_equal(515, list.length)
     assert_equal(expected_list, list)

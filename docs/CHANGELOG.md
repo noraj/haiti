@@ -5,6 +5,7 @@
   - **Drop** Ruby 2.6 support, [EOL since 12/04/2021](https://www.ruby-lang.org/en/downloads/branches/) and not supported by Rubocop since [1.51.0](https://github.com/rubocop/rubocop/releases/tag/v1.51.0)
   - _Warning_: Drop Ruby 2.7 support soon, [EOL since 31/03/2023](https://www.ruby-lang.org/en/downloads/branches/) but still supported by Rubocop
 - **Additions**:
+  - New `list` command [#159][#159]
   - SSHA-256 (Base64) [#147][#147]
   - LDAP (SSHA-256) [#147][#147]
   - IPMI 2.0 RAKP HMAC-MD5 [#144][#144]
@@ -26,6 +27,7 @@
     - fix regexp
     - add samples
     - add JtR format
+  - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
 
@@ -33,6 +35,7 @@
 [#146]:https://github.com/noraj/haiti/issues/146
 [#147]:https://github.com/noraj/haiti/issues/147
 [#144]:https://github.com/noraj/haiti/issues/144
+[#159]:https://github.com/noraj/haiti/pull/159
 
 ## [1.5.0]
 

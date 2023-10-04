@@ -15,7 +15,7 @@ Usage:
 
 Commands:
   samples         Display hash samples for the given type
-  list            Display array list of available types
+  list            Display a list of all the available hash types
 
 Parameters:
   <hash>          Hash string to identify, read from STDIN if equal to "-"

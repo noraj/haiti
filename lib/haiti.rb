@@ -51,13 +51,23 @@ class HashIdentifier
       samples.flatten.uniq
     end
 
-    # Return all, common, with or without ref, extended or not.
-    # @return [Array<String>] a list of types
+    # List names of all hash types available
+    # @return [Array<String>] a list of hash types name
     # @example
     #   HashIdentifier.list
-    #   # => ["CRC-16", "CRC-16-CCITT", "FCS-16", "Adler-32", "CRC-32B", "FCS-32"]
+    #   # => ["CRC-16", "CRC-16-CCITT", "FCS-16", "Adler-32", "CRC-32B", "FCS-32", ...]
     def list
-      (PROTOTYPES.flat_map { |d| d["modes"].map { |m| m["name"]}} + COMMONS).uniq
+      (PROTOTYPES.flat_map { |d| d['modes'].map { |m| m['name'] } }).sort { |a, b| a.downcase <=> b.downcase }.uniq
+    end
+
+    # List all hash types available as <Chf> object
+    # @return [Array<Chf>] a list of hash types object
+    def object_list
+      (PROTOTYPES.flat_map do |d|
+         d['modes'].map do |m|
+           Chf.new(m)
+         end
+       end).sort { |a, b| a.name.downcase <=> b.name.downcase }.uniq
     end
   end
 

@@ -8,18 +8,21 @@ require 'haiti'
 require 'docopt'
 require 'paint'
 
+# NOTE: `haiti [options] <hash>` needs to be after `list` and `samples`, else `list` is caught as a hash
 doc = <<~DOCOPT
   #{Paint['HAITI (HAsh IdenTifIer)', '#FF69B4']} v#{Paint[HashIdentifier::VERSION, :bold]}
 
   #{Paint['Usage:', '#00FFFF']}
-    haiti [options] <hash>
+    haiti [options] list
     haiti samples (<ref> | <name>)
+    haiti [options] <hash>
     haiti --ascii-art
     haiti -h | --help
     haiti --version
 
   #{Paint['Commands:', '#00FFFF']}
     samples         Display hash samples for the given type
+    list            Display a list of all the available hash types
 
   #{Paint['Parameters:', '#00FFFF']}
     <hash>          Hash string to identify, read from STDIN if equal to "-"
@@ -49,6 +52,18 @@ doc = <<~DOCOPT
     #{Paint['documentation', :underline]} (https://noraj.github.io/haiti)
 DOCOPT
 
+# Shared option management logic for the identify and list command
+def manage_options(args, types)
+  types.each do |type|
+    next if type.extended && !args['--extended']
+
+    print Paint[type.name, :bold]
+    print Paint[" [HC: #{type.hashcat}]", '#00FFFF'] unless type.hashcat.nil? || args['--short'] || args['--john-only']
+    print Paint[" [JtR: #{type.john}]", '#FF69B4'] unless type.john.nil? || args['--short'] || args['--hashcat-only']
+    puts
+  end
+end
+
 begin
   args = Docopt.docopt(doc, version: HashIdentifier::VERSION)
   Paint.mode = 0 if args['--no-color']
@@ -61,22 +76,16 @@ begin
       puts 'Unknown hash type'
       exit(0)
     end
-    hi.type.each do |type|
-      next if type.extended && !args['--extended']
-
-      print Paint[type.name, :bold]
-      unless type.hashcat.nil? || args['--short'] || args['--john-only']
-        print Paint[" [HC: #{type.hashcat}]", '#00FFFF']
-      end
-      print Paint[" [JtR: #{type.john}]", '#FF69B4'] unless type.john.nil? || args['--short'] || args['--hashcat-only']
-      puts
-    end
+    manage_options(args, hi.type)
   elsif args['samples']
     input = args['<ref>'] || args['<name>']
     samples = HashIdentifier.samples(input)
     samples.each do |sample|
       puts sample
     end
+  elsif args['list']
+    types = HashIdentifier.object_list
+    manage_options(args, types)
   elsif args['--ascii-art']
     puts File.read(File.join(__dir__, '../docs/_media/logo.ascii'))
   end
