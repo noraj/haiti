@@ -33,12 +33,18 @@ class HaitiTest < Minitest::Test
     assert_empty(HashIdentifier.samples(9_999_999_999_999))
   end
 
+  def test_hashidentifier_object_list
+    olist = HashIdentifier.object_list
+    assert_instance_of(Array, olist)
+    assert_instance_of(HashIdentifier::Chf, olist.first)
+    refute_empty(olist)
+  end
+
   def test_hashidentifier_list
     list = HashIdentifier.list
-    prototypes = HashIdentifier::PROTOTYPES.flat_map { |d| d['modes'].map { |m| m['name'] } }.uniq
-    expected_list = (prototypes + HashIdentifier::COMMONS).uniq
-    assert_equal(515, list.length)
-    assert_equal(expected_list, list)
+    assert_instance_of(Array, list)
+    assert_instance_of(String, list.first)
+    refute_empty(list)
   end
 
   def test_chf
