@@ -5753,5 +5753,20 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "\\A\\(md5|pbkdf2-hmac-md5):(\\d+:[A-Za-z0-9+/]+={0,2}:[A-Za-z0-9+/]+={0,2})|(\\$pbkdf2-hmac-md5\\$\\d+\\$[A-Fa-f0-9]+\\$[A-Fa-f0-9]+)\\Z",
+        "modes": [
+            {
+                "john": "PBKDF2-HMAC-MD5",
+                "hashcat": 11900,
+                "extended": false,
+                "name": "PBKDF2-HMAC-MD5",
+                "samples": [
+                    "md5:1000:MTg1MzA=:Lz84VOcrXd699Edsj34PP98+f4f3S0rTZ4kHAIHoAjs=",
+                    "$pbkdf2-hmac-md5$1000$38333335343433323338$f445d6d0ed5cbe9fc12c03ea9530c1c6f79e7886a6af1552b40f3704a8b87847"
+                ]
+            }
+        ]
     }
 ]
