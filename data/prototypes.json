@@ -5929,5 +5929,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "\\A[a-f0-9]{32}\\*[a-f0-9]{12}\\*[a-f0-9]{12}\\*[a-f0-9]{,64}\\Z",
+        "modes": [
+            {
+                "john": "wpapsk-pmk",
+                "hashcat": 16800,
+                "extended": false,
+                "name": "WPA-PMKID-PBKDF2",
+                "samples": [
+                    "2582a8281bf9d4308d6f5731d0e61c61*4604ba734d4e*89acf0e761f4*ed487162465a774bfba60eb603a39f3a"
+                ]
+            }
+        ]
     }
 ]
