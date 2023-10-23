@@ -3799,13 +3799,18 @@
         ]
     },
     {
-        "regex": "\\A\\{PKCS5S2\\}[a-z0-9\\/+]{64}\\Z",
+        "regex": "\\A{PKCS5S2}[a-z0-9\\/+]{64}\\Z",
         "modes": [
             {
-                "john": null,
-                "hashcat": null,
+                "john": "pbkdf2-hmac-sha1",
+                "hashcat": 12001,
                 "extended": false,
-                "name": "PBKDF2(Atlassian)"
+                "name": "Atlassian (PBKDF2-HMAC-SHA1)",
+                "samples": [
+                    "{PKCS5S2}DQIXJU038u4P7FdsuFTY/+35bm41kfjZa57UrdxHp2Mu3qF2uy+ooD+jF5t1tb8J",
+                    "{PKCS5S2}NzIyNzM0NzY3NTIwNjI3MdDDis7wPxSbSzfFqDGf7u/L00kSEnupbz36XCL0m7wa",
+                    "{PKCS5S2}NTczNTY0NDY2NjQyNzU1Mx8gGiRGobaZYwumctGHbn2ZOHB8LkwzH+Z1gkWfy1zD"
+                ]
             }
         ]
     },

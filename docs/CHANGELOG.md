@@ -36,6 +36,11 @@
     - fix regexp
     - split regexp in 2 (1 for HC & 1 for JtR)
     - add samples
+  - Atlassian (PBKDF2-HMAC-SHA1) [#160][#160]
+    - enhance regexp
+    - add JtR & HC refs.
+    - enhance name
+    - add samples
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
