@@ -45,6 +45,11 @@
   - PBKDF2-HMAC-SHA1 (Cryptacular) [#160][#160]
     - enhance name
     - add samples
+  - macOS v10.8+ (PBKDF2-HMAC-SHA512) [#160][#160]
+    - enhance regexp
+    - enhance name
+    - add samples
+    - remove duplicate mode
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
