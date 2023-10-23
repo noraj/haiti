@@ -29,6 +29,10 @@
     - add JtR format
   - Django (PBKDF2-HMAC-SHA256) [#160][#160]
     - add samples
+  - PBKDF2-HMAC-SHA256 [#160][#160]
+    - fix regexp
+    - split regexp in 2 (1 for HC & 1 for JtR)
+    - add samples
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page

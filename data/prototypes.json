@@ -4151,21 +4151,39 @@
         ]
     },
     {
-        "regex": "\\Asha256[:$]\\d+[:$][a-z0-9\\/+]+[:$][a-z0-9\\/+]{32,128}\\Z",
+        "regex": "\\Asha256:\\d{1,6}:(?=[^:]+:)(?:[a-z0-9+\/]{4})*(?:|(?:[a-z0-9+\/]{3}=)|(?:[a-z0-9+\/]{2}==)|(?:[a-z0-9+\/]{1}===)):(?=[^:]{16,256})(?:[a-z0-9+\/]{4})*(?:|(?:[a-z0-9+\/]{3}=)|(?:[a-z0-9+\/]{2}==)|(?:[a-z0-9+\/]{1}===))\\Z",
         "modes": [
             {
                 "john": null,
                 "hashcat": 10900,
                 "extended": false,
-                "name": "PBKDF2-HMAC-SHA256 (PHP)",
+                "name": "PBKDF2-HMAC-SHA256",
                 "samples": [
-                    "sha256:1000:NjI3MDM3:vVfavLQL9ZWjg8BUMq6/FB8FtpkIGWYk"
+                    "sha256:1000:NjI3MDM3:vVfavLQL9ZWjg8BUMq6/FB8FtpkIGWYk",
+                    "sha256:1000:MTc3MTA0MTQwMjQxNzY=:PYjCU215Mi57AYPKva9j7mvF4Rc5bCnt"
                 ]
             }
         ]
     },
     {
-        "regex": "\\A(\\$dahua\\$)?[a-z0-9]{8}\\Z",
+        "regex": "\\A\\$pbkdf2-sha256\\$\\d{1,6}\\$[a-z0-9+\/]+\\$[a-z0-9+\/]{16,256}\\Z",
+        "modes": [
+            {
+                "john": "pbkdf2-hmac-sha256",
+                "hashcat": null,
+                "extended": false,
+                "name": "PBKDF2-HMAC-SHA256",
+                "samples": [
+                    "$pbkdf2-sha256$1000$b1dWS2dab3dKQWhPSUg3cg$UY9j5wlyxtsJqhDKTqua8Q3fMp0ojc2pOnErzr8ntLE",
+                    "$pbkdf2-sha256$12000$MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg$94Z71JhWYUP2E0IrQrexc8AMhHzVB4bwkxh7n0FCnns",
+                    "$pbkdf2-sha256$12000$dU5p7T2ndM7535tzjpGyVg$ILbppLkipmonlfH1I2W3/vFMyr2xvCI8QhksH8DWn/M",
+                    "$pbkdf2-sha256$12000$MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIz$iII/U6157WHgHfIatBb/o1rXQithKBN6ykgJU/I0Wpc"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\A(?:\\$dahua\\$)?[a-z0-9]{8}\\Z",
         "modes": [
             {
                 "john": "dahua",
