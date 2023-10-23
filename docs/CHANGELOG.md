@@ -27,6 +27,8 @@
     - fix regexp
     - add samples
     - add JtR format
+  - Django (PBKDF2-HMAC-SHA256) [#160][#160]
+    - add samples
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
@@ -36,6 +38,7 @@
 [#147]:https://github.com/noraj/haiti/issues/147
 [#144]:https://github.com/noraj/haiti/issues/144
 [#159]:https://github.com/noraj/haiti/pull/159
+[#160]:https://github.com/noraj/haiti/issues/160
 
 ## [1.5.0]
 
