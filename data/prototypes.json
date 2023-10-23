@@ -2812,13 +2812,18 @@
         ]
     },
     {
-        "regex": "\\Agrub\\.pbkdf2\\.sha512\\.\\d+\\.([a-f0-9]{128,2048}\\.|\\d+\\.)?[a-f0-9]{128}\\Z",
+        "regex": "\\Agrub\\.pbkdf2\\.sha512\\.\\d{1,6}\\.[a-f0-9]{128,2048}\\.[a-f0-9]{128}\\Z",
         "modes": [
             {
-                "john": null,
+                "john": "pbkdf2-hmac-sha512",
                 "hashcat": 7200,
                 "extended": false,
-                "name": "GRUB 2"
+                "name": "GRUB 2 (PBKDF2-HMAC-SHA512)",
+                "samples": [
+                    "grub.pbkdf2.sha512.10000.7d391ef48645f626b427b1fae06a7219b5b54f4f02b2621f86b5e36e83ae492bd1db60871e45bc07925cecb46ff8ba3db31c723c0c6acbd4f06f60c5b246ecbf.26d59c52b50df90d043f070bd9cbcd92a74424da42b3666fdeb08f1a54b8f1d2f4f56cf436f9382419c26798dc2c209a86003982b1e5a9fcef905f4dfaa4c524",
+                    "grub.pbkdf2.sha512.10000.4483972AD2C52E1F590B3E2260795FDA9CA0B07B96FF492814CA9775F08C4B59CD1707F10B269E09B61B1E2D11729BCA8D62B7827B25B093EC58C4C1EAC23137.DF4FCB5DD91340D6D31E33423E4210AD47C7A4DF9FA16F401663BF288C20BF973530866178FE6D134256E4DBEFBD984B652332EED3ACAED834FEA7B73CAE851D",
+                    "grub.pbkdf2.sha512.1024.03510507805003756325721848020561235456073188241051876082416068104377357018503082587026352628170170411053726157658716047762755750.aac26b18c2b0c44bcf56514d46aabd52eea097d9c95122722087829982e9dd957b2b641cb1e015d4df16a84d0571e96cf6d3de6361431bdeed4ddb0940f2425b"
+                ]
             }
         ]
     },
@@ -2829,7 +2834,7 @@
                 "john": null,
                 "hashcat": 124,
                 "extended": false,
-                "name": "Django(SHA-1)"
+                "name": "Django (SHA-1)"
             }
         ]
     },

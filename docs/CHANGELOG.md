@@ -50,6 +50,11 @@
     - enhance name
     - add samples
     - remove duplicate mode
+  - GRUB 2 (PBKDF2-HMAC-SHA512) [#160][#160]
+    - enhance regexp
+    - enhance name
+    - add samples
+    - add JtR ref.
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
