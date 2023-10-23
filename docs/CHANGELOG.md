@@ -11,6 +11,7 @@
   - IPMI 2.0 RAKP HMAC-MD5 [#144][#144]
   - RedHat 389-DS LDAP (PBKDF2-HMAC-SHA256) [#160][#160]
   - PBKDF2-HMAC-MD5 [#160][#160]
+  - PBKDF2-HMAC-SHA1 [#160][#160]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
