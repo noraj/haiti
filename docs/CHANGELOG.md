@@ -15,6 +15,7 @@
   - PBKDF2-HMAC-SHA512 [#160][#160]
   - Ethereum Wallet (SCRYPT)
   - WPA-PMKID-PBKDF2 [#160][#160]
+  - PBKDF2-HMAC-MD4 [#160][#160]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
