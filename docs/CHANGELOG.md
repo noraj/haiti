@@ -41,6 +41,9 @@
     - add JtR & HC refs.
     - enhance name
     - add samples
+  - PBKDF2-HMAC-SHA1 (Cryptacular) [#160][#160]
+    - enhance name
+    - add samples
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page

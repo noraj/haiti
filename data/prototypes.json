@@ -3645,7 +3645,10 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "PBKDF2(Cryptacular)"
+                "name": "PBKDF2-HMAC-SHA1 (Cryptacular)",
+                "samples": [
+                    "$p5k2$2710$oX9ZZOcNgYoAsYL-8bqxKg==$AU2JLf2rNxWoZxWxRCluY0u6h6c="
+                ]
             }
         ]
     },
