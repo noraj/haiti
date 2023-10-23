@@ -9,6 +9,7 @@
   - SSHA-256 (Base64) [#147][#147]
   - LDAP (SSHA-256) [#147][#147]
   - IPMI 2.0 RAKP HMAC-MD5 [#144][#144]
+  - RedHat 389-DS LDAP (PBKDF2-HMAC-SHA256) [#160][#160]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
