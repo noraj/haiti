@@ -13,6 +13,7 @@
   - PBKDF2-HMAC-MD5 [#160][#160]
   - PBKDF2-HMAC-SHA1 [#160][#160]
   - PBKDF2-HMAC-SHA512 [#160][#160]
+  - Ethereum Wallet (SCRYPT)
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
@@ -55,6 +56,16 @@
     - enhance name
     - add samples
     - add JtR ref.
+  - Ethereum Wallet (PBKDF2-HMAC-SHA256) [#160][#160]
+    - fix regexp
+    - enhance name
+    - add samples
+    - fix JtR ref.
+  - Ethereum Presale Wallet (PBKDF2-HMAC-SHA256) [#160][#160]
+    - fix regexp
+    - enhance name
+    - add samples
+    - fix JtR ref.
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
