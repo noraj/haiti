@@ -12,6 +12,7 @@
   - RedHat 389-DS LDAP (PBKDF2-HMAC-SHA256) [#160][#160]
   - PBKDF2-HMAC-MD5 [#160][#160]
   - PBKDF2-HMAC-SHA1 [#160][#160]
+  - PBKDF2-HMAC-SHA512 [#160][#160]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
