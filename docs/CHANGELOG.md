@@ -87,6 +87,9 @@
     - merge _Telegram Desktop 1.3.9_ into _Telegram Desktop < v2.1.14 (PBKDF2-HMAC-SHA1)_
     - update samples
     - add HC refs.
+  - SAP CODVN F/G (PASSCODE) [#160][#160]
+    - fix regexp
+    - add samples
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
