@@ -83,6 +83,10 @@
   - PBKDF2-HMAC-SHA1 [#160][#160]
     - fix regexp
     - add a special case sample
+  - Telegram Desktop [#160][#160]
+    - merge _Telegram Desktop 1.3.9_ into _Telegram Desktop < v2.1.14 (PBKDF2-HMAC-SHA1)_
+    - update samples
+    - add HC refs.
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
