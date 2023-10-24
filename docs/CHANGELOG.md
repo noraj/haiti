@@ -23,6 +23,10 @@
   - SAP CODVN H (PWDSALTEDHASH) iSSHA-512
   - Web2py (PBKDF2-HMAC-SHA512) [#160][#160]
   - VMware VMX (PBKDF2-HMAC-SHA1 + AES-256-CBC) [#160][#160]
+  - ENCsecurity Datavault (PBKDF2/no keychain) [#160][#160]
+  - ENCsecurity Datavault (PBKDF2/keychain) [#160][#160]
+  - ENCsecurity Datavault (MD5/no keychain) [#160][#160]
+  - ENCsecurity Datavault (MD5/keychain) [#160][#160]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label

@@ -6091,5 +6091,61 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "\\A\\$encdv-pbkdf2\\$\\d\\$\\d\\$[a-f0-9]{16}\\$[a-f0-9]{16}\\$\\d{2}\\$[a-f0-9]{64}\\$\\d{1,10}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 29910,
+                "extended": false,
+                "name": "ENCsecurity Datavault (PBKDF2/no keychain)",
+                "samples": [
+                    "$encdv-pbkdf2$1$1$121f898edc51ffb2$14e6bf4e9256f9e4$32$1972489853882254644795101599063579097812661888813652597380052274$100000"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\A\\$encdv-pbkdf2\\$\\d\\$\\d\\$[a-f0-9]{16}\\$[a-f0-9]{16}\\$\\d{2}\\$[a-f0-9]{64}\\$\\d{1,10}\\$[a-f0-9]{256}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 29920,
+                "extended": false,
+                "name": "ENCsecurity Datavault (PBKDF2/keychain)",
+                "samples": [
+                    "$encdv-pbkdf2$3$1$c232aba45699c80b$473d5dd2e0833ac7$32$4454716926322493581114042616371582782202532493983541577898367049$100000$9a030124cecc2fef5ca44f83ef6e4c7944f8d7c5234b9000c982e209a92bb5535f4c15be6e9914729eb8a9bf870bd0535a231fa1d443d27c1fc4f78b441a7aa765fa0a3d181c485f77f59334ec68f27e66f227eb4be3579464d907ed8cf8bacc817cceb4496587898e43ce41921f66114051c007e1a54b7215b220aed6e33064"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\A\\$encdv\\$\\d\\$\\d\\$[a-f0-9]{16}\\$[a-f0-9]{16}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 29930,
+                "extended": false,
+                "name": "ENCsecurity Datavault (MD5/no keychain)",
+                "samples": [
+                    "$encdv$1$1$3a427b9ee5851118$4f52176bb9a1b3b6"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\A\\$encdv\\$\\d\\$\\d\\$[a-f0-9]{16}\\$[a-f0-9]{16}\\$[a-f0-9]{256}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 29940,
+                "extended": false,
+                "name": "ENCsecurity Datavault (MD5/keychain)",
+                "samples": [
+                    "$encdv$3$1$91b9babb3820c527$1ff4cb6657adad34$d9067c4d059879dfee2edeb3999871973d422ff5fa868c51b025d07f644187889dc5509ec75d4a120184d619d10d02b138d64ba82f9d0936162c9e64d97771de3e74d6e52e5ab9b900c25fb446e14cbe3ef1fa34328a13f9473c669f22d7020bc036d9e99194c959e4c5ba885d6f9ff9ccc2299d67b26e68b850a02363fb2646"
+                ]
+            }
+        ]
     }
 ]
