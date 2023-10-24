@@ -6077,5 +6077,19 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "\\A\\$vmx\\$0\\$\\d{1,9}\\$[a-f0-9]{32}\\$[a-f0-9]{64}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 27400,
+                "extended": false,
+                "name": "VMware VMX (PBKDF2-HMAC-SHA1 + AES-256-CBC)",
+                "samples": [
+                    "$vmx$0$10000$264bbab02fdf7c1a793651120bec3723$cbb368564d8dfb99f509d4922f4693413f3816af713f0e76bc2409ff9336935d"
+                ]
+            }
+        ]
     }
 ]
