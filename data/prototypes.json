@@ -3294,13 +3294,21 @@
         ]
     },
     {
-        "regex": "\\A(.+)?\\$[a-f0-9]{16}\\Z",
+        "regex": "\\A.{1,40}\\$[a-f0-9]{16}\\Z",
         "modes": [
             {
                 "john": "sapb",
                 "hashcat": 7700,
                 "extended": false,
-                "name": "SAP CODVN B (BCODE)"
+                "name": "SAP CODVN B (BCODE)",
+                "samples": [
+                    "USER$C8B48F26B87B7EA7",
+                    "027642760180$77EC38630C08DF8D",
+                    "F           $E3A65AAA9676060F",
+                    "ROOT        $8366A4E9E6B72CB0",
+                    "DOLLAR$$$---$C3413C498C48EB67",
+                    "------------$058DE95926E00F32"
+                ]
             }
         ]
     },
