@@ -68,6 +68,21 @@
     - enhance name
     - add samples
     - fix JtR ref.
+  - Python passlib (PBKDF2-HMAC-SHA512) [#160][#160]
+    - fix name
+    - add HC ref.
+    - add samples
+  - Python passlib (PBKDF2-HMAC-SHA256) [#160][#160]
+    - fix name
+    - remove JtR ref.
+    - enhance regexp
+  - Python passlib (PBKDF2-HMAC-SHA1) [#160][#160]
+    - enhance regexp
+    - remove JtR ref.
+    - add samples
+  - PBKDF2-HMAC-SHA1 [#160][#160]
+    - fix regexp
+    - add a special case sample
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page

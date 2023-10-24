@@ -3598,31 +3598,30 @@
         ]
     },
     {
-        "regex": "\\A\\$pbkdf2(-hmac)?(-sha1)?\\$(\\d{1,6}\\$[a-z0-9\\/.]+\\$[a-z0-9\\/.]+|\\d{1,6}\\.[a-f0-9]+\\.[a-f0-9]{40})\\Z",
+        "regex": "\\A\\$pbkdf2\\$\\d{1,6}\\$[a-z0-9\\/.]+\\$[a-z0-9\\/.]{27}\\Z",
         "modes": [
             {
-                "john": "pbkdf2-hmac-sha1",
+                "john": null,
                 "hashcat": 20400,
                 "extended": false,
-                "name": "PBKDF2-SHA1 (Generic)",
+                "name": "Python passlib (PBKDF2-HMAC-SHA1)",
                 "samples": [
                     "$pbkdf2$131000$r5WythYixPgfQ2jt3buXcg$8Kdr.QQEOaZIXNOrrru36I/.6Po",
-                    "$pbkdf2-hmac-sha1$1000.fd11cde0.27de197171e6d49fc5f55c9ef06c0d8751cd7250",
-                    "$pbkdf2-hmac-sha1$1000$6926d45e$231c561018a4cee662df7cd4a8206701c5806af9",
-                    "$pbkdf2-hmac-sha1$1000.6834476f733353333654315a5a31494f.1932a843a69dc1e38a29d2691a7abf27ecaa6d55",
-                    "$pbkdf2-hmac-sha1$1000.3031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738.8f7c89f74233f78f6c8ace00696cf6ed09ae43f4"
+                    "$pbkdf2$131000$rpVSSikFAACAkDKmNObc.w$BHrFgkhY.JYFssT.eYRzQtKnyVM",
+                    "$pbkdf2$131000$I6QUQmgtpdS6t9b6v7dWqg$oJ7fYtKnjobkEVjf6mto9PpxCQE",
+                    "$pbkdf2$8000$O6dUipHSmvN.Dw$cYDAjcgzIVS3w78DS2MEi8lyEks"
                 ]
             }
         ]
     },
     {
-        "regex": "\\A\\$pbkdf2-sha256\\$\\d{1,6}\\$[a-z0-9\\/.]+\\$[a-z0-9\\/.]+\\Z",
+        "regex": "\\A\\$pbkdf2-sha256\\$\\d{1,6}\\$[a-z0-9\\/.]+\\$[a-z0-9\\/.]{43}\\Z",
         "modes": [
             {
-                "john": "pbkdf2-hmac-sha256",
+                "john": null,
                 "hashcat": 20300,
                 "extended": false,
-                "name": "PBKDF2-SHA256 (Generic)",
+                "name": "Python passlib (PBKDF2-HMAC-SHA256)",
                 "samples": [
                     "$pbkdf2-sha256$29000$x9h7j/Ge8x6DMEao1VqrdQ$kra3R1wEnY8mPdDWOpTqOTINaAmZvRMcYd8u5OBQP9A",
                     "$pbkdf2-sha256$1000$b1dWS2dab3dKQWhPSUg3cg$UY9j5wlyxtsJqhDKTqua8Q3fMp0ojc2pOnErzr8ntLE",
@@ -3637,9 +3636,15 @@
         "modes": [
             {
                 "john": null,
-                "hashcat": null,
+                "hashcat": 20200,
                 "extended": false,
-                "name": "PBKDF2-SHA512(Generic)"
+                "name": "Python passlib (PBKDF2-HMAC-SHA512)",
+                "samples": [
+                    "$pbkdf2-sha512$25000$LyWE0HrP2RsjZCxlDGFMKQ$1vC5Ohk2mCS9b6akqsEfgeb4l74SF8XjH.SljXf3dMLHdlY1GK9ojcCKts6/asR4aPqBmk74nCDddU3tvSCJvw",
+                    "$pbkdf2-sha512$25000$BYCQMqY05hwDAMD4vxdCSA$Xkihvv4JSviJN33jnvRP9g/WPmDhJX7ekfDhAwKr4WObNub2X28MxXrqNvz0Gz5Iceq05jHkMQgguY25L2foGg",
+                    "$pbkdf2-sha512$25000$HsM45xyjFKIUYgxB6F2rVQ$Xdwj5UI34VV37EhSdS/wHbZjkPmXHsQdM08xi6sUcjv68zH0xlvYIACyZcJrkJE2D01tz3zlQmU6AryL90aGmQ",
+                    "$pbkdf2-sha512$25000$/V9LiTHGWEuptdZ6z9n7vw$qRNiT1Ld095fDTpx7nE9qN21wLji33hOBDI0VNApCqYc5.nd1reJKohWmdobXV5XnmuOMHtvcQOaZ/gB6oagWw"
+                ]
             }
         ]
     },
@@ -4257,7 +4262,7 @@
         ]
     },
     {
-        "regex": "\\A\\$pbkdf2-hmac-sha1\\$\\d{1,6}\\.[a-f0-9]+\\.[a-f0-9]+\\Z",
+        "regex": "\\A\\$pbkdf2-hmac-sha1\\$\\d{1,6}[.$][a-f0-9]+[.$][a-f0-9]+\\Z",
         "modes": [
             {
                 "john": "pbkdf2-hmac-sha1",
@@ -4268,7 +4273,8 @@
                     "$pbkdf2-hmac-sha1$1000.fd11cde0.27de197171e6d49fc5f55c9ef06c0d8751cd7250",
                     "$pbkdf2-hmac-sha1$1000.6834476f733353333654315a5a31494f.1932a843a69dc1e38a29d2691a7abf27ecaa6d55",
                     "$pbkdf2-hmac-sha1$1000.303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930.a145d99036ea8d7ec08b5b10b3fa2b5227482d16",
-                    "$pbkdf2-hmac-sha1$1000.3031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738.8f7c89f74233f78f6c8ace00696cf6ed09ae43f4"
+                    "$pbkdf2-hmac-sha1$1000.3031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738.8f7c89f74233f78f6c8ace00696cf6ed09ae43f4",
+                    "$pbkdf2-hmac-sha1$1000$6926d45e$231c561018a4cee662df7cd4a8206701c5806af9"
                 ]
             }
         ]
