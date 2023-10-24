@@ -18,6 +18,9 @@
   - PBKDF2-HMAC-MD4 [#160][#160]
   - SAP CODVN B (BCODE) from RFC_READ_TABLE
   - SAP CODVN F/G (PASSCODE) from RFC_READ_TABLE
+  - SAP CODVN H (PWDSALTEDHASH) iSSHA-256
+  - SAP CODVN H (PWDSALTEDHASH) iSSHA-384
+  - SAP CODVN H (PWDSALTEDHASH) iSSHA-512
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
@@ -95,6 +98,9 @@
   - SAP CODVN B (BCODE)
     - fix regexp
     - add samples
+  - SAP CODVN H (PWDSALTEDHASH) iSSHA-1
+    - add samples
+    - enhance regexp
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
