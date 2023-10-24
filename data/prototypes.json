@@ -2920,7 +2920,7 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Django(SHA-256)"
+                "name": "Django (SHA-256)"
             }
         ]
     },
@@ -2931,7 +2931,7 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Django(SHA-384)"
+                "name": "Django (SHA-384)"
             }
         ]
     },
@@ -3811,7 +3811,7 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Django(DES Crypt Wrapper)"
+                "name": "Django (DES Crypt Wrapper)"
             }
         ]
     },
@@ -3850,7 +3850,7 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Django(bcrypt)"
+                "name": "Django (bcrypt)"
             }
         ]
     },
@@ -3861,7 +3861,7 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Django(MD5)"
+                "name": "Django (MD5)"
             }
         ]
     },
@@ -4231,7 +4231,7 @@
                 "john": null,
                 "hashcat": null,
                 "extended": false,
-                "name": "Django(bcrypt-SHA256)"
+                "name": "Django (bcrypt-SHA256)"
             }
         ]
     },
@@ -6144,6 +6144,223 @@
                 "name": "ENCsecurity Datavault (MD5/keychain)",
                 "samples": [
                     "$encdv$3$1$91b9babb3820c527$1ff4cb6657adad34$d9067c4d059879dfee2edeb3999871973d422ff5fa868c51b025d07f644187889dc5509ec75d4a120184d619d10d02b138d64ba82f9d0936162c9e64d97771de3e74d6e52e5ab9b900c25fb446e14cbe3ef1fa34328a13f9473c669f22d7020bc036d9e99194c959e4c5ba885d6f9ff9ccc2299d67b26e68b850a02363fb2646"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Amd5\\$.{0,256}\\$[a-f0-9]{32}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 30000,
+                "extended": false,
+                "name": "Python Werkzeug MD5 (HMAC-MD5 (key = $salt))",
+                "samples": [
+                    "md5$84143$7f51edecfa6fb401a0b5e63d33fc8c0e",
+                    "md5$Aq2w03c8q1XVLX61$d318a29b5ee84ad33699bea6448e372e",
+                    "md5$zZJEVcyg$f6a67f7af86f0e6124fc533d55503b44",
+                    "md5$VgvFxJk7EGQh7Y4yUx7Wlw3WcIhm7YSp$e85dde5d8f419e73fb03b99346ea04fc"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Asha1\\$.{0,256}\\$[a-f0-9]{40}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug SHA1 (HMAC-SHA1 (key = $salt))",
+                "samples": [
+                    "sha1$sV9Unoac$8083cab64f3b016e9d70729906ee11ea10a51ad6",
+                    "sha1$84eyBlujP9J4o7IU$0ecad02823bde7b529a16ec68a44f502fe83ac8d",
+                    "sha1$iQ0LfrHjFg4t5oCzA27HaQpl8zM8C4oI$103aeadda05906e3b6be6625d76c6c309e3daf17"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Asha224\\$.{0,256}\\$[a-f0-9]{56}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug SHA224 (HMAC-SHA224 (key = $salt))",
+                "samples": [
+                    "sha224$BY08WpEW$ae9cb24fc6839cb4bb289145d82c38ab89bf21aeec07dfcd08ea7398",
+                    "sha224$mknkBjuIty9lWlJp$8835f938e9422537e66ad16469d8e0adab54e69c922c3ac4d9be7b8f",
+                    "sha224$0iluTjCqz9YlhJk5RJ6RbYodLVG1CxUw$678217b476398021c32c8ca2dc8089f97026d96b9c1fe17e868a3da6"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Asha256\\$.{0,256}\\$[a-f0-9]{64}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 30120,
+                "extended": false,
+                "name": "Python Werkzeug SHA256 (HMAC-SHA256 (key = $salt))",
+                "samples": [
+                    "sha256$70108387805$8b9472281c36c3a693703de0e0f1ffab8fc0ecdd3bc5ead04c76dd74ef431e49",
+                    "sha256$8L1sXlmf$06302845373c294101f60460870c74a4da2bc7fe7daf5efdee377659ad94ae47",
+                    "sha256$eFEZrXi4My8nLaHp$cb15c73bd22351c579386b7fe2b3c45bb330e0f3bbc0a666a7f6f2d8cf56b02f",
+                    "sha256$S8DnKBwzknauPOx6DgSV4ShCylfZY3Qi$67d81bbb376af0b81a15af48a27f43aac155139c2370ed4cce28fb1b2ccda5a9"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Asha384\\$.{0,256}\\$[a-f0-9]{96}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug SHA384 (HMAC-SHA384 (key = $salt))",
+                "samples": [
+                    "sha384$orWox93X$faca5d655e1354fdc71ed176a077384fccb27f2e9d5d7e1ae95a02b71bf3471d20fa3a4d09e2aa74dd1f64c2ffff0c15",
+                    "sha384$RMfhEQgyeVp5v442$60fd0382520b74a952247dbb00a0b00b95023196e5b99a2fa9919f5a2075d9242b67d32f586030228650e92e04b4f371",
+                    "sha384$ShaQbCQLwqAF7Arv1D0TLjTy5N7c9QGX$5fcae189dcadcc3dbf6e68048a7752acc92b546de76e629315dd2f71b9738e09f4227453938ff618df81e82904614968"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Asha512\\$.{0,256}\\$[a-f0-9]{128}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug SHA512 (HMAC-SHA512 (key = $salt))",
+                "samples": [
+                    "sha512$kO7IfIeA$95ce7f6ef3c104739872842011db4c670640f576ed89cc4986cd13454019eafff820ae9264d9f9dc09a407242d5f050910d0e37e15eb4324e6abffdae4fcd29a",
+                    "sha512$4AMoZWLMzpheIFiU$72d4d78999a7caa361c8109bd6eae97b0384351f134c97a7fcb7e233d1b1e7722485458bd9ddb1ea1795255d8691c3ecc0bbb155ae116bc1ac75d61d6a40fc09",
+                    "sha512$rfO0UIgdyDDPkNLqXCgFYCcWQE6sct0i$e82b9ea90015c4ab2540a82f721f1051cd49aea988efa37ce57d0b5c43a30d20377d563bbfe8a55163cacadc47c7d9783aef756629f1b2ca02721e569e47d8ce"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Ascrypt:\\d+:\\d+:\\d+\\$.{0,256}\\$[a-f0-9]{128}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug scrypt (scrypt (key = $salt))",
+                "samples": [
+                    "scrypt:32768:8:1$SPOnauFG$5770625ad4692a95989389a6eefc05f758c00a00351c8ca508a283bcb80cfc20696155f2e9106bf9d1c36a86ac42e51915231d192c9785f5445a10bba96b5c18",
+                    "scrypt:32768:8:1$o0AEq1NsM48mpRZX$ec30fa478403094a3686f0ee825208da545514d871b98afa8b4c3c7a9ec2621b11ce9ef8584a761c961a4c2a9b8759bfb2893d9ae8b75c0b1aa7dc241bb82379",
+                    "scrypt:32768:8:1$pLaTtGUijpBTu23LHEND5Msf7c5xiOIT$68d61eee291ded6884211192f54830cf78841d6b4398b8a45ed75ee9ca82f2fd953c82c74920aaa88b67595241a60c697cc3c10bb2aeeed0dde548396def7a21",
+                    "scrypt:65536:16:2$LdMZzxK4$01964c4337085d11d6df634f47bf589339e7ecc03419f4c396c77b3d433e05832bcf17e124388745a4adf464a40958238674e875b5ae4ebbf74e51cc1b333feb"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Apbkdf2:md5:\\d+\\$.{0,256}\\$[a-f0-9]{32}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug PBKDF2-HMAC-MD5 (key = $salt)",
+                "samples": [
+                    "pbkdf2:md5:600000$QhX2QHrQ$49cc3851f77779484c28e19329b314e3",
+                    "pbkdf2:md5:700000$3BpTqiI1$1c10bea34f19bacdb289d55236173524",
+                    "pbkdf2:md5:600000$adwFmD4ib2Y7oJO8$762cfbd4b80cd9f5e3cdc046465cc2ec",
+                    "pbkdf2:md5:600000$UUYvlGLR6dM0UktS9ZPlB6g31d3GfGmB$609b8faacaf938b20c4d8200a870901f"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Apbkdf2:sha1:\\d+\\$.{0,256}\\$[a-f0-9]{40}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug PBKDF2-HMAC-SHA1 (key = $salt)",
+                "samples": [
+                    "pbkdf2:sha1:600000$3lGWkOIT$505daf9a81fc1953f4b7a2ea69f656c46c87dfb2",
+                    "pbkdf2:sha1:700000$ISoXbW1u$5a50ed21ef5e3cda6be8e3dcbedcdadd64d1e6bf",
+                    "pbkdf2:sha1:600000$RF37Bycc5slAkgfO$aae97ff5ac11b6e1163c391363b062000ec6cb10",
+                    "pbkdf2:sha1:600000$fQ2Cw88BMhFLsemZpVMq6gd6PTJhDFTf$98db7984f6a90d060fdfc843cabbb1c67835c025"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Apbkdf2:sha224:\\d+\\$.{0,256}\\$[a-f0-9]{56}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug PBKDF2-HMAC-SHA224 (key = $salt)",
+                "samples": [
+                    "pbkdf2:sha224:600000$z0GRcSo8$02f0a17307119fcea06769868738f7eec66459ee91aaba4cb4010c68",
+                    "pbkdf2:sha224:700000$QZRD4xfb$eee77c4c451d943f1b1f0d942385f5a58aa785cae1b3222c7c9ec90f",
+                    "pbkdf2:sha224:600000$wOMVTU0PDTHT5Yjm$67bc9c786e4e94559ecbb10cea8fd57cd93c232bb8d858159def6715",
+                    "pbkdf2:sha224:600000$RidDKlBPNHJvzywwjQdl0Ly1UjLFcmwN$7a42f0cfc831bb8b9f5c635c4b6294195125ad282c6e16ab2ff82738"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Apbkdf2:sha256:\\d+\\$.{0,256}\\$[a-f0-9]{64}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug PBKDF2-HMAC-SHA256 (key = $salt)",
+                "samples": [
+                    "pbkdf2:sha256:600000$MdFcQyXK$6f0610d79e21ac75ca1ed5a4d191e28c50df259e341807b8124ead79eebd7972",
+                    "pbkdf2:sha256:700000$so1iCYwc$5a18fd5ae003c3e8ab7638f40a9d7bc21edcc5e2254903f0aa467a3ffd463ef7",
+                    "pbkdf2:sha256:600000$UrVCZT9PYrurm5iR$6e8c155567d97206e3c49fd3b9e7a523c57fb2c3794c08db018cb2c340184d6c",
+                    "pbkdf2:sha256:600000$h8Xxe8ozyRJaXiYciVIw2OJpQKhIUUdX$b2eab4b0e57bb5bd35f626770d4a8d07b046392ee4707bcde58d8c6272ed15b7"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Apbkdf2:sha384:\\d+\\$.{0,256}\\$[a-f0-9]{96}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug PBKDF2-HMAC-SHA384 (key = $salt)",
+                "samples": [
+                    "pbkdf2:sha384:600000$hi075NNi$bf0f8e9c48b26e9c6a2333b52d15f758c5755102d5adf8c87002092c97003f89583c00c01be7ebcb3a5e73fbcf5135f2",
+                    "pbkdf2:sha384:700000$Q2v7gfi9$cc6eb7cf597edeef28d7b2cfe7356b6977a13e61ddfc6131407f127cf5b563f59da719c6caaf49cd26496012ff474d7b",
+                    "pbkdf2:sha384:600000$8nBACDcyvz9dxIO7$47ee33cd1a785bfbf84fd6333f74eb361d5725b017a188d0be8ab1968622cdfb3329643bca8c83a31d31761da7d2e7b6",
+                    "pbkdf2:sha384:600000$1kRINtdv2MR2f7T1y3hnwqX2ogt9zzHx$9a21701c17d58923b9f0fa19556e4c55056ad0b54f057adda436bb9533a65944bd343c2960f5157973b1893af6cfe989"
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\Apbkdf2:sha512:\\d+\\$.{0,256}\\$[a-f0-9]{128}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": null,
+                "extended": false,
+                "name": "Python Werkzeug PBKDF2-HMAC-SHA512 (key = $salt)",
+                "samples": [
+                    "pbkdf2:sha512:600000$WyEo87ON$2a31bd497f7a3805c73b287f425feff822707f1f72f5e1e8a5e83867147c1cc5535d99e1c578efcc9d346362f1470443d6b6de1f62da67da29bad32d071cff11",
+                    "pbkdf2:sha512:700000$p4y46MS3$6d1fb73e5e5f3432575ee12899a8dbace43719e04a3013179d696316e4e8757c6abeb3bde21d4378143a288d29f5ed9055152ec47fbd748c53671a48ffffd0f9",
+                    "pbkdf2:sha512:600000$WrsgowshePSwsPVA$980d0f2e3cdd1814ac73350ae84077d599697991d001ccd4512ac2dd7cfbb64a30efe27f9d642b3194a8be975e3c151619a27ee5ac2cc9624ad4c89987f3f756",
+                    "pbkdf2:sha512:600000$HIu57TAWiQJqqoY2KWtIzt7ZFzPBoiRL$12d3212f93b2e919842f4212107d9ad6c9b74010ba9f2b3f85874e447cc3cd32c83c71dbf60110f5260352bc4426094e97c5649c81252dcd7dbedc9e55ce7fda"
                 ]
             }
         ]
