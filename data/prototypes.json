@@ -3309,6 +3309,15 @@
                     "DOLLAR$$$---$C3413C498C48EB67",
                     "------------$058DE95926E00F32"
                 ]
+            },
+            {
+                "john": "sapb",
+                "hashcat": 7701,
+                "extended": false,
+                "name": "SAP CODVN B (BCODE) from RFC_READ_TABLE",
+                "samples": [
+                    "027642760180$77EC386300000000"
+                ]
             }
         ]
     },
@@ -3332,6 +3341,15 @@
                     "SAP*                                $60A0F7E06D95BC9FB45F605BDF1F7B660E5D5D4E",
                     "DOLLAR$$$---$E0180FD4542D8B6715E7D0D9EDE7E2D2E40C3D4D",
                     "€€€€€€€€€€€€$B20D15C088481780CD44FCF2003AAAFBD9710C7C"
+                ]
+            },
+            {
+                "john": "sapg",
+                "hashcat": 7801,
+                "extended": false,
+                "name": "SAP CODVN F/G (PASSCODE) from RFC_READ_TABLE",
+                "samples": [
+                    "604020408266$32837BA7B97672BA4E5A00000000000000000000"
                 ]
             }
         ]
