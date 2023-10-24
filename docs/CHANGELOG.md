@@ -16,6 +16,8 @@
   - Ethereum Wallet (SCRYPT)
   - WPA-PMKID-PBKDF2 [#160][#160]
   - PBKDF2-HMAC-MD4 [#160][#160]
+  - SAP CODVN B (BCODE) from RFC_READ_TABLE
+  - SAP CODVN F/G (PASSCODE) from RFC_READ_TABLE
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
