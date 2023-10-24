@@ -4077,13 +4077,65 @@
         ]
     },
     {
-        "regex": "\\A{x-issha,\\s\\d{4}}[a-z0-9\\/+=]+\\Z",
+        "regex": "\\A{x-issha,\\s\\d{1,6}}[a-z0-9\\/+=]{32,49}\\Z",
         "modes": [
             {
                 "john": "saph",
                 "hashcat": 10300,
                 "extended": false,
-                "name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-1"
+                "name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-1",
+                "samples": [
+                    "{x-issha, 1024}C0624EvGSdAMCtuWnBBYBGA0chvqAflKY74oEpw/rpY=",
+                    "{x-issha, 1024}BnjXMqcNTwa3BzdnUOf1iAu6dw02NzU4MzE2MTA=",
+                    "{x-issha, 6666}7qNFlIR+ZQUpe2DtSBvpvzU5VlBzcG1DVGxvOEFQODI="
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\A{x-isSHA256,\\s\\d{1,6}}[a-z0-9\\/+=]+\\Z",
+        "modes": [
+            {
+                "john": "saph",
+                "hashcat": null,
+                "extended": false,
+                "name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-256",
+                "samples": [
+                    "{x-isSHA256, 3000}UqMnsr5BYN+uornWC7yhGa/Wj0u5tshX19mDUQSlgih6OTFoZjRpMQ==",
+                    "{x-isSHA256, 3000}ydi0JlyU6lX5305Qk/Q3uLBbIFjWuTyGo3tPBZDcGFd6NkFvV1gza3RkNg=="
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\A{x-isSHA384,\\s\\d{1,6}}[a-z0-9\\/+=]+\\Z",
+        "modes": [
+            {
+                "john": "saph",
+                "hashcat": null,
+                "extended": false,
+                "name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-384",
+                "samples": [
+                    "{x-isSHA384, 5000}3O/F4YGKNmIYHDu7ZQ7Q+ioCOQi4HRY4yrggKptAU9DtmHigCuGqBiAPVbKbEAfGTzh4YlZLWUM=",
+                    "{x-isSHA384, 5000}XSLo2AKIvACwqW/X416UeVbHOXmio4u27Z7cgXS2rxND+zTpN+x3JNfQcEQX2PT0Z3FPdEY2dHM="
+                ]
+            }
+        ]
+    },
+    {
+        "regex": "\\A{x-isSHA512,\\s\\d{1,6}}[a-z0-9\\/+=]+\\Z",
+        "modes": [
+            {
+                "john": "saph",
+                "hashcat": null,
+                "extended": false,
+                "name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-512",
+                "samples": [
+                    "{x-isSHA512, 7500}ctlX6qYsWspafEzwoej6nFp7zRQQjr8y22vE+xeveIX2gUndAw9N2Gep5azNUwuxOe2o7tusF800OfB9tg4taWI4Tg==",
+                    "{x-isSHA512, 7500}Qyrh2JXgGkvIfKYOJRdWFut5/pVnXI/vZvqJ7N+Tz9M1zUTXGWCZSom4az4AhqOuAahBwuhcKqMq/pYPW4h3cThvT2JaWVBw",
+                    "{x-isSHA512, 18009}C2+Sij3JyXPPDuQgsF6Zot7XnjRFX86X67tWJpUzXNnFw2dKcGPH6HDEzVJ8HN8+cJe4vZaOYTlmdz09gI7YEwECAwQFBgcICQoLDA0ODwA=",
+                    "{x-isSHA512, 15000}2VwEw7rHLfYYblKU/ol7t6I7i2UjDOYOEW4H2iEHiUvNmNkxmM5rX5jcEAeRM6W+KQ0QBCsx1hDo9wXm+rbQPrL67ov+dGn/z+3o4f9pdIaJaU61YYQwl37PoYA7SvRU"
+                ]
             }
         ]
     },
