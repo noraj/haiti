@@ -21,6 +21,7 @@
   - SAP CODVN H (PWDSALTEDHASH) iSSHA-256
   - SAP CODVN H (PWDSALTEDHASH) iSSHA-384
   - SAP CODVN H (PWDSALTEDHASH) iSSHA-512
+  - Web2py (PBKDF2-HMAC-SHA512) [#160][#160]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label

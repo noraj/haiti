@@ -3355,13 +3355,28 @@
         ]
     },
     {
+        "regex": "\\Apbkdf2\\(\\d{1,8},20,sha512\\)\\$.{0,256}\\$[a-f0-9]{40}\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 21600,
+                "extended": false,
+                "name": "Web2py (PBKDF2-HMAC-SHA512)",
+                "samples": [
+                    "pbkdf2(1000,20,sha512)$744943$c5f8cdef76e3327c908d8d96d4abdb3d8caba14c",
+                    "pbkdf2(1000,20,sha512)$b787f1e6dfe7da8f$b280b42a152aa14a1944d35c6a070521251b85d1"
+                ]
+            }
+        ]
+    },
+    {
         "regex": "\\A(.+\\$)?[a-z0-9\\/.+]{30}(:.+)?\\Z",
         "modes": [
             {
                 "john": "md5ns",
                 "hashcat": 22,
                 "extended": false,
-                "name": "Juniper Netscreen/SSG(ScreenOS)"
+                "name": "Juniper Netscreen/SSG (ScreenOS)"
             }
         ]
     },
