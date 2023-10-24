@@ -120,6 +120,8 @@
   - SAP CODVN H (PWDSALTEDHASH) iSSHA-1
     - add samples
     - enhance regexp
+  - Telegram Mobile App Passcode (SHA256)
+    - add samples
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
