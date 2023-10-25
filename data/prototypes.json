@@ -6367,5 +6367,21 @@
                 ]
             }
         ]
+    },
+    {
+        "regex": "\\A[a-z0-9\\-_]+\\.[a-z0-9\\-_]+\\.[a-z0-9\\-_]*\\Z",
+        "modes": [
+            {
+                "john": null,
+                "hashcat": 16500,
+                "extended": false,
+                "name": "JSON Web Token (JWT)",
+                "samples": [
+                    "eyJhbGciOiJIUzI1NiJ9.eyIzNDM2MzQyMCI6NTc2ODc1NDd9.f1nXZ3V_Hrr6ee-AFCTLaHRnrkiKmio2t3JqwL32guY",
+                    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+                    "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Im5vcmFqIiwiaWF0IjoxNTE2MjM5MDIyfQ.YtoHWI-c3rjBhg2AjrTRnYBcRk7QpjvdhpcmorFoJXf6Ruf1Mtj5IO9LFD1i0g25"
+                ]
+            }
+        ]
     }
 ]

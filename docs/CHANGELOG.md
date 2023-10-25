@@ -40,6 +40,7 @@
   - Python Werkzeug PBKDF2-HMAC-SHA256 (key = $salt) [#160][#160]
   - Python Werkzeug PBKDF2-HMAC-SHA384 (key = $salt) [#160][#160]
   - Python Werkzeug PBKDF2-HMAC-SHA512 (key = $salt) [#160][#160]
+  - JWT [#164][#164]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
@@ -132,6 +133,7 @@
 [#144]:https://github.com/noraj/haiti/issues/144
 [#159]:https://github.com/noraj/haiti/pull/159
 [#160]:https://github.com/noraj/haiti/issues/160
+[#164]:https://github.com/noraj/haiti/issues/164
 
 ## [1.5.0]
 
