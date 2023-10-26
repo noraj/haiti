@@ -16,6 +16,6 @@ indent_size = 2
 trim_trailing_whitespace = true
 
 # keep source format
-[data/prototypes.json]
-indent_style = space
+[data/*.json]
+indent_style = tab
 indent_size = 4
