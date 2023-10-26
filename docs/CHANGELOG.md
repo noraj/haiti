@@ -56,6 +56,13 @@
   - VeraCrypt SHA256 + XTS 512/1024/1536 bit + boot-mode [#154][#154]
   - VeraCrypt Streebog-512 + XTS 512/1024/1536 bit [#154][#154]
   - VeraCrypt Streebog-512 + XTS 512/1024/1536 bit + boot-mode [#154][#154]
+  - TrueCrypt RIPEMD160 + XTS 512/1024/1536 bit (legacy) [#154][#154]
+  - TrueCrypt SHA512 + XTS 512/1024/1536 bit (legacy) [#154][#154]
+  - TrueCrypt Whirlpool + XTS 512/1024/1536 bit (legacy) [#154][#154]
+  - TrueCrypt RIPEMD160 + XTS 512/1024/1536 bit [#154][#154]
+  - TrueCrypt SHA512 + XTS 512/1024/1536 bit [#154][#154]
+  - TrueCrypt Whirlpool + XTS 512/1024/1536 bit [#154][#154]
+  - TrueCrypt RIPEMD160 + XTS 512/1024/1536 bit + boot-mode [#154][#154]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
