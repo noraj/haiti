@@ -41,6 +41,21 @@
   - Python Werkzeug PBKDF2-HMAC-SHA384 (key = $salt) [#160][#160]
   - Python Werkzeug PBKDF2-HMAC-SHA512 (key = $salt) [#160][#160]
   - JWT [#164][#164]
+  - VeraCrypt RIPEMD160 + XTS 512/1024/1536 bit (legacy) [#154][#154]
+  - VeraCrypt SHA512 + XTS 512/1024/1536 bit (legacy) [#154][#154]
+  - VeraCrypt Whirlpool + XTS 512/1024/1536 bit (legacy) [#154][#154]
+  - VeraCrypt RIPEMD160 + XTS 512/1024/1536 bit + boot-mode (legacy) [#154][#154]
+  - VeraCrypt SHA256 + XTS 512/1024/1536 bit (legacy) [#154][#154]
+  - VeraCrypt SHA256 + XTS 512/1024/1536 bit + boot-mode (legacy) [#154][#154]
+  - VeraCrypt Streebog-512 + XTS 512/1024/1536 bit (legacy) [#154][#154]
+  - VeraCrypt Streebog-512 + XTS 512/1024/1536 bit + boot-mode (legacy) [#154][#154]
+  - VeraCrypt RIPEMD160 + XTS 512/1024/1536 bit [#154][#154]
+  - VeraCrypt SHA512 + XTS 512/1024/1536 bit [#154][#154]
+  - VeraCrypt Whirlpool + XTS 512/1024/1536 bit [#154][#154]
+  - VeraCrypt RIPEMD160 + XTS 512/1024/1536 bit + boot-mode [#154][#154]
+  - VeraCrypt SHA256 + XTS 512/1024/1536 bit + boot-mode [#154][#154]
+  - VeraCrypt Streebog-512 + XTS 512/1024/1536 bit [#154][#154]
+  - VeraCrypt Streebog-512 + XTS 512/1024/1536 bit + boot-mode [#154][#154]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
@@ -131,6 +146,7 @@
 [#146]:https://github.com/noraj/haiti/issues/146
 [#147]:https://github.com/noraj/haiti/issues/147
 [#144]:https://github.com/noraj/haiti/issues/144
+[#154]:https://github.com/noraj/haiti/issues/154
 [#159]:https://github.com/noraj/haiti/pull/159
 [#160]:https://github.com/noraj/haiti/issues/160
 [#164]:https://github.com/noraj/haiti/issues/164
