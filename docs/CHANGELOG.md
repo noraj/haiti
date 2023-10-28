@@ -1,5 +1,7 @@
 ## [unreleased]
 
+## [2.0.0]
+
 - **Breaking changes**:
   - **Drop** Ruby 2.5 support, [EOL since 05/04/2021](https://www.ruby-lang.org/en/downloads/branches/) and not supported by Rubocop since [1.29.0](https://github.com/rubocop/rubocop/releases/tag/v1.29.0)
   - **Drop** Ruby 2.6 support, [EOL since 12/04/2021](https://www.ruby-lang.org/en/downloads/branches/) and not supported by Rubocop since [1.51.0](https://github.com/rubocop/rubocop/releases/tag/v1.51.0)

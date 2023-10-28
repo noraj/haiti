@@ -16,7 +16,7 @@ A CLI tool (and library) to identify hash types (hash type identifier).
 
 ## Features
 
-- 519+ hash types detected
+- 632+ hash types detected
 - Modern algorithms supported (SHA3, Keccak, Blake2, etc.)
 - Hashcat and John the Ripper references
 - CLI tool & library

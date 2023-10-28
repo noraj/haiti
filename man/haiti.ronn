@@ -108,7 +108,7 @@ redistribute copies of it, subject to the conditions of the license.
 
 ## VERSION
 
-1.5.0
+2.0.0
 
 ## REPORTING BUGS
 

@@ -4,7 +4,7 @@
 
 ```
 $ haiti -h
-HAITI (HAsh IdenTifIer) v1.5.0
+HAITI (HAsh IdenTifIer) v2.0.0
 
 Usage:
   haiti [options] list
