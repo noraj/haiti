@@ -63,6 +63,10 @@
   - TrueCrypt SHA512 + XTS 512/1024/1536 bit [#154][#154]
   - TrueCrypt Whirlpool + XTS 512/1024/1536 bit [#154][#154]
   - TrueCrypt RIPEMD160 + XTS 512/1024/1536 bit + boot-mode [#154][#154]
+  - TrueCrypt RIPEMD160 + XTS 256 bit [#154][#154]
+  - TrueCrypt RIPEMD160 + XTS 256 bit + boot-mode [#154][#154]
+  - TrueCrypt SHA512 + XTS 256 bit [#154][#154]
+  - TrueCrypt Whirlpool + XTS 256 bit [#154][#154]
 - **Enhancements**:
   - SSHA: [#145][#145]
     - update JtR label
@@ -148,6 +152,8 @@
   - Updated hash names in `commons.json` to reflect `prototypes.json` changes
 - **Documentation**:
   - added a man page
+- **Chore**:
+  - Change indentation from 4 spaces to tabs in `data/*.json` to save dozens of KB
 
 [#145]:https://github.com/noraj/haiti/issues/145
 [#146]:https://github.com/noraj/haiti/issues/146
