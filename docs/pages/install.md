@@ -238,6 +238,14 @@ haiti is available as an [Exegol](https://exegol.readthedocs.io/en/latest/exegol
 $ exegol install haiti
 ```
 
+### **Homebrew**
+
+```
+$ brew install haiti
+```
+
+Formula: [haiti](https://formulae.brew.sh/formula/haiti)
+
 <!-- tabs:end -->
 
 ## Development
