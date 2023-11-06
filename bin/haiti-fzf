@@ -1,0 +1,57 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Ruby internal
+# Project internal
+require 'haiti'
+# External
+require 'docopt'
+require 'paint'
+
+doc = <<~DOCOPT
+  #{Paint['HAITI (HAsh IdenTifIer)', '#FF69B4']} v#{Paint[HashIdentifier::VERSION, :bold]}
+
+  #{Paint['Usage:', '#00FFFF']}
+    haiti-fzf hc [options] <hash>
+    haiti-fzf jtr [options] <hash>
+    haiti-fzf -h | --help
+    haiti-fzf --version
+
+  #{Paint['Commands:', '#00FFFF']}
+    hc             Select a Hashcat reference with fzf from one of the matching hash types
+    jtr            Select a John the Ripper reference with fzf from one of the matching hash types
+
+  #{Paint['Parameters:', '#00FFFF']}
+    <hash>          Hash string to identify, read from STDIN if equal to "-"
+
+  #{Paint['Options:', '#00FFFF']}
+    -e, --extended  List all possible hash algorithms including ones using salt
+    --debug         Display arguments
+    -h, --help      Show this screen
+    --version       Show version
+
+  #{Paint['Examples:', '#00FFFF']}
+    haiti-fzf hc -e d41d8cd98f00b204e9800998ecf8427e
+    haiti-fzf jtr d41d8cd98f00b204e9800998ecf8427e
+
+  #{Paint['Project:', '#00FFFF']}
+    #{Paint['author', :underline]} (https://pwn.by/noraj / https://twitter.com/noraj_rawsec)
+    #{Paint['source', :underline]} (https://github.com/noraj/haiti)
+    #{Paint['documentation', :underline]} (https://noraj.github.io/haiti)
+DOCOPT
+
+begin
+  args = Docopt.docopt(doc, version: HashIdentifier::VERSION)
+  puts args if args['--debug']
+  # use case 1, using the tool
+  if args['<hash>']
+    args['<hash>'] = $stdin.read.chomp if args['<hash>'] == '-'
+    ext = args['--extended'] ? '-e' : ''
+    system("haiti-parsable hc #{ext} #{args['<hash>']} | fzf | cut -d '|' -f 2") if args['hc']
+    system("haiti-parsable jtr #{ext} #{args['<hash>']} | fzf | cut -d '|' -f 2") if args['jtr']
+  end
+  # use case 2, help: already handled by docopt
+  # use case 3, version: already handled by docopt
+rescue Docopt::Exit => e
+  puts e.message
+end

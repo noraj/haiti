@@ -1,5 +1,16 @@
 ## [unreleased]
 
+## [2.1.0]
+
+- **Additions**:
+  - 4 new binaries
+    - `hashcat-haiti`: wrapper for Hashcat where you can select the mode using haiti and fzf
+    - `john-haiti`: wrapper for John the Ripper where you can select the format using haiti and fzf
+    - `haiti-fzf`: select a Hashcat or John the Ripper reference with fzf from one of the matching hash types
+      - mostly useful for `hashcat-haiti` and `john-haiti` or building another binary or alias that will make use of haiti with fzf input
+    - `haiti-parsable`: display hash types matching that have a Hashcat reference in an easily parsable format
+      - mostly useful for `haiti-fzf` or building another binary or alias
+
 ## [2.0.0]
 
 - **Breaking changes**:
