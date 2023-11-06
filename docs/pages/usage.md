@@ -2,6 +2,12 @@
 
 ## CLI
 
+<!-- tabs:start -->
+
+### **haiti**
+
+Main binary: identify hash types, list types and samples.
+
 ```
 $ haiti -h
 HAITI (HAsh IdenTifIer) v2.0.0
@@ -45,6 +51,154 @@ Project:
   source (https://github.com/noraj/haiti)
   documentation (https://noraj.github.io/haiti)
 ```
+
+### **hashcat-haiti**
+
+Wrapper for Hashcat where you can select the mode using haiti and fzf.
+
+```
+$ hashcat-haiti -h
+HAITI (HAsh IdenTifIer) v2.0.0
+
+Usage:
+  hashcat-haiti [options] <hash> -- <hashcat_options>...
+  hashcat-haiti -h | --help
+  hashcat-haiti --version
+
+Parameters:
+  <hash>          Hash string to identify, read from STDIN if equal to "-"
+
+Options:
+  -e, --extended  List all possible hash algorithms including ones using salt
+  --debug         Display arguments
+  -h, --help      Show this screen
+  --version       Show version
+
+Examples:
+  hashcat-haiti -e d41d8cd98f00b204e9800998ecf8427e -- hashes.txt /usr/share/wordlists/passwords/rockyou.txt -r /usr/share/doc/hashcat/rules/best64.rule
+  hashcat-haiti d41d8cd98f00b204e9800998ecf8427e -- hashes.txt -a 3
+  head -1 /tmp/hash.txt | hashcat-haiti - -- /tmp/hash.txt
+  hashcat-haiti -e d41d8cd98f00b204e9800998ecf8427e -- hashes.txt --show
+
+Project:
+  author (https://pwn.by/noraj / https://twitter.com/noraj_rawsec)
+  source (https://github.com/noraj/haiti)
+  documentation (https://noraj.github.io/haiti)
+```
+
+### **john-haiti**
+
+Wrapper for John the Ripper where you can select the format using haiti and fzf.
+
+```
+$ john-haiti -h 
+HAITI (HAsh IdenTifIer) v2.0.0
+
+Usage:
+  john-haiti [options] <hash> -- <john_options>...
+  john-haiti -h | --help
+  john-haiti --version
+
+Parameters:
+  <hash>          Hash string to identify, read from STDIN if equal to "-"
+
+Options:
+  -e, --extended  List all possible hash algorithms including ones using salt
+  --debug         Display arguments
+  -h, --help      Show this screen
+  --version       Show version
+
+Examples:
+  john-haiti -e d41d8cd98f00b204e9800998ecf8427e -- hashes.txt --wordlist=/usr/share/wordlists/passwords/rockyou.txt
+  john-haiti 1f474c6dadb3cb2370f6cb88d4576ede0db9ff43 -- hashes.txt --rules=NT --fork=3
+  head -1 /tmp/hash.txt | john-haiti - -- /tmp/hash.txt
+  john-haiti -e d41d8cd98f00b204e9800998ecf8427e -- hashes.txt --show
+
+Project:
+  author (https://pwn.by/noraj / https://twitter.com/noraj_rawsec)
+  source (https://github.com/noraj/haiti)
+  documentation (https://noraj.github.io/haiti)
+```
+
+### **haiti-fzf**
+
+Select a Hashcat or John the Ripper reference with fzf from one of the matching hash types.
+
+Note: mostly useful for `hashcat-haiti` and `john-haiti` or building another binary or alias that will make use of haiti with fzf input.
+
+```
+$ haiti-fzf -h 
+HAITI (HAsh IdenTifIer) v2.0.0
+
+Usage:
+  haiti-fzf hc [options] <hash>
+  haiti-fzf jtr [options] <hash>
+  haiti-fzf -h | --help
+  haiti-fzf --version
+
+Commands:
+  hc             Select a Hashcat reference with fzf from one of the matching hash types
+  jtr            Select a John the Ripper reference with fzf from one of the matching hash types
+
+Parameters:
+  <hash>          Hash string to identify, read from STDIN if equal to "-"
+
+Options:
+  -e, --extended  List all possible hash algorithms including ones using salt
+  --debug         Display arguments
+  -h, --help      Show this screen
+  --version       Show version
+
+Examples:
+  haiti-fzf hc -e d41d8cd98f00b204e9800998ecf8427e
+  haiti-fzf jtr d41d8cd98f00b204e9800998ecf8427e
+
+Project:
+  author (https://pwn.by/noraj / https://twitter.com/noraj_rawsec)
+  source (https://github.com/noraj/haiti)
+  documentation (https://noraj.github.io/haiti)
+```
+
+### **haiti-parsable**
+
+Display hash types matching that have a Hashcat reference in an easily parsable format.
+
+Note: mostly useful for `haiti-fzf` or building another binary or alias.
+
+```
+$ haiti-parsable -h
+HAITI (HAsh IdenTifIer) v2.0.0
+
+Usage:
+  haiti-parsable hc [options] <hash>
+  haiti-parsable jtr [options] <hash>
+  haiti-parsable -h | --help
+  haiti-parsable --version
+
+Commands:
+  hc             Display hash types matching that have a Hashcat reference
+  jtr            Display hash types matching that have a John the Ripper reference
+
+Parameters:
+  <hash>          Hash string to identify, read from STDIN if equal to "-"
+
+Options:
+  -e, --extended  List all possible hash algorithms including ones using salt
+  --debug         Display arguments
+  -h, --help      Show this screen
+  --version       Show version
+
+Examples:
+  haiti-parsable hc -e d41d8cd98f00b204e9800998ecf8427e
+  haiti-parsable jtr d41d8cd98f00b204e9800998ecf8427e
+
+Project:
+  author (https://pwn.by/noraj / https://twitter.com/noraj_rawsec)
+  source (https://github.com/noraj/haiti)
+  documentation (https://noraj.github.io/haiti)
+```
+
+<!-- tabs:end -->
 
 ## Library
 
