@@ -1,7 +1,7 @@
 --output-type rpm
 --name haiti
 --license mit
---version 2.0.0
+--version 2.1.0
 --architecture all
 --depends rubygem-paint
 --depends rubygem-docopt
@@ -9,4 +9,4 @@
 --description "Hash type identifier (CLI & lib)"
 --url "https://noraj.github.io/haiti/"
 --maintainer "noraj <printf %s 'YWxleGFuZHJlLnphbm5pQGV1cm9wZS5jb20='|base64 -d>"
---package haiti_2.0.0-2_all_opensuse.rpm
+--package haiti_2.1.0-2_all_opensuse.rpm

@@ -2,7 +2,7 @@
 version: '3'
 services:
   haiti:
-    image: noraj/haiti:2.0.0
+    image: noraj/haiti:2.1.0
     user: noraj
     container_name: haiti
     read_only: false
@@ -10,4 +10,4 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        HAITI_VERSION: 2.0.0
+        HAITI_VERSION: 2.1.0

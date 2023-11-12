@@ -1,7 +1,7 @@
 = haiti-fzf(1)
 Alexandre ZANNI (@noraj)
 :doctype: manpage
-:release-version: 2.0.0
+:release-version: 2.1.0
 :manmanual: haiti-fzf manual
 :mansource: haiti-fzf {release-version}
 :manversion: {release-version}
