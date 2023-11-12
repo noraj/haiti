@@ -12,8 +12,8 @@
       - mostly useful for `haiti-fzf` or building another binary or alias
 - **Documentation**:
   - migrating from ronn to asciidoc for man page generation
-  - add documentation for how to package haiti
-  - add more demo casts
+  - add documentation for [how to package haiti](https://noraj.github.io/haiti/#/pages/publishing?id=distribution-packaging) for distribution maintainers
+  - add more [demo casts](https://noraj.github.io/haiti/#/pages/demo)
 
 ## [2.0.0]
 
