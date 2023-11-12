@@ -10,6 +10,10 @@
       - mostly useful for `hashcat-haiti` and `john-haiti` or building another binary or alias that will make use of haiti with fzf input
     - `haiti-parsable`: display hash types matching that have a Hashcat reference in an easily parsable format
       - mostly useful for `haiti-fzf` or building another binary or alias
+- **Documentation**:
+  - migrating from ronn to asciidoc for man page generation
+  - add documentation for how to package haiti
+  - add more demo casts
 
 ## [2.0.0]
 
