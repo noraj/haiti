@@ -1,0 +1,113 @@
+'\" t
+.\"     Title: haiti-parsable
+.\"    Author: Alexandre ZANNI (@noraj)
+.\" Generator: Asciidoctor 2.0.20
+.\"      Date: 2023-11-12
+.\"    Manual: haiti-parsable manual
+.\"    Source: haiti-parsable 2.0.0
+.\"  Language: English
+.\"
+.TH "HAITI\-PARSABLE" "1" "2023-11-12" "haiti\-parsable 2.0.0" "haiti\-parsable manual"
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.ss \n[.ss] 0
+.nh
+.ad l
+.de URL
+\fI\\$2\fP <\\$1>\\$3
+..
+.als MTO URL
+.if \n[.g] \{\
+.  mso www.tmac
+.  am URL
+.    ad l
+.  .
+.  am MTO
+.    ad l
+.  .
+.  LINKSTYLE cyan R < >
+.\}
+.SH "NAME"
+haiti-parsable \- Display hash types matching that have a Hashcat reference in an easily parsable format
+.SH "NOTE"
+.sp
+Mostly useful for \fBhaiti\-fzf\fP(1) or building another binary or alias.
+.SH "SYNOPSIS"
+.sp
+\fBhaiti\-parsable\fP hc [\fIoptions\fP] \fI<hash>\fP
+.sp
+\fBhaiti\-parsable\fP jtr [\fIoptions\fP] \fI<hash>\fP
+.sp
+\fBhaiti\-parsable\fP \-h | \-\-help
+.sp
+\fBhaiti\-parsable\fP \-\-version
+.SH "OPTIONS"
+.sp
+\fB\-e, \-\-extended\fP
+.RS 4
+List all possible hash algorithms including ones using salt
+.RE
+.sp
+\fB\-\-debug\fP
+.RS 4
+Display arguments
+.RE
+.sp
+\fB\-h, \-\-help\fP
+.RS 4
+Show this screen
+.RE
+.sp
+\fB\-\-version\fP
+.RS 4
+Show version
+.RE
+.SH "COMMANDS"
+.sp
+\fBhc\fP
+.RS 4
+Display hash types matching that have a Hashcat reference
+.RE
+.sp
+\fBjtr\fP
+.RS 4
+Display hash types matching that have a John the Ripper reference
+.RE
+.SH "PARAMETERS"
+.sp
+\fB<hash>\fP
+.RS 4
+Hash string to identify, read from STDIN if equal to "\-"
+.RE
+.SH "EXAMPLES"
+.sp
+\fBhaiti\-parsable\fP hc \-e d41d8cd98f00b204e9800998ecf8427e
+\fBhaiti\-parsable\fP jtr d41d8cd98f00b204e9800998ecf8427e
+.SH "COPYRIGHT"
+.sp
+Copyright © 2020\-2023 Alexandre ZANNI (independent)
+.sp
+Copyright © 2019\-2020 Alexandre ZANNI at Orange Cyberdefense
+.sp
+This software is distributed under the terms of the MIT License. You may freely
+redistribute copies of it, subject to the conditions of the license.
+.SH "VERSION"
+.sp
+2.0.0
+.SH "REPORTING BUGS"
+.sp
+Report bugs to \c
+.URL "https://github.com/noraj/haiti/issues" "" "."
+.SH "RESOURCES"
+.sp
+Project homepage and documentation: \c
+.URL "https://noraj.github.io/haiti" "" ""
+.sp
+Source code: \c
+.URL "https://github.com/noraj/haiti" "" ""
+.SH "SEE ALSO"
+.sp
+\fBhaiti\fP(1), \fBhashcat\-haiti\fP(1), \fBjohn\-haiti\fP(1), \fBhaiti\-fzf\fP(1)
+.SH "AUTHOR"
+.sp
+Alexandre ZANNI (@noraj)

@@ -1,0 +1,76 @@
+= hashcat-haiti(1)
+Alexandre ZANNI (@noraj)
+:doctype: manpage
+:release-version: 2.0.0
+:manmanual: hashcat-haiti manual
+:mansource: hashcat-haiti {release-version}
+:manversion: {release-version}
+:man-linkstyle: pass:[cyan R < >]
+
+== Name
+
+hashcat-haiti - Wrapper for Hashcat where you can select the mode using haiti and fzf
+
+== Synopsis
+
+*hashcat-haiti* [_options_] _<hash>_ -- _<hashcat_options>_...
+
+*hashcat-haiti* -h | --help
+
+*hashcat-haiti* --version
+
+== Options
+
+*-e, --extended*::
+  List all possible hash algorithms including ones using salt
+
+*--debug*::
+  Display arguments
+
+*-h, --help*::
+  Show this screen
+
+*--version*::
+  Show version
+
+== Parameters
+
+*<hash>*::
+  Hash string to identify, read from STDIN if equal to "-"
+
+== Examples
+
+*hashcat-haiti* -e d41d8cd98f00b204e9800998ecf8427e \-- hashes.txt /usr/share/wordlists/passwords/rockyou.txt -r /usr/share/doc/hashcat/rules/best64.rule
+
+*hashcat-haiti* d41d8cd98f00b204e9800998ecf8427e \-- hashes.txt -a 3
+
+head -1 /tmp/hash.txt | *hashcat-haiti* - \-- /tmp/hash.txt
+
+*hashcat-haiti* -e d41d8cd98f00b204e9800998ecf8427e \-- hashes.txt --show
+
+== Copyright
+
+Copyright © 2020-2023 Alexandre ZANNI (independent)
+
+Copyright © 2019-2020 Alexandre ZANNI at Orange Cyberdefense
+
+This software is distributed under the terms of the MIT License. You may freely
+redistribute copies of it, subject to the conditions of the license.
+
+== Version
+
+{release-version}
+
+== Reporting bugs
+
+Report bugs to https://github.com/noraj/haiti/issues.
+
+== Resources
+
+Project homepage and documentation: https://noraj.github.io/haiti
+
+Source code: https://github.com/noraj/haiti
+
+== See also
+
+man:haiti[1], man:john-haiti[1], man:haiti-fzf[1], man:haiti-parsable[1]

@@ -1,0 +1,86 @@
+= haiti-fzf(1)
+Alexandre ZANNI (@noraj)
+:doctype: manpage
+:release-version: 2.0.0
+:manmanual: haiti-fzf manual
+:mansource: haiti-fzf {release-version}
+:manversion: {release-version}
+:man-linkstyle: pass:[cyan R < >]
+
+== Name
+
+haiti-fzf - Select a Hashcat or John the Ripper reference with fzf from one of the matching hash types
+
+== Note
+
+Mostly useful for man:hashcat-haiti[1] and man:john-haiti[1] or building another binary or alias that will make use of haiti with fzf input.
+
+== Synopsis
+
+*haiti-fzf* hc [_options_] _<hash>_
+
+*haiti-fzf* jtr [_options_] _<hash>_
+
+*haiti-fzf* -h | --help
+
+*haiti-fzf* --version
+
+== Options
+
+*-e, --extended*::
+  List all possible hash algorithms including ones using salt
+
+*--debug*::
+  Display arguments
+
+*-h, --help*::
+  Show this screen
+
+*--version*::
+  Show version
+
+== Commands
+
+*hc*::
+  Select a Hashcat reference with fzf from one of the matching hash types
+
+*jtr*::
+  Select a John the Ripper reference with fzf from one of the matching hash types
+
+== Parameters
+
+*<hash>*::
+  Hash string to identify, read from STDIN if equal to "-"
+
+== Examples
+
+*haiti-fzf* hc -e d41d8cd98f00b204e9800998ecf8427e
+
+*haiti-fzf* jtr d41d8cd98f00b204e9800998ecf8427e
+
+== Copyright
+
+Copyright © 2020-2023 Alexandre ZANNI (independent)
+
+Copyright © 2019-2020 Alexandre ZANNI at Orange Cyberdefense
+
+This software is distributed under the terms of the MIT License. You may freely
+redistribute copies of it, subject to the conditions of the license.
+
+== Version
+
+{release-version}
+
+== Reporting bugs
+
+Report bugs to https://github.com/noraj/haiti/issues.
+
+== Resources
+
+Project homepage and documentation: https://noraj.github.io/haiti
+
+Source code: https://github.com/noraj/haiti
+
+== See also
+
+man:haiti[1], man:hashcat-haiti[1], man:john-haiti[1], man:haiti-parsable[1]

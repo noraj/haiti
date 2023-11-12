@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://noraj.github.io/haiti/'
   s.license       = 'MIT'
 
-  s.files         = Dir['bin/*'] + Dir['lib/**/*.rb'] + Dir['data/*.json'] + Dir['man/haiti.1']
-  s.files        += ['LICENSE.txt'] + ['docs/_media/logo.ascii']
+  s.files         = Dir['bin/*', 'lib/**/*.rb', 'data/*.json', 'man/*.1']
+  s.files        += ['LICENSE.txt', 'docs/_media/logo.ascii']
   s.bindir        = 'bin'
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.require_paths = ['lib']

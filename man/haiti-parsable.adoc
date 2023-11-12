@@ -1,0 +1,85 @@
+= haiti-parsable(1)
+Alexandre ZANNI (@noraj)
+:doctype: manpage
+:release-version: 2.0.0
+:manmanual: haiti-parsable manual
+:mansource: haiti-parsable {release-version}
+:manversion: {release-version}
+:man-linkstyle: pass:[cyan R < >]
+
+== Name
+
+haiti-parsable - Display hash types matching that have a Hashcat reference in an easily parsable format
+
+== Note
+
+Mostly useful for man:haiti-fzf[1] or building another binary or alias.
+
+== Synopsis
+
+*haiti-parsable* hc [_options_] _<hash>_
+
+*haiti-parsable* jtr [_options_] _<hash>_
+
+*haiti-parsable* -h | --help
+
+*haiti-parsable* --version
+
+== Options
+
+*-e, --extended*::
+  List all possible hash algorithms including ones using salt
+
+*--debug*::
+  Display arguments
+
+*-h, --help*::
+  Show this screen
+
+*--version*::
+  Show version
+
+== Commands
+
+*hc*::
+  Display hash types matching that have a Hashcat reference
+
+*jtr*::
+  Display hash types matching that have a John the Ripper reference
+
+== Parameters
+
+*<hash>*::
+  Hash string to identify, read from STDIN if equal to "-"
+
+== Examples
+
+*haiti-parsable* hc -e d41d8cd98f00b204e9800998ecf8427e
+*haiti-parsable* jtr d41d8cd98f00b204e9800998ecf8427e
+
+== Copyright
+
+Copyright © 2020-2023 Alexandre ZANNI (independent)
+
+Copyright © 2019-2020 Alexandre ZANNI at Orange Cyberdefense
+
+This software is distributed under the terms of the MIT License. You may freely
+redistribute copies of it, subject to the conditions of the license.
+
+== Version
+
+{release-version}
+
+== Reporting bugs
+
+Report bugs to https://github.com/noraj/haiti/issues.
+
+== Resources
+
+Project homepage and documentation: https://noraj.github.io/haiti
+
+Source code: https://github.com/noraj/haiti
+
+== See also
+
+man:haiti[1], man:hashcat-haiti[1], man:john-haiti[1], man:haiti-fzf[1]

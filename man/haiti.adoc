@@ -1,0 +1,111 @@
+= haiti(1)
+Alexandre ZANNI (@noraj)
+:doctype: manpage
+:release-version: 2.0.0
+:manmanual: haiti manual
+:mansource: haiti {release-version}
+:manversion: {release-version}
+:man-linkstyle: pass:[cyan R < >]
+
+== Name
+
+haiti - CLI tool for identifying hash types (hash type identifier)
+
+== Synopsis
+
+*haiti* [_options_] _<hash>_
+
+*haiti* samples (_<ref>_ | _<name>_)
+
+*haiti* [_options_] list
+
+*haiti* --ascii-art
+
+*haiti* -h | --help
+
+*haiti* --version
+
+== Options
+
+*--no-color*::
+  Disable colorized output (NO_COLOR environment variable is respected too).
+
+*-e, --extended*::
+  List all possible hash algorithms, including ones using salt.
+
+*--short*::
+  Display in a short format: do not display hashcat and john the ripper references.
+
+*--hashcat-only*::
+  Show only hashcat references.
+
+*--john-only*::
+  Show only john the ripper references.
+
+*--ascii-art*::
+  Display the logo in colored ascii-art.
+
+*--debug*::
+  Display arguments.
+
+*-h, --help*::
+  Show this screen.
+
+*--version*::
+  Show version.
+
+== Commands
+
+*samples*::
+  Display hash samples for the given type.
+
+*list*::
+  Display a list of all the available hash types.
+
+== Parameters
+
+*<hash>*::
+  Hash string to identify, read from STDIN if equal to "-".
+
+*<ref>*::
+  Hashcat or John the Ripper reference.
+
+*<name>*::
+  Hash type name.
+
+== Examples
+
+*haiti* -e d41d8cd98f00b204e9800998ecf8427e
+
+*haiti* --no-color --short d41d8cd98f00b204e9800998ecf8427e
+
+b2sum /etc/os-release | awk '{print $1}' | *haiti* -
+
+*haiti* samples crc32
+
+== Copyright
+
+Copyright © 2020-2023 Alexandre ZANNI (independent)
+
+Copyright © 2019-2020 Alexandre ZANNI at Orange Cyberdefense
+
+This software is distributed under the terms of the MIT License. You may freely
+redistribute copies of it, subject to the conditions of the license.
+
+== Version
+
+{release-version}
+
+== Reporting bugs
+
+Report bugs to https://github.com/noraj/haiti/issues.
+
+== Resources
+
+Project homepage and documentation: https://noraj.github.io/haiti
+
+Source code: https://github.com/noraj/haiti
+
+== See also
+
+man:hashcat-haiti[1], man:john-haiti[1], man:haiti-fzf[1], man:haiti-parsable[1]

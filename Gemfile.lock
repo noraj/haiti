@@ -8,6 +8,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    asciidoctor (2.0.20)
     ast (2.4.2)
     base64 (0.1.1)
     commonmarker (0.23.10)
@@ -54,6 +55,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  asciidoctor (~> 2.0, >= 2.0.20)
   bundler (~> 2.1)
   commonmarker (~> 0.23)
   docopt (~> 0.6)

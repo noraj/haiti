@@ -2,6 +2,8 @@
 
 require 'rake/testtask'
 require 'bundler/gem_tasks'
+require 'asciidoctor'
+require_relative 'man/man_inline_macro'
 
 Rake::TestTask.new do |t|
   t.libs << 'test'
@@ -15,12 +17,12 @@ task :count do
   puts File.read('data/prototypes.json').scan('"extended"').count
 end
 
-# Define a task for creating the man page
-desc 'Create the man page'
-task :create_manpage do
-  ronn_source = 'man/haiti.ronn'
-  manpage_destination = 'man/haiti.1'
-
-  # Generate the man page from the ronn file
-  sh "ronn --roff #{ronn_source} > #{manpage_destination}"
+desc 'Create man pages'
+task :man do
+  Asciidoctor::Extensions.register do
+    inline_macro ManInlineMacro
+  end
+  Dir['man/*.adoc'].each do |adoc|
+    Asciidoctor.convert_file adoc, safe: :safe, backend: 'manpage'
+  end
 end

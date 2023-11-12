@@ -1,0 +1,76 @@
+= john-haiti(1)
+Alexandre ZANNI (@noraj)
+:doctype: manpage
+:release-version: 2.0.0
+:manmanual: john-haiti manual
+:mansource: john-haiti {release-version}
+:manversion: {release-version}
+:man-linkstyle: pass:[cyan R < >]
+
+== Name
+
+john-haiti - Wrapper for John the Ripper where you can select the format using haiti and fzf
+
+== Synopsis
+
+*john-haiti* [_options_] _<hash>_ -- _<john_options>_...
+
+*john-haiti* -h | --help
+
+*john-haiti* --version
+
+== Options
+
+*-e, --extended*::
+  List all possible hash algorithms including ones using salt
+
+*--debug*::
+  Display arguments
+
+*-h, --help*::
+  Show this screen
+
+*--version*::
+  Show version
+
+== Parameters
+
+*<hash>*::
+  Hash string to identify, read from STDIN if equal to "-"
+
+== Examples
+
+*john-haiti* -e d41d8cd98f00b204e9800998ecf8427e \-- hashes.txt --wordlist=/usr/share/wordlists/passwords/rockyou.txt
+
+*john-haiti* 1f474c6dadb3cb2370f6cb88d4576ede0db9ff43 \-- hashes.txt --rules=NT --fork=3
+
+head -1 /tmp/hash.txt | *john-haiti* - \-- /tmp/hash.txt
+
+*john-haiti* -e d41d8cd98f00b204e9800998ecf8427e \-- hashes.txt --show
+
+== Copyright
+
+Copyright © 2020-2023 Alexandre ZANNI (independent)
+
+Copyright © 2019-2020 Alexandre ZANNI at Orange Cyberdefense
+
+This software is distributed under the terms of the MIT License. You may freely
+redistribute copies of it, subject to the conditions of the license.
+
+== Version
+
+{release-version}
+
+== Reporting bugs
+
+Report bugs to https://github.com/noraj/haiti/issues.
+
+== Resources
+
+Project homepage and documentation: https://noraj.github.io/haiti
+
+Source code: https://github.com/noraj/haiti
+
+== See also
+
+man:haiti[1], man:hashcat-haiti[1], man:haiti-fzf[1], man:haiti-parsable[1]
