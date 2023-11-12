@@ -43,7 +43,7 @@ $ bundle exec yard doc
 Update the man page in `man/haiti.ronn` and build it:
 
 ```
-$ bundle exec rake create_manpage
+$ bundle exec rake man
 ```
 
 Create an **annotated git tag**:
@@ -138,3 +138,39 @@ $ docker push quay.io/noraj/haiti:latest
 ```
 
 <!-- tabs:end -->
+
+## Distribution packaging
+
+### Example
+
+Globally, you can take example on the easy to understand [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=haiti) for ArchLinux.
+
+### Runtime dependencies
+
+The dependencies required for runtime are the one listed the `:runtime` group in `Gemfile`. You can skip all other dependencies since they are useful only for development.
+
+Those are Ruby dependencies (gems) available on [RubyGems](https://rubygems.org/) registry.
+
+The system package equivalent of the Ruby gem is often name (depending on the distribution) `ruby-<gemname>`, e.g. `ruby-paint` for the `paint` gem.
+
+`paint` gem is [often available as system package](https://repology.org/project/ruby:paint/versions) while `docopt` gem is [rarely](https://repology.org/project/ruby:docopt/versions). So you'll probably have to package this dependency too. Hopefully, `docopt` gem is pure ruby and has no dependency so is very [easy to package](https://github.com/BlackArch/blackarch/blob/master/packages/ruby-docopt/PKGBUILD).
+
+### Optional dependencies
+
+The runtime dependencies will be enough to use haiti library, `haiti` and `haiti-parsable` CLI programs.
+
+To use `haiti-fzf`, `john-haiti` and `hashcat-haiti` CLI programs, the system package [fzf](https://repology.org/project/fzf/versions) will be required.
+
+To use `john-haiti` CLI program, the system package [john](https://repology.org/project/john/versions) will be required.
+
+To use `hashcat-haiti` CLI program, the system package [hashcat](https://repology.org/project/hashcat/versions) will be required.
+
+### Man pages
+
+Man pages for all CLI programs are either available on the `man/` folder if you clone the git repository or shipped in the `man/` folder is you only fetch gem.
+
+Depending on the distribution, deploying the man pages will be as easy as copying them to `/usr/share/man/man1/<pkgname>.1` and letting the package manager post-install hook update the man database.
+
+### Distribution packages
+
+You can check existing packages for various distributions in the `packages/` folder of the git repository (packages source or link pointing to them) or on [repology](https://repology.org/project/haiti/versions), and some install guidelines on the [install page](https://noraj.github.io/haiti/#/pages/install).
