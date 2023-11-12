@@ -2,8 +2,6 @@
 
 require 'rake/testtask'
 require 'bundler/gem_tasks'
-require 'asciidoctor'
-require_relative 'man/man_inline_macro'
 
 Rake::TestTask.new do |t|
   t.libs << 'test'
@@ -19,6 +17,9 @@ end
 
 desc 'Create man pages'
 task :man do
+  require 'asciidoctor'
+  require_relative 'man/man_inline_macro'
+
   Asciidoctor::Extensions.register do
     inline_macro ManInlineMacro
   end
