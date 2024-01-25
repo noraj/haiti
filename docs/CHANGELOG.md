@@ -1,5 +1,11 @@
 ## [unreleased]
 
+- **Enhancements**:
+  - OpenSSH private key
+    - Better naming (add algorithm)
+    - Better regexp (add john format support)
+    - Add type `$2$`
+
 ## [2.1.0]
 
 - **Additions**:
