@@ -6002,7 +6002,7 @@
 		"modes": [
 			{
 				"john": "ssh",
-				"hashcat": 22951,
+				"hashcat": null,
 				"extended": false,
 				"name": "OpenSSH private key (RSA/DSA/EC + Bcrypt PBKDF + AES-256-CBC)",
 				"samples": [
