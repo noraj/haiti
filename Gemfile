@@ -23,7 +23,7 @@ group :development, :lint do
 end
 
 group :development, :docs do
-  gem 'asciidoctor', '~> 2.0', '>= 2.0.20' # for manpage generation
+  gem 'asciidoctor', '~> 2.0' # for manpage generation
   gem 'commonmarker', '~> 0.23' # for markdown support in YARD
   gem 'yard', ['>= 0.9.27', '< 0.10']
 end
