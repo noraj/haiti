@@ -5,6 +5,10 @@
     - Better naming (add algorithm)
     - Better regexp (add john format support)
     - Add type `$2$`
+  - IPB 2.x (Invision Power Board)
+    - fix HC ref. [#182][#182] (thanks to @junewerner)
+
+[#182]:https://github.com/noraj/haiti/pull/182
 
 ## [2.1.0]
 
