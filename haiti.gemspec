@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     'documentation_uri'     => 'https://noraj.github.io/haiti/',
     'homepage_uri'          => 'https://noraj.github.io/haiti/',
     'source_code_uri'       => 'https://github.com/noraj/haiti/',
+    'funding_uri'           => 'https://github.com/sponsors/noraj',
     'rubygems_mfa_required' => 'true'
   }
 
