@@ -12,7 +12,7 @@ GEM
     ast (2.4.2)
     commonmarker (0.23.10)
     docopt (0.6.1)
-    json (2.7.1)
+    json (2.7.2)
     language_server-protocol (3.17.0.3)
     minitest (5.22.3)
     paint (2.3.0)
@@ -25,7 +25,7 @@ GEM
     rake (13.2.1)
     regexp_parser (2.9.0)
     rexml (3.2.6)
-    rubocop (1.62.1)
+    rubocop (1.63.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -54,7 +54,7 @@ DEPENDENCIES
   minitest (~> 5.22)
   paint (~> 2.3)
   rake (~> 13.2)
-  rubocop (~> 1.62)
+  rubocop (~> 1.63)
   yard (>= 0.9.27, < 0.10)
 
 BUNDLED WITH
