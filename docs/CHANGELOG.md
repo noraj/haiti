@@ -1,5 +1,7 @@
 ## [unreleased]
 
+- **Breaking changes**:
+  - **Drop** Ruby 2.7 support, [EOL since 31/03/2023](https://www.ruby-lang.org/en/downloads/branches/), no longer compatible with newest version of bundler
 - **Enhancements**:
   - OpenSSH private key
     - Better naming (add algorithm)

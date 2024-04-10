@@ -3,7 +3,7 @@ PATH
   specs:
     haiti-hash (2.1.0)
       docopt (~> 0.6)
-      paint (~> 2.2)
+      paint (~> 2.3)
 
 GEM
   remote: https://rubygems.org/
