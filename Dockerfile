@@ -1,5 +1,6 @@
 # Official verified image
-FROM ruby:3.2.2-alpine3.17
+# https://hub.docker.com/_/ruby
+FROM ruby:3.3.0-alpine3.19
 
 # Metadata
 LABEL org.opencontainers.image.title="haiti" \
