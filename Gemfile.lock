@@ -14,7 +14,7 @@ GEM
     docopt (0.6.1)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
-    minitest (5.24.1)
+    minitest (5.25.0)
     paint (2.3.0)
     parallel (1.25.1)
     parser (3.3.4.0)
@@ -53,7 +53,7 @@ DEPENDENCIES
   commonmarker (~> 0.23)
   docopt (~> 0.6)
   haiti-hash!
-  minitest (~> 5.24)
+  minitest (~> 5.25)
   paint (~> 2.3)
   rake (~> 13.2)
   rubocop (~> 1.65)
