@@ -14,7 +14,7 @@ GEM
     docopt (0.6.1)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
-    minitest (5.25.0)
+    minitest (5.25.1)
     paint (2.3.0)
     parallel (1.25.1)
     parser (3.3.4.0)
