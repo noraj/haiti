@@ -6,6 +6,7 @@
   - WPA-PMKID-PMK [#162][#162]
   - WPA-EAPOL-PBKDF2 [#162][#162]
   - WPA-EAPOL-PMK [#162][#162]
+  - WPA-PBKDF2-PMKID+EAPOL [#162][#162]
 - **Enhancements**:
   - OpenSSH private key
     - Better naming (add algorithm)
