@@ -2,6 +2,8 @@
 
 - **Breaking changes**:
   - **Drop** Ruby 2.7 support, [EOL since 31/03/2023](https://www.ruby-lang.org/en/downloads/branches/), no longer compatible with newest version of bundler
+- **Additions**:
+  - WPA-PMKID-PMK [#162][#162]
 - **Enhancements**:
   - OpenSSH private key
     - Better naming (add algorithm)
@@ -9,8 +11,11 @@
     - Add type `$2$`
   - IPB 2.x (Invision Power Board)
     - fix HC ref. [#182][#182] (thanks to @junewerner)
+  - WPA-PMKID-PBKDF2
+    - Different separators
 
 [#182]:https://github.com/noraj/haiti/pull/182
+[#162]:https://github.com/noraj/haiti/issues/162
 
 ## [2.1.0]
 
