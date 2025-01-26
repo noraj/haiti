@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/ParadoxV5/yard.git
+  revision: 9e869c940859570b07b81c5eadd6070e76f6291e
+  ref: 9e869c940859570b07b81c5eadd6070e76f6291e
+  branch: commonmarker-1.0
+  specs:
+    yard (0.9.36)
+
 PATH
   remote: .
   specs:
@@ -10,37 +18,36 @@ GEM
   specs:
     asciidoctor (2.0.23)
     ast (2.4.2)
-    commonmarker (0.23.11)
+    commonmarker (2.0.4-x86_64-linux)
     docopt (0.6.1)
-    json (2.8.2)
+    json (2.9.1)
     language_server-protocol (3.17.0.3)
-    minitest (5.25.2)
+    minitest (5.25.4)
     paint (2.3.0)
     parallel (1.26.3)
-    parser (3.3.6.0)
+    parser (3.3.7.0)
       ast (~> 2.4.1)
       racc
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
-    regexp_parser (2.9.3)
-    rubocop (1.69.0)
+    regexp_parser (2.10.0)
+    rubocop (1.71.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 2.4, < 3.0)
-      rubocop-ast (>= 1.36.1, < 2.0)
+      regexp_parser (>= 2.9.3, < 3.0)
+      rubocop-ast (>= 1.36.2, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.36.2)
+    rubocop-ast (1.37.0)
       parser (>= 3.3.1.0)
     ruby-progressbar (1.13.0)
-    unicode-display_width (3.1.2)
+    unicode-display_width (3.1.4)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
-    yard (0.9.37)
 
 PLATFORMS
   x86_64-linux
@@ -48,14 +55,14 @@ PLATFORMS
 DEPENDENCIES
   asciidoctor (~> 2.0)
   bundler (~> 2.1)
-  commonmarker (~> 0.23)
+  commonmarker (~> 2.0)
   docopt (~> 0.6)
   haiti-hash!
   minitest (~> 5.25)
   paint (~> 2.3)
   rake (~> 13.2)
   rubocop (~> 1.66)
-  yard (>= 0.9.27, < 0.10)
+  yard!
 
 BUNDLED WITH
-   2.5.22
+   2.6.3

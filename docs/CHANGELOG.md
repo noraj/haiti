@@ -2,6 +2,7 @@
 
 - **Breaking changes**:
   - **Drop** Ruby 2.7 support, [EOL since 31/03/2023](https://www.ruby-lang.org/en/downloads/branches/), no longer compatible with newest version of bundler
+  - **Drop** Ruby 3.0 support (EOL)
 - **Additions**:
   - WPA-PMKID-PMK [#162][#162]
   - WPA-EAPOL-PBKDF2 [#162][#162]
@@ -17,6 +18,8 @@
     - fix HC ref. [#182][#182] (thanks to @junewerner)
   - WPA-PMKID-PBKDF2
     - Different separators
+- **Chore**:
+  - Add support for Ruby 3.4
 
 [#182]:https://github.com/noraj/haiti/pull/182
 [#162]:https://github.com/noraj/haiti/issues/162

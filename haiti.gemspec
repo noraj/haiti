@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
     'rubygems_mfa_required' => 'true'
   }
 
-  s.required_ruby_version = ['>= 3.0.0', '< 4.0']
+  s.required_ruby_version = ['>= 3.1.0', '< 4.0']
 
   s.add_runtime_dependency('docopt', '~> 0.6') # for argument parsing
   s.add_runtime_dependency('paint', '~> 2.3') # for colorized output
