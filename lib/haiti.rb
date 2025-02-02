@@ -9,7 +9,6 @@ require 'haiti/hash'
 # The global Hash Identifier class
 class HashIdentifier
   # Constants
-  include Version
   PROTOTYPES = JSON.parse(File.read(File.join(__dir__, '../data/prototypes.json')))
   COMMONS = JSON.parse(File.read(File.join(__dir__, '../data/commons.json')))
 

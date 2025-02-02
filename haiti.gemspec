@@ -4,7 +4,7 @@ require_relative 'lib/haiti/version'
 
 Gem::Specification.new do |s|
   s.name          = 'haiti-hash'
-  s.version       = Version::VERSION
+  s.version       = HashIdentifier::VERSION
   s.platform      = Gem::Platform::RUBY
   s.summary       = 'HAsh IdenTifIer'
   s.description   = 'Hash type identifier (CLI & lib).'

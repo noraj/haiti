@@ -20,6 +20,8 @@
     - Different separators
 - **Chore**:
   - Add support for Ruby 3.4
+  - Change the way version is included. Insted of including a module `Version`, directly add the `VERSION` constant in the `HashIdentifier` class. It could avoid namespace collision with that kind of generic name.
+
 
 [#182]:https://github.com/noraj/haiti/pull/182
 [#162]:https://github.com/noraj/haiti/issues/162
