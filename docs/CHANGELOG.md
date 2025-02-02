@@ -3,7 +3,7 @@
 ## [3.0.0]
 
 - **Breaking changes**:
-  - **Drop** Ruby 2.7 support, [EOL since 31/03/2023](https://www.ruby-lang.org/en/downloads/branches/), no longer compatible with newest version of bundler
+  - **Drop** Ruby 2.7 support, [EOL since 31/03/2023](https://www.ruby-lang.org/en/downloads/branches/), no longer compatible with newer versions of bundler
   - **Drop** Ruby 3.0 support (EOL)
 - **Additions**:
   - WPA-PMKID-PMK [#162][#162]
@@ -24,14 +24,14 @@
     - Different separators
 - **Chore**:
   - Add support for Ruby 3.4
-  - Change the way version is included. Insted of including a module `Version`, directly add the `VERSION` constant in the `HashIdentifier` class. It could avoid namespace collision with that kind of generic name.
+  - Change the way version is included. Instead of including a module `Version`, directly add the `VERSION` constant in the `HashIdentifier` class. It could avoid namespace collision with that kind of generic name.
 - **Documentation**:
   - Use syntax highlight for shell commands without output
   - Add bash syntax highlight support
   - Update docsify, docsify plugins
   - Enhance of docsify theme
   - Include version number in docsify scripts and themes as well as CDN url for easier update
-  - Comparition with more tools
+  - Comparison with more tools
 
 [#182]:https://github.com/noraj/haiti/pull/182
 [#162]:https://github.com/noraj/haiti/issues/162
