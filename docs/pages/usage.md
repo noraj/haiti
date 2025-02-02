@@ -10,7 +10,7 @@ Main binary: identify hash types, list types and samples.
 
 ```
 $ haiti -h
-HAITI (HAsh IdenTifIer) v2.1.0
+HAITI (HAsh IdenTifIer) v3.0.0
 
 Usage:
   haiti [options] list
@@ -58,7 +58,7 @@ Wrapper for Hashcat where you can select the mode using haiti and fzf.
 
 ```
 $ hashcat-haiti -h
-HAITI (HAsh IdenTifIer) v2.1.0
+HAITI (HAsh IdenTifIer) v3.0.0
 
 Usage:
   hashcat-haiti [options] <hash> -- <hashcat_options>...
@@ -92,7 +92,7 @@ Wrapper for John the Ripper where you can select the format using haiti and fzf.
 
 ```
 $ john-haiti -h 
-HAITI (HAsh IdenTifIer) v2.1.0
+HAITI (HAsh IdenTifIer) v3.0.0
 
 Usage:
   john-haiti [options] <hash> -- <john_options>...
@@ -128,7 +128,7 @@ Note: mostly useful for `hashcat-haiti` and `john-haiti` or building another bin
 
 ```
 $ haiti-fzf -h 
-HAITI (HAsh IdenTifIer) v2.1.0
+HAITI (HAsh IdenTifIer) v3.0.0
 
 Usage:
   haiti-fzf hc [options] <hash>
@@ -167,7 +167,7 @@ Note: mostly useful for `haiti-fzf` or building another binary or alias.
 
 ```
 $ haiti-parsable -h
-HAITI (HAsh IdenTifIer) v2.1.0
+HAITI (HAsh IdenTifIer) v3.0.0
 
 Usage:
   haiti-parsable hc [options] <hash>

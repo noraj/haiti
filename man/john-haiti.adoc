@@ -1,7 +1,7 @@
 = john-haiti(1)
 Alexandre ZANNI (@noraj)
 :doctype: manpage
-:release-version: 2.1.0
+:release-version: 3.0.0
 :manmanual: john-haiti manual
 :mansource: john-haiti {release-version}
 :manversion: {release-version}

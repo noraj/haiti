@@ -1,5 +1,7 @@
 ## [unreleased]
 
+## [3.0.0]
+
 - **Breaking changes**:
   - **Drop** Ruby 2.7 support, [EOL since 31/03/2023](https://www.ruby-lang.org/en/downloads/branches/), no longer compatible with newest version of bundler
   - **Drop** Ruby 3.0 support (EOL)
@@ -29,6 +31,7 @@
   - Update docsify, docsify plugins
   - Enhance of docsify theme
   - Include version number in docsify scripts and themes as well as CDN url for easier update
+  - Comparition with more tools
 
 [#182]:https://github.com/noraj/haiti/pull/182
 [#162]:https://github.com/noraj/haiti/issues/162

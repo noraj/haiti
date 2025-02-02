@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    haiti-hash (2.1.0)
+    haiti-hash (3.0.0)
       docopt (~> 0.6)
       paint (~> 2.3)
 

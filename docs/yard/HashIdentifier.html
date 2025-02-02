@@ -6,7 +6,7 @@
 <title>
   Class: HashIdentifier
   
-    &mdash; Documentation by YARD 0.9.34
+    &mdash; Documentation by YARD 0.9.36
   
 </title>
 
@@ -87,11 +87,6 @@
   
   
   
-  <dl>
-      <dt>Includes:</dt>
-      <dd><span class='object_link'><a href="Version.html" title="Version (module)">Version</a></span></dd>
-  </dl>
-  
   
 
   
@@ -100,7 +95,7 @@
   <dl>
     <dt>Defined in:</dt>
     <dd>lib/haiti.rb<span class="defines">,<br />
-  lib/haiti/hash.rb</span>
+  lib/haiti/hash.rb,<br /> lib/haiti/version.rb</span>
 </dd>
   </dl>
   
@@ -136,7 +131,17 @@
     <dl class="constants">
       
         <dt id="PROTOTYPES-constant" class="">PROTOTYPES =
-          
+          <div class="docstring">
+  <div class="discussion">
+    <p>Constants</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
         </dt>
         <dd><pre class="code"><span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='id identifier rubyid___dir__'>__dir__</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>../data/prototypes.json</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rparen'>)</span></pre></dd>
       
@@ -145,16 +150,15 @@
         </dt>
         <dd><pre class="code"><span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='id identifier rubyid___dir__'>__dir__</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>../data/commons.json</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rparen'>)</span></pre></dd>
       
+        <dt id="VERSION-constant" class="">VERSION =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>3.0.0</span><span class='tstring_end'>&#39;</span></span></pre></dd>
+      
     </dl>
   
 
 
-
-  
-  
-  <h3 class="inherited">Constants included
-     from <span class='object_link'><a href="Version.html" title="Version (module)">Version</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Version.html#VERSION-constant" title="Version::VERSION (constant)">Version::VERSION</a></span></p>
 
 
   <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
@@ -335,13 +339,7 @@
     </ul>
   
 
-
-  
-  
-  
-  
-  
-  <div id="constructor_details" class="method_details_list">
+<div id="constructor_details" class="method_details_list">
   <h2>Constructor Details</h2>
   
     <div class="method_details first">
@@ -388,14 +386,14 @@
       <pre class="lines">
 
 
+26
 27
 28
 29
-30
-31</pre>
+30</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 26</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='rparen'>)</span>
   <span class='ivar'>@hash</span> <span class='op'>=</span> <span class='id identifier rubyid_hash'>hash</span>
@@ -464,12 +462,12 @@
       <pre class="lines">
 
 
+18
 19
-20
-21</pre>
+20</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_hash'>hash</span>
   <span class='ivar'>@hash</span>
@@ -492,7 +490,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Returns list of <span class='object_link'><a href="HashIdentifier/Chf.html" title="HashIdentifier::Chf (class)">Chf</a></span> objects, representing the identified
+    <p>Returns list of <span class='object_link'><a href="HashIdentifier/Chf.html" title="HashIdentifier::Chf (class)">Chf</a></span> objects, representing the identified<br />
 hashes.</p>
 
 
@@ -511,7 +509,7 @@ hashes.</p>
       
       
         &mdash;
-        <div class='inline'><p>list of <span class='object_link'><a href="HashIdentifier/Chf.html" title="HashIdentifier::Chf (class)">Chf</a></span> objects, representing the identified
+        <div class='inline'><p>list of <span class='object_link'><a href="HashIdentifier/Chf.html" title="HashIdentifier::Chf (class)">Chf</a></span> objects, representing the identified<br />
 hashes</p>
 </div>
       
@@ -525,12 +523,12 @@ hashes</p>
       <pre class="lines">
 
 
+22
 23
-24
-25</pre>
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 22</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_type'>type</span>
   <span class='ivar'>@type</span>
@@ -598,12 +596,12 @@ hashes</p>
       <pre class="lines">
 
 
+58
 59
-60
-61</pre>
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 58</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_list'>list</span>
   <span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#PROTOTYPES-constant" title="HashIdentifier::PROTOTYPES (constant)">PROTOTYPES</a></span></span><span class='period'>.</span><span class='id identifier rubyid_flat_map'>flat_map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_d'>d</span><span class='op'>|</span> <span class='id identifier rubyid_d'>d</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>modes</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span> <span class='id identifier rubyid_m'>m</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='rbrace'>}</span> <span class='rbrace'>}</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sort'>sort</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_a'>a</span><span class='comma'>,</span> <span class='id identifier rubyid_b'>b</span><span class='op'>|</span> <span class='id identifier rubyid_a'>a</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>&lt;=&gt;</span> <span class='id identifier rubyid_b'>b</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_uniq'>uniq</span>
@@ -655,16 +653,16 @@ hashes</p>
       <pre class="lines">
 
 
+64
 65
 66
 67
 68
 69
-70
-71</pre>
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 64</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_object_list'>object_list</span>
   <span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#PROTOTYPES-constant" title="HashIdentifier::PROTOTYPES (constant)">PROTOTYPES</a></span></span><span class='period'>.</span><span class='id identifier rubyid_flat_map'>flat_map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_d'>d</span><span class='op'>|</span>
@@ -748,6 +746,7 @@ hashes</p>
       <pre class="lines">
 
 
+39
 40
 41
 42
@@ -759,11 +758,10 @@ hashes</p>
 48
 49
 50
-51
-52</pre>
+51</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'lib/haiti.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_samples'>samples</span><span class='lparen'>(</span><span class='id identifier rubyid_input'>input</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_samples'>samples</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -788,9 +786,9 @@ hashes</p>
 </div>
 
       <div id="footer">
-  Generated on Sun Nov 12 17:03:44 2023 by
+  Generated on Sun Feb  2 20:18:06 2025 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.34 (ruby-3.2.2).
+  0.9.36 (ruby-3.4.1).
 </div>
 
     </div>
