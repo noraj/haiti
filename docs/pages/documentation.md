@@ -6,9 +6,9 @@ See [Usage](pages/usage.md?id=cli).
 
 ## Server locally
 
-```
-$ npm i docsify-cli -g
-$ docsify serve docs
+```bash
+npm i docsify-cli -g
+docsify serve docs
 ```
 
 ## Library doc
@@ -21,14 +21,14 @@ You can consult it online [here](https://noraj.github.io/haiti/yard/).
 
 For developers who only want to use the HAITI library.
 
-```
-$ bundle exec yard doc
+```bash
+bundle exec yard doc
 ```
 
 ### Building locally: for HAITI developer
 
 For developers who want to participate to HAITI development.
 
-```
-$ bundle exec yard doc --yardopts .yardopts-dev
+```bash
+bundle exec yard doc --yardopts .yardopts-dev
 ```
