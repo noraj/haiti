@@ -10,6 +10,7 @@
   - WPA-PBKDF2-PMKID+EAPOL [#162][#162]
   - WPA-PMK-PMKID+EAPOL [#162][#162]
   - PFX (PKCS#12 PBE) (SHA1/SHA2) [#170][#170]
+  - FileVault 2 [#216][#216]
 - **Enhancements**:
   - OpenSSH private key
     - Better naming (add algorithm)
@@ -32,6 +33,7 @@
 [#182]:https://github.com/noraj/haiti/pull/182
 [#162]:https://github.com/noraj/haiti/issues/162
 [#170]:https://github.com/noraj/haiti/issues/170
+[#216]:https://github.com/noraj/haiti/issues/216
 
 ## [2.1.0]
 
