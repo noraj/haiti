@@ -2,8 +2,8 @@
 
 ## Quick install
 
-```
-$ gem install haiti-hash
+```bash
+gem install haiti-hash
 ```
 
 ## Default usage: CLI

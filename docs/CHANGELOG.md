@@ -23,6 +23,10 @@
   - Change the way version is included. Insted of including a module `Version`, directly add the `VERSION` constant in the `HashIdentifier` class. It could avoid namespace collision with that kind of generic name.
 - **Documentation**:
   - Use syntax highlight for shell commands without output
+  - Add bash syntax highlight support
+  - Update docsify, docsify plugins
+  - Enhance of docsify theme
+  - Include version number in docsify scripts and themes as well as CDN url for easier update
 
 [#182]:https://github.com/noraj/haiti/pull/182
 [#162]:https://github.com/noraj/haiti/issues/162

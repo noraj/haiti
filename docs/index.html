@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>HAITI documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
+  <meta name="description" content="HAITI tool documentation">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="vendor/themes/theme-simple-dark.css">
+  <!-- Site theme -->
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="vendor/themes/docsify-themeable-dark-0.9.0.min.css" data-cdn="https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple-dark.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="vendor/themes/docsify-themeable-light-0.9.0.min.css" data-cdn="https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/css/theme-simple.css">
+  <!-- PrismJS theme -->
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="vendor/prismjs/themes/prism-one-dark-1.9.0.min.css" data-cdn="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-dark.min.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="vendor/prismjs/themes/prism-one-light-1.9.0.min.css" data-cdn="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-one-light.min.css">
 </head>
 <body>
   <div id="app"></div>
@@ -15,7 +20,7 @@
       name: 'HAITI',
       repo: 'https://github.com/noraj/haiti/',
       loadSidebar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       loadNavbar: true,
       coverpage: true,
       logo: '_media/logo.png',
@@ -34,11 +39,16 @@
       }
     }
   </script>
-  <script src="vendor/docsify.js"></script>
-  <script src="vendor/plugins/search.min.js"></script>
-  <script src="vendor/plugins/emoji.min.js"></script>
-  <script src="vendor/prismjs/components/prism-ruby.min.js"></script>
-  <script src="vendor/plugins/docsify-themeable.min.js"></script>
-  <script src="vendor/plugins/docsify-tabs.min.js"></script>
+  <!-- Docsify -->
+  <script src="vendor/docsify-4.13.1.js" data-cdn="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
+  <!-- Docsify plugins -->
+  <script src="vendor/plugins/search-4.13.1.min.js" data-cdn="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
+  <script src="vendor/plugins/emoji-4.13.1.min.js" data-cdn="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/emoji.min.js"></script>
+  <script src="vendor/plugins/docsify-tabs-1.6.3.min.js" data-cdn="https://cdn.jsdelivr.net/npm/docsify-tabs@1.6.3/dist/docsify-tabs.min.js"></script>
+  <!-- Docsify theme additions -->
+  <script src="vendor/themes/docsify-themeable-0.9.0.min.js" data-cdn="https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0/dist/js/docsify-themeable.min.js"></script>
+  <!-- Docsify Syntax highlight languages -->
+  <script src="vendor/prismjs/components/prism-bash-1.29.0.min.js" data-cdn="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="vendor/prismjs/components/prism-ruby-1.29.0.min.js" data-cdn="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-ruby.min.js"></script>
 </body>
 </html>
