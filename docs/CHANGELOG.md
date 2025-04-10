@@ -1,5 +1,12 @@
 ## [unreleased]
 
+- **Enhancements**:
+  - OpenSSH private key
+    - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
+
+[#217]:https://github.com/noraj/haiti/pull/217
+[lap1nou]:https://github.com/lap1nou
+
 ## [3.0.0]
 
 - **Breaking changes**:
