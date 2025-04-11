@@ -4200,10 +4200,14 @@
 		"regex": "\\A[a-z0-9\\/.]{13,}\\Z",
 		"modes": [
 			{
-				"john": "bigcrypt",
+				"john": "descrypt",
 				"hashcat": null,
 				"extended": true,
-				"name": "BigCrypt"
+				"name": "BigCrypt (descrypt extension, DES-based crypt(3))",
+				"samples": [
+					"S/8NbAAlzbYO66hAa9XZyWy2",
+					"TO9Mdb1FHXkFU"
+				]
 			}
 		]
 	},

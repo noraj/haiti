@@ -3,6 +3,10 @@
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
+  - BigCrypt
+    - Better description
+    - Add samples
+    - Fix available JtR format
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou
