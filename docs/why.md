@@ -49,7 +49,7 @@ Legend:
 - ✅: feature supported
 - ❌: feature not supported
 - ⭕️: feature partially supported
-- Programming langage:
+- Programming language:
   - 💎: Ruby
   - 🐍: Python
   - 🇨 : C
