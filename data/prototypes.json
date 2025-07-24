@@ -5816,21 +5816,50 @@
 		]
 	},
 	{
-		"regex": "\\A\\$keepass\\$\\*2\\*\\d{1,10}\\*\\d{1,3}\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]{24}\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\Z",
+		"regex": "\\A(?:.+:)?\\$keepass\\$\\*2\\*\\d+\\*0\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]{32}\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\Z",
 		"modes": [
 			{
 				"john": "keepass",
 				"hashcat": null,
 				"extended": false,
-				"name": "KeePass 2 ChaCha20 (KDBX 3) / without keyfile",
+				"name": "KeePass 2 (KDBX 3) / AES 256 enc. / AES-KDF / without keyfile",
 				"samples": [
-					"$keepass$*2*6000*2*e852737a797fb642a2814e5965aba3473644a56ea67998526ce5e6f0e256a56a*fb300459b1e8c52fefa8e72676b57563565475b1c1306c266a48ccc2010e6a94*03027f86819941d1d0f3f2f5*af0f6c5e4319e6c10fdb95f44ded70f3115ae7dc28ec83fd3676c92076505ded*e0ab7f438903eb91dd8bc13c52c5a1c02e34b107ae16710bc57858c8c85fecd0"
+					"aes_aes:$keepass$*2*51724136*0*4349620c23fd506d0ef1513cf163a2b3f7aba29bf0bfd167433f4f948de45a80*9607e1f89e7aab4a6720d29478c17596fe5b9bbef218aabfeb87421b889bb417*03a258af4a69efe55851fcb3579753f2*8a6d25336ad495c840d0caaea8333a954ecd4f75d0d80e76cd46896f400947f2*f83af1c765569887eea00128526527a48a6e0d0943d30ff18055055329c62836"
 				]
 			}
 		]
 	},
 	{
-		"regex": "\\A.+:\\$keepass\\$\\*4\\*\\d+\\*ef636ddf\\*\\d{2,}\\*\\d+\\*\\d\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]+\\*[a-f0-9]{64}\\Z",
+		"regex": "\\A(?:.+:)?\\$keepass\\$\\*2\\*\\d+\\*1\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]{32}\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\Z",
+		"modes": [
+			{
+				"john": "keepass",
+				"hashcat": null,
+				"extended": false,
+				"name": "KeePass 2 (KDBX 3) / Twofish 256 enc. / AES-KDF / without keyfile",
+				"samples": [
+					"twofish_aes:$keepass$*2*45454544*1*012100297ce9a9f0bafa80baea8e25c3c544ee9a769d7bbae9d1b39544a1103e*1e69bcf23baf3941387ca91eeca84163481edcfe5f210e0a3a5d82a5077d447d*d2eeb12c093d3f554020fb0127add83d*b0d55717dfd912e1cec7bf31cc5249bdf7286ad9b487121e20f3020258a38596*991f9862a44be62723fe7088d01321b6c09c393181896b6ba566ac6300b555ef"
+				]
+			}
+		]
+	},
+	{
+		"regex": "\\A(?:.+:)?\\$keepass\\$\\*2\\*\\d+\\*2\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]{24}\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\Z",
+		"modes": [
+			{
+				"john": "keepass",
+				"hashcat": null,
+				"extended": false,
+				"name": "KeePass 2 (KDBX 3) / ChaCha20 256 enc. / AES-KDF / without keyfile",
+				"samples": [
+					"$keepass$*2*6000*2*e852737a797fb642a2814e5965aba3473644a56ea67998526ce5e6f0e256a56a*fb300459b1e8c52fefa8e72676b57563565475b1c1306c266a48ccc2010e6a94*03027f86819941d1d0f3f2f5*af0f6c5e4319e6c10fdb95f44ded70f3115ae7dc28ec83fd3676c92076505ded*e0ab7f438903eb91dd8bc13c52c5a1c02e34b107ae16710bc57858c8c85fecd0",
+					"chacha20_aes:$keepass$*2*37974684*2*df1a71413770160c73c22c5eded4bdd9ccc5324e09de09c3b8d8bf188b386469*4ff7861f57b1bc36488fd52cc81e3eb598bde02897b54f0494ee947029166e8a*1a84a4f7af7daf598ed0a0b7*7d2143822acf4e6405f3621ff545231087d18aa97993ae6139b694424f582e1a*f213f090d8c23d204eeef4583db4c7658725a15f40863e8d53ac751bf980f245"
+				]
+			}
+		]
+	},
+	{
+		"regex": "\\A(?:.+:)?\\$keepass\\$\\*4\\*\\d+\\*ef636ddf\\*\\d{2,}\\*\\d+\\*\\d\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]+\\*[a-f0-9]{64}\\Z",
 		"modes": [
 			{
 				"john": "keepass",
@@ -5846,7 +5875,7 @@
 		]
 	},
 	{
-		"regex": "\\A.+:\\$keepass\\$\\*4\\*\\d+\\*9e298b19\\*\\d{2,}\\*\\d+\\*\\d\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]+\\*[a-f0-9]{64}\\Z",
+		"regex": "\\A(?:.+:)?\\$keepass\\$\\*4\\*\\d+\\*9e298b19\\*\\d{2,}\\*\\d+\\*\\d\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]+\\*[a-f0-9]{64}\\Z",
 		"modes": [
 			{
 				"john": "keepass",
@@ -5862,7 +5891,7 @@
 		]
 	},
 	{
-		"regex": "\\A.+:\\$keepass\\$\\*4\\*\\d+\\*c9d9f39a\\*0\\*0\\*0\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]+\\*[a-f0-9]{64}\\Z",
+		"regex": "\\A(?:.+:)?\\$keepass\\$\\*4\\*\\d+\\*c9d9f39a\\*0\\*0\\*0\\*[a-f0-9]{64}\\*[a-f0-9]{64}\\*[a-f0-9]+\\*[a-f0-9]{64}\\Z",
 		"modes": [
 			{
 				"john": "keepass",
