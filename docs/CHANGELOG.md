@@ -1,12 +1,13 @@
 ## [unreleased]
 
 - **Additions**:
-  - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2d KDF / without keyfile
+  - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2d KDF / without keyfile [#220][#220]
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2id KDF / without keyfile
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / AES-KDF / without keyfile
   - KeePass 2 (KDBX 3) / AES 256 enc. / AES-KDF / without keyfile
   - KeePass 2 (KDBX 3) / Twofish 256 enc. / AES-KDF / without keyfile
   - KeePass 2 (KDBX 3) / ChaCha20 256 enc. / AES-KDF / without keyfile
+  - Apache Shiro 1 SHA-512 [#215][#215]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
@@ -17,6 +18,8 @@
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou
+[#215]:https://github.com/noraj/haiti/issues/215
+[#220]:https://github.com/noraj/haiti/issues/220
 
 ## [3.0.0]
 

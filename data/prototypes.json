@@ -7282,5 +7282,19 @@
 				]
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$shiro1\\$SHA-512\\$\\d+\\$[a-z0-9=+\\/]{0,345}\\$[a-z0-9=+\\/]{88}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 12150,
+				"extended": false,
+				"name": "Apache Shiro 1 SHA-512",
+				"samples": [
+					"$shiro1$SHA-512$1024$WobJGSjbUhsMdaILomMOdw==$9uptGJ24vzZCqZI55F77N7xjUxGlVrK5aCmAwIrV1vwDmFM4akE6Hmd23Aj8ANLSUdIEkHLZ6SnoitZbOsoQNQ=="
+				]
+			}
+		]
 	}
 ]
