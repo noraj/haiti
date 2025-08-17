@@ -12,6 +12,7 @@
   - AS/400 SSHA1 [#222][#222]
   - Blockchain, My Wallet, Legacy Wallets [#223][#223]
   - Blockchain, My Wallet, Second Password (SHA256) [#223][#223]
+  - Blockchain, My Wallet, V2 [#223][#223]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
