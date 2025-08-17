@@ -1756,6 +1756,15 @@
 					"bcb34bae2f591c257a07d6d07adecd4cd968cdd06ab4a4d3bb001574",
 					"e745e2e424aaed1cef3c765b6c22396bb6bcc5215128100f54031132"
 				]
+			},
+			{
+				"john": null,
+				"hashcat": 34500,
+				"extended": true,
+				"name": "sha224(sha1($pass))",
+				"samples": [
+					"10d302483c927df95abba98d69dcd9608365241d1523a8cc5fcbcedc"
+				]
 			}
 		]
 	},
