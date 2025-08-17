@@ -2,8 +2,11 @@
 
 - **Additions**:
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2d KDF / without keyfile [#220][#220]
+  - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2d KDF / with keyfile
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2id KDF / without keyfile
+  - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2id KDF / with keyfile
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / AES-KDF / without keyfile
+  - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / AES-KDF / with keyfile
   - KeePass 2 (KDBX 3) / AES 256 enc. / AES-KDF / without keyfile
   - KeePass 2 (KDBX 3) / Twofish 256 enc. / AES-KDF / without keyfile
   - KeePass 2 (KDBX 3) / ChaCha20 256 enc. / AES-KDF / without keyfile
@@ -22,6 +25,9 @@
     - Better description
     - Add samples
     - Fix available JtR format
+  - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. (Argon2d KDF & Argon2id KDF)
+    - Add HC support
+    - More precise regexp
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou
