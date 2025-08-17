@@ -9,6 +9,8 @@
   - KeePass 2 (KDBX 3) / ChaCha20 256 enc. / AES-KDF / without keyfile
   - Apache Shiro 1 SHA-512 [#215][#215]
   - AS/400 DES [#222][#222]
+  - AS/400 SSHA1 [#222][#222]
+  - Blockchain, My Wallet, Legacy Wallets [#223][#223]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
@@ -22,6 +24,7 @@
 [#215]:https://github.com/noraj/haiti/issues/215
 [#220]:https://github.com/noraj/haiti/issues/220
 [#222]:https://github.com/noraj/haiti/issues/222
+[#223]:https://github.com/noraj/haiti/issues/223
 
 ## [3.0.0]
 
