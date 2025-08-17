@@ -1637,9 +1637,12 @@
 			},
 			{
 				"john": "dynamic_53",
-				"hashcat": null,
+				"hashcat": 34400,
 				"extended": true,
-				"name": "sha224(sha224($pass))"
+				"name": "sha224(sha224($pass))",
+				"samples": [
+					"b7d9a0e57e6e94e8b87996b81ffa64b05d237c58fff1d7a4e4fe2a77"
+				]
 			},
 			{
 				"john": "dynamic_54",

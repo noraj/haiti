@@ -43,6 +43,8 @@
     - Fix regexp for salt
   - sha224($salt.$pass)
     - Add HC support
+  - sha224(sha224($pass))
+    - Add HC support
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou
