@@ -2299,6 +2299,20 @@
 		]
 	},
 	{
+		"regex": "\\A[a-z0-9=+\\/]{80}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 18800,
+				"extended": false,
+				"name": "Blockchain, My Wallet, Second Password (SHA256)",
+				"samples": [
+					"YnM6WYERjJfhxwepT7zV6odWoEUz1X4esYQb4bQ3KZ7bbZAyOTc1MDM3OTc1NjMyODA0ECcAAD3vFoc="
+				]
+			}
+		]
+	},
+	{
 		"regex": "\\A\\$episerver\\$\\*1\\*[a-z0-9\\/=+]+\\*[a-z0-9\\/=+]{42,43}\\Z",
 		"modes": [
 			{
