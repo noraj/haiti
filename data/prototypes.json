@@ -7310,5 +7310,19 @@
 				]
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$as400\\$ssha1\\$\\*.{0,10}\\*[a-f0-9]{40}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 35200,
+				"extended": false,
+				"name": "AS/400 SSHA1",
+				"samples": [
+					"$as400$ssha1$*QTEST1*7ED7D3694D0A2E40A720D41031B456C09124966E"
+				]
+			}
+		]
 	}
 ]
