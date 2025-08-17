@@ -2217,10 +2217,19 @@
 			{
 				"john": null,
 				"hashcat": 34820,
-				"extended": false,
+				"extended": true,
 				"name": "BLAKE2-256($salt.$pass) (blake2b)",
 				"samples": [
 					"$BLAKE2$a4cad0b026ed24adf13fb70ec31d35b02751dcb33354e2c9d20ef3f968748501:3601"
+				]
+			},
+			{
+				"john": null,
+				"hashcat": 34810,
+				"extended": true,
+				"name": "BLAKE2-256($pass.$salt) (blake2b)",
+				"samples": [
+					"$BLAKE2$2b51353016a512b60e587bea98d799c2de243468085ca6cd67f983b2e55bfb67:2353288289"
 				]
 			}
 		]

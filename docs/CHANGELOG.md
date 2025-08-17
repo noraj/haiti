@@ -20,6 +20,7 @@
   - Cisco-ISE Hashed Password (SHA256) [#224][#224]
   - sm3crypt, SM3 (Unix) [#225][#225]
   - BLAKE2-256($salt.$pass) (blake2b) [#226][#226]
+  - BLAKE2-256($pass.$salt) (blake2b) [#226][#226]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
