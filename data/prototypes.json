@@ -7296,5 +7296,19 @@
 				]
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$as400\\$des\\$\\*.{0,8}\\*[a-f0-9]{2,16}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 8501,
+				"extended": false,
+				"name": "AS/400 DES",
+				"samples": [
+					"$as400$des$*OPEN3*EC76FC0DEF5B0A83"
+				]
+			}
+		]
 	}
 ]
