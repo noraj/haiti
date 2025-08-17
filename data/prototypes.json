@@ -2702,6 +2702,20 @@
 			}
 		]
 	},
+		{
+		"regex": "\\A[a-f0-9]{128}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 5720,
+				"extended": false,
+				"name": "Cisco-ISE Hashed Password (SHA256)",
+				"samples": [
+					"465865d4226c4d9696e601f2c99b25ae2c194ec01806bafc93933331acfc1a60e8bdcca8be9fa245a5fa16029bb52480915746f47d1c539d01da7ec6f37468d1"
+				]
+			}
+		]
+	},
 	{
 		"regex": "\\A\\$keccak\\$[a-f0-9]{128}\\Z",
 		"modes": [

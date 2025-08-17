@@ -14,6 +14,7 @@
   - Blockchain, My Wallet, Second Password (SHA256) [#223][#223]
   - Blockchain, My Wallet, V2 [#223][#223]
   - Blockchain, My Wallet [#223][#223]
+  - Cisco-ISE Hashed Password (SHA256) [#224][#224]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
@@ -28,6 +29,7 @@
 [#220]:https://github.com/noraj/haiti/issues/220
 [#222]:https://github.com/noraj/haiti/issues/222
 [#223]:https://github.com/noraj/haiti/issues/223
+[#224]:https://github.com/noraj/haiti/issues/224
 
 ## [3.0.0]
 
