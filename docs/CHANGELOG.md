@@ -28,6 +28,8 @@
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. (Argon2d KDF & Argon2id KDF)
     - Add HC support
     - More precise regexp
+  - SAP CODVN H (PWDSALTEDHASH) iSSHA-512
+    - Add HC support
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou
