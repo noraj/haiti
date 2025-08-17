@@ -35,6 +35,8 @@
     - Add HC support
   - BLAKE2-256 (blake2b) [#226][#226]
     - Add HC support
+  - MD6-256
+    - Add HC support
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou

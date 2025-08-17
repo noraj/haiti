@@ -2113,11 +2113,12 @@
 			},
 			{
 				"john": null,
-				"hashcat": null,
+				"hashcat": 34600,
 				"extended": false,
 				"name": "MD6-256",
 				"samples": [
-					"bc9e2022386d929ae3936306153d9366fc555dc868579c87c7faf8846f79f414"
+					"bc9e2022386d929ae3936306153d9366fc555dc868579c87c7faf8846f79f414",
+					"539a8b63639c94b80e746611c476a684e7cc95235187b2f8b81a188d6dfbf64c"
 				]
 			},
 			{
