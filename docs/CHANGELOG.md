@@ -37,6 +37,9 @@
     - Add HC support
   - MD6-256
     - Add HC support
+  - sha224($pass.$salt)
+    - Add HC support
+    - Fix regexp for salt
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou

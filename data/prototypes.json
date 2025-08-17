@@ -1605,7 +1605,7 @@
 		]
 	},
 	{
-		"regex": "\\A[a-f0-9]{56}\\Z",
+		"regex": "\\A[a-f0-9]{56}(?::.+)?\\Z",
 		"modes": [
 			{
 				"john": "raw-sha224",
@@ -1621,13 +1621,19 @@
 				"john": "dynamic_51",
 				"hashcat": null,
 				"extended": true,
-				"name": "sha224($salt.$pass)"
+				"name": "sha224($salt.$pass)",
+				"samples": [
+					
+				]
 			},
 			{
 				"john": "dynamic_52",
-				"hashcat": null,
+				"hashcat": 1310,
 				"extended": true,
-				"name": "sha224($pass.$salt)"
+				"name": "sha224($pass.$salt)",
+				"samples": [
+					"0cf361904f4b0234cf4ade8496d8c11c04e5982db967603e82f22b2f:89452466460220844541730694146873525188525677"
+				]
 			},
 			{
 				"john": "dynamic_53",
