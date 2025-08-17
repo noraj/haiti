@@ -31,6 +31,8 @@
     - More precise regexp
   - SAP CODVN H (PWDSALTEDHASH) iSSHA-512
     - Add HC support
+  - BLAKE2-256 (blake2b) [#226][#226]
+    - Add HC support
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou
@@ -40,6 +42,7 @@
 [#223]:https://github.com/noraj/haiti/issues/223
 [#224]:https://github.com/noraj/haiti/issues/224
 [#225]:https://github.com/noraj/haiti/issues/225
+[#226]:https://github.com/noraj/haiti/issues/226
 
 ## [3.0.0]
 

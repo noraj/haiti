@@ -2198,6 +2198,20 @@
 		]
 	},
 	{
+		"regex": "\\A\\$BLAKE2\\$[a-f0-9]{64}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 34800,
+				"extended": false,
+				"name": "BLAKE2-256 (blake2b)",
+				"samples": [
+					"$BLAKE2$68b163391b3e779dcddba4e6d8fa03e962c29569b430efa5ba014303358557e1"
+				]
+			}
+		]
+	},
+	{
 		"regex": "\\A[a-f0-9]{32}:[a-z0-9]{32}\\Z",
 		"modes": [
 			{
