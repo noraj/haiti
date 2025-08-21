@@ -24,6 +24,7 @@
   - sha224(sha1($pass))
   - bcrypt(HMAC-SHA256($pass)) / bcryptsha256 v2 [#227][#227]
   - bcrypt(sha256($pass)) / bcryptsha256 [#227][#227]
+  - md5($salt1.$pass.$salt2) [#227][#227]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
