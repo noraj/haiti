@@ -1828,7 +1828,7 @@
 				"john": null,
 				"hashcat": 30601,
 				"extended": true,
-				"name": "bcrypt(HMAC-SHA256($pass)) / bcrypt-sha256 v2",
+				"name": "bcrypt(HMAC-SHA256($pass)) / bcryptsha256 v2",
 				"samples": [
 					"$bcrypt-sha256$v=2,t=2b,r=12$KSOjON/ciJR86a00N5q61.$AmWZucQuHk13FGkQWhgMeiFvBfm2GCy",
 					"$bcrypt-sha256$v=2,t=2b,r=12$n79VH.0Q2TMWmt3Oqt9uku$Kq4Noyk3094Y2QlB8NdRT8SvGiI4ft2"
@@ -1859,13 +1859,16 @@
 		]
 	},
 	{
-		"regex": "\\A\\$bcrypt-sha256\\$(2[axy]|2)\\,\\d+\\$[a-z0-9\\/.]{22}\\$[a-z0-9\\/.]{31}\\Z",
+		"regex": "\\A(?:\\$bcrypt-sha256)?\\$(?:2[abxy]?)\\$\\d{2}\\$[a-z0-9\\/.]{53}\\Z",
 		"modes": [
 			{
 				"john": null,
-				"hashcat": null,
+				"hashcat": 30600,
 				"extended": false,
-				"name": "bcrypt(SHA-256)"
+				"name": "bcrypt(sha256($pass)) / bcryptsha256",
+				"samples": [
+					"$2b$10$FxDtpTNaL303lLcWtd6LFO2U6Gc63VJ07qycHcfqbQQ71GhO/qSzu"
+				]
 			}
 		]
 	},

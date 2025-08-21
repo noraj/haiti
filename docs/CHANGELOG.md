@@ -22,7 +22,8 @@
   - BLAKE2-256($salt.$pass) (blake2b) [#226][#226]
   - BLAKE2-256($pass.$salt) (blake2b) [#226][#226]
   - sha224(sha1($pass))
-  - bcrypt(HMAC-SHA256($pass)) / bcrypt-sha256 v2 [#227][#227]
+  - bcrypt(HMAC-SHA256($pass)) / bcryptsha256 v2 [#227][#227]
+  - bcrypt(sha256($pass)) / bcryptsha256 [#227][#227]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
