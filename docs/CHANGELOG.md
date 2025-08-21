@@ -1,4 +1,4 @@
-## [unreleased]
+## [unreleased - 3.1.0]
 
 - **Additions**:
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2d KDF / without keyfile [#220][#220]
@@ -22,6 +22,7 @@
   - BLAKE2-256($salt.$pass) (blake2b) [#226][#226]
   - BLAKE2-256($pass.$salt) (blake2b) [#226][#226]
   - sha224(sha1($pass))
+  - bcrypt(HMAC-SHA256($pass)) / bcrypt-sha256 v2 [#227][#227]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
@@ -55,6 +56,7 @@
 [#224]:https://github.com/noraj/haiti/issues/224
 [#225]:https://github.com/noraj/haiti/issues/225
 [#226]:https://github.com/noraj/haiti/issues/226
+[#227]:https://github.com/noraj/haiti/issues/227
 
 ## [3.0.0]
 
