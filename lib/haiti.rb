@@ -56,7 +56,7 @@ class HashIdentifier
     #   HashIdentifier.list
     #   # => ["CRC-16", "CRC-16-CCITT", "FCS-16", "Adler-32", "CRC-32B", "FCS-32", ...]
     def list
-      (PROTOTYPES.flat_map { |d| d['modes'].map { |m| m['name'] } }).sort { |a, b| a.downcase <=> b.downcase }.uniq
+      PROTOTYPES.flat_map { |d| d['modes'].map { |m| m['name'] } }.sort { |a, b| a.downcase <=> b.downcase }.uniq
     end
 
     # List all hash types available as <Chf> object
