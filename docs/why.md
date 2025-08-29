@@ -42,6 +42,7 @@ Tool                                | Maintained    | Color | Ref. | Library | L
 [hash-detector][12] ([cli][12-cli]) | ❌ (2018-2021) | ❌     | ❌    | ✅       | 🟨   | ❌      | 44
 [Go Detect that Hash][13]           | ❌ (2023-2024) | ✅     | ✅    | ✅       | 🔵   | ❌      | 246
 [HashDetector][14]                  | ❌ (2016-2016) | ❌     | ✅    | ❌       | 🐍   | ⭕️      | 275
+[Hashpeek][15]                      | ✅ (2025-now)  |        | ✅    | ❌       | 🔵   | ⭕️      | 109
 
 Legend:
 
@@ -74,3 +75,4 @@ Legend:
 [12-cli]:https://github.com/k4m4/hash-detector-cli
 [13]:https://github.com/ArmanHZ/go-detect-that-hash
 [14]:https://github.com/cothan/hashdectector
+[15]:https://github.com/ph4mished/hashpeek/
