@@ -27,6 +27,7 @@
   - md5($salt1.$pass.$salt2) [#227][#227]
   - md5($salt1.sha1($salt2.$pass)) [#227][#227]
   - md5($salt1.strtoupper(md5($salt2.$pass))) [#227][#227]
+  - md5(md5($pass.$salt))
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])
@@ -50,7 +51,7 @@
     - Add HC support
   - sha224(sha224($pass))
     - Add HC support
-  - md5($salt.md5($pass).$salt)
+  - md5($salt.md5($pass).$salt) [#227][#227]
     - Add HC support
     - Add sample
 
