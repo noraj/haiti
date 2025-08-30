@@ -600,9 +600,12 @@
 			},
 			{
 				"john": "dynamic_14",
-				"hashcat": null,
+				"hashcat": 33100,
 				"extended": true,
-				"name": "md5($salt.md5($pass).$salt)"
+				"name": "md5($salt.md5($pass).$salt)",
+				"samples": [
+					"866244ca1d318292a6f40b60e03fd29c:72219426709"
+				]
 			},
 			{
 				"john": "dynamic_13",

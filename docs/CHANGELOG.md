@@ -50,6 +50,9 @@
     - Add HC support
   - sha224(sha224($pass))
     - Add HC support
+  - md5($salt.md5($pass).$salt)
+    - Add HC support
+    - Add sample
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou
