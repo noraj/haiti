@@ -2881,6 +2881,15 @@
 					"8e945da209aa869f0455928529bcae4679e9873ab707b55315f56ceb98bef0a7362f715528356ee83cda5f2aac4c6ad2ba3a715c1bcd81cb8e9f90bf4c1c1a8a",
 					"d2b793a0bb6cb5904828b5b6dcfb443bb8f33efc06ad09368878ae4cdc8245b97e60802469bed1e7c21a64ff0b179a6a1e0bb74d92965450a0adab69162c00fe"
 				]
+			},
+			{
+				"john": null,
+				"hashcat": 32420,
+				"extended": false,
+				"name": "sha512(sha512_bin($pass).$salt)",
+				"samples": [
+					"c1bade2bd4ebc8db841ac6ab3e0a5035a29619e5b1a6135782b77da5d7cfaccee096f3ddb9ee23b9866378cfc2fb19f2c013fed1b7e1fffd18340a4f39238412:789"
+				]
 			}
 		]
 	},
