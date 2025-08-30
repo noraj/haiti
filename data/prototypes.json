@@ -2808,9 +2808,12 @@
 			},
 			{
 				"john": "dynamic_85",
-				"hashcat": null,
+				"hashcat": 32410,
 				"extended": true,
-				"name": "sha512(sha512($pass).$salt)"
+				"name": "sha512(sha512($pass).$salt)",
+				"samples": [
+					"25d509824028a999f4ee851b5de404bb316b78ae8e974874376484018f58520e082747a7ce9f769bcaccb5f63878356c780f602e23393f12b650a6931e4b9338:21881837027919828109608"
+				]
 			},
 			{
 				"john": "dynamic_86",
