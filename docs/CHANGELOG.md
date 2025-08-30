@@ -56,6 +56,9 @@
   - md5($salt.md5($pass).$salt) [#227][#227]
     - Add HC support
     - Add sample
+  - md5(md5(md5($pass).$salt1).$salt2) [#227][#227]
+    - Add HC support
+    - Add sample
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou
