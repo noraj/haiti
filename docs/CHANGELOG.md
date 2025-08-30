@@ -29,6 +29,7 @@
   - md5($salt1.strtoupper(md5($salt2.$pass))) [#227][#227]
   - md5(md5($pass.$salt)) [#227][#227]
   - md5(md5($salt).md5(md5($pass))) [#227][#227]
+  - md5(md5(md5($pass)).$salt) [#227][#227]
 - **Enhancements**:
   - OpenSSH private key
     - Fix Regexp for large key size (reported by [lap1nou][lap1nou] on [#217][#217])

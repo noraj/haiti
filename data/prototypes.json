@@ -771,6 +771,15 @@
 				"samples": [
 					"e13bb4b8e5a98db7277df344aa3363cf:28945624531"
 				]
+			},
+			{
+				"john": null,
+				"hashcat": 3610,
+				"extended": true,
+				"name": "md5(md5(md5($pass)).$salt)",
+				"samples": [
+					"a0ab79f9e2b5a4434d2da61673b56362:1234"
+				]
 			}
 		]
 	},
