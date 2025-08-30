@@ -810,6 +810,15 @@
 				"samples": [
 					"df0e9ede5b6c7d1f1b47199f86029002:59132809201799180722359939692710461886"
 				]
+			},
+			{
+				"john": null,
+				"hashcat": 32800,
+				"extended": true,
+				"name": "md5(sha1(md5($pass)))",
+				"samples": [
+					"7b4f60b54472980e922280e225150dfa"
+				]
 			}
 		]
 	},
