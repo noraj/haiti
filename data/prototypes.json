@@ -2312,6 +2312,15 @@
 					"3f539a213e97c802cc229d474c6aa32a825a360b2a933a949fd925208d9ce1bb",
 					"3e7dea7f2384b6c5a3d0e24aaa29c05e89ddd762145030ec22c71a6db8b2c1f4"
 				]
+			},
+			{
+				"john": null,
+				"hashcat": 20730,
+				"extended": true,
+				"name": "sha256(sha256($pass.$salt))",
+				"samples": [
+					"ad66bdc0841d7e08d96c03de271ce14e77de078746b535adbf9d4b6ccbf2a517:7218532375810603"
+				]
 			}
 		]
 	},
