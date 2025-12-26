@@ -10,7 +10,7 @@ group :runtime, :cli do
 end
 
 group :development, :install do
-  gem 'bundler', '~> 2.1'
+  gem 'bundler', '>= 2.1'
 end
 
 group :development, :test do

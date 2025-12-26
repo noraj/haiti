@@ -18,7 +18,7 @@ GEM
   specs:
     asciidoctor (2.0.23)
     ast (2.4.3)
-    commonmarker (2.3.2-x86_64-linux)
+    commonmarker (2.6.0-x86_64-linux)
     docopt (0.6.1)
     json (2.13.2)
     language_server-protocol (3.17.0.5)
@@ -58,7 +58,7 @@ PLATFORMS
 
 DEPENDENCIES
   asciidoctor (~> 2.0)
-  bundler (~> 2.1)
+  bundler (>= 2.1)
   commonmarker (~> 2.0)
   docopt (~> 0.6)
   haiti-hash!
@@ -69,4 +69,4 @@ DEPENDENCIES
   yard!
 
 BUNDLED WITH
-   2.6.3
+  4.0.2
