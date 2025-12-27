@@ -68,6 +68,8 @@
   - sha512(sha512($pass).$salt) [#227][#227]
     - Add HC support
     - Add sample
+- **Chore**:
+  - Add support for Ruby 4.0
 
 [#217]:https://github.com/noraj/haiti/pull/217
 [lap1nou]:https://github.com/lap1nou

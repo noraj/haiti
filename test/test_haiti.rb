@@ -3,6 +3,7 @@
 require 'minitest/autorun'
 require 'haiti'
 
+# Unit tests for the HashIdentifier library
 class HaitiTest < Minitest::Test
   def setup
     @hash = '5f4dcc3b5aa765d61d8327deb882cf99'

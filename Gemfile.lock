@@ -23,13 +23,14 @@ GEM
     json (2.13.2)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
-    minitest (5.25.5)
+    minitest (6.0.1)
+      prism (~> 1.5)
     paint (2.3.0)
     parallel (1.27.0)
     parser (3.3.9.0)
       ast (~> 2.4.1)
       racc
-    prism (1.4.0)
+    prism (1.7.0)
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.3.0)
@@ -51,22 +52,22 @@ GEM
     ruby-progressbar (1.13.0)
     unicode-display_width (3.1.5)
       unicode-emoji (~> 4.0, >= 4.0.4)
-    unicode-emoji (4.0.4)
+    unicode-emoji (4.2.0)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   asciidoctor (~> 2.0)
-  bundler (~> 2.1)
+  bundler (>= 2.1)
   commonmarker (~> 2.0)
   docopt (~> 0.6)
   haiti-hash!
-  minitest (~> 5.25)
+  minitest (~> 6.0)
   paint (~> 2.3)
   rake (~> 13.2)
   rubocop (~> 1.66)
   yard!
 
 BUNDLED WITH
-   2.6.3
+  4.0.3

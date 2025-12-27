@@ -10,11 +10,11 @@ group :runtime, :cli do
 end
 
 group :development, :install do
-  gem 'bundler', '~> 2.1'
+  gem 'bundler', '>= 2.1'
 end
 
 group :development, :test do
-  gem 'minitest', '~> 5.25'
+  gem 'minitest', '~> 6.0'
   gem 'rake', '~> 13.2'
 end
 
@@ -24,6 +24,8 @@ end
 
 group :development, :docs do
   gem 'asciidoctor', '~> 2.0' # for manpage generation
+  # 2.6.0 currently not working on ruby 4.0
+  # https://github.com/gjtorikian/commonmarker/issues/427
   gem 'commonmarker', '~> 2.0' # for markdown support in YARD
   # gem 'yard', ['>= 0.9.27', '< 0.10']
   # https://github.com/lsegal/yard/issues/1528
