@@ -1,5 +1,7 @@
 ## [unreleased - 3.1.0]
 
+- **Breaking changes**:
+  - **Drop** Ruby 3.1 support, [EOL since 26/03/2025](https://www.ruby-lang.org/en/downloads/branches/) and no longer supported by minitest 6.x.x
 - **Additions**:
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2d KDF / without keyfile [#220][#220]
   - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / Argon2d KDF / with keyfile
