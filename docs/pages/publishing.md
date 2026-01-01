@@ -107,6 +107,11 @@ docker push ghcr.io/noraj/haiti:$HAITI_VERSION
 docker push ghcr.io/noraj/haiti:latest
 ```
 
+Ref.:
+
+- [Authenticating with a personal access token](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic)
+- [GitHub Personal access tokens](https://github.com/settings/tokens)
+
 ### **Alibaba Cloud (ACR)**
 
 ACR = Alibaba Cloud Container Registry
