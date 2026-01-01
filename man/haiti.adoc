@@ -1,7 +1,7 @@
 = haiti(1)
 Alexandre ZANNI (@noraj)
 :doctype: manpage
-:release-version: 3.0.0
+:release-version: 4.0.0
 :manmanual: haiti manual
 :mansource: haiti {release-version}
 :manversion: {release-version}
@@ -85,7 +85,7 @@ b2sum /etc/os-release | awk '{print $1}' | *haiti* -
 
 == Copyright
 
-Copyright © 2020-2023 Alexandre ZANNI (independent)
+Copyright © 2020-2026 Alexandre ZANNI (independent)
 
 Copyright © 2019-2020 Alexandre ZANNI at Orange Cyberdefense
 

@@ -78,7 +78,7 @@ git clone https://github.com/noraj/haiti.git
 cd haiti
 docker-compose build
 # alternatively without docker compose
-docker build -f Dockerfile -t haiti:3.0.0 --build-arg HAITI_VERSION=3.0.0 .
+docker build -f Dockerfile -t haiti:4.0.0 --build-arg HAITI_VERSION=4.0.0 .
 ```
 
 Usage examples:
@@ -98,7 +98,7 @@ host: `docker.io`
 docker pull noraj/haiti
 
 # specific tag
-docker pull noraj/haiti:3.0.0
+docker pull noraj/haiti:4.0.0
 ```
 
 Usage examples:
@@ -120,7 +120,7 @@ host: `ghcr.io`
 docker pull ghcr.io/noraj/haiti
 
 # specific tag
-docker pull ghcr.io/noraj/haiti:3.0.0
+docker pull ghcr.io/noraj/haiti:4.0.0
 ```
 
 Usage examples:
@@ -142,7 +142,7 @@ host: `registry-intl.eu-central-1.aliyuncs.com`
 docker pull registry-intl.eu-central-1.aliyuncs.com/noraj/haiti
 
 # specific tag
-docker pull registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:3.0.0
+docker pull registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:4.0.0
 ```
 
 Usage examples:
@@ -162,7 +162,7 @@ host: `quay.io`
 docker pull quay.io/noraj/haiti
 
 # specific tag
-docker pull quay.io/noraj/haiti:3.0.0
+docker pull quay.io/noraj/haiti:4.0.0
 ```
 
 Usage examples:

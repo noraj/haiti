@@ -1,7 +1,7 @@
 = haiti-fzf(1)
 Alexandre ZANNI (@noraj)
 :doctype: manpage
-:release-version: 3.0.0
+:release-version: 4.0.0
 :manmanual: haiti-fzf manual
 :mansource: haiti-fzf {release-version}
 :manversion: {release-version}
@@ -60,7 +60,7 @@ Mostly useful for man:hashcat-haiti[1] and man:john-haiti[1] or building another
 
 == Copyright
 
-Copyright © 2020-2023 Alexandre ZANNI (independent)
+Copyright © 2020-2026 Alexandre ZANNI (independent)
 
 Copyright © 2019-2020 Alexandre ZANNI at Orange Cyberdefense
 

@@ -49,7 +49,7 @@ bundle exec rake man
 Create an **annotated git tag**:
 
 ```bash
-git tag -a v3.0.0
+git tag -a v4.0.0
 ```
 
 Push the changes including the tags:
@@ -69,7 +69,7 @@ bundle exec rake build
 Push the new gem release on **RubyGems** See https://guides.rubygems.org/publishing/.
 
 ```bash
-gem push haiti-hash-3.0.0.gem
+gem push haiti-hash-4.0.0.gem
 ```
 
 ## Docker container registries
@@ -79,7 +79,7 @@ gem push haiti-hash-3.0.0.gem
 ### **Docker Hub**
 
 ```bash
-export HAITI_VERSION=3.0.0
+export HAITI_VERSION=4.0.0
 docker build -f Dockerfile -t noraj/haiti:$HAITI_VERSION --build-arg HAITI_VERSION=$HAITI_VERSION .
 docker build -f Dockerfile -t noraj/haiti:latest --build-arg HAITI_VERSION=$HAITI_VERSION .
 
@@ -95,7 +95,7 @@ docker push docker.io/noraj/haiti:latest
 GHCR = Github Container Registry
 
 ```bash
-export HAITI_VERSION=3.0.0
+export HAITI_VERSION=4.0.0
 docker build -f Dockerfile -t ghcr.io/noraj/haiti:$HAITI_VERSION --build-arg HAITI_VERSION=$HAITI_VERSION .
 docker build -f Dockerfile -t ghcr.io/noraj/haiti:latest --build-arg HAITI_VERSION=$HAITI_VERSION .
 
@@ -112,7 +112,7 @@ docker push ghcr.io/noraj/haiti:latest
 ACR = Alibaba Cloud Container Registry
 
 ```bash
-export HAITI_VERSION=3.0.0
+export HAITI_VERSION=4.0.0
 docker build -f Dockerfile -t registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:$HAITI_VERSION --build-arg HAITI_VERSION=$HAITI_VERSION .
 docker build -f Dockerfile -t registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:latest --build-arg HAITI_VERSION=$HAITI_VERSION .
 
@@ -126,7 +126,7 @@ docker push registry-intl.eu-central-1.aliyuncs.com/noraj/haiti:latest
 ### **Quay.io**
 
 ```bash
-export HAITI_VERSION=3.0.0
+export HAITI_VERSION=4.0.0
 docker build -f Dockerfile -t quay.io/noraj/haiti:$HAITI_VERSION --build-arg HAITI_VERSION=$HAITI_VERSION .
 docker build -f Dockerfile -t quay.io/noraj/haiti:latest --build-arg HAITI_VERSION=$HAITI_VERSION .
 

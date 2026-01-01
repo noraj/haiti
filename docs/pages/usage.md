@@ -10,7 +10,7 @@ Main binary: identify hash types, list types and samples.
 
 ```
 $ haiti -h
-HAITI (HAsh IdenTifIer) v3.0.0
+HAITI (HAsh IdenTifIer) v4.0.0
 
 Usage:
   haiti [options] list
@@ -35,7 +35,7 @@ Options:
   --short         Display in a short format: do not display hashcat and john the ripper references
   --hashcat-only  Show only hashcat references
   --john-only     Show only john the ripper references
-  --ascii-art       Display the logo in colored ascii-art
+  --ascii-art     Display the logo in colored ascii-art
   --debug         Display arguments
   -h, --help      Show this screen
   --version       Show version
@@ -58,7 +58,7 @@ Wrapper for Hashcat where you can select the mode using haiti and fzf.
 
 ```
 $ hashcat-haiti -h
-HAITI (HAsh IdenTifIer) v3.0.0
+HAITI (HAsh IdenTifIer) v4.0.0
 
 Usage:
   hashcat-haiti [options] <hash> -- <hashcat_options>...
@@ -83,7 +83,6 @@ Examples:
 Project:
   author (https://pwn.by/noraj / https://twitter.com/noraj_rawsec)
   source (https://github.com/noraj/haiti)
-  documentation (https://noraj.github.io/haiti)
 ```
 
 ### **john-haiti**
@@ -91,8 +90,8 @@ Project:
 Wrapper for John the Ripper where you can select the format using haiti and fzf.
 
 ```
-$ john-haiti -h 
-HAITI (HAsh IdenTifIer) v3.0.0
+$ john-haiti -h
+HAITI (HAsh IdenTifIer) v4.0.0
 
 Usage:
   john-haiti [options] <hash> -- <john_options>...
@@ -127,8 +126,8 @@ Select a Hashcat or John the Ripper reference with fzf from one of the matching 
 Note: mostly useful for `hashcat-haiti` and `john-haiti` or building another binary or alias that will make use of haiti with fzf input.
 
 ```
-$ haiti-fzf -h 
-HAITI (HAsh IdenTifIer) v3.0.0
+$ haiti-fzf -h
+HAITI (HAsh IdenTifIer) v4.0.0
 
 Usage:
   haiti-fzf hc [options] <hash>
@@ -167,7 +166,7 @@ Note: mostly useful for `haiti-fzf` or building another binary or alias.
 
 ```
 $ haiti-parsable -h
-HAITI (HAsh IdenTifIer) v3.0.0
+HAITI (HAsh IdenTifIer) v4.0.0
 
 Usage:
   haiti-parsable hc [options] <hash>

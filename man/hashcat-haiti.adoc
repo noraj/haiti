@@ -1,7 +1,7 @@
 = hashcat-haiti(1)
 Alexandre ZANNI (@noraj)
 :doctype: manpage
-:release-version: 3.0.0
+:release-version: 4.0.0
 :manmanual: hashcat-haiti manual
 :mansource: hashcat-haiti {release-version}
 :manversion: {release-version}
@@ -50,7 +50,7 @@ head -1 /tmp/hash.txt | *hashcat-haiti* - \-- /tmp/hash.txt
 
 == Copyright
 
-Copyright © 2020-2023 Alexandre ZANNI (independent)
+Copyright © 2020-2026 Alexandre ZANNI (independent)
 
 Copyright © 2019-2020 Alexandre ZANNI at Orange Cyberdefense
 

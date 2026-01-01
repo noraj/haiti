@@ -1,4 +1,4 @@
-## [unreleased - 3.1.0]
+## [4.0.0]
 
 - **Breaking changes**:
   - **Drop** Ruby 3.1 support, [EOL since 26/03/2025](https://www.ruby-lang.org/en/downloads/branches/) and no longer supported by minitest 6.x.x
