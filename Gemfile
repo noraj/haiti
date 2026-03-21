@@ -24,7 +24,7 @@ end
 
 group :development, :docs do
   gem 'asciidoctor', '~> 2.0' # for manpage generation
-  gem 'commonmarker', '~> 2.6', '>= 2.6.1' # for markdown support in YARD
+  gem 'commonmarker', '~> 2.7' # for markdown support in YARD
   # gem 'yard', ['>= 0.9.27', '< 0.10']
   # https://github.com/lsegal/yard/issues/1528
   gem 'yard', github: 'ParadoxV5/yard', ref: '9e869c940859570b07b81c5eadd6070e76f6291e', branch: 'commonmarker-1.0'
