@@ -15,7 +15,7 @@ end
 
 group :development, :test do
   gem 'minitest', '~> 6.0'
-  gem 'rake', '~> 13.2'
+  gem 'rake', '~> 13.4'
 end
 
 group :development, :lint do
