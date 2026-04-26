@@ -19,15 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['4.0', '3.4', '3.3', '3.2']
+        ruby-version: ['4.0', '3.4', '3.3']
     env:
       BUNDLE_WITHOUT: docs development # https://bundler.io/v1.5/groups.html
     steps:
-    - uses: actions/checkout@v4 # https://github.com/actions/checkout
+    - uses: actions/checkout@v6 # https://github.com/actions/checkout
     - name: Set up Ruby
-    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
-    # change this to (see https://github.com/ruby/setup-ruby#versioning):
-      uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@v1 # https://github.com/ruby/setup-ruby
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
