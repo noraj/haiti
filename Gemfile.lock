@@ -10,7 +10,7 @@ GEM
   specs:
     asciidoctor (2.0.26)
     ast (2.4.3)
-    commonmarker (2.8.1-x86_64-linux)
+    commonmarker (2.8.2-x86_64-linux)
     docopt (0.6.1)
     drb (2.2.3)
     json (2.19.4)
