@@ -24,6 +24,6 @@ end
 
 group :development, :docs do
   gem 'asciidoctor', '~> 2.0' # for manpage generation
-  gem 'commonmarker', '~> 2.8' # for markdown support in YARD
+  gem 'commonmarker', '~> 2.9' # for markdown support in YARD
   gem 'yard', ['>= 0.9.43', '< 0.10']
 end
