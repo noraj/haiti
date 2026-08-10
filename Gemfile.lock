@@ -21,7 +21,7 @@ GEM
       prism (~> 1.5)
     paint (2.3.0)
     parallel (2.1.0)
-    parser (3.3.11.1)
+    parser (3.3.12.0)
       ast (~> 2.4.1)
       racc
     prism (1.9.0)
@@ -29,7 +29,7 @@ GEM
     rainbow (3.1.1)
     rake (13.4.2)
     regexp_parser (2.12.0)
-    rubocop (1.88.2)
+    rubocop (1.89.0)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -61,7 +61,7 @@ DEPENDENCIES
   minitest (~> 6.0)
   paint (~> 2.3)
   rake (~> 13.4)
-  rubocop (~> 1.88)
+  rubocop (~> 1.89)
   yard (>= 0.9.43, < 0.10)
 
 BUNDLED WITH
