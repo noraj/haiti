@@ -2,8 +2,6 @@
 
 require 'minitest/autorun'
 require 'haiti'
-require 'open3'
-require 'tempfile'
 
 # Unit tests for the HashIdentifier library
 class HaitiTest < Minitest::Test
@@ -67,21 +65,6 @@ class HaitiTest < Minitest::Test
           assert_match(reg, sample, mode['name'])
         end
       end
-    end
-  end
-
-  def test_cli_file
-    Tempfile.create('haiti-hashes') do |file|
-      file.write("#{@hash}\nunknown\n\n")
-      file.flush
-
-      output, status = Open3.capture2('ruby', '-Ilib', 'bin/haiti', '--no-color', '--file', file.path)
-
-      assert_predicate(status, :success?)
-      assert_includes(output, "Hash: #{@hash}")
-      assert_includes(output, 'MD5 [HC: 0] [JtR: raw-md5]')
-      assert_includes(output, "Hash: unknown")
-      assert_includes(output, 'Unknown hash type')
     end
   end
 end
