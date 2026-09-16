@@ -15,7 +15,7 @@ haiti - CLI tool for identifying hash types (hash type identifier)
 
 *haiti* [_options_] _<hash>_
 
-*haiti* [_options_] -f _<file>_
+*haiti* [_options_] file _<file>_
 
 *haiti* samples (_<ref>_ | _<name>_)
 
@@ -44,9 +44,6 @@ haiti - CLI tool for identifying hash types (hash type identifier)
 *--john-only*::
   Show only john the ripper references.
 
-*-f, --file* _<file>_::
-  Identify hashes from a file, one hash per line.
-
 *--ascii-art*::
   Display the logo in colored ascii-art.
 
@@ -66,6 +63,9 @@ haiti - CLI tool for identifying hash types (hash type identifier)
 
 *list*::
   Display a list of all the available hash types.
+
+*file*::
+  Identify hashes from a file, one hash per line.
 
 == Parameters
 
@@ -89,7 +89,7 @@ haiti - CLI tool for identifying hash types (hash type identifier)
 
 b2sum /etc/os-release | awk '{print $1}' | *haiti* -
 
-*haiti* --file hashes.txt
+*haiti* file hashes.txt
 
 *haiti* samples crc32
 
