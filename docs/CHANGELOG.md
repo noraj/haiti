@@ -6,6 +6,8 @@
   - Drop support for Ruby 3.2
     - Ruby 3.2 is ([EOL](https://www.ruby-lang.org/en/downloads/branches/))
     - parallel-2.1.0 requires ruby version >= 3.3
+- **Additions**:
+  - Add hash file input support [#267](https://github.com/noraj/haiti/pull/267)
 
 ## [4.0.0]
 

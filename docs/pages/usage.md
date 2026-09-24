@@ -15,6 +15,7 @@ HAITI (HAsh IdenTifIer) v4.0.0
 Usage:
   haiti [options] list
   haiti samples (<ref> | <name>)
+  haiti [options] file <file>
   haiti [options] <hash>
   haiti --ascii-art
   haiti -h | --help
@@ -23,27 +24,30 @@ Usage:
 Commands:
   samples         Display hash samples for the given type
   list            Display a list of all the available hash types
+  file            Identify hashes from a file, one hash per line
 
 Parameters:
   <hash>          Hash string to identify, read from STDIN if equal to "-"
+  <file>          File containing one hash per line
   <ref>           hashcat or john the ripper reference
   <name>          Hash type name
 
 Options:
-  --no-color      Disable colorized output (NO_COLOR environment variable is respected too)
-  -e, --extended  List all possible hash algorithms including ones using salt
-  --short         Display in a short format: do not display hashcat and john the ripper references
-  --hashcat-only  Show only hashcat references
-  --john-only     Show only john the ripper references
-  --ascii-art     Display the logo in colored ascii-art
-  --debug         Display arguments
-  -h, --help      Show this screen
-  --version       Show version
+  --no-color        Disable colorized output (NO_COLOR environment variable is respected too)
+  -e, --extended    List all possible hash algorithms including ones using salt
+  --short           Display in a short format: do not display hashcat and john the ripper references
+  --hashcat-only    Show only hashcat references
+  --john-only       Show only john the ripper references
+  --ascii-art       Display the logo in colored ascii-art
+  --debug           Display arguments
+  -h, --help        Show this screen
+  --version         Show version
 
 Examples:
   haiti -e d41d8cd98f00b204e9800998ecf8427e
   haiti --no-color --short d41d8cd98f00b204e9800998ecf8427e
   b2sum /etc/os-release | awk '{print $1}' | haiti -
+  haiti file hashes.txt
   haiti samples crc32
 
 Project:

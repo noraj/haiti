@@ -40,7 +40,7 @@ On new release don't forget to rebuild the **library documentation**:
 bundle exec yard doc
 ```
 
-Update the man page in `man/haiti.ronn` and build it:
+Update the man page in `man/haiti.adoc` and build it:
 
 ```bash
 bundle exec rake man
