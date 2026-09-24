@@ -9,7 +9,7 @@ Alexandre ZANNI (@noraj)
 
 == Name
 
-haiti-parsable - Display hash types matching that have a Hashcat reference in an easily parsable format
+haiti-parsable - Display hash types matching that have a Hashcat or John the Ripper reference in an easily parsable format
 
 == Note
 
