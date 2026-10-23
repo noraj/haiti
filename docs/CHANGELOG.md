@@ -8,6 +8,7 @@
     - parallel-2.1.0 requires ruby version >= 3.3
 - **Additions**:
   - Add hash file input support [#267](https://github.com/noraj/haiti/pull/267)
+  - Microsoft SNTP [#227][#227] [#272][#272]
 
 ## [4.0.0]
 
@@ -94,6 +95,7 @@
 [#225]:https://github.com/noraj/haiti/issues/225
 [#226]:https://github.com/noraj/haiti/issues/226
 [#227]:https://github.com/noraj/haiti/issues/227
+[#272]:https://github.com/noraj/haiti/pull/272
 
 ## [3.0.0]
 
