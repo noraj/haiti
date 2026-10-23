@@ -7,8 +7,13 @@
     - Ruby 3.2 is ([EOL](https://www.ruby-lang.org/en/downloads/branches/))
     - parallel-2.1.0 requires ruby version >= 3.3
 - **Additions**:
-  - Add hash file input support [#267](https://github.com/noraj/haiti/pull/267)
+  - Add hash file input support [#267][#267]
   - Microsoft SNTP [#227][#227] [#272][#272]
+  - Ansible Vault [#273][#273]
+
+[#267]:https://github.com/noraj/haiti/pull/267
+[#272]:https://github.com/noraj/haiti/pull/272
+[#273]:https://github.com/noraj/haiti/pull/273
 
 ## [4.0.0]
 
@@ -95,7 +100,6 @@
 [#225]:https://github.com/noraj/haiti/issues/225
 [#226]:https://github.com/noraj/haiti/issues/226
 [#227]:https://github.com/noraj/haiti/issues/227
-[#272]:https://github.com/noraj/haiti/pull/272
 
 ## [3.0.0]
 
