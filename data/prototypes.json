@@ -7695,5 +7695,33 @@
 				]
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$sspr\\$3\\$1000\\$[a-f0-9]{16}\\$[a-f0-9]{64}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 40061,
+				"extended": false,
+				"name": "Adobe AEM (SSPR, SHA-256 with Salt)",
+				"samples": [
+					"$sspr$3$1000$f9bbf1381f481427$a1b45fd7eb190cc7f0bf831698cb777207eebbb4b7ea2abd6fff84be539aae62"
+				]
+			}
+		]
+	},
+	{
+		"regex": "\\A\\$sspr\\$4\\$1000\\$[a-f0-9]{16}\\$[a-f0-9]{128}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 40063,
+				"extended": false,
+				"name": "Adobe AEM (SSPR, SHA-512 with Salt)",
+				"samples": [
+					"$sspr$4$1000$9ad596c50a5c9acd$d4cdc3c7d227e3cc57a9c9014b1eff1684808ef40191482cd8ae6e9d7b66211a5f04e4b34f494b0513a5f67b9614c5ff16e95e624a60f41b16b90533f305146e"
+				]
+			}
+		]
 	}
 ]

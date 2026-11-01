@@ -12,6 +12,8 @@
   - Ansible Vault [#273][#273]
   - CubeCart [#227][#227]
   - 1Password (Mobile Keychain) (1Password 8) [#227][#227]
+  - Adobe AEM (SSPR, SHA-256 with Salt) [#227][#227]
+  - Adobe AEM (SSPR, SHA-512 with Salt) [#227][#227]
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
