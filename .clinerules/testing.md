@@ -1,0 +1,1 @@
+Testing data validity (regexp and samples) can be done running `bundle exec rake test`. Tests are stored in @/test/test_haiti.rb, `test_prototypes` dynamically generate tests for prototypes with example samples.
