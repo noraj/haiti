@@ -3078,6 +3078,34 @@
 		]
 	},
 	{
+		"regex": "\\A2[a-f0-9]{136}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 22200,
+				"extended": false,
+				"name": "Citrix Netscaler (SHA512)",
+				"samples": [
+					"2f9282ade42ce148175dc3b4d8b5916dae5211eee49886c3f7cc768f6b9f2eb982a5ac2f2672a0223999bfd15349093278adf12f6276e8b61dacf5572b3f93d0b4fa886ce"
+				]
+			}
+		]
+	},
+	{
+		"regex": "\\A5[a-f0-9]{128}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 40075,
+				"extended": false,
+				"name": "Citrix Netscaler (PBKDF2-HMAC-SHA256)",
+				"samples": [
+					"5567243c55099b6b10a714a350db53beea8be6ac9c247fd40fea7e96d206a9f11fd1c45735556ac2004138640de206d0e1522607ab3c3f92816156d2d7845068e"
+				]
+			}
+		]
+	},
+	{
 		"regex": "\\A\\$S\\$[a-z0-9\\/.]{52}\\Z",
 		"modes": [
 			{
