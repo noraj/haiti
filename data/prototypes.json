@@ -7751,5 +7751,19 @@
 				]
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$bisq\\$\\d\\*\\d{1,10}\\*\\d{1,2}\\*\\d\\*[a-f0-9]{16}\\*[a-f0-9]{64}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 29800,
+				"extended": false,
+				"name": "Bisq .wallet (scrypt)",
+				"samples": [
+					"$bisq$3*32768*8*6*31d838af87f99cb8*5cfb7bf3228d9e865881156e17b1866589ffa6b757011e25d1319083595236d2"
+				]
+			}
+		]
 	}
 ]

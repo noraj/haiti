@@ -16,6 +16,7 @@
   - Adobe AEM (SSPR, SHA-512 with Salt) [#227][#227]
   - Anope IRC Services (enc_sha256) [#227][#227]
   - BestCrypt v4 Volume Encryption [#227][#227]
+  - Bisq .wallet (scrypt) [#227][#227]
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
