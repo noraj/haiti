@@ -2696,6 +2696,15 @@
 			},
 			{
 				"john": null,
+				"hashcat": 40069,
+				"extended": false,
+				"name": "CubeCart",
+				"samples": [
+					"a2c0342a2617026fbaeed01130c826cc3f58242799894b3ecc1abfa811ede03fd712efd14a886af6fa74045502f22c9feb1c45a291cf2d7bbe9bb94c388b6403:deadbeef"
+				]
+			},
+			{
+				"john": null,
 				"hashcat": null,
 				"extended": false,
 				"name": "Salsa10"
