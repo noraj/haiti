@@ -4725,6 +4725,20 @@
 		]
 	},
 	{
+		"regex": "\\A[a-z0-9]{8}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 24901,
+				"extended": false,
+				"name": "Besder Authentication MD5",
+				"samples": [
+					"GRmHbqVh"
+				]
+			}
+		]
+	},
+	{
 		"regex": "\\A[a-z0-9]{8}(?::[a-z0-9]{8})?\\Z",
 		"modes": [
 			{

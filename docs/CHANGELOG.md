@@ -20,6 +20,7 @@
   - Bitcoin raw private key (P2PKH/P2WPKH/P2SH(P2WPKH), compressed/uncompressed) [#227][#227]
   - Citrix Netscaler (SHA512) [#227][#227]
   - Citrix Netscaler (PBKDF2-HMAC-SHA256) [#227][#227]
+  - Besder Authentication MD5
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
