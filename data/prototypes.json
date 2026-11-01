@@ -5862,6 +5862,24 @@
 				"samples": [
 					"1L9nr4GX4Zmd7gDL1UT75QPUqxSgNTvdHb"
 				]
+			},
+			{
+				"john": null,
+				"hashcat": 30901,
+				"extended": false,
+				"name": "Bitcoin raw private key (P2PKH), compressed",
+				"samples": [
+					"14Fqy5AGRehazZ4NLzxFWy2E4BiNFdH9Ut"
+				]
+			},
+			{
+				"john": null,
+				"hashcat": 30902,
+				"extended": false,
+				"name": "Bitcoin raw private key (P2PKH), uncompressed",
+				"samples": [
+					"12sLRz1TKPZurKCwVqeT5FkW3Y7usipPbZ"
+				]
 			}
 		]
 	},
@@ -5885,6 +5903,24 @@
 				"samples": [
 					"bc1qv8e65p73gmp4w3z6fqnyu8t6ct69vetsda3snd"
 				]
+			},
+			{
+				"john": null,
+				"hashcat": 30903,
+				"extended": false,
+				"name": "Bitcoin raw private key (P2WPKH, Bech32), compressed",
+				"samples": [
+					"bc1q926ca6n7wz7gm2gfd8xc5p0vu687ngvnknpx74"
+				]
+			},
+			{
+				"john": null,
+				"hashcat": 30904,
+				"extended": false,
+				"name": "Bitcoin raw private key (P2WPKH, Bech32), uncompressed",
+				"samples": [
+					"bc1qq6samcuksd2f6rsc48eu3lkq87zp33vfud0p0t"
+				]
 			}
 		]
 	},
@@ -5907,6 +5943,24 @@
 				"name": "Bitcoin WIF private key (P2SH(P2WPKH)), uncompressed",
 				"samples": [
 					"3LovFVx5zBRvusVcj7pf3JxV9V46kjKhKu"
+				]
+			},
+			{
+				"john": null,
+				"hashcat": 30905,
+				"extended": false,
+				"name": "Bitcoin raw private key (P2SH(P2WPKH)), compressed",
+				"samples": [
+					"3JqAMRQN3Gd6i8yV3Kw7v55RmFxW7iW2Aq"
+				]
+			},
+			{
+				"john": null,
+				"hashcat": 30906,
+				"extended": false,
+				"name": "Bitcoin raw private key (P2SH(P2WPKH)), uncompressed",
+				"samples": [
+					"3PmD8zdrFD8KVgLrguVDCP2RJB4Rh35G9Z"
 				]
 			}
 		]
