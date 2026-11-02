@@ -24,7 +24,9 @@
 	"MD5 (APR)",
 	"md5apr1",
 	"Domain Cached Credentials (DCC), MS Cache",
+	"Domain Cached Credentials (DCC), MS Cache (NT)",
 	"Domain Cached Credentials 2 (DCC2), MS Cache 2",
+	"Domain Cached Credentials 2 (DCC2), MS Cache 2, (NT)",
 	"LM",
 	"RIPEMD-160",
 	"scrypt"

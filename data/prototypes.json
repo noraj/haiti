@@ -938,6 +938,15 @@
 					"M$#january#72488d8077e33d138b9cff94092716e4",
 					"CORP1.COMPANY.LOCAL/Administrator:ab60bdb4493822b175486810ac2abe63:Administrator"
 				]
+			},
+			{
+				"john": null,
+				"hashcat": 31500,
+				"extended": false,
+				"name": "Domain Cached Credentials (DCC), MS Cache (NT)",
+				"samples": [
+					"c896b3c6963e03c86ade3a38370bbb09:54161084332"
+				]
 			}
 		]
 	},
@@ -956,6 +965,15 @@
 					"$DCC2$january#26b5495b21f9ad58255d99b5e117abe2",
 					"$DCC2$#59137848828d14b1fca295a5032b52a1",
 					"CORP1.COMPANY.LOCAL/Administrator:$DCC2$10240#Administrator#cceed966f6689269b758893bb6bbb985"
+				]
+			},
+			{
+				"john": null,
+				"hashcat": 31600,
+				"extended": false,
+				"name": "Domain Cached Credentials 2 (DCC2), MS Cache 2, (NT)",
+				"samples": [
+					"$DCC2$10240#6848#e2829c8af2232fa53797e2f0e35e4626"
 				]
 			}
 		]
