@@ -1195,6 +1195,20 @@
 		]
 	},
 	{
+		"regex": "\\A[a-f0-9]{32}:[^:]+:[^:]+\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 32300,
+				"extended": false,
+				"name": "Empire CMS (Admin password)",
+				"samples": [
+					"5962d4ada95d6493379cd9c05ce7a376:726620866134417802643053384570:6056291339665060317728572165496183"
+				]
+			}
+		]
+	},
+	{
 		"regex": "\\A[a-f0-9]{40}(:[^:]+)?\\Z",
 		"modes": [
 			{
