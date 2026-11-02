@@ -22,6 +22,7 @@
   - Citrix Netscaler (PBKDF2-HMAC-SHA256) [#227][#227]
   - Besder Authentication MD5
   - DANE RFC7929/RFC8162 SHA2-256 [#227][#227]
+  - Dogechain.info Wallet [#227][#227]
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272

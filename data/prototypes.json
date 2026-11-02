@@ -7869,5 +7869,19 @@
 				]
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$dogechain\\$0\\*\\d{1,10}\\*[a-z0-9=+\\/]{320}\\*[a-z0-9=+\\/]{24}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 32500,
+				"extended": false,
+				"name": "Dogechain.info Wallet",
+				"samples": [
+					"$dogechain$0*5000*EEmAkgiMlVrToRhu2suq91R5Frf+VQCvNzv9lj6OwRWIf/3IM31wqhJM7gGQpinXH9kqHkuQ2DMZxspgA7QFAddsUWvZxGdNAkaeKy90EAsTLIuDQnH3plfBQfmL6j5NPaH7Nr7kF1PdvM0pbUw6XHySBYkD/rPHNM6n58NRK4xfO4VVMykeX3+m2LaVyv5s269r/op38svRPT0YFGpRcanY6/U1BeSrvG2IXii1BKXXAcVEN4GFmyEQRWKI0uZE+3M0atf7UEPD4K9tmEKosqdsF4MFLiBtfI4eq0+926ijoezDmUPvHIiyQZ9CH2jZ*6jOgqW/GxL9He1afQiINIg=="
+				]
+			}
+		]
 	}
 ]
