@@ -26,10 +26,18 @@
   - Empire CMS (Admin password) [#227][#227]
   - Domain Cached Credentials (DCC), MS Cache (NT) [#227][#227]
   - Domain Cached Credentials 2 (DCC2), MS Cache 2, (NT) [#227][#227]
+  - OpenSSH private key (RSA/DSA/EC + Bcrypt PBKDF + AES-256-CTR / AES-256-CBC) (HC 36800) [#277][#277]
+  - scrypt Crypt (HC 36300), yescrypt (HC 36100), gost-yescrypt (HC 36200) [#277][#277]
+  - SAP CODVN H (PWDSALTEDHASH) iSSHA-256 / iSSHA-384 (HC 40081 / 40082) [#277][#277]
+  - Wordpress bcrypt(hmac-sha384($pass)) (HC 35500) [#277][#277]
+  - gost12512crypt [$gost12512hash$] (Unix) (HC 35600) [#277][#277]
+  - Cisco-IOS $14$ (MD5 (Type 5) + scrypt, Convoluted) (HC 38200) [#277][#277]
+  - Huawei / H3C / HPE Comware $h$6$ (HC 40002) [#277][#277]
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
 [#273]:https://github.com/noraj/haiti/pull/273
+[#277]:https://github.com/noraj/haiti/issues/277
 
 ## [4.0.0]
 
