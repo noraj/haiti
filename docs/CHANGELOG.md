@@ -23,6 +23,11 @@
   - Besder Authentication MD5
   - DANE RFC7929/RFC8162 SHA2-256 [#227][#227]
   - Dogechain.info Wallet [#227][#227]
+  - GPG (AES-128/AES-256 (SHA-1($pass))) [#227][#227]
+  - GPG (AES-128/AES-256 (SHA-512($pass))) [#227][#227]
+  - GPG (AES-128/AES-256 (SHA-256($pass))) [#227][#227]
+  - GPG (CAST5 (SHA-1($pass))) [#227][#227]
+  - GPG (AES-OCB-128 (SHA-1($pass))) [#227][#227]
   - Empire CMS (Admin password) [#227][#227]
   - Domain Cached Credentials (DCC), MS Cache (NT) [#227][#227]
   - Domain Cached Credentials 2 (DCC2), MS Cache 2, (NT) [#227][#227]
