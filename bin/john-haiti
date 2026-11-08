@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 # Ruby internal
+require 'shellwords' # for shellescape cmd
 # Project internal
 require 'haiti'
 # External
@@ -44,7 +45,7 @@ begin
   if args['<hash>']
     args['<hash>'] = $stdin.read.chomp if args['<hash>'] == '-'
     ext = args['--extended'] ? '-e' : ''
-    system("john --format=$(haiti-fzf jtr #{ext} #{args['<hash>']}) #{args['<john_options>'].join(' ')}")
+    system("john --format=$(haiti-fzf jtr #{ext} #{args['<hash>'].shellescape}) #{args['<john_options>'].join(' ')}")
   end
   # use case 2, help: already handled by docopt
   # use case 3, version: already handled by docopt
