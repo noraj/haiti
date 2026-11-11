@@ -7985,5 +7985,19 @@
 				]
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$kgb\\$[a-f0-9]{16}\\$[a-f0-9]{40}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 32700,
+				"extended": true,
+				"name": "Kremlin Encrypt 3.0 w/NewDES",
+				"samples": [
+					"$kgb$0ab30cf7a52dad93$82a7c454246fc7570224e9f24279791aa2a63bf4"
+				]
+			}
+		]
 	}
 ]
