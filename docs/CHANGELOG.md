@@ -31,6 +31,7 @@
   - Empire CMS (Admin password) [#227][#227]
   - Domain Cached Credentials (DCC), MS Cache (NT) [#227][#227]
   - Domain Cached Credentials 2 (DCC2), MS Cache 2, (NT) [#227][#227]
+  - KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / AES-KDF (Hashcat mode 34301) [#282]
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
