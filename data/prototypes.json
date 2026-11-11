@@ -6405,7 +6405,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": null,
+				"hashcat": 36100,
 				"extended": false,
 				"name": "yescrypt",
 				"samples": [
