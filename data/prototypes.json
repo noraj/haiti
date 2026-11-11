@@ -2947,7 +2947,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 5720,
+				"hashcat": 40012,
 				"extended": false,
 				"name": "Cisco-ISE Hashed Password (SHA256)",
 				"samples": [
