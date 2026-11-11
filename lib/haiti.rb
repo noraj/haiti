@@ -91,6 +91,6 @@ class HashIdentifier
 
   # Sort common hash types first
   def sort_commons
-    @type.sort_by! { |e| COMMONS.include?(e.name) ? 0 : 1 }
+    @type = @type.each_with_index.sort_by { |e, i| [COMMONS.include?(e.name) ? 0 : 1, i] }.map(&:first)
   end
 end
