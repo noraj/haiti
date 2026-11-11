@@ -31,8 +31,10 @@
   - Empire CMS (Admin password) [#227][#227]
   - Domain Cached Credentials (DCC), MS Cache (NT) [#227][#227]
   - Domain Cached Credentials 2 (DCC2), MS Cache 2, (NT) [#227][#227]
+  - SAP CODVN H (PWDSALTEDHASH) isSHA512 [#282][#282]
 
 [#267]:https://github.com/noraj/haiti/pull/267
+[#282]:https://github.com/noraj/haiti/issues/282
 [#272]:https://github.com/noraj/haiti/pull/272
 [#273]:https://github.com/noraj/haiti/pull/273
 

@@ -4452,9 +4452,9 @@
 		"modes": [
 			{
 				"john": "saph",
-				"hashcat": 35000,
+				"hashcat": 40078,
 				"extended": false,
-				"name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-512",
+				"name": "SAP CODVN H (PWDSALTEDHASH) isSHA512",
 				"samples": [
 					"{x-isSHA512, 7500}ctlX6qYsWspafEzwoej6nFp7zRQQjr8y22vE+xeveIX2gUndAw9N2Gep5azNUwuxOe2o7tusF800OfB9tg4taWI4Tg==",
 					"{x-isSHA512, 7500}Qyrh2JXgGkvIfKYOJRdWFut5/pVnXI/vZvqJ7N+Tz9M1zUTXGWCZSom4az4AhqOuAahBwuhcKqMq/pYPW4h3cThvT2JaWVBw",
