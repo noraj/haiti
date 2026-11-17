@@ -7999,5 +7999,27 @@
 				]
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$luks\\$2\\$argon2id?\\$sha256\\$aes\\$[a-z0-9-]{9,16}\\$(?:128|256|512)\\$m=\\d{3,12},t=\\d{3,5},p=\\d{3,5}\\$[a-f0-9]+\\$[a-f0-9]+\\$[a-f0-9]+\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 34100,
+				"extended": true,
+				"name": "LUKS v2 (argon2 + SHA-256 + AES)"
+			}
+		]
+	},
+	{
+		"regex": "\\A\\$luks\\$1\\$\\d+\\$[a-f0-9]+\\$\\d+\\$[a-zA-Z0-9+/]+={0,2}\\Z",
+		"modes": [
+			{
+				"john": "luks",
+				"hashcat": null,
+				"extended": true,
+				"name": "LUKS v1 (PBKDF2 + SHA1)"
+			}
+		]
 	}
 ]
