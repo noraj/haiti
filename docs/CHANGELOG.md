@@ -34,10 +34,14 @@
   - Kremlin Encrypt 3.0 w/NewDES [#227][#227]
   - LUKS v2 (argon2 + SHA-256 + AES) [#227][#227]
   - LUKS v1 (legacy and Hashcat PBKDF2 modes: SHA-1, SHA-256, SHA-512, RIPEMD-160)
+- **Enhancements**:
+  - yescrypt
+    - Add HC support [#277][#277]
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
 [#273]:https://github.com/noraj/haiti/pull/273
+[#277]:https://github.com/noraj/haiti/pull/277
 
 ## [4.0.0]
 
