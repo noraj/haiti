@@ -8001,13 +8001,119 @@
 		]
 	},
 	{
-		"regex": "\\A\\$luks\\$2\\$argon2id?\\$sha256\\$aes\\$[a-z0-9-]{9,16}\\$(?:128|256|512)\\$m=\\d{3,12},t=\\d{3,5},p=\\d{3,5}\\$[a-f0-9]+\\$[a-f0-9]+\\$[a-f0-9]+\\Z",
+		"regex": "\\A\\$luks\\$1\\$(?:(?:sha1|sha256|sha512)\\$(?:aes|serpent|twofish|blowfish)|ripemd160\\$(?:aes|serpent|twofish))\\$[a-z0-9:-]{9,16}\\$(?:128|256|512)\\$\\d{1,10}\\$[a-f0-9]{64}\\$(?:[a-f0-9]{1000}){128,512}\\$[a-f0-9]{1024}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 29511,
+				"extended": false,
+				"name": "LUKS v1 (SHA-1 + AES)"
+			},
+			{
+				"john": null,
+				"hashcat": 29512,
+				"extended": false,
+				"name": "LUKS v1 (SHA-1 + Serpent)"
+			},
+			{
+				"john": null,
+				"hashcat": 29513,
+				"extended": false,
+				"name": "LUKS v1 (SHA-1 + Twofish)"
+			},
+			{
+				"john": null,
+				"hashcat": 29514,
+				"extended": false,
+				"name": "LUKS v1 (SHA-1 + Blowfish)"
+			},
+			{
+				"john": null,
+				"hashcat": 29521,
+				"extended": false,
+				"name": "LUKS v1 (SHA-256 + AES)"
+			},
+			{
+				"john": null,
+				"hashcat": 29522,
+				"extended": false,
+				"name": "LUKS v1 (SHA-256 + Serpent)"
+			},
+			{
+				"john": null,
+				"hashcat": 29523,
+				"extended": false,
+				"name": "LUKS v1 (SHA-256 + Twofish)"
+			},
+			{
+				"john": null,
+				"hashcat": 29524,
+				"extended": false,
+				"name": "LUKS v1 (SHA-256 + Blowfish)"
+			},
+			{
+				"john": null,
+				"hashcat": 29531,
+				"extended": false,
+				"name": "LUKS v1 (SHA-512 + AES)"
+			},
+			{
+				"john": null,
+				"hashcat": 29532,
+				"extended": false,
+				"name": "LUKS v1 (SHA-512 + Serpent)"
+			},
+			{
+				"john": null,
+				"hashcat": 29533,
+				"extended": false,
+				"name": "LUKS v1 (SHA-512 + Twofish)"
+			},
+			{
+				"john": null,
+				"hashcat": 29534,
+				"extended": false,
+				"name": "LUKS v1 (SHA-512 + Blowfish)"
+			},
+			{
+				"john": null,
+				"hashcat": 29541,
+				"extended": false,
+				"name": "LUKS v1 (RIPEMD-160 + AES)"
+			},
+			{
+				"john": null,
+				"hashcat": 29542,
+				"extended": false,
+				"name": "LUKS v1 (RIPEMD-160 + Serpent)"
+			},
+			{
+				"john": null,
+				"hashcat": 29543,
+				"extended": false,
+				"name": "LUKS v1 (RIPEMD-160 + Twofish)"
+			}
+		]
+	},
+	{
+		"regex": "\\A\\$luks\\$2\\$argon2id\\$sha256\\$aes\\$[a-z0-9-]{9,16}\\$(?:128|256|512)\\$m=\\d{3,12},t=\\d{1,3},p=\\d{1,3}\\$[a-f0-9]{64}\\$(?:[a-f0-9]{1000}){128,512}\\$[a-f0-9]{1024}\\Z",
 		"modes": [
 			{
 				"john": null,
 				"hashcat": 34100,
-				"extended": true,
-				"name": "LUKS v2 (argon2 + SHA-256 + AES)"
+				"extended": false,
+				"name": "LUKS v2 (argon2id + SHA-256 + AES)"
+			}
+		]
+	},
+	{
+		"regex": "\\A\\$luks\\$2\\$argon2i\\$sha256\\$aes\\$[a-z0-9-]{9,16}\\$(?:128|256|512)\\$m=\\d{3,12},t=\\d{1,3},p=\\d{1,3}\\$[a-f0-9]{64}\\$(?:[a-f0-9]{1000}){128,512}\\$[a-f0-9]{1024}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 34100,
+				"extended": false,
+				"name": "LUKS v2 (argon2i + SHA-256 + AES)"
 			}
 		]
 	},
@@ -8016,9 +8122,9 @@
 		"modes": [
 			{
 				"john": "luks",
-				"hashcat": null,
-				"extended": true,
-				"name": "LUKS v1 (PBKDF2 + SHA1)"
+				"hashcat": 14600,
+				"extended": false,
+				"name": "LUKS v1 legacy (PBKDF2 + SHA1)"
 			}
 		]
 	}

@@ -33,7 +33,7 @@
   - Domain Cached Credentials 2 (DCC2), MS Cache 2, (NT) [#227][#227]
   - Kremlin Encrypt 3.0 w/NewDES [#227][#227]
   - LUKS v2 (argon2 + SHA-256 + AES) [#227][#227]
-  - LUKS v1 (PBKDF2 + SHA1)
+  - LUKS v1 (legacy and Hashcat PBKDF2 modes: SHA-1, SHA-256, SHA-512, RIPEMD-160)
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
