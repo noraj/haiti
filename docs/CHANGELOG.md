@@ -37,6 +37,8 @@
 - **Enhancements**:
   - yescrypt
     - Add HC support [#277][#277]
+  - Cisco-ISE Hashed Password (SHA256)
+    - Update to new HC ref.
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
