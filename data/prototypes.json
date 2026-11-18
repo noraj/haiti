@@ -7820,6 +7820,23 @@
 		]
 	},
 	{
+		"regex": "\\A\\$gost12512hash\\$(?:rounds=\\d+\\$)?[a-z0-9\\/.]{0,16}\\$[a-z0-9\\/.]{86}\\Z",
+		"modes": [
+			{
+				"john": "streebog512crypt",
+				"hashcat": 35600,
+				"extended": false,
+				"name": "gost12512crypt [$gost12512hash$] (Unix)",
+				"samples": [
+					"$gost12512hash$salt$w0TCvk4n0JHA/kPNpHEyf3RR5YuUXReihlrize3NdcPCmtLk/ewG63OUWT.G4bvjegPTeMb/xQ2PK7apsCfC7/",
+					"$gost12512hash$salt$nwv1Oqm2zL9523APlKI6Fpmlm56UzSe.J1wDzMk61S2zxa1nWY4U9d3oP5UyOpZQvTzVPEZWRnfRd/yJZeXp2.",
+					"$gost12512hash$longersalt$Ru..ARXlil3CeBqecyE9EBW1tfZZoPPnnwWJKy7nbhOnzmXpldy3nt1iB1QM21KD73L1tm/zWsiyU05zHluwO1",
+					"$gost12512hash$KrmcHbeQmxiP/Ipl$uNmEQvpJ7B0jTcCkIh1IQEIRoyAXzliyt2S7VAz/xA8GNjBbFeE.c98elVBwad6y40qPNKYqYNkWZJFxpGw620"
+				]
+			}
+		]
+	},
+	{
 		"regex": "\\A(?:\\d+:)?\\$sntp-ms\\$[a-f0-9]{32}\\$[a-f0-9]{96}\\Z",
 		"modes": [
 			{
