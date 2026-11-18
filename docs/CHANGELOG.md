@@ -29,6 +29,7 @@
   - GPG (CAST5 (SHA-1($pass))) [#227][#227]
   - GPG (AES-OCB-128 (SHA-1($pass))) [#227][#227]
   - Empire CMS (Admin password) [#227][#227]
+  - Wordpress bcrypt(hmac-sha384($pass)) [#277][#277]
   - Domain Cached Credentials (DCC), MS Cache (NT) [#227][#227]
   - Domain Cached Credentials 2 (DCC2), MS Cache 2, (NT) [#227][#227]
   - Kremlin Encrypt 3.0 w/NewDES [#227][#227]
