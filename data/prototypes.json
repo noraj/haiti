@@ -4221,7 +4221,7 @@
 		"modes": [
 			{
 				"john": "scrypt",
-				"hashcat": null,
+				"hashcat": 36300,
 				"extended": false,
 				"name": "scrypt Crypt",
 				"samples": [

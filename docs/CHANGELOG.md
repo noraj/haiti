@@ -41,6 +41,8 @@
     - Add HC support [#277][#277]
   - Cisco-ISE Hashed Password (SHA256)
     - Update to new HC ref.
+  - scrypt Crypt
+    - Add HC support [#277][#277]
   - Hashcat stored-recipe modes
     - Update to new HC refs:
       - `sha224($pass.$salt)`: 1310 -> 40009
