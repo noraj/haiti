@@ -600,7 +600,7 @@
 			},
 			{
 				"john": "dynamic_14",
-				"hashcat": 33100,
+				"hashcat": 40071,
 				"extended": true,
 				"name": "md5($salt.md5($pass).$salt)",
 				"samples": [
@@ -841,7 +841,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 11000,
+				"hashcat": 40026,
 				"extended": false,
 				"name": "PrestaShop",
 				"samples": [
@@ -1689,7 +1689,7 @@
 		"modes": [
 			{
 				"john": "aix-ssha1",
-				"hashcat": 6700,
+				"hashcat": 40017,
 				"extended": false,
 				"name": "AIX (ssha1)",
 				"samples": [
@@ -1746,7 +1746,7 @@
 			},
 			{
 				"john": "dynamic_51",
-				"hashcat": 1320,
+				"hashcat": 40010,
 				"extended": true,
 				"name": "sha224($salt.$pass)",
 				"samples": [
@@ -1755,7 +1755,7 @@
 			},
 			{
 				"john": "dynamic_52",
-				"hashcat": 1310,
+				"hashcat": 40009,
 				"extended": true,
 				"name": "sha224($pass.$salt)",
 				"samples": [
@@ -1764,7 +1764,7 @@
 			},
 			{
 				"john": "dynamic_53",
-				"hashcat": 34400,
+				"hashcat": 40076,
 				"extended": true,
 				"name": "sha224(sha224($pass))",
 				"samples": [
@@ -1889,7 +1889,7 @@
 			},
 			{
 				"john": null,
-				"hashcat": 34500,
+				"hashcat": 40077,
 				"extended": true,
 				"name": "sha224(sha1($pass))",
 				"samples": [
@@ -2229,7 +2229,7 @@
 			},
 			{
 				"john": "dynamic_66",
-				"hashcat": 20720,
+				"hashcat": 40046,
 				"extended": true,
 				"name": "sha256($salt.sha256($pass))",
 				"samples": [
@@ -2238,7 +2238,7 @@
 			},
 			{
 				"john": null,
-				"hashcat": 21420,
+				"hashcat": 40049,
 				"extended": true,
 				"name": "sha256($salt.sha256_raw($pass))",
 				"samples": [
@@ -2355,7 +2355,7 @@
 			},
 			{
 				"john": null,
-				"hashcat": 20730,
+				"hashcat": 40047,
 				"extended": true,
 				"name": "sha256(sha256($pass.$salt))",
 				"samples": [
@@ -2471,7 +2471,7 @@
 		"modes": [
 			{
 				"john": "aix-ssha256",
-				"hashcat": 6400,
+				"hashcat": 40015,
 				"extended": false,
 				"name": "AIX (ssha256)",
 				"samples": [
@@ -2522,7 +2522,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 18800,
+				"hashcat": 40040,
 				"extended": false,
 				"name": "Blockchain, My Wallet, Second Password (SHA256)",
 				"samples": [
@@ -2698,7 +2698,7 @@
 		"modes": [
 			{
 				"john": "aix-ssha512",
-				"hashcat": 6500,
+				"hashcat": 40016,
 				"extended": false,
 				"name": "AIX (ssha512)",
 				"samples": [
@@ -2857,7 +2857,7 @@
 			},
 			{
 				"john": "dynamic_85",
-				"hashcat": 32410,
+				"hashcat": 40067,
 				"extended": true,
 				"name": "sha512(sha512($pass).$salt)",
 				"samples": [
@@ -2933,7 +2933,7 @@
 			},
 			{
 				"john": null,
-				"hashcat": 32420,
+				"hashcat": 40068,
 				"extended": false,
 				"name": "sha512(sha512_bin($pass).$salt)",
 				"samples": [
@@ -3052,7 +3052,7 @@
 		"modes": [
 			{
 				"john": "pbkdf2-hmac-sha512",
-				"hashcat": 7100,
+				"hashcat": 40018,
 				"extended": false,
 				"name": "macOS v10.8+ (PBKDF2-HMAC-SHA512)",
 				"samples": [
@@ -3084,7 +3084,7 @@
 		"modes": [
 			{
 				"john": "pbkdf2-hmac-sha512",
-				"hashcat": 7200,
+				"hashcat": 40019,
 				"extended": false,
 				"name": "GRUB 2 (PBKDF2-HMAC-SHA512)",
 				"samples": [
@@ -3150,7 +3150,7 @@
 		"modes": [
 			{
 				"john": "drupal7",
-				"hashcat": 7900,
+				"hashcat": 40020,
 				"extended": false,
 				"name": "Drupal > v7.x"
 			}
@@ -3655,7 +3655,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 21600,
+				"hashcat": 40050,
 				"extended": false,
 				"name": "Web2py (PBKDF2-HMAC-SHA512)",
 				"samples": [
@@ -3903,7 +3903,7 @@
 		"modes": [
 			{
 				"john": "sha1crypt",
-				"hashcat": 15100,
+				"hashcat": 40038,
 				"extended": false,
 				"name": "SHA-1 Crypt (Juniper/NetBSD)",
 				"samples": [
@@ -3952,7 +3952,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 20400,
+				"hashcat": 40044,
 				"extended": false,
 				"name": "Python passlib (PBKDF2-HMAC-SHA1)",
 				"samples": [
@@ -3969,7 +3969,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 20300,
+				"hashcat": 40043,
 				"extended": false,
 				"name": "Python passlib (PBKDF2-HMAC-SHA256)",
 				"samples": [
@@ -3986,7 +3986,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 20200,
+				"hashcat": 40042,
 				"extended": false,
 				"name": "Python passlib (PBKDF2-HMAC-SHA512)",
 				"samples": [
@@ -4130,7 +4130,7 @@
 		"modes": [
 			{
 				"john": "django",
-				"hashcat": 10000,
+				"hashcat": 40022,
 				"extended": false,
 				"name": "Django (PBKDF2-HMAC-SHA256)",
 				"samples": [
@@ -4180,7 +4180,7 @@
 		"modes": [
 			{
 				"john": "pbkdf2-hmac-sha1",
-				"hashcat": 12001,
+				"hashcat": 40033,
 				"extended": false,
 				"name": "Atlassian (PBKDF2-HMAC-SHA1)",
 				"samples": [
@@ -4254,7 +4254,7 @@
 		"modes": [
 			{
 				"john": "pbkdf2-hmac-sha256",
-				"hashcat": 9200,
+				"hashcat": 40021,
 				"extended": false,
 				"name": "Cisco Type 8 (PBKDF2-SHA256)",
 				"samples": [
@@ -4406,7 +4406,7 @@
 		"modes": [
 			{
 				"john": "saph",
-				"hashcat": 10300,
+				"hashcat": 40023,
 				"extended": false,
 				"name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-1",
 				"samples": [
@@ -4452,7 +4452,7 @@
 		"modes": [
 			{
 				"john": "saph",
-				"hashcat": 35000,
+				"hashcat": 40078,
 				"extended": false,
 				"name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-512",
 				"samples": [
@@ -4594,7 +4594,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 10900,
+				"hashcat": 40024,
 				"extended": false,
 				"name": "PBKDF2-HMAC-SHA256",
 				"samples": [
@@ -4626,7 +4626,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 10901,
+				"hashcat": 40025,
 				"extended": false,
 				"name": "RedHat 389-DS LDAP (PBKDF2-HMAC-SHA256)",
 				"samples": [
@@ -4640,7 +4640,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 11900,
+				"hashcat": 40031,
 				"extended": false,
 				"name": "PBKDF2-HMAC-MD5",
 				"samples": [
@@ -4672,7 +4672,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 12000,
+				"hashcat": 40032,
 				"extended": false,
 				"name": "PBKDF2-HMAC-SHA1",
 				"samples": [
@@ -4705,7 +4705,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 12100,
+				"hashcat": 40034,
 				"extended": false,
 				"name": "PBKDF2-HMAC-SHA512",
 				"samples": [
@@ -5345,7 +5345,7 @@
 		"modes": [
 			{
 				"john": "fortigate256",
-				"hashcat": 26300,
+				"hashcat": 40054,
 				"extended": false,
 				"name": "FortiGate256 (FortiOS256)",
 				"samples": [
@@ -5432,7 +5432,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 24200,
+				"hashcat": 40053,
 				"extended": false,
 				"name": "MongoDB ServerKey SCRAM-SHA-256",
 				"samples": [
@@ -5612,7 +5612,7 @@
 		"modes": [
 			{
 				"john": "xmpp-scram",
-				"hashcat": 23200,
+				"hashcat": 40052,
 				"extended": false,
 				"name": "XMPP SCRAM PBKDF2-SHA1",
 				"samples": [
@@ -5861,7 +5861,7 @@
 		"modes": [
 			{
 				"john": "azuread",
-				"hashcat": 12800,
+				"hashcat": 40037,
 				"extended": false,
 				"name": "AzureAD (MS-AzureSync) PBKDF2-HMAC-SHA256",
 				"samples": [
@@ -6128,7 +6128,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 29100,
+				"hashcat": 40056,
 				"extended": false,
 				"name": "Flask Session Cookie ($salt.$salt.$pass)",
 				"samples": [
@@ -6349,7 +6349,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 28600,
+				"hashcat": 40055,
 				"extended": false,
 				"name": "PostgreSQL SCRAM-SHA-256",
 				"samples": [
@@ -7727,7 +7727,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": 12150,
+				"hashcat": 40035,
 				"extended": false,
 				"name": "Apache Shiro 1 SHA-512",
 				"samples": [

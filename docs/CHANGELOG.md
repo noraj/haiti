@@ -39,6 +39,48 @@
     - Add HC support [#277][#277]
   - Cisco-ISE Hashed Password (SHA256)
     - Update to new HC ref.
+  - Hashcat stored-recipe modes
+    - Update to new HC refs:
+      - `sha224($pass.$salt)`: 1310 -> 40009
+      - `sha224($salt.$pass)`: 1320 -> 40010
+      - `AIX (ssha256)`: 6400 -> 40015
+      - `AIX (ssha512)`: 6500 -> 40016
+      - `AIX (ssha1)`: 6700 -> 40017
+      - `macOS v10.8+ (PBKDF2-HMAC-SHA512)`: 7100 -> 40018
+      - `GRUB 2 (PBKDF2-HMAC-SHA512)`: 7200 -> 40019
+      - `Drupal > v7.x`: 7900 -> 40020
+      - `Cisco Type 8 (PBKDF2-SHA256)`: 9200 -> 40021
+      - `Django (PBKDF2-HMAC-SHA256)`: 10000 -> 40022
+      - `SAP CODVN H (PWDSALTEDHASH) iSSHA-1`: 10300 -> 40023
+      - `PBKDF2-HMAC-SHA256`: 10900 -> 40024
+      - `RedHat 389-DS LDAP (PBKDF2-HMAC-SHA256)`: 10901 -> 40025
+      - `PrestaShop`: 11000 -> 40026
+      - `PBKDF2-HMAC-MD5`: 11900 -> 40031
+      - `PBKDF2-HMAC-SHA1`: 12000 -> 40032
+      - `Atlassian (PBKDF2-HMAC-SHA1)`: 12001 -> 40033
+      - `PBKDF2-HMAC-SHA512`: 12100 -> 40034
+      - `Apache Shiro 1 SHA-512`: 12150 -> 40035
+      - `AzureAD (MS-AzureSync) PBKDF2-HMAC-SHA256`: 12800 -> 40037
+      - `SHA-1 Crypt (Juniper/NetBSD)`: 15100 -> 40038
+      - `Blockchain, My Wallet, Second Password (SHA256)`: 18800 -> 40040
+      - `Python passlib (PBKDF2-HMAC-SHA512)`: 20200 -> 40042
+      - `Python passlib (PBKDF2-HMAC-SHA256)`: 20300 -> 40043
+      - `Python passlib (PBKDF2-HMAC-SHA1)`: 20400 -> 40044
+      - `sha256($salt.sha256($pass))`: 20720 -> 40046
+      - `sha256(sha256($pass.$salt))`: 20730 -> 40047
+      - `sha256($salt.sha256_raw($pass))`: 21420 -> 40049
+      - `Web2py (PBKDF2-HMAC-SHA512)`: 21600 -> 40050
+      - `XMPP SCRAM PBKDF2-SHA1`: 23200 -> 40052
+      - `MongoDB ServerKey SCRAM-SHA-256`: 24200 -> 40053
+      - `FortiGate256 (FortiOS256)`: 26300 -> 40054
+      - `PostgreSQL SCRAM-SHA-256`: 28600 -> 40055
+      - `Flask Session Cookie ($salt.$salt.$pass)`: 29100 -> 40056
+      - `sha512(sha512($pass).$salt)`: 32410 -> 40067
+      - `sha512(sha512_bin($pass).$salt)`: 32420 -> 40068
+      - `md5($salt.md5($pass).$salt)`: 33100 -> 40071
+      - `sha224(sha224($pass))`: 34400 -> 40076
+      - `sha224(sha1($pass))`: 34500 -> 40077
+      - `SAP CODVN H (PWDSALTEDHASH) iSSHA-512`: 35000 -> 40078
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
