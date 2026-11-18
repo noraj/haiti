@@ -36,6 +36,7 @@
   - Kremlin Encrypt 3.0 w/NewDES [#227][#227]
   - LUKS v2 (argon2 + SHA-256 + AES) [#227][#227]
   - LUKS v1 (legacy and Hashcat PBKDF2 modes: SHA-1, SHA-256, SHA-512, RIPEMD-160)
+  - Huawei / H3C / HPE Comware $h$6$ [#277][#277]
 - **Enhancements**:
   - yescrypt
     - Add HC support [#277][#277]
