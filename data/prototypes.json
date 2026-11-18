@@ -8128,5 +8128,22 @@
 				"name": "LUKS v1 legacy (PBKDF2 + SHA1)"
 			}
 		]
+	},
+	{
+		"regex": "\\A\\$h\\$6\\$[^$]{1,256}\\$[a-z0-9\\/+]{86}==\\Z",
+		"modes": [
+			{
+				"john": "h3c",
+				"hashcat": 40002,
+				"extended": false,
+				"name": "Huawei / H3C / HPE Comware $h$6$",
+				"samples": [
+					"$h$6$4tWqOiqovcWddOKv$XyFMVgaE46fGiqsZEHbcr+BM/m9tDkvahDbqU7HoNrvmALk2u31z9c/tuUmX7IiQhWRwN5qoZquW82A8XYaDWA==",
+					"$h$6$abcdefghijklmnop$jp3hDbVlf/L1GNDE4n6x4wqvHnFiEr4YrtM6ax1aFXFb6pdu4Nfmpp09pZFOGOH8ID9vw2AOKQA4q8lByhlG4A==",
+					"$h$6$z)`6LE)4lBPKdDEr$MlUS0GBjnwzMOzFEhniVm+F9S9/YxdAKUy04NPCH5eXckRdk6fhH3gEGQmllhtrppRcGymdCxCrs9sBQJj2jbw==",
+					"$h$6$aIYeQUH63hnhJ1lK$7CqVJE2q/Es8B8Fqnp5349OQdrdv/kUYHTNiU7Aq+Am8LZG9u+Gawnn5SVEqn8N89n+agG449J0W0wlSk/cuvw=="
+				]
+			}
+		]
 	}
 ]
