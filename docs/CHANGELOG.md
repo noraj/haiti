@@ -83,6 +83,8 @@
       - `SAP CODVN H (PWDSALTEDHASH) iSSHA-512`: 35000 -> 40078
   - KeePass 2 (KDBX 4) AES-KDF
     - Add HC support
+  - OpenSSH private key (RSA/DSA/EC + Bcrypt PBKDF + AES-256-CTR / AES-256-CBC)
+    - Add HC support [#277][#277]
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
