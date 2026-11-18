@@ -6319,7 +6319,7 @@
 		"modes": [
 			{
 				"john": "keepass",
-				"hashcat": null,
+				"hashcat": 34301,
 				"extended": false,
 				"name": "KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / AES-KDF / without keyfile",
 				"samples": [
@@ -6335,7 +6335,7 @@
 		"modes": [
 			{
 				"john": "keepass",
-				"hashcat": null,
+				"hashcat": 34301,
 				"extended": false,
 				"name": "KeePass 2 (KDBX 4) / AES-Twofish-ChaCha20 256 enc. / AES-KDF / with keyfile",
 				"samples": [

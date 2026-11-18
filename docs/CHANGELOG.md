@@ -81,6 +81,8 @@
       - `sha224(sha224($pass))`: 34400 -> 40076
       - `sha224(sha1($pass))`: 34500 -> 40077
       - `SAP CODVN H (PWDSALTEDHASH) iSSHA-512`: 35000 -> 40078
+  - KeePass 2 (KDBX 4) AES-KDF
+    - Add HC support
 
 [#267]:https://github.com/noraj/haiti/pull/267
 [#272]:https://github.com/noraj/haiti/pull/272
