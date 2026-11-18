@@ -85,6 +85,10 @@
       - `sha224(sha224($pass))`: 34400 -> 40076
       - `sha224(sha1($pass))`: 34500 -> 40077
       - `SAP CODVN H (PWDSALTEDHASH) iSSHA-512`: 35000 -> 40078
+  - SAP CODVN H (PWDSALTEDHASH) iSSHA-256
+    - Add HC support [#277][#277]
+  - SAP CODVN H (PWDSALTEDHASH) iSSHA-384
+    - Add HC support [#277][#277]
   - KeePass 2 (KDBX 4) AES-KDF
     - Add HC support
 
