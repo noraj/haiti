@@ -37,6 +37,8 @@
 - **Enhancements**:
   - yescrypt
     - Add HC support [#277][#277]
+  - gost-yescrypt
+    - Add HC support [#277][#277]
   - Cisco-ISE Hashed Password (SHA256)
     - Update to new HC ref.
   - Hashcat stored-recipe modes
