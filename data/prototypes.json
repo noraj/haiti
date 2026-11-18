@@ -4422,7 +4422,7 @@
 		"modes": [
 			{
 				"john": "saph",
-				"hashcat": null,
+				"hashcat": 40081,
 				"extended": false,
 				"name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-256",
 				"samples": [
@@ -4437,7 +4437,7 @@
 		"modes": [
 			{
 				"john": "saph",
-				"hashcat": null,
+				"hashcat": 40082,
 				"extended": false,
 				"name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-384",
 				"samples": [
