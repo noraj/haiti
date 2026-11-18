@@ -11,6 +11,7 @@
   - Microsoft SNTP [#227][#227] [#272][#272]
   - Ansible Vault [#273][#273]
   - CubeCart [#227][#227]
+  - gost12512crypt [$gost12512hash$] (Unix) [#277][#277]
   - 1Password (Mobile Keychain) (1Password 8) [#227][#227]
   - Adobe AEM (SSPR, SHA-256 with Salt) [#227][#227]
   - Adobe AEM (SSPR, SHA-512 with Salt) [#227][#227]
