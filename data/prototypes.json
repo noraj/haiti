@@ -7876,6 +7876,20 @@
 		]
 	},
 	{
+		"regex": "\\A\\$wp\\$2[abxy]\\$\\d{2}\\$[a-z0-9\\/.]{53}\\Z",
+		"modes": [
+			{
+				"john": null,
+				"hashcat": 35500,
+				"extended": false,
+				"name": "Wordpress bcrypt(hmac-sha384($pass))",
+				"samples": [
+					"$wp$2y$10$lzlQrRRhLSjz486bA9CKHuZRPoKz4uviT251Sq/r5OzKUBbrXwnQW"
+				]
+			}
+		]
+	},
+	{
 		"regex": "\\Asha256:[a-f0-9]{64}:[a-f0-9]{64}\\Z",
 		"modes": [
 			{
