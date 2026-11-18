@@ -6422,7 +6422,7 @@
 		"modes": [
 			{
 				"john": null,
-				"hashcat": null,
+				"hashcat": 36200,
 				"extended": false,
 				"name": "gost-yescrypt",
 				"samples": [
