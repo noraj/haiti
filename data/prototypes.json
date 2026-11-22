@@ -4428,7 +4428,8 @@
 				"name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-256",
 				"samples": [
 					"{x-isSHA256, 3000}UqMnsr5BYN+uornWC7yhGa/Wj0u5tshX19mDUQSlgih6OTFoZjRpMQ==",
-					"{x-isSHA256, 3000}ydi0JlyU6lX5305Qk/Q3uLBbIFjWuTyGo3tPBZDcGFd6NkFvV1gza3RkNg=="
+					"{x-isSHA256, 3000}ydi0JlyU6lX5305Qk/Q3uLBbIFjWuTyGo3tPBZDcGFd6NkFvV1gza3RkNg==",
+					"{x-isSHA256, 3000}56SL4GZltN0YPoXeGfu6BzTjFYmY4QS723iBHVbRnXg1Njc4OTAxMjM0NTY="
 				]
 			}
 		]
@@ -4443,7 +4444,8 @@
 				"name": "SAP CODVN H (PWDSALTEDHASH) iSSHA-384",
 				"samples": [
 					"{x-isSHA384, 5000}3O/F4YGKNmIYHDu7ZQ7Q+ioCOQi4HRY4yrggKptAU9DtmHigCuGqBiAPVbKbEAfGTzh4YlZLWUM=",
-					"{x-isSHA384, 5000}XSLo2AKIvACwqW/X416UeVbHOXmio4u27Z7cgXS2rxND+zTpN+x3JNfQcEQX2PT0Z3FPdEY2dHM="
+					"{x-isSHA384, 5000}XSLo2AKIvACwqW/X416UeVbHOXmio4u27Z7cgXS2rxND+zTpN+x3JNfQcEQX2PT0Z3FPdEY2dHM=",
+					"{x-isSHA384, 5000}Hp1DRs7iqAwvLqhfMRnPVpFulGAdRYnnnIo3ytnoexSU5dxas1MOglsYHp5J5XuYNTY3ODkwMTIzNDU2"
 				]
 			}
 		]
