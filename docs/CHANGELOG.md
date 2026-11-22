@@ -95,6 +95,8 @@
     - Add HC support [#277][#277]
   - KeePass 2 (KDBX 4) AES-KDF
     - Add HC support
+  - OpenSSH private key (RSA/DSA/EC + Bcrypt PBKDF + AES-256-CTR / AES-256-CBC)
+    - Add HC support [#277][#277]
   - BASE64B https://github.com/hashcat/hashcat/blob/d8c6c37fa2eaf8a3abfcaea27a14705853562ce8/src/convert.c#L290-L313
     - add missing equal sign
 
