@@ -6427,7 +6427,8 @@
 				"name": "gost-yescrypt",
 				"samples": [
 					"$gy$jCT$HM87v.7RwpQLba8fDjNSk1$VgqS7k2OZWhFbAJVBye2vaA7ex/1VtU3a5fmL8Wv/26",
-					"$gy$j9T$.......$.xOKFTJExrsAB12xqOm7X4K3mMPTwx0aMN1dx5PQnQ5"
+					"$gy$j9T$.......$.xOKFTJExrsAB12xqOm7X4K3mMPTwx0aMN1dx5PQnQ5",
+					"$gy$j9T$HtyOX9cwJ2Dh8LlJV8IJ30$ZCSJt69pE/HLXFfIuxukRc2PlNla.tbqJxUHCp/WHVD"
 				]
 			}
 		]
